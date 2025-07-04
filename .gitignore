@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Another
+*.iml
+out
+gen
+*.DS_Store
+/*/.DS_Store
+*.pyc
+/allure-*/
+pytestdebug.log
+/venv
+/screenshots/

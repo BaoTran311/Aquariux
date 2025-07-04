@@ -1,0 +1,9 @@
+Appium-Python-Client
+selenium
+webdriver_manager
+pytest
+colorlog
+allure-pytest
+pyyaml
+pycryptodome
+pytest-check
