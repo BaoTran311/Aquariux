@@ -52,3 +52,10 @@ def encrypt_rsa_base64(raw_value, keypath):
 
 def format_number_string(text):
     return re.sub(r"[^\d.]", "", text)
+
+
+def count_decimal_places(s: str) -> int:
+    if '.' in s:
+        decimal_part = s.split('.')[-1]
+        return len(decimal_part)
+    return 0
