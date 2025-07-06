@@ -213,7 +213,7 @@ gen
 *.DS_Store
 /*/.DS_Store
 *.pyc
-/allure-*/
+/allure-result*/
 pytestdebug.log
 /venv
 /screenshots/

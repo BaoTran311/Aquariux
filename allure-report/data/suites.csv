@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8126","TC6 - Bulk close open position order","Trader","Sun Jul 06 21:33:40 ICT 2025","passed","Sun Jul 06 21:33:48 ICT 2025","","","",""
+"","3589","TC2 - Login with invalid credential","Credential","Sun Jul 06 21:32:17 ICT 2025","passed","Sun Jul 06 21:32:20 ICT 2025","","","",""
+"","17123","TC5 - Partial close open position order","Trader","Sun Jul 06 21:33:15 ICT 2025","passed","Sun Jul 06 21:33:32 ICT 2025","","","",""
+"","9697","TC4 - Place sell market order","Trader","Sun Jul 06 21:32:55 ICT 2025","passed","Sun Jul 06 21:33:05 ICT 2025","","","",""
+"","10818","TC1 - Login with valid credential","Credential","Sun Jul 06 21:31:59 ICT 2025","passed","Sun Jul 06 21:32:10 ICT 2025","","","",""
+"","11153","TC3 - Place buy market order","Trader","Sun Jul 06 21:32:40 ICT 2025","passed","Sun Jul 06 21:32:51 ICT 2025","","","",""
