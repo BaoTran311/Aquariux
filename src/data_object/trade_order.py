@@ -1,4 +1,4 @@
-from src.enums.order_enum import OrderType, OrderSide, VolumeType
+from src.enums.order_enum import OrderType, OrderSide, VolumeType, ExpiryType
 
 
 class TradeOrder:
@@ -30,14 +30,14 @@ class MarketTradeOrder(TradeOrder):
 
 
 class LimitTradeOrder(TradeOrder):
-    def __init__(self, order_side, volume, limit_price, stop_loss, take_profit, expiry):
+    def __init__(self, order_side, volume, limit_price, stop_loss, take_profit, expiry: ExpiryType):
         super().__init__(OrderType.LIMIT, order_side, volume, stop_loss, take_profit)
         self.price = limit_price
         self.expiry = expiry
 
 
 class StopTradeOrder(TradeOrder):
-    def __init__(self, order_side, volume, stop_price, stop_loss, take_profit, expiry):
+    def __init__(self, order_side, volume, stop_price, stop_loss, take_profit, expiry: ExpiryType):
         super().__init__(OrderType.LIMIT, order_side, volume, stop_loss, take_profit)
         self.price = stop_price
         self.expiry = expiry

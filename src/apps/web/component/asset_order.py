@@ -27,6 +27,8 @@ class _AssetColumnProperty:
     SWAP = "swap"
     COMMISSION = "commission"
     REMARKS = "remarks"
+    EXPIRY = "expiry"
+    PRICE = "entry-price"
 
 
 class AssetOrder:
@@ -44,6 +46,9 @@ class AssetOrder:
     __tab_order_history = (By.CSS_SELECTOR, "div[data-testid='tab-asset-order-type-history']")
     __lbl_asset_open_column_dyn = (
         By.CSS_SELECTOR, "td[data-testid='asset-open-column-{0}'], th[data-testid='asset-open-column-{0}']"
+    )
+    __lbl_asset_pending_column_dyn = (
+        By.CSS_SELECTOR, "td[data-testid='asset-pending-column-{0}'], th[data-testid='asset-pending-column-{0}']"
     )
     __lbl_asset_history_column_dyn = (
         By.CSS_SELECTOR, "td[data-testid='asset-history-column-{0}'], th[data-testid='asset-history-column-{0}']"
@@ -74,7 +79,7 @@ class AssetOrder:
 
     def __get_row_value_based_on_column(self, asset_order_type: AssetOrderType, asset_property):
         root_locator = {
-            AssetOrderType.PENDING_ORDERS: "",
+            AssetOrderType.PENDING_ORDERS: self.__lbl_asset_pending_column_dyn,
             AssetOrderType.ORDER_HISTORY: self.__lbl_asset_history_column_dyn,
             AssetOrderType.OPEN_POSITIONS: self.__lbl_asset_open_column_dyn,
         }.get(asset_order_type)  # noqa
@@ -134,6 +139,18 @@ class AssetOrder:
 
     def get_latest_status(self, asset_order_type: AssetOrderType):
         return self.get_status_list(asset_order_type)[0]
+
+    def get_expiry_list(self, asset_order_type: AssetOrderType):
+        return self.__get_row_value_based_on_column(asset_order_type, _AssetColumnProperty.EXPIRY)
+
+    def get_latest_expiry(self, asset_order_type: AssetOrderType):
+        return self.get_expiry_list(asset_order_type)[0]
+
+    def get_price_list(self, asset_order_type: AssetOrderType):
+        return self.__get_row_value_based_on_column(asset_order_type, _AssetColumnProperty.PRICE)
+
+    def get_latest_price(self, asset_order_type: AssetOrderType):
+        return self.get_price_list(asset_order_type)[0]
 
     def close_asset_order(self, order_id, confirm=True):
         locator = cook_element(self.__btn_close_asset_order_by_id, order_id)

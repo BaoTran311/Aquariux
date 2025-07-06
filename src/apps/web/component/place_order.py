@@ -6,6 +6,7 @@ from src.data_object.trade_order import TradeOrder
 from src.enums.order_enum import VolumeType
 from src.utils import logger, string_util
 from src.utils.element_util import WebActions
+from src.utils.string_util import cook_element
 
 
 class PlaceOrder:
@@ -15,9 +16,12 @@ class PlaceOrder:
         self.logger = logger
         self.trade_confirmation_popup = TradeConfirmationPopup(driver)
 
-    __btn_trade_order_type_dyn = (By.CSS_SELECTOR, "div[data-testid='trade-button-order-{}']")
+    __btn_trade_order_action_dyn = (By.CSS_SELECTOR, "div[data-testid='trade-button-order-{}']")
     __lbl_live_buy_price = (By.CSS_SELECTOR, "div[data-testid='trade-live-buy-price']")
     __lbl_live_sell_price = (By.CSS_SELECTOR, "div[data-testid='trade-live-sell-price']")
+    __dd_trade_order_type = (By.CSS_SELECTOR, "div[data-testid='trade-dropdown-order-type']")
+    __dd_trade_order_type_item_dyn = (By.CSS_SELECTOR, "div[data-testid='trade-dropdown-order-type-{}']")
+
     __pnl_trade_detail_status = (
         By.XPATH, "//div[./parent::div[@data-testid='trade-details'] and .//span[@aria-expanded]]"
     )
@@ -69,8 +73,18 @@ class PlaceOrder:
 
     def place_an_order(self, trade_order: TradeOrder, confirm=True):
         # Select Buy or Sell
-        trade_locator = string_util.cook_element(self.__btn_trade_order_type_dyn, trade_order.order_side.lower())
+        trade_locator = string_util.cook_element(self.__btn_trade_order_action_dyn, trade_order.order_side.lower())
         self.actions.click(trade_locator)
+
+        # Select Limit or Stop
+        cls_name = type(trade_order).__name__.replace("TradeOrder", "").lower()
+        if cls_name in ["limit", "stop"] and cls_name != self.actions.get_text(self.__dd_trade_order_type):
+            self.actions.click(self.__dd_trade_order_type)
+            self.actions.click(cook_element(self.__dd_trade_order_type_item_dyn, cls_name))
+            self.collapse_trade_details()
+
+        if hasattr(trade_order, "price"):
+            self.actions.send_keys_by_action_chains(self.__txt_limit_or_stop_price, trade_order.price)
 
         # Select Units or Size
         self.switch_to_size() if trade_order.is_volume_size() else self.switch_to_units()
@@ -78,16 +92,17 @@ class PlaceOrder:
         # Fill place order information
         self.actions.send_keys_by_action_chains(self.__txt_trade_volume, trade_order.get_volume_value(), press=Keys.TAB)
         self.actions.send_keys_by_action_chains(self.__txt_trade_stop_loss_price, trade_order.stop_loss, press=Keys.TAB)
-        self.actions.send_keys_by_action_chains(self.__txt_trade_take_profit_price, trade_order.take_profit, press=Keys.TAB)
+        self.actions.send_keys_by_action_chains(
+            self.__txt_trade_take_profit_price, trade_order.take_profit, press=Keys.TAB)
 
         trade_order.stop_loss = float(self.actions.get_attribute(self.__txt_trade_stop_loss_price, "value"))
         trade_order.take_profit = float(self.actions.get_attribute(self.__txt_trade_take_profit_price, "value"))
 
-        if hasattr(trade_order, "price"):
-            self.actions.send_keys(self.__txt_limit_or_stop_price, trade_order.price)
-
         if hasattr(trade_order, "expiry"):
-            current_expiry = self.actions.get_text(self.__dd_expiry)
+            if trade_order.expiry != self.actions.get_text(self.__dd_expiry):
+                self.actions.click(self.__dd_expiry)
+                self.actions.click(
+                    cook_element(self.__dd_expiry_item_dyn, trade_order.expiry.replace(" ", "-").lower()))
 
         # Click Place Buy/Sell Order
         self.actions.click(self.__btn_place_buy_or_sell_order)

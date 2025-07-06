@@ -21,7 +21,8 @@ class TradeConfirmationPopup:
     def get_confirmation_order_info(self, is_volume_size=False) -> list:
         """
         return: a list of trade order information in the following order
-            [order side, volume, stop loss, take profit]
+            [order side, volume, stop loss, take profit] -> Market
+            [order side, volume, price, stop loss, take profit, expiry] -> Market
         """
         trade_order_info = [
             self.actions.get_text(self.__lbl_confirmation_order_side).capitalize(),
