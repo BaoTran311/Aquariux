@@ -59,3 +59,8 @@ def count_decimal_places(s: str) -> int:
         decimal_part = s.split('.')[-1]
         return len(decimal_part)
     return 0
+
+
+def random_enum_value(enum_class):
+    values = [v for k, v in enum_class.__dict__.items() if not k.startswith('__') and not callable(v)]
+    return random.choice(values)

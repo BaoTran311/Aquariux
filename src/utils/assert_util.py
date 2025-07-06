@@ -65,11 +65,11 @@ def ___verify___(actual, expected, message="", op_func=lambda a, b: a == b):
         assert result
 
 
-verify_equals = partial(___verify___, op_str="=", op_func=eq)
-verify_not_equals = partial(___verify___, op_str="!=", op_func=ne)
-verify_greater_than = partial(___verify___, op_str=">", op_func=gt)
-verify_greater_equal = partial(___verify___, op_str=">=", op_func=ge)
-verify_less_than = partial(___verify___, op_str="<", op_func=lt)
-verify_less_equal = partial(___verify___, op_str="<=", op_func=le)
-verify_in = partial(___verify___, op_str="in", op_func=lambda a, b: a in b)
-verify_not_in = partial(___verify___, op_str="not in", op_func=lambda a, b: a not in b)
+verify_equals = partial(___verify___, op_func=eq)
+verify_not_equals = partial(___verify___, op_func=ne)
+verify_greater_than = partial(___verify___, op_func=gt)
+verify_greater_equal = partial(___verify___, op_func=ge)
+verify_less_than = partial(___verify___, op_func=lt)
+verify_less_equal = partial(___verify___, op_func=le)
+verify_contains = partial(___verify___, op_func=lambda a, b: b in a)
+verify_not_contains = partial(___verify___, op_func=lambda a, b: b not in a)

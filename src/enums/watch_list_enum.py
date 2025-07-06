@@ -6,6 +6,6 @@ class WatchList:
     TOP_LOSER = "Top Loser"
     SHARES = "Shares"
     FOREX = "Forex"
-    INDEX = "index"
+    INDEX = "Index"
     COMMODITIES = "Commodities"
     CRYPTO = "Crypto"

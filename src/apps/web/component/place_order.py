@@ -30,9 +30,11 @@ class PlaceOrder:
     __dd_expiry_item_dyn = (By.CSS_SELECTOR, "div[data-testid='trade-dropdown-expiry-{}']")
     __txt_limit_or_stop_price = (By.CSS_SELECTOR, "input[data-testid='trade-input-price']")
 
-
     def get_live_buy_price(self):
         return self.actions.get_text(self.__lbl_live_buy_price).strip()
+
+    def get_live_sell_price(self):
+        return self.actions.get_text(self.__lbl_live_sell_price).strip()
 
     def is_trade_details_expanded(self):
         return "expanded" in self.actions.get_attribute(self.__pnl_trade_detail_status, "class")
@@ -74,16 +76,20 @@ class PlaceOrder:
         self.switch_to_size() if trade_order.is_volume_size() else self.switch_to_units()
 
         # Fill place order information
-        self.actions.send_keys(self.__txt_trade_volume, trade_order.get_volume_value())
+        self.actions.send_keys(self.__txt_trade_volume, trade_order.get_volume_value(), press=Keys.TAB)
         self.actions.send_keys(self.__txt_trade_stop_loss_price, trade_order.stop_loss, press=Keys.TAB)
         self.actions.send_keys(self.__txt_trade_take_profit_price, trade_order.take_profit, press=Keys.TAB)
+
+        k = VolumeType.UNITS if trade_order.is_volume_units() else VolumeType.SIZE
+        trade_order.volume = {k: int(self.actions.get_attribute(self.__txt_trade_volume, "value"))}
+        trade_order.stop_loss = float(self.actions.get_attribute(self.__txt_trade_stop_loss_price, "value"))
+        trade_order.take_profit = float(self.actions.get_attribute(self.__txt_trade_take_profit_price, "value"))
 
         if hasattr(trade_order, "price"):
             self.actions.send_keys(self.__txt_limit_or_stop_price, trade_order.price)
 
         if hasattr(trade_order, "expiry"):
             current_expiry = self.actions.get_text(self.__dd_expiry)
-
 
         # Click Place Buy/Sell Order
         self.actions.click(self.__btn_place_buy_or_sell_order)

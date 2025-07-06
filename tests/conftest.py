@@ -268,6 +268,8 @@ def pytest_sessionfinish(session):
     allure_result_dir = Path(allure_result_dir)
     with open(f"{allure_result_dir}/environment.properties", "w") as f:
         f.write(f"Browser={DataRuntime.config.platforms.web.browser.capitalize()}\n")
+        f.write(
+            f"Aquariux_TestCases=https://docs.google.com/spreadsheets/d/1TFzYPzAz5Eve0monmAXT7f0oTUfx_GGeGkdeUwLT5bE")
 
     container_files = allure_result_dir.glob("*-container.json")
     for container_file in container_files:

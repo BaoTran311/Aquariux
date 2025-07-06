@@ -8,16 +8,18 @@ from src.utils.assert_util import verify_equals, verify_contains
 from src.utils.string_util import format_number_string, count_decimal_places
 
 
-def test_place_buy_MARKET_order(web, symbol):
+def test_place_sell_MARKET_order(web, symbol):
+    asset_tab = AssetOrderType.OPEN_POSITIONS
+
     logger.info(f"Step 1: Select {symbol!r}")
     web.trade_page.select_symbol(symbol)
     web.trade_page.place_order.collapse_trade_details()
 
     logger.info("Step 2: Get live buy price")
-    live_buy_price = float(format_number_string(web.trade_page.place_order.get_live_buy_price()))
+    live_sell_price = float(format_number_string(web.trade_page.place_order.get_live_sell_price()))
 
     logger.info("Step 3: Place buy Market order")
-    trade_order = MarketTradeOrder(OrderSide.BUY, {VolumeType.UNITS: 1}, live_buy_price - 5, live_buy_price + 5)
+    trade_order = MarketTradeOrder(OrderSide.SELL, {VolumeType.UNITS: 2}, live_sell_price + 5, live_sell_price - 5)
     web.trade_page.place_order.place_an_order(trade_order, False)
 
     verify_equals(
@@ -52,13 +54,13 @@ def test_place_buy_MARKET_order(web, symbol):
     web.trade_page.wait_for_loading_complete()
 
     logger.info("Step 5: Focus on 'Open Position' area")
-    actual_open_date = web.trade_page.asset_order.get_latest_open_date(AssetOrderType.OPEN_POSITIONS)
+    order_id = web.trade_page.asset_order.get_latest_order_id(asset_tab)
+
+    actual_open_date = web.trade_page.asset_order.get_latest_open_date(asset_tab)
     verify_equals(
         datetime.strptime(actual_open_date, time_fmt).replace(second=0, microsecond=0), server_time,
         f"Verify {actual_open_date!r} is match the server time when placing the order"
     )
-
-    asset_tab = AssetOrderType.OPEN_POSITIONS
 
     verify_equals(
         web.trade_page.asset_order.get_latest_type(asset_tab), trade_order.order_side.upper(),
@@ -86,6 +88,10 @@ def test_place_buy_MARKET_order(web, symbol):
         "Verify 'order type' is correct in notification"
     )
     verify_contains(
+        actual_result_noti, order_id,
+        "Verify 'order id' is correct in notification"
+    )
+    verify_contains(
         actual_result_noti, symbol,
         "Verify 'symbol' is correct in notification"
     )
@@ -94,8 +100,7 @@ def test_place_buy_MARKET_order(web, symbol):
         "Verify 'volume' is correct in notification"
     )
     verify_contains(
-        actual_result_noti, str(live_buy_price),
+        actual_result_noti, str(live_sell_price),
         "Verify 'entry price' is correct in notification"
     )
-
     web.home_page.top_navigation.close_notification()

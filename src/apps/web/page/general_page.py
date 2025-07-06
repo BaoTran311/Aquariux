@@ -12,11 +12,12 @@ class GeneralPage:
         self.actions = WebActions(self._driver)
         self.logger = logger
 
-    __ic_loading = (By.CSS_SELECTOR, "div.loader, div[data-testid='spin-loader']")
+    __ic_loading = (By.XPATH,
+                    "//div[@class='loader' and parent::div[contains(@style, 'display: flex')]] | //div[@data-testid='spin-loader']")
 
     def wait_for_loading_complete(self, timeout=LOADING_TIMEOUT):
         self.actions.wait_for_condition(
             lambda: len(
-                self.actions.find_elements(self.__ic_loading, visible=False, show_log=False, timeout=1),
+                self.actions.find_elements(self.__ic_loading, show_log=False, timeout=1, visible=False),
             ) == 0, timeout=timeout
         )

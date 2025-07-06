@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from src.apps.web.component.asset_order import AssetOrder
 from src.apps.web.component.place_order import PlaceOrder
 from src.apps.web.page.home_page import HomePage
+from src.apps.web.popup.confirm_close_order_popup import ConfirmCloseOrderPopup
 from src.enums.watch_list_enum import WatchList
 from src.utils import string_util
 

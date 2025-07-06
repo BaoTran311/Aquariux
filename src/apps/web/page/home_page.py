@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+from src.apps.web.component.notification import Notification
 from src.apps.web.component.top_navigation import TopNavigation
 from src.apps.web.page.general_page import GeneralPage
 from src.apps.web.popup.trade_confirmation_popup import TradeConfirmationPopup
@@ -12,6 +13,7 @@ class HomePage(GeneralPage):
         super().__init__(driver)
         self.top_navigation = TopNavigation(driver)
         self.trade_confirmation_popup = TradeConfirmationPopup(driver)
+        self.notification = Notification(driver)
 
     __sidebar_dyn = (By.CSS_SELECTOR, "div[data-testid='side-bar-option-{}']")
     __lbl_server_time = (By.XPATH, "//div[@id='root']//span[@dir='ltr']")

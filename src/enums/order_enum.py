@@ -23,3 +23,9 @@ class AssetOrderType:
     OPEN_POSITIONS = "Open Positions"
     PENDING_ORDERS = "Pending Orders"
     ORDER_HISTORY = "Order History"
+
+
+class BulkCloseType:
+    ALL_POSITIONS = "All Positions"
+    PROFITABLE_POSITIONS = "Profitable Positions"
+    LOSING_POSITIONS = "Losing Positions"

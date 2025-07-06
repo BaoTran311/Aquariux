@@ -33,7 +33,7 @@ class Actions:
         __wait_for_element__, func=exc.presence_of_all_elements_located)
     wait_for_element_clickable = functools.partialmethod(__wait_for_element__, func=exc.element_to_be_clickable)
 
-    def wait_for_condition(self, condition_func, timeout=TIMEOUT, interval=0.1, *, show_log=False):
+    def wait_for_condition(self, condition_func, timeout=TIMEOUT, interval=0.5, *, show_log=False):
         """
         Wait until the given condition returns True using WebDriverWait.
 
@@ -70,18 +70,13 @@ class Actions:
     def find_elements(
             self, element: tuple, /,
             *, timeout=TIMEOUT, visible=True, wait=True, show_log=True
-    ) -> WebElement:
-        with suppress(NoSuchElementException, TimeoutException):
+    ) -> list:
+        with suppress(TimeoutException):
             if wait:
                 if visible:
                     return self.wait_for_all_elements_visible(element, timeout=timeout)
                 return self.wait_for_all_elements_presence(element, timeout=timeout)
-            return self._driver.find_elements(*element)
-
-        msg_log = f"Element not found with locator {element[1]!r} after {timeout!r} seconds"
-        if show_log:
-            _logger.error(msg_log)
-        raise NoSuchElementException(msg_log)
+        return self._driver.find_elements(*element)
 
     def click(self, element: tuple, /, *, timeout=TIMEOUT, visible=True, show_log=True, retry=0):
         try:
@@ -161,6 +156,13 @@ class WebActions(Actions):
         with suppress(TimeoutException):
             self._driver.execute_script(
                 "arguments[0].click();",
+                self.find_element(element, timeout=timeout, show_log=show_log, visible=False)
+            )
+
+    def clear_text_by_js(self, element: tuple, /, *, timeout=TIMEOUT, show_log=True):
+        with suppress(TimeoutException):
+            self._driver.execute_script(
+                "arguments[0].value = '';",
                 self.find_element(element, timeout=timeout, show_log=show_log, visible=False)
             )
 
