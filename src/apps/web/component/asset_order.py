@@ -4,7 +4,6 @@ from src.apps.web.component.update_order import UpdateOrder
 from src.apps.web.popup.bulk_close_popup import BulkClosePopup
 from src.apps.web.popup.confirm_close_order_popup import ConfirmCloseOrderPopup
 from src.apps.web.popup.trade_confirmation_popup import TradeConfirmationPopup
-from src.consts import DISPLAY_TIMEOUT
 from src.data_object.trade_order import TradeOrder
 from src.enums.order_enum import AssetOrderType, BulkCloseType
 from src.utils import logger
@@ -58,6 +57,12 @@ class AssetOrder:
     )
     __dd_bulk_close = (By.CSS_SELECTOR, "div[data-testid='bulk-close']")
     __dd_bulk_close_item_dyn = (By.CSS_SELECTOR, "div[data-testid='dropdown-bulk-close-{}']")
+    __lbl_open_position_empty_message = (
+        By.CSS_SELECTOR, "tbody[data-testid='asset-open-list'] div[data-testid='empty-message']"
+    )
+    __lbl_pending_order_empty_message = (
+        By.CSS_SELECTOR, "tbody[data-testid='asset-open-list'] div[data-testid='empty-message']"
+    )
 
     def select_asset_order(self, asset_order_type: AssetOrderType):
         locator = {
@@ -74,7 +79,7 @@ class AssetOrder:
             AssetOrderType.OPEN_POSITIONS: self.__lbl_asset_open_column_dyn,
         }.get(asset_order_type)  # noqa
         locator = cook_element(root_locator, asset_property)
-        return self.actions.get_list_text(locator, timeout=DISPLAY_TIMEOUT)
+        return self.actions.get_list_text(locator)
 
     def get_open_date_list(self, asset_order_type: AssetOrderType) -> list:
         return self.__get_row_value_based_on_column(asset_order_type, _AssetColumnProperty.OPEN_DATE)
@@ -154,3 +159,10 @@ class AssetOrder:
         self.actions.click(locator)
         if confirm:
             self.bulk_close_popup.click_confirm()
+
+    def get_empty_message(self, asset_order_type: AssetOrderType):
+        locator = {
+            AssetOrderType.OPEN_POSITIONS: self.__lbl_open_position_empty_message,
+            AssetOrderType.PENDING_ORDERS: self.__lbl_pending_order_empty_message,
+        }.get(asset_order_type)  # noqa
+        return self.actions.get_text(locator)
