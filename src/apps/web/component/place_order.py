@@ -76,12 +76,10 @@ class PlaceOrder:
         self.switch_to_size() if trade_order.is_volume_size() else self.switch_to_units()
 
         # Fill place order information
-        self.actions.send_keys(self.__txt_trade_volume, trade_order.get_volume_value(), press=Keys.TAB)
-        self.actions.send_keys(self.__txt_trade_stop_loss_price, trade_order.stop_loss, press=Keys.TAB)
-        self.actions.send_keys(self.__txt_trade_take_profit_price, trade_order.take_profit, press=Keys.TAB)
+        self.actions.send_keys_by_action_chains(self.__txt_trade_volume, trade_order.get_volume_value(), press=Keys.TAB)
+        self.actions.send_keys_by_action_chains(self.__txt_trade_stop_loss_price, trade_order.stop_loss, press=Keys.TAB)
+        self.actions.send_keys_by_action_chains(self.__txt_trade_take_profit_price, trade_order.take_profit, press=Keys.TAB)
 
-        k = VolumeType.UNITS if trade_order.is_volume_units() else VolumeType.SIZE
-        trade_order.volume = {k: int(self.actions.get_attribute(self.__txt_trade_volume, "value"))}
         trade_order.stop_loss = float(self.actions.get_attribute(self.__txt_trade_stop_loss_price, "value"))
         trade_order.take_profit = float(self.actions.get_attribute(self.__txt_trade_take_profit_price, "value"))
 

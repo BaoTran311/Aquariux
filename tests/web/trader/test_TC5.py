@@ -75,3 +75,4 @@ def test_partial_close_open_position_order(web, place_market_order, symbol):
         actual_result_noti, ' '.join(f'{k} {v}' for k, v in place_market_order.volume.items()),
         "Verify 'volume' is correct in notification"
     )
+    web.trade_page.asset_order.select_asset_order(AssetOrderType.OPEN_POSITIONS)

@@ -25,7 +25,7 @@ def test_place_buy_MARKET_order(web, symbol):
         f"Verify {symbol!r} is correct in confirmation popup"
     )
 
-    actual_trade_order_info = web.trade_page.trade_confirmation_popup.get_confirmation_trade_order_info()
+    actual_trade_order_info = web.trade_page.trade_confirmation_popup.get_confirmation_order_info()
     decimal_places = count_decimal_places(str(actual_trade_order_info[2]))
     verify_equals(
         actual_trade_order_info[0], trade_order.order_side,

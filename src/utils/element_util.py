@@ -146,12 +146,6 @@ class WebActions(Actions):
     def __init__(self, driver):
         super().__init__(driver)
 
-    # def click(self, element: tuple, /, *, timeout=TIMEOUT, show_log=True, visible=True):
-    #     with suppress(TimeoutException):
-    #         self.wait_for_element_clickable(element, timeout=timeout)
-    #         ele = self.find_element(element, timeout=timeout, show_log=show_log, visible=visible)
-    #         ele.click()
-
     def click_by_js(self, element: tuple, /, *, timeout=TIMEOUT, show_log=True):
         with suppress(TimeoutException):
             self._driver.execute_script(
@@ -193,6 +187,18 @@ class WebActions(Actions):
             self._action_chains.context_click(
                 self.find_element(element, timeout=timeout, show_log=show_log, visible=visible)
             ).perform()
+
+    def send_keys_by_action_chains(
+            self, element: tuple, text, /,
+            *, clear=True, press: Keys = "", visible=True, timeout=TIMEOUT):
+        with suppress(TimeoutException):
+            ele = self.find_element(element, timeout=timeout, visible=visible)
+            if clear:
+                self._action_chains.double_click(ele).send_keys(Keys.DELETE).pause(1).perform()
+            action = self._action_chains.send_keys_to_element(ele, text)
+            if press:
+                action.send_keys(press)
+            action.perform()
 
 
 class MobileActions(Actions):

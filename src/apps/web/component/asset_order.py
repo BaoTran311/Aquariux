@@ -1,7 +1,9 @@
 from selenium.webdriver.common.by import By
 
+from src.apps.web.component.update_order import UpdateOrder
 from src.apps.web.popup.bulk_close_popup import BulkClosePopup
 from src.apps.web.popup.confirm_close_order_popup import ConfirmCloseOrderPopup
+from src.apps.web.popup.trade_confirmation_popup import TradeConfirmationPopup
 from src.consts import DISPLAY_TIMEOUT
 from src.data_object.trade_order import TradeOrder
 from src.enums.order_enum import AssetOrderType, BulkCloseType
@@ -35,6 +37,8 @@ class AssetOrder:
         self.logger = logger
         self.confirm_close_order_popup = ConfirmCloseOrderPopup(driver)
         self.bulk_close_popup = BulkClosePopup(driver)
+        self.update_order = UpdateOrder(driver)
+        self.trade_confirmation_popup = TradeConfirmationPopup(driver)
 
     __tab_open_position = (By.CSS_SELECTOR, "div[data-testid='tab-asset-order-type-open-positions']")
     __tab_pending_orders = (By.CSS_SELECTOR, "div[data-testid='tab-asset-order-type-pending-orders']")
@@ -132,9 +136,12 @@ class AssetOrder:
         if confirm:
             self.confirm_close_order_popup.click_close_order()
 
-    def edit_asset_order(self, order_id, trade_order: TradeOrder):
+    def update_asset_order(self, order_id, trade_order: TradeOrder, confirm=True):
         locator = cook_element(self.__btn_edit_asset_order_by_id, order_id)
         self.actions.click(locator)
+        self.update_order.update(trade_order)
+        if confirm:
+            self.trade_confirmation_popup.confirm()
 
     def bulk_close_order(self, bulk_close_type: BulkCloseType, confirm=True):
         self.actions.click(self.__dd_bulk_close)
