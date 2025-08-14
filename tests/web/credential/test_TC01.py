@@ -3,7 +3,7 @@ from src.utils import logger
 
 
 def test_login_with_valid_credential(web):
-    logger.info("Step 1: Navigate to flo web")
+    logger.info("Step 1: Navigate to AQX Trader")
     web.navigate_to_aquariux()
 
     logger.info("Step 2: Login with valid account")
