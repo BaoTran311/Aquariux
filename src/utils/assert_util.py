@@ -1,6 +1,6 @@
 import builtins
 from functools import partial
-from operator import eq, ne, gt, ge, lt, le, contains
+from operator import eq, ne, gt, ge, lt, le
 
 from pytest_check import check
 
@@ -36,6 +36,5 @@ verify_greater_than = partial(___verify___, op_func=gt)
 verify_greater_equal = partial(___verify___, op_func=ge)
 verify_less_than = partial(___verify___, op_func=lt)
 verify_less_equal = partial(___verify___, op_func=le)
-# verify_contains = partial(___verify___, op_func=lambda a, b: b in a)
-verify_contains = partial(___verify___, op_func=contains)
+verify_contains = partial(___verify___, op_func=lambda a, b: b in a)
 verify_not_contains = partial(___verify___, op_func=lambda a, b: b not in a)
