@@ -18,7 +18,8 @@ from src.data_runtime import DataRuntime
 from src.utils import logger, create_handler_logger, dotdict, string_util, file_util, datetime_util
 
 _msg_logs = []
-_fail_check_point = dict()
+_time_logs = []
+_duration_step = dict()
 VIDEO_NAME = f"{PROJECT_ROOT}/video.mp4"
 
 
@@ -77,7 +78,6 @@ def pytest_runtest_setup(item: pytest.Item):
     DataRuntime.tc_info = dotdict(name=full_tc_name, test_suite=test_suite, parent_suite=parent_suite)
     # allure.dynamic.testcase(re.sub(r"\bTC(\d+)\b", r"TC-\1", tc_module.upper()), full_tc_name)
 
-    global _fail_check_point
     builtins.fail_check_point[full_tc_name] = []  # noqa
 
 
@@ -93,8 +93,6 @@ def pytest_runtest_teardown(item):  # After each test case
     if test_suite:
         allure.dynamic.suite(test_suite[-1].capitalize().replace("_", " "))
     allure.dynamic.title(tc_name)
-
-    global _fail_check_point
 
     if not builtins.fail_check_point[tc_name]:  # noqa
         del builtins.fail_check_point[tc_name]  # noqa
@@ -112,7 +110,7 @@ def pytest_runtest_logreport(report):
 
 @pytest.fixture(scope="session", autouse=True)
 def auto_allure_logging():
-    global _msg_logs
+    global _msg_logs, _time_logs
 
     def patchinfo(f):
         def wrapper(*args, **kwargs):
@@ -124,12 +122,15 @@ def auto_allure_logging():
                 _log_msgs_checking = "verify step steps".split()
                 if any(_msgs in _msg_log_check for _msgs in _log_msgs_checking):
                     _msg_logs.append(_logs)
+                    breakpoint()
+                    _time_logs.append(int(time.time() * 1000))
 
             return f(*args, **kwargs)
 
         return wrapper
 
     logging.Logger.info = patchinfo(logging.Logger.info)
+    logging.Logger.warning = patchinfo(logging.Logger.warning)
 
 
 @pytest.fixture(scope="function", autouse=True)
@@ -164,7 +165,7 @@ def record_video():
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
-    global _msg_logs, VIDEO_NAME
+    global _msg_logs, VIDEO_NAME, _time_logs, _duration_step
 
     report = (yield).get_result()
 
@@ -193,6 +194,7 @@ def pytest_runtest_makereport(item, call):
             test_steps.append(_msg_logs[steps_index[i]: steps_index[i + 1]])
 
         fail_check_points = builtins.fail_check_point.get(DataRuntime.tc_info.name, [])
+        _duration_step[DataRuntime.tc_info.name] = dict()
         if not fail_check_points and report.failed:
             for platform, driver in getattr(builtins, "dict_driver").items():
                 attach_name = f"{platform}_{datetime_util.get_current_time(time_format="%d-%m-%Y_%H:%M:%S")}.png"
@@ -202,10 +204,29 @@ def pytest_runtest_makereport(item, call):
                     attachment_type=allure.attachment_type.PNG
                 )
 
-        # Log test to allure reports
-        for steps in test_steps:
-            with (allure.step(steps.pop(0))):
+        for i in range(len(test_steps)):
+            steps = test_steps[i]
+            _duration_step[DataRuntime.tc_info.name][steps[0]] = dict()
+            if i + 1 < len(test_steps):
+                _duration_step[DataRuntime.tc_info.name][steps[0]]['start'] = _time_logs[i]
+                _duration_step[DataRuntime.tc_info.name][steps[0]]['stop'] = _time_logs[i + 1]
+            else:
+                _duration_step[DataRuntime.tc_info.name][steps[0]]['start'] = _time_logs[i]
+                _duration_step[DataRuntime.tc_info.name][steps[0]]['stop'] = int(time.time() * 1000)
+
+            # with allure.step(f"{steps.pop(0)} - ({_duration}s)"):
+            with allure.step(steps.pop(0)):
                 for verify in steps:
+                    _duration_step[DataRuntime.tc_info.name][verify] = dict()
+                    index = _msg_logs.index(verify)
+                    if index + 1 < len(_msg_logs):
+                        _duration_step[DataRuntime.tc_info.name][verify]['start'] = _time_logs[index]
+                        _duration_step[DataRuntime.tc_info.name][verify]['stop'] = _time_logs[index + 1]
+                    else:
+                        _duration_step[DataRuntime.tc_info.name][verify]['start'] = _time_logs[index]
+                        _duration_step[DataRuntime.tc_info.name][verify]['stop'] = int(time.time() * 1000)
+
+                    # Set start verify
                     with allure.step(verify):
                         if report.failed:
                             for item in fail_check_points:
@@ -214,10 +235,10 @@ def pytest_runtest_makereport(item, call):
                                     allure.attach(
                                         name=screenshot[0],
                                         body=screenshot.pop(-1),
-                                        attachment_type=allure.attachment_type.PNG,
+                                        attachment_type=allure.attachment_type.PNG
                                     )
-
         del _msg_logs[:]
+        del _time_logs[:]
 
     if report.when == 'teardown':
         if not os.path.exists(VIDEO_NAME):
@@ -246,7 +267,6 @@ def pytest_sessionfinish(session):
     if vars(session.config.option)["collectonly"]:
         return
 
-    global _fail_check_point
     _fail_tcs_name = [name for name in builtins.fail_check_point.keys()]  # noqa
 
     if hasattr(builtins, "dict_driver"):
@@ -288,12 +308,22 @@ def pytest_sessionfinish(session):
                 for _sub_steps in steps:
                     sub_steps = _sub_steps.get("steps", "")
                     for sub_step in sub_steps:
+                        # Set duration checkpoint
+                        sub_step['start'] = _duration_step[json_obj['name']][sub_step['name']]['start']
+                        sub_step['stop'] = _duration_step[json_obj['name']][sub_step['name']]['stop']
+
                         # Loop for sub-steps and change status to failed if checkpoint failed
                         if sub_step['name'] in [
                             list(entry.keys())[0] for entry in builtins.fail_check_point.get(json_obj.get('name'), [])
                         ]:
                             sub_step["status"] = "failed"
                             _sub_steps["status"] = "failed"
+
+                # Set duration for each step
+                for _step in steps:
+                    duration = _duration_step[json_obj['name']][_step['name']]
+                    _step['start'] = duration['start']
+                    _step['stop'] = duration['stop']
 
                 # labels - allure report
                 # Present, cook (value, name in parentSuite and Suite)

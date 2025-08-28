@@ -21,3 +21,8 @@ def test_login_with_invalid_credential(web):
         web.login_page.get_alert_error_content(), expected_msg,
         f"Verify error text displays"
     )
+
+    assert_util.verify_equals(
+        web.trade_page.top_navigation.is_setting_button_displayed(), True,
+        "Verify setting button on Top Navigation displays"
+    )
