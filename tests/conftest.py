@@ -122,7 +122,6 @@ def auto_allure_logging():
                 _log_msgs_checking = "verify step steps".split()
                 if any(_msgs in _msg_log_check for _msgs in _log_msgs_checking):
                     _msg_logs.append(_logs)
-                    breakpoint()
                     _time_logs.append(int(time.time() * 1000))
 
             return f(*args, **kwargs)
