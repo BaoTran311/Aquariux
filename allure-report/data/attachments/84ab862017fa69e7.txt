@@ -1,0 +1,74 @@
+22:39:51 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:39:51 | - Start recording screen
+22:39:51 | - Get table data
+22:39:53 | - Click 'next' button on table
+22:39:54 | - Click 'next' button on table
+22:39:55 | - Go to the first page
+22:39:55 | Step 1: Search by: 'Description', with: 'EokJjjvmUJ - DeScripTiOn'
+22:39:55 | - Search for: 'EokJjjvmUJ - DeScripTiOn'
+22:39:56 | Verify results match on table data (case-insensitive): 'EokJjjvmUJ - DeScripTiOn'
+22:39:56 | - Get table data
+22:39:57 | - Go to the first page
+22:39:57 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ MUMe_Auto/DaBkPdrm │ EokJjJVmUJ - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:57 | - Comparing 1 items
+22:39:57 | Step 2: Search by: 'Description', with: 'rjWwzFTkXJ - dESCrIPtIoN'
+22:39:57 | - Search for: 'rjWwzFTkXJ - dESCrIPtIoN'
+22:39:58 | Verify results match on table data (case-insensitive): 'rjWwzFTkXJ - dESCrIPtIoN'
+22:39:58 | - Get table data
+22:39:59 | - Go to the first page
+22:39:59 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ zRtw_Auto_CqJVBpgC │ rjwwZFtkxj - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:54 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:59 | - Comparing 1 items
+22:39:59 | Step 3: Search by: 'Description', with: 'ExhKLZPeEw - dESCripTION'
+22:39:59 | - Search for: 'ExhKLZPeEw - dESCripTION'
+22:39:59 | Verify results match on table data (case-insensitive): 'ExhKLZPeEw - dESCripTION'
+22:39:59 | - Get table data
+22:40:00 | - Go to the first page
+22:40:00 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ kEsi_Auto/EeUYYrDW │ eXHklZPEew - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:05 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:40:00 | - Comparing 1 items
+22:40:00 | Step 4: Search by: 'Description', with: 'iniFKuLrVp - descRIpTION'
+22:40:00 | - Search for: 'iniFKuLrVp - descRIpTION'
+22:40:01 | Verify results match on table data (case-insensitive): 'iniFKuLrVp - descRIpTION'
+22:40:01 | - Get table data
+22:40:02 | - Go to the first page
+22:40:02 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ xgne_Auto-PFKmmNHp │ iNiFkulrvP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:40:02 | - Comparing 1 items
+22:40:02 | Step 5: Search by: 'Description', with: 'eJYDJZWBom - DESCRiptiON'
+22:40:02 | - Search for: 'eJYDJZWBom - DESCRiptiON'
+22:40:03 | Verify results match on table data (case-insensitive): 'eJYDJZWBom - DESCRiptiON'
+22:40:03 | - Get table data
+22:40:04 | - Go to the first page
+22:40:04 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ fVdZ_Auto.gmXWdlAj │ ejyDjzwBOM - description │ Net           │ A-Book       │ 8 May 2026 08:06:24 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:40:04 | - Comparing 1 items
+22:40:04 | [Teardown] Clear search field
+22:40:04 | - Clear search input
+22:40:05 | - Stop recording screen

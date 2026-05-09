@@ -1,0 +1,27 @@
+20:25:42 | - Running test case: test_UG_EDT_TC03_positive_number_fields_validation.py
+20:25:42 | - Start recording screen
+20:25:42 | - Get table data
+20:25:43 | - Go to the first page
+20:25:43 | Step 1: View row: 'BHNm_Auto-WVIrEbfI' > Edit
+20:25:43 | - Get table data
+20:25:44 | - Found record: 'BHNm_Auto-WVIrEbfI' column: 'Name' (page:1)
+20:25:44 | - View row: 'BHNm_Auto-WVIrEbfI' (attempt:1)
+20:25:45 | - Click 'Edit' button
+20:25:45 | Step 2: Input negative number: -75
+20:25:45 | - Input stop out level: -75
+20:25:45 | Verify Not accept negative number and show 75
+20:25:45 | Step 3: Input more than 2 decimal: 58.69348892523587
+20:25:45 | - Input stop out level: 58.69348892523587
+20:25:45 | - Click outside to close the panel
+20:25:46 | Verify auto complete 2 decimal
+20:25:46 | Step 4: Input non-numeric: ,%_$_
+20:25:46 | - Input stop out level: ',%_$_'
+20:25:46 | - Click outside to close the panel
+20:25:47 | Verify placeholder restored
+20:25:47 | Step 5: Input valid number: (83, 2)
+20:25:47 | - Input stop out level: 83
+20:25:47 | Verify no error validation is displayed
+20:25:47 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-field-stop-out-level-error"]'): TRUE
+20:25:47 | [Teardown] Click 'x' icon to close the panel
+20:25:47 | - Click 'x' icon
+20:25:48 | - Stop recording screen

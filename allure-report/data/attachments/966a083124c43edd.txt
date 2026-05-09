@@ -1,0 +1,53 @@
+22:37:21 | - Running test case: test_UG_TBL_TC06_resize_columns.py
+22:37:21 | - Start recording screen
+22:37:21 | - Size of column: 'Name': 'height: 40, width: 301'
+22:37:21 | - Size of column: 'Description': 'height: 40, width: 301'
+22:37:21 | - Size of column: 'Position Type': 'height: 40, width: 301'
+22:37:21 | - Size of column: 'Book Type': 'height: 40, width: 301'
+22:37:21 | - Size of column: 'Book Type': 'height: 40, width: 301'
+22:37:21 | Step 1: Decrease size of column: 'Book Type'
+22:37:21 | - Decrease column: 'Book Type' by 77px
+22:37:23 | Verify column 'Book Type' size reflects 'decrease'
+22:37:23 | - Size of column: 'Book Type': 'height: 40, width: 225'
+22:37:23 | - Size of column: 'Book Type': 'height: 40, width: 225'
+22:37:23 | Step 2: Decrease size of column: 'Book Type'
+22:37:23 | - Decrease column: 'Book Type' by 77px
+22:37:25 | Verify column 'Book Type' size reflects 'decrease'
+22:37:25 | - Size of column: 'Book Type': 'height: 40, width: 149'
+22:37:25 | - Size of column: 'Position Type': 'height: 40, width: 301'
+22:37:25 | Step 3: Decrease size of column: 'Position Type'
+22:37:25 | - Decrease column: 'Position Type' by 77px
+22:37:28 | Verify column 'Position Type' size reflects 'decrease'
+22:37:28 | - Size of column: 'Position Type': 'height: 40, width: 225'
+22:37:28 | - Size of column: 'Position Type': 'height: 40, width: 225'
+22:37:28 | Step 4: Increase size of column: 'Position Type'
+22:37:28 | - Increase column: 'Position Type' by 77px
+22:37:30 | Verify column 'Position Type' size reflects 'increase'
+22:37:30 | - Size of column: 'Position Type': 'height: 40, width: 301'
+22:37:30 | - Size of column: 'Description': 'height: 40, width: 301'
+22:37:30 | Step 5: Decrease size of column: 'Description'
+22:37:30 | - Decrease column: 'Description' by 77px
+22:37:32 | Verify column 'Description' size reflects 'decrease'
+22:37:32 | - Size of column: 'Description': 'height: 40, width: 225'
+22:37:32 | - Size of column: 'Description': 'height: 40, width: 225'
+22:37:32 | Step 6: Increase size of column: 'Description'
+22:37:32 | - Increase column: 'Description' by 77px
+22:37:34 | Verify column 'Description' size reflects 'increase'
+22:37:34 | - Size of column: 'Description': 'height: 40, width: 301'
+22:37:34 | - Size of column: 'Name': 'height: 40, width: 301'
+22:37:34 | Step 7: Increase size of column: 'Name'
+22:37:34 | - Increase column: 'Name' by 77px
+22:37:36 | Verify column 'Name' size reflects 'increase'
+22:37:36 | - Size of column: 'Name': 'height: 40, width: 377'
+22:37:36 | - Size of column: 'Name': 'height: 40, width: 377'
+22:37:36 | Step 8: Decrease size of column: 'Name'
+22:37:36 | - Decrease column: 'Name' by 77px
+22:37:38 | Verify column 'Name' size reflects 'decrease'
+22:37:38 | - Size of column: 'Name': 'height: 40, width: 301'
+22:37:38 | Step 9: Refresh page
+22:37:39 | Verify column sizes restored for: Book Type, Position Type, Description, Name
+22:37:39 | - Size of column: 'Book Type': 'height: 40, width: 301'
+22:37:39 | - Size of column: 'Position Type': 'height: 40, width: 301'
+22:37:39 | - Size of column: 'Description': 'height: 40, width: 301'
+22:37:39 | - Size of column: 'Name': 'height: 40, width: 301'
+22:37:40 | - Stop recording screen

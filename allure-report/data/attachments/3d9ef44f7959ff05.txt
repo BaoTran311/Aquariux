@@ -1,0 +1,30 @@
+00:34:50 | - Running test case: test_UG_ADD_TC06_positive_success_creation.py
+00:34:50 | - Start recording screen
+00:34:51 | - Get table data
+00:34:52 | - Go to the first page
+00:34:52 | [Setup] Total rows data: 18
+00:34:52 | [Setup] Click on 'Add User Group' button
+00:34:52 | - Click 'Add User Group' button
+00:34:52 | Step 1: submit form with: 'name: AUTOMXWXQCI-BEB, description: vpWCNRlzeR - description, position_type: Hedge, book_type: A-Book, margin_call_level: 98.25, stop_out_level: 12.11, commission: 5.93'
+00:34:52 | - Input name: 'AUTOMXWXQCI-BEB'
+00:34:52 | - Input description: 'vpWCNRlzeR - description'
+00:34:52 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:34:52 | - Open dropdown Book Type
+00:34:52 | - Select Book Type
+00:34:53 | - Input margin call level: 98.25
+00:34:53 | - Input stop out level: 12.11
+00:34:53 | - Input commission: 5.93
+00:34:53 | - Click 'Save' button
+00:34:53 | Verify toast message: 'The user group has been created successfully'
+00:34:53 | Verify footer label +1: 'Showing 1 to 19 of 19 items'
+00:34:53 | - Wait for 'Showing 1 to 19 of 19 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+00:34:53 | Step 2: Search for newly created record: 'AUTOMXWXQCI-BEB'
+00:34:53 | - Search for: 'AUTOMXWXQCI-BEB'
+00:34:54 | Verify newly created data on table
+00:34:54 | - Get table data
+00:34:55 | Step 3: View details of the newly created record
+00:34:55 | - Get table data
+00:34:56 | - Found record: 'AUTOMXWXQCI-BEB' column: 'Name' (page:1)
+00:34:56 | - View row: 'AUTOMXWXQCI-BEB' (attempt:1)
+00:34:56 | Verify details matches with created data
+00:34:59 | - Stop recording screen

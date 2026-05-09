@@ -1,0 +1,95 @@
+22:58:11 | - Running test case: test_UG_TBL_TC12_positive_dropdown_functionality.py
+22:58:11 | - Start recording screen
+22:58:12 | - Get table data
+22:58:13 | - Click 'next' button on table
+22:58:15 | - Click 'next' button on table
+22:58:16 | - Go to the first page
+22:58:16 | Step 1: Select 'Hedge' option
+22:58:16 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+22:58:16 | - Open dropdown Position Type
+22:58:16 | - Select Position Type
+22:58:16 | Step 2: Select 'A-Book' option
+22:58:16 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+22:58:16 | - Open dropdown Book Type
+22:58:16 | - Select Book Type
+22:58:16 | Verify table data reset ('Hedge' combine with 'A-Book')
+22:58:16 | - Get table data
+22:58:18 | - Click 'next' button on table
+22:58:18 | - Go to the first page
+22:58:18 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ ApvJ_Auto-lQJruouB │ TQdOsUNgqp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33 │
+│ -AUTOSULMGVAVGO    │ QrWBfwJqsI - description │ Hedge         │ A-Book       │ 8 May 2026 08:47:24 │
+│ bEeI_Auto-YQpyfKdV │ vZhmFiIAgX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:10 │
+│ BHNm_Auto-WVIrEbfI │ pgjbdbdLhb - description │ Hedge         │ A-Book       │ 3 May 2026 15:42:48 │
+│ cIUQ_Auto-YjWLzNvl │ aVDCDgljkt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:58 │
+│ coUi_Auto/lRbEKhwY │ elQdCgUXTy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14 │
+│ cyql_Auto.ouPuzntC │ aziGDHGyOg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:44 │
+│ dAJX_Auto_VwWwwegw │ SIabfRlOZc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23 │
+│ dBti_Auto.xdfdryXe │ rBLMcncYrs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:39 │
+│ DEfa_Auto-cfkiMOsh │ ovmpALttHm - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06 │
+│ DGaK_Auto.DOpXwkUE │ PVVlwdTcaV - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16 │
+│ EITs_Auto/LHHCiPwp │ cQwXufbUGv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35 │
+│ eYHS_Auto/JsDNmqQl │ ZYAJuaZRhE - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:32 │
+│ fmhz_Auto/hTyHbfEI │ sUKWioFOHy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07 │
+│ FOxh_Auto/RkNIHefL │ jrXoqCktqH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14 │
+│ gSKu_Auto-HcrahNSf │ ugtkCzuVvF - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35 │
+│ GVFo_Auto/yRodjPWm │ GnhDmFnCUO - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23 │
+│ hABA_Auto.rPVlkrZY │ kNdfWYxuiG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:28 │
+│ HMkx_Auto-GWtQjPiV │ eImbswDjqL - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:34 │
+│ HpZV_Auto.xcyXbRqX │ yHpqXwFFFt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:42 │
+│ iHyR_Auto_OUJlFEIz │ oenMehFYCb - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:17 │
+│ Jpgt_Auto/JAJJAriL │ KSdMDsznNC - description │ Hedge         │ A-Book       │ 8 May 2026 08:53:54 │
+│ kyaC_Auto-CecgjbKh │ SccZCbJYpU - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:27 │
+│ LkRS_Auto_vRIHwLyS │ TDHpLTinUv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:15 │
+│ MUMe_Auto/DaBkPdrm │ EokJjJVmUJ - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33 │
+│ nQeV_Auto_feenLzKY │ wJhZiLapij - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:25 │
+│ NYwk_Auto.dSpzYQut │ czOeWJzaIc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:03 │
+│ Oeqq_Auto_OENDgvkG │ rIuBzNWPKn - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:49 │
+│ OQcq_Auto-kzqUwjzb │ CZHukHUjNG - description │ Hedge         │ A-Book       │ 8 May 2026 08:51:30 │
+│ PBCC_Auto_xizSVlkx │ ghfmrNRtkD - description │ Hedge         │ A-Book       │ 8 May 2026 04:24:36 │
+│ PKBN_Auto-aKjpSHcb │ izZdYpByHh - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:51 │
+│ qldE_Auto-RjxrIzgi │ kSyefhGUpi - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:25 │
+│ rFhB_Auto_sKQtwkuZ │ mMepVcbYIu - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:53 │
+│ rHsT_Auto_GAJpWJYC │ choIDgoomp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:11 │
+│ Rszp_Auto.INczbrBY │ rvKQHJsFJg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:46 │
+│ RUqy_Auto_btdyYCck │ tekcUaliAX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:22 │
+│ rUys_Auto_YutJSVHj │ NJbTWXZJca - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:31 │
+│ siDg_Auto_jhoWZCPx │ mvpZrZDPvl - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:36 │
+│ sYyc_Auto_FoydRjFY │ FqPAqkmGrv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:51 │
+│ tJRo_Auto.EImysQWD │ wgZuUHaoMs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:26 │
+│ TLRo_Auto.ArtEDOhB │ xTZHYKzcSH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:47 │
+│ TVdj_Auto_HcgvtlVf │ kkfbSCilIP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:08 │
+│ ULdx_Auto/OVWJnUXc │ zVzzjbvsOz - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07 │
+│ uUqu_Auto/fHrYIgiP │ CTsjSyIoar - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:05 │
+│ vJLH_Auto-nKCyTWcV │ nzrhFDMjfn - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:41 │
+│ VWSO_Auto.cNuMycKB │ EdKbkzlXmJ - description │ Hedge         │ A-Book       │ 8 May 2026 08:49:22 │
+│ VXdr_Auto-QaaAoBOW │ NHCvdlrple - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:01 │
+│ WJxn_Auto.yLSutcWL │ KuAPZWZePK - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06 │
+│ xgne_Auto-PFKmmNHp │ iNiFkulrvP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16 │
+│ ynoi_Auto-uDYUZWay │ POEtAJiJYw - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:17 │
+│ yTVG_Auto_OzSDAZVh │ OVPGOOqPyC - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:45 │
+│ ZAOm_Auto.zXmzbvPg │ eMKyXlWjxG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:21 │
+│ zlLw_Auto.CrLyDjwX │ CERYKshaeP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:37 │
+│ zMqE_Auto.ONVmHyVX │ nEVctPgrJB - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:40 │
+│ zRtw_Auto_CqJVBpgC │ rjwwZFtkxj - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:54 │
+│ zxHu_Auto-EuDYDHWD │ RyYYCrFltq - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:09 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:58:18 | - Comparing 56 items
+22:58:18 | Step 3: Refresh page
+22:58:19 | Verify Default state of Position Type: All Position Type
+22:58:19 | Verify Default state of Book Type: All Book Type
+22:58:19 | Verify table data reset (no filter)
+22:58:19 | - Get table data
+22:58:21 | - Click 'next' button on table
+22:58:22 | - Click 'next' button on table
+22:58:23 | - Go to the first page
+22:58:24 | - Comparing 120 items
+22:58:24 | [Teardown] Refresh the page
+22:58:25 | - Stop recording screen
+22:58:25 | [Teardown] Quit Web Driver
+22:58:26 | - Quit driver 'web_main'
+22:58:26 | - All drivers quit and registry cleared

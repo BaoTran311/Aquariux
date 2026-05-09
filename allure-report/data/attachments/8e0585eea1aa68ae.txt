@@ -1,0 +1,42 @@
+00:35:14 | - Running test case: test_UG_ADD_TC08_positive_save_and_create_another.py
+00:35:14 | - Start recording screen
+00:35:15 | - Get table data
+00:35:16 | - Go to the first page
+00:35:16 | [Setup] Total rows data: 20
+00:35:16 | [Setup] Click on 'Add User Group' button
+00:35:16 | - Click 'Add User Group' button
+00:35:16 | Step 1: submit form with: 'name: IlhN_Auto_yarpEETE, description: YkZWJkOoce - description, position_type: Hedge, book_type: A-Book, margin_call_level: 95.98, stop_out_level: 39.19, commission: 7.94'
+00:35:16 | - Input name: 'IlhN_Auto_yarpEETE'
+00:35:16 | - Input description: 'YkZWJkOoce - description'
+00:35:16 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:35:16 | - Open dropdown Book Type
+00:35:16 | - Select Book Type
+00:35:16 | - Input margin call level: 95.98
+00:35:16 | - Input stop out level: 39.19
+00:35:16 | - Input commission: 7.94
+00:35:16 | - Click 'Save & Create Another' button
+00:35:16 | Verify toast message: 'The user group has been created successfully'
+00:35:17 | Verify 'Add User Group' is opened right after created data
+00:35:17 | Verify pre-filled values reset
+00:35:17 | Step 2: Continue submitting form with: 'name: haDX_Auto/NKekKjAe, description: tLcMdheHdE - description, position_type: Hedge, book_type: A-Book, margin_call_level: 74.31, stop_out_level: 79.56, commission: 7.11'
+00:35:17 | - Input name: 'haDX_Auto/NKekKjAe'
+00:35:17 | - Input description: 'tLcMdheHdE - description'
+00:35:17 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:35:17 | - Open dropdown Book Type
+00:35:17 | - Select Book Type
+00:35:18 | - Input margin call level: 74.31
+00:35:18 | - Input stop out level: 79.56
+00:35:18 | - Input commission: 7.11
+00:35:18 | - Click 'Save' button
+00:35:18 | Verify toast message: 'The user group has been created successfully'
+00:35:18 | Verify footer label +2: 'Showing 1 to 22 of 22 items'
+00:35:19 | - Wait for 'Showing 1 to 22 of 22 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+00:35:19 | Step 3: Search for newly created record: 'IlhN_Auto_yarpEETE'
+00:35:19 | - Search for: 'IlhN_Auto_yarpEETE'
+00:35:19 | Verify newly created data on table
+00:35:19 | - Get table data
+00:35:20 | Step 4: Search for newly created record: 'haDX_Auto/NKekKjAe'
+00:35:20 | - Search for: 'haDX_Auto/NKekKjAe'
+00:35:21 | Verify newly created data on table
+00:35:21 | - Get table data
+00:35:24 | - Stop recording screen

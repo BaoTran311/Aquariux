@@ -1,0 +1,68 @@
+22:36:16 | - Running test case: test_UG_TBL_TC03_positive_table_pagination_button_nav.py
+22:36:16 | [API] Send API: GET /backoffice/v1/user-groups/available-user-groups
+22:36:16 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/available-user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MzExNjg3OS0wNTZjLTQ3MmEtYTFhNy1kNzE1Y2NkODRlMmIiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNTQ1NDUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4Mjc2NDQ1LCJpYXQiOjE3NzgyNTQ1NDUsInVzZXJJZCI6IjgzMTE2ODc5LTA1NmMtNDcyYS1hMWE3LWQ3MTVjY2Q4NGUyYiIsImp0aSI6IjM2YmJlZGVjLTE0YTEtNGFjOC1iMTg3LWM5ZDEwNWYzYjFjNSIsImVtYWlsIjoibmdvY3V5ZW4uaG8xQGFxdWFyaXV4LmNvbSJ9.UyBhrpxz2A2jZrseZqdcVAcXIoSHqW7fAqstsNBGZXVpu1PZRRa4nbRr1lhyjUR0Ywn6oGfSy9ec76WfoG1MbKicnXTmED2B1ZE78DIRjE7i2aqzoZ31eij26skQ55zKZ_p0daHKnL4DX6qPQNpiBAeKNVjwgTR7x5NuPT0Jng3Ov_I5HSZdQ6SZbr17UMtXG0hN2d4L947N13pK-rGKSX9eDLOcC5xKFhprxyzV9zFmD7szOwgvUEXQi7XbtPtGvm_yPRfveerHCnBAqvgO4I7lfqfcYNjtFW6i0s4F2GYb7w3GuoVRfX1eG9IxcnqmU5aENWyl3_FWFD03RUTHKA'
+
+
+22:36:17 | - Start recording screen
+22:36:18 | - Get table data
+22:36:19 | - Click 'next' button on table
+22:36:21 | - Click 'next' button on table
+22:36:22 | - Go to the first page
+22:36:22 | Step 1: Observe initial table state
+22:36:22 | Verify table shows 3 page numbers
+22:36:22 | Verify page number 1 has selected color
+22:36:22 | Verify footer label: 'Showing 1 to 40 of 120 items'
+22:36:22 | - Wait for 'Showing 1 to 40 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:22 | Verify table data (page: 1)
+22:36:22 | - Get table data
+22:36:23 | - Comparing 40 items
+22:36:23 | Verify prev button is disabled on the first page
+22:36:24 | Step 2: Navigate to next page: 2
+22:36:24 | - Click 'next' button on table
+22:36:24 | Verify page number 2 has selected color
+22:36:24 | Verify footer label: 'Showing 41 to 80 of 120 items'
+22:36:24 | - Wait for 'Showing 41 to 80 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:24 | Verify table data (page: 2)
+22:36:24 | - Get table data
+22:36:25 | - Comparing 40 items
+22:36:25 | Step 3: Navigate to next page: 3
+22:36:25 | - Click 'next' button on table
+22:36:25 | Verify page number 3 has selected color
+22:36:26 | Verify footer label: 'Showing 81 to 120 of 120 items'
+22:36:26 | - Wait for 'Showing 81 to 120 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:26 | Verify table data (page: 3)
+22:36:26 | - Get table data
+22:36:27 | - Comparing 40 items
+22:36:27 | Verify next button is disabled on the last page
+22:36:27 | Verify page number 3 has selected color
+22:36:28 | Verify footer label: 'Showing 81 to 120 of 120 items'
+22:36:28 | - Wait for 'Showing 81 to 120 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:28 | Verify table data (page: 3)
+22:36:28 | - Get table data
+22:36:29 | - Comparing 40 items
+22:36:29 | Step 4: Navigate to prev page: 2
+22:36:29 | - Click 'prev' button on table
+22:36:29 | Verify page number 2 has selected color
+22:36:29 | Verify footer label: 'Showing 41 to 80 of 120 items'
+22:36:29 | - Wait for 'Showing 41 to 80 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:29 | Verify table data (page: 2)
+22:36:29 | - Get table data
+22:36:31 | - Comparing 40 items
+22:36:31 | Step 5: Navigate to prev page: 1
+22:36:31 | - Click 'prev' button on table
+22:36:31 | Verify page number 1 has selected color
+22:36:32 | Verify footer label: 'Showing 1 to 40 of 120 items'
+22:36:32 | - Wait for 'Showing 1 to 40 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:32 | Verify table data (page: 1)
+22:36:32 | - Get table data
+22:36:33 | - Comparing 40 items
+22:36:33 | Verify prev button is disabled on the first page
+22:36:33 | Verify prev button is disabled on the last page
+22:36:34 | - Stop recording screen
