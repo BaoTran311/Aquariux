@@ -1,0 +1,57 @@
+22:37:03 | - Running test case: test_UG_TBL_TC05_positive_table_pagination_with_search.py
+22:37:03 | - Start recording screen
+22:37:03 | - Get table data
+22:37:05 | - Click 'next' button on table
+22:37:06 | - Click 'next' button on table
+22:37:08 | - Go to the first page
+22:37:08 | Step 1: Search with: 'auto'
+22:37:08 | - Search for: 'auto'
+22:37:08 | Verify page number 1 has selected color
+22:37:08 | Verify footer label: 'Showing 1 to 40 of 119 items'
+22:37:08 | - Wait for 'Showing 1 to 40 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:37:08 | Verify table data (page: 1)
+22:37:08 | - Get table data
+22:37:10 | - Comparing 40 items
+22:37:10 | Verify prev button is disabled on the first page
+22:37:10 | Step 2: Navigate to next page: 2
+22:37:10 | - Click 'next' button on table
+22:37:10 | Verify page number 2 has selected color
+22:37:10 | Verify footer label: 'Showing 41 to 80 of 119 items'
+22:37:10 | - Wait for 'Showing 41 to 80 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:37:10 | Verify table data (page: 2)
+22:37:10 | - Get table data
+22:37:12 | - Comparing 40 items
+22:37:12 | Step 3: Navigate to next page: 3
+22:37:12 | - Click 'next' button on table
+22:37:12 | Verify page number 3 has selected color
+22:37:12 | Verify footer label: 'Showing 81 to 119 of 119 items'
+22:37:12 | - Wait for 'Showing 81 to 119 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:37:12 | Verify table data (page: 3)
+22:37:12 | - Get table data
+22:37:13 | - Comparing 39 items
+22:37:13 | Verify next button is disabled on the last page
+22:37:13 | Verify page number 3 has selected color
+22:37:13 | Verify footer label: 'Showing 81 to 119 of 119 items'
+22:37:13 | - Wait for 'Showing 81 to 119 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:37:13 | Verify table data (page: 3)
+22:37:13 | - Get table data
+22:37:15 | - Comparing 39 items
+22:37:15 | Step 4: Navigate to prev page: 2
+22:37:15 | - Click 'prev' button on table
+22:37:15 | Verify page number 2 has selected color
+22:37:15 | Verify footer label: 'Showing 41 to 80 of 119 items'
+22:37:15 | - Wait for 'Showing 41 to 80 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:37:15 | Verify table data (page: 2)
+22:37:15 | - Get table data
+22:37:17 | - Comparing 40 items
+22:37:17 | Step 5: Navigate to prev page: 1
+22:37:17 | - Click 'prev' button on table
+22:37:17 | Verify page number 1 has selected color
+22:37:17 | Verify footer label: 'Showing 1 to 40 of 119 items'
+22:37:17 | - Wait for 'Showing 1 to 40 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:37:17 | Verify table data (page: 1)
+22:37:17 | - Get table data
+22:37:19 | - Comparing 40 items
+22:37:19 | Verify prev button is disabled on the first page
+22:37:19 | Verify prev button is disabled on the last page
+22:37:20 | - Stop recording screen

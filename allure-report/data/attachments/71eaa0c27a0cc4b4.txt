@@ -1,0 +1,15 @@
+00:33:51 | - Running test case: test_UG_ADD_TC03_negative_required_fields.py
+00:33:51 | - Start recording screen
+00:33:51 | [Setup] Click on 'Add User Group' button
+00:33:51 | - Click 'Add User Group' button
+00:33:51 | Step 1: Click on 'Save & Create Another' button without input any fields
+00:33:51 | - Click 'Save & Create Another' button
+00:33:51 | Verify error validation: 'Name is required'
+00:33:51 | Verify error validation: 'Book type is required'
+00:33:51 | Verify error validation: 'Margin call level is required'
+00:33:51 | Verify error validation: 'Stop out level is required'
+00:33:51 | Verify error validation: 'Commission is required'
+00:33:51 | Verify panel remains open
+00:33:51 | [Teardown] Click 'x' icon to close the panel
+00:33:51 | - Click 'x' icon
+00:33:53 | - Stop recording screen

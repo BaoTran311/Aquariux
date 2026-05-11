@@ -1,0 +1,29 @@
+15:23:26 | - Running test case: test_TA_DEL_TC07_positive_network_error_from_action.py
+15:23:26 | - Start recording screen
+15:23:26 | - Get table data
+15:23:29 | - Click 'next' button on table
+15:23:30 | - Click 'next' button on table
+15:23:32 | - Go to the first page
+15:23:32 | - Get table data
+15:23:34 | - Click 'next' button on table
+15:23:36 | - Click 'next' button on table
+15:23:37 | - Go to the first page
+15:23:37 | [Setup] Total rows data: 119
+15:23:37 | Step 1: Action on row: 'AQX-TA-00000567' > Delete
+15:23:37 | - Search for: 'AQX-TA-00000567'
+15:23:38 | - Delete row: 'wMlT_Auto-XWsBWPWg' (attempt:1)
+15:23:38 | Step 2: Disconnect network
+15:23:38 | Step 3: Confirm delete
+15:23:38 | - Modal confirm
+15:23:38 | Verify toast message: 'Network error. Please check your connection.'
+15:23:39 | Verify confirmation modal remains open
+15:23:39 | Step 4: Restore network & refresh page
+15:23:40 | Verify footer label unchanged: 'Showing 1 to 40 of 119 items'
+15:23:40 | - Wait for 'Showing 1 to 40 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+15:23:40 | Step 5: Search for: 'AQX-TA-00000567'
+15:23:40 | - Search for: 'AQX-TA-00000567'
+15:23:41 | Verify table data remains unchanged
+15:23:41 | - Get table data
+15:23:42 | [Teardown] Restore network connection
+15:23:42 | [Teardown] Refresh the page
+15:23:44 | - Stop recording screen

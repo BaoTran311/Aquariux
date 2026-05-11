@@ -1,0 +1,81 @@
+20:25:55 | - Running test case: test_UG_EDT_TC04_positive_success_full_fields.py
+20:25:55 | - Start recording screen
+20:25:55 | [API] Send API: POST /backoffice/v1/user-groups
+20:25:55 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 192' 
+--data-raw '{"name": "XaaL_Auto.uvHwVFXL", "description": "spwfkMooMF - description", "positionType": "HEDGE", "bookType": "A_BOOK", "marginCallLevel": 86.68, "stopOutLevel": 19.64, "commissionRate": 7.5}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:25:55.821353469Z"
+}
+
+
+20:25:55 | [API] Send API: GET /backoffice/v1/user-groups
+20:25:56 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ'
+
+
+20:25:56 | [Setup] Send API to create new user group: name: XaaL_Auto.uvHwVFXL, description: spwfkMooMF - description, position_type: Hedge, book_type: A-Book, margin_call_level: 86.68, stop_out_level: 19.64, commission: 7.5, created_date: 09 May 2026 13:25:55, id: 019e0cea-81e9-7379-8c7f-3dbe3b7703d2
+20:25:56 | [Setup] Refresh page to load changes
+20:25:57 | Step 1: View row: 'XaaL_Auto.uvHwVFXL' > Edit
+20:25:57 | - Get table data
+20:25:58 | - Found record: 'XaaL_Auto.uvHwVFXL' column: 'Name' (page:1)
+20:25:58 | - View row: 'XaaL_Auto.uvHwVFXL' (attempt:1)
+20:25:58 | Step 2: Submit edit form with: 'name: XCmM_Auto-rcFglMzA, description: RKitRFRMeB - description, position_type: Hedge, book_type: A-Book, margin_call_level: 74.42, stop_out_level: 22.12, commission: 9.14'
+20:25:59 | - Click 'Edit' button
+20:26:00 | - Input name: 'XCmM_Auto-rcFglMzA'
+20:26:00 | - Input description: 'RKitRFRMeB - description'
+20:26:00 | - Input margin call level: 74.42
+20:26:00 | - Input stop out level: 22.12
+20:26:00 | - Input commission: 9.14
+20:26:00 | - Click 'Save' button
+20:26:00 | Verify toast message: 'The user group has been updated successfully'
+20:26:00 | Step 3: Search with old name: 'XaaL_Auto.uvHwVFXL'
+20:26:00 | - Search for: 'XaaL_Auto.uvHwVFXL'
+20:26:01 | Verify no results label
+20:26:01 | Verify button 'Add User Group' is displayed
+20:26:01 | Step 4: Search for: 'XCmM_Auto-rcFglMzA'
+20:26:01 | - Search for: 'XCmM_Auto-rcFglMzA'
+20:26:02 | Verify table data updated accordingly
+20:26:02 | - Get table data
+20:26:03 | Step 5: View details of 'XCmM_Auto-rcFglMzA'
+20:26:03 | - Get table data
+20:26:04 | - Found record: 'XCmM_Auto-rcFglMzA' column: 'Name' (page:1)
+20:26:04 | - View row: 'XCmM_Auto-rcFglMzA' (attempt:1)
+20:26:04 | Verify details updated accordingly
+20:26:05 | [Teardown] Refresh the page
+20:26:06 | Send API to delete the created asset: 019e0cea-81e9-7379-8c7f-3dbe3b7703d2
+20:26:06 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0cea-81e9-7379-8c7f-3dbe3b7703d2
+20:26:06 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0cea-81e9-7379-8c7f-3dbe3b7703d2' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:26:06.846913742Z"
+}
+
+
+20:26:07 | - Stop recording screen

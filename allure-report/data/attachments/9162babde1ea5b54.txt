@@ -1,0 +1,12 @@
+00:35:34 | - Running test case: test_UG_ADD_TC10_positive_dropdown_functionality.py
+00:35:34 | - Start recording screen
+00:35:34 | Step 1: Click on 'Add User Group' button
+00:35:34 | - Click 'Add User Group' button
+00:35:34 | Step 2: Open 'Book Type' dropdown
+00:35:34 | - Open dropdown Book Type
+00:35:34 | Verify available options: A-Book, B-Book
+00:35:35 | - Comparing: 
+Actual:    ['A-Book', 'B-Book']
+Expected:  ['A-Book', 'B-Book']
+00:35:35 | [Teardown] Refresh the page
+00:35:37 | - Stop recording screen

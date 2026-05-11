@@ -1,0 +1,19 @@
+01:02:50 | - Running test case: test_UG_DEL_TC01_positive_cancel_from_action.py
+01:02:50 | - Start recording screen
+01:02:50 | - Get table data
+01:02:52 | - Go to the first page
+01:02:52 | - Get table data
+01:02:53 | - Go to the first page
+01:02:53 | [Setup] Total rows data: 27
+01:02:53 | Step 1: Action on row: 'AU_TOGKQZURPXZB' > Delete
+01:02:53 | - Get table data
+01:02:55 | - Found record: 'AU_TOGKQZURPXZB' column: 'Name' (page:1)
+01:02:55 | - Delete row: 'AU_TOGKQZURPXZB' (attempt:1)
+01:02:55 | Verify delete confirmation title: 'Permanently delete (AU_TOGKQZURPXZB)?'
+01:02:55 | Verify delete confirmation content
+01:02:56 | Step 2: Click outside to close the modal
+01:02:56 | Verify delete confirmation title: 'Permanently delete (AU_TOGKQZURPXZB)?'
+01:02:56 | [Teardown] Click 'x' icon to close the panel
+01:02:56 | - Click 'x' icon
+01:02:57 | 🟡 Element not found for ('css selector', "button[data-slot='sheet-close']"): TimeoutException after 1(s)
+01:02:58 | - Stop recording screen

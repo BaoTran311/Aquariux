@@ -1,0 +1,29 @@
+00:34:12 | - Running test case: test_UG_ADD_TC04_negative_duplicated_name.py
+00:34:12 | - Start recording screen
+00:34:12 | - Get table data
+00:34:14 | - Go to the first page
+00:34:14 | [Setup] Click on 'Add User Group' button
+00:34:14 | - Click 'Add User Group' button
+00:34:14 | Step 1: Submit form with duplicated name: 'pLib_Auto_TlXFFGmD'
+00:34:14 | - Input name: 'pLib_Auto_TlXFFGmD'
+00:34:14 | - Input description: 'KwCeszykNm - description'
+00:34:14 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:34:14 | - Open dropdown Book Type
+00:34:14 | - Select Book Type
+00:34:15 | - Input margin call level: 97.82
+00:34:15 | - Input stop out level: 76.58
+00:34:15 | - Input commission: 6.22
+00:34:15 | - Click 'Save' button
+00:34:15 | Verify toast message: 'This user group name already exists'
+00:34:16 | Step 2: Click on 'Save & Create Another' button
+00:34:16 | - Click 'Save & Create Another' button
+00:34:16 | Verify toast message: 'This user group name already exists'
+00:34:18 | Verify panel remains open
+00:34:18 | Step 3: Click 'x' icon to close the panel
+00:34:18 | - Click 'x' icon
+00:34:18 | Verify table footer remain un-changed: 'Showing 1 to 16 of 16 items'
+00:34:18 | - Wait for 'Showing 1 to 16 of 16 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+00:34:18 | Verify table data remains un-changed
+00:34:18 | - Get table data
+00:34:19 | - Comparing 16 items
+00:34:21 | - Stop recording screen

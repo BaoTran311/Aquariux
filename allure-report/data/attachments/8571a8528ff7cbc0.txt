@@ -1,0 +1,18 @@
+00:34:02 | - Running test case: test_UG_ADD_TC03_negative_required_fields.py
+00:34:02 | - Start recording screen
+00:34:02 | [Setup] Click on 'Add User Group' button
+00:34:02 | - Click 'Add User Group' button
+00:34:02 | Step 1: Submit form without field: 'Stop Out Level'
+00:34:02 | - Input name: 'iXOL_Auto.IjkjOQjK'
+00:34:03 | - Input description: 'AcwnXhAold - description'
+00:34:03 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:34:03 | - Open dropdown Book Type
+00:34:03 | - Select Book Type
+00:34:03 | - Input margin call level: 26.19
+00:34:03 | - Input commission: 8.06
+00:34:03 | - Click 'Save' button
+00:34:03 | Verify error validation: 'Stop out level is required'
+00:34:03 | Verify panel remains open
+00:34:03 | [Teardown] Click 'x' icon to close the panel
+00:34:03 | - Click 'x' icon
+00:34:05 | - Stop recording screen

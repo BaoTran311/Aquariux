@@ -1,0 +1,12 @@
+22:10:25 | - Running test case: test_TA_VIW_TC03_positive_button_copy.py
+22:10:25 | - Start recording screen
+22:10:26 | - Get table data
+22:10:27 | - Go to the first page
+22:10:27 | Step 1: Search with: 'AQX-TA-00000567'
+22:10:27 | - Clear search input
+22:10:27 | - Search for: 'AQX-TA-00000567'
+22:10:27 | Step 2: Click on button Copy of Account ID
+22:10:27 | - Select col: 'Account ID' value: 'AQX-TA-00000567'
+22:10:33 | 🟡 Element not found for ('xpath', '//td[contains(@data-testid, "-cell-readableId")]//*[text()="AQX-TA-00000567"]'): TimeoutException after 5(s)
+22:10:33 | [Teardown] Refresh the page
+22:10:35 | - Stop recording screen

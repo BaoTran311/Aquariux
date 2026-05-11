@@ -1,0 +1,156 @@
+22:47:57 | - Running test case: test_TA_VIW_TC03_positive_button_copy.py
+22:47:57 | [Setup] Setup 2FA via API
+22:47:57 | [API] Send API: POST /auth/v1/login/admin
+22:47:58 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-11T15:47:58.826541045Z"
+}
+
+
+22:47:58 | [API] Send API: GET /backoffice/v1/2fa/setup/totp
+22:47:59 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/setup/totp' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1MTQ0NzgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTM2Mzc4LCJpYXQiOjE3Nzg1MTQ0NzgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFkNGZhNjViLTIyMDEtNDM1ZS1hNjIxLTJkYjRhNDQyZDQzNCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.LUeqc5_VBvH4uZJFMDtbhZPG-cI4Fl4yKQHyjpXToIGc383KRIwWINnGm8FZmY2eUiqv5UL8R0imC6qlLOSV1iVTUxxjs10HUQaTh4ZP-0DURdZxkLmZy4e30s31kuLGpKDZ-2ERJY51akuZrnKSAx61zgTZcKWs8Y-4If4LJ58zZwDopvVRP43Q15S0xIGxsz0jswJ0sHmRfzA0r6uGo18qB1NulmrH5Ha-H0YMBzC4k2ZPgztfm8ZO9KyvqOSM-ZlIJJt3PiLfTED5ptLGSH39uyKJGHuvBpsaRPqjyJK0awcD-UCotnrpQirdERBJRwX6FR_oGbtXzUqK1L8Pzg'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "secret": "PNXVGECVVHDLONR4QZSFAWDQFVBBE4WR",
+        "qrCodeUrl": "otpauth://totp/nguyengiabao.tran1%40aquariux.com?secret=PNXVGECVVHDLONR4QZSFAWDQFVBBE4WR&issuer=AQXOMS",
+        "accountName": "nguyengiabao.tran1@aquariux.com",
+        "issuer": "AQXOMS",
+        "message": "TOTP secret generated. Scan QR code with authenticator app, then verify."
+    },
+    "success": true,
+    "timestamp": "2026-05-11T15:47:59.195666826Z"
+}
+
+
+22:47:59 | [API] Send API: POST /backoffice/v1/2fa/totp/verify
+22:47:59 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/totp/verify' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1MTQ0NzgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTM2Mzc4LCJpYXQiOjE3Nzg1MTQ0NzgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFkNGZhNjViLTIyMDEtNDM1ZS1hNjIxLTJkYjRhNDQyZDQzNCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.LUeqc5_VBvH4uZJFMDtbhZPG-cI4Fl4yKQHyjpXToIGc383KRIwWINnGm8FZmY2eUiqv5UL8R0imC6qlLOSV1iVTUxxjs10HUQaTh4ZP-0DURdZxkLmZy4e30s31kuLGpKDZ-2ERJY51akuZrnKSAx61zgTZcKWs8Y-4If4LJ58zZwDopvVRP43Q15S0xIGxsz0jswJ0sHmRfzA0r6uGo18qB1NulmrH5Ha-H0YMBzC4k2ZPgztfm8ZO9KyvqOSM-ZlIJJt3PiLfTED5ptLGSH39uyKJGHuvBpsaRPqjyJK0awcD-UCotnrpQirdERBJRwX6FR_oGbtXzUqK1L8Pzg' 
+--header 'Content-Length: 18' 
+--data-raw '{"code": "208470"}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-11T15:47:59.617433349Z"
+}
+
+
+22:47:59 | [API] Send API: POST /auth/v1/login/admin
+22:48:00 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-11T15:48:00.883778469Z"
+}
+
+
+22:48:00 | [API] Send API: GET /backoffice/v1/admin-users
+22:48:01 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1MTQ0ODAsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTM2MzgwLCJpYXQiOjE3Nzg1MTQ0ODAsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6Ijc4OTU3NjAzLTg1NTAtNDI2My1iODI3LTllYTM2ZWJlZmQ4ZCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.BjDzLNBCBQHMIArX9JwXk1cuGbgNisA7JGoNTQoCsk9fkexYiNFzyr3AdAjOgVpSiI7pThVrGa7czIwKog-jG4Mj1cAtLnkg3-XERY2mX9khIP-5hg4k4bdipghpq2TyVIaIbmOoaLrgWTHlfdANDpW82HoU8XvV57yF1S--gpdOa1wq85RDV8oQG3SYVe33xyV0ayvAm2iY0OVIuJ-3Jh5FlZSxjvwuTuEWAlfW-TKJsN8l-aIGpAvjE1-wgxbjgA2lMHrdPwTn8n0TzB5wOQkANMh4pxWMem-rJMUtGQYceQdNXxrtsED4hVHPFst1DfYoRQwXK6wu1hZa4SaFHQ'
+
+
+22:48:01 | [Setup] Init Web Driver
+22:48:02 | - Registered driver under 'web_main' (total: 1)
+22:48:02 | - Added web driver 'main' to driver_list (total: 1)
+22:48:02 | [Setup] Navigate to OMS site
+22:48:05 | [Setup] Login with default admin user
+22:48:06 | [Setup] Expand Accounts section
+22:48:06 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+22:48:06 | - Expand item: 'Accounts'
+22:48:06 | [Setup] Navigate to Trading Account Page
+22:48:06 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+22:48:06 | - Item: 'Accounts' already 'expand'
+22:48:06 | - Start recording screen
+22:48:08 | - Get table data
+22:48:10 | - Go to the first page
+22:48:10 | Step 1: View details: wMlT_Auto-XWsBWPWg
+22:48:10 | - Select col: 'Name' value: 'wMlT_Auto-XWsBWPWg'
+22:48:11 | Step 2: Click on button Copy of Account ID
+22:48:11 | - Click on Copy button: 'Account ID'
+22:48:11 | Verify toast message: 'Account ID copied.'
+22:48:11 | Step 3: Close view panel
+22:48:11 | - Click 'x' icon
+22:48:12 | Step 4: Paste copied text to search bar (Account ID)
+22:48:12 | - Clear search input
+22:48:13 | Verify Search bar displays: 'AQX-TA-00000566'
+22:48:13 | Step 5: View details: wMlT_Auto-XWsBWPWg
+22:48:13 | - Select col: 'Name' value: 'wMlT_Auto-XWsBWPWg'
+22:48:14 | Step 6: Click on button Copy of Email
+22:48:14 | - Click on Copy button: 'Email'
+22:48:14 | Verify toast message: 'Email copied.'
+22:48:15 | Step 7: Close view panel
+22:48:15 | - Click 'x' icon
+22:48:15 | Step 8: Paste copied text to search bar (Email)
+22:48:15 | - Clear search input
+22:48:16 | Verify Search bar displays: 'auto_ld1vys1aj@aquariux.com'
+22:48:16 | Step 9: View details: wMlT_Auto-XWsBWPWg
+22:48:16 | - Select col: 'Name' value: 'wMlT_Auto-XWsBWPWg'
+22:48:17 | Step 10: Click on button Copy of Phone
+22:48:17 | - Click on Copy button: 'Phone'
+22:48:17 | Verify toast message: 'Phone copied.'
+22:48:18 | - Get text: 'Phone'
+22:48:18 | Step 11: Close view panel
+22:48:18 | - Click 'x' icon
+22:48:18 | Step 12: Paste copied text to search bar (Phone)
+22:48:18 | - Clear search input
+22:48:19 | Verify Search bar displays: '+65-12341526'
+22:48:19 | [Teardown] Refresh the page
+22:48:22 | - Stop recording screen
+22:48:22 | [Teardown] Quit Web Driver
+22:48:22 | - Quit driver 'web_main'
+22:48:22 | - All drivers quit and registry cleared

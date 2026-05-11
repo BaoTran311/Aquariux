@@ -1,0 +1,14 @@
+23:37:22 | - Running test case: test_TA_TBL_TC15_positive_button_copy.py
+23:37:22 | - Start recording screen
+23:37:22 | - Get table data
+23:37:24 | - Go to the first page
+23:37:24 | Step 1: Click on button copy of ID: 'AQX-TA-100000000'
+23:37:24 | - Click on button copy (Account ID: AQX-TA-100000000)
+23:37:24 | Verify toast: 'Account ID copied.'
+23:37:24 | Step 2: pasted copied id to search field (id: 'AQX-TA-100000000')
+23:37:24 | - Clear search input
+23:37:24 | Verify search field populated with copied id (id: 'AQX-TA-100000000')
+23:37:25 | - Stop recording screen
+23:37:25 | [Teardown] Quit Web Driver
+23:37:26 | - Quit driver 'web_main'
+23:37:26 | - All drivers quit and registry cleared

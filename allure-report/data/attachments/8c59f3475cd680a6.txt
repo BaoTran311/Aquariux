@@ -1,0 +1,30 @@
+01:04:55 | - Running test case: test_UG_DEL_TC08_negative_network_error_from_edit_panel.py
+01:04:55 | - Start recording screen
+01:04:56 | - Get table data
+01:04:57 | - Go to the first page
+01:04:57 | [Setup] Total rows data: 27
+01:04:57 | - Get table data
+01:04:59 | - Go to the first page
+01:04:59 | Step 1: View row: 'AUTOCXXHJ.LXAGC' > Edit
+01:04:59 | - Get table data
+01:05:00 | - Found record: 'AUTOCXXHJ.LXAGC' column: 'Name' (page:1)
+01:05:00 | - View row: 'AUTOCXXHJ.LXAGC' (attempt:1)
+01:05:00 | - Click 'Edit' button
+01:05:01 | Step 2: Click on Delete button
+01:05:01 | - Click 'Delete' button
+01:05:01 | Step 3: Disconnect network
+01:05:01 | Step 4: Confirm delete
+01:05:01 | - Modal confirm
+01:05:01 | Verify toast message: 'Network error. Please check your connection.'
+01:05:01 | Verify confirmation modal remains opens
+01:05:01 | Step 5: Restore network
+01:05:01 | Step 6: Refresh page
+01:05:03 | Verify footer label remain un-changed
+01:05:03 | - Wait for 'Showing 1 to 27 of 27 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+01:05:03 | Step 7: Search for: 'AUTOCXXHJ.LXAGC'
+01:05:03 | - Search for: 'AUTOCXXHJ.LXAGC'
+01:05:04 | Verify table data remains un-changed
+01:05:04 | - Get table data
+01:05:05 | [Teardown] Restore network connection
+01:05:05 | [Teardown] Refresh the page
+01:05:07 | - Stop recording screen

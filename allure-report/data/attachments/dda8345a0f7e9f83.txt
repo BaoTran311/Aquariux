@@ -1,0 +1,16 @@
+20:28:34 | - Running test case: test_UG_EDT_TC07_positive_dropdown_functionality.py
+20:28:34 | - Get table data
+20:28:35 | - Go to the first page
+20:28:35 | [Setup] View row: 'IlhN_Auto_yarpEETE' > Edit
+20:28:35 | - Get table data
+20:28:37 | - Found record: 'IlhN_Auto_yarpEETE' column: 'Name' (page:1)
+20:28:37 | - View row: 'IlhN_Auto_yarpEETE' (attempt:1)
+20:28:37 | - Click 'Edit' button
+20:28:37 | - Start recording screen
+20:28:37 | Step 1: Open 'Book Type' dropdown
+20:28:37 | - Open dropdown Book Type
+20:28:37 | Verify available options: A-Book, B-Book
+20:28:37 | - Comparing: 
+Actual:    ['A-Book', 'B-Book']
+Expected:  ['A-Book', 'B-Book']
+20:28:38 | - Stop recording screen
