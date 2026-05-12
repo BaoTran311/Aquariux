@@ -1,0 +1,520 @@
+22:40:05 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:40:05 | - Start recording screen
+22:40:06 | - Get table data
+22:40:07 | - Click 'next' button on table
+22:40:08 | - Click 'next' button on table
+22:40:10 | - Go to the first page
+22:40:10 | Step 1: Search with character: ':'
+22:40:10 | - Search for: ':'
+22:40:10 | Verify character ':' not in any row — empty state label is shown
+22:40:10 | Verify button 'Add Asset Class' is displayed (':')
+22:40:10 | Verify footer label: 'Showing 0 to 0 of 0 items' (':')
+22:40:10 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:40:10 | Step 2: Clear search
+22:40:10 | - Clear search input
+22:40:10 | Verify table data reset (':')
+22:40:10 | - Get table data
+22:40:12 | - Click 'next' button on table
+22:40:13 | - Click 'next' button on table
+22:40:14 | - Go to the first page
+22:40:14 | - Comparing 120 items
+22:40:14 | Step 3: Search with character: '}'
+22:40:14 | - Search for: '}'
+22:40:15 | Verify character '}' not in any row — empty state label is shown
+22:40:15 | Verify button 'Add Asset Class' is displayed ('}')
+22:40:15 | Verify footer label: 'Showing 0 to 0 of 0 items' ('}')
+22:40:15 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:40:15 | Step 4: Clear search
+22:40:15 | - Clear search input
+22:40:15 | Verify table data reset ('}')
+22:40:15 | - Get table data
+22:40:17 | - Click 'next' button on table
+22:40:18 | - Click 'next' button on table
+22:40:19 | - Go to the first page
+22:40:19 | - Comparing 120 items
+22:40:19 | Step 5: Search with character: '~'
+22:40:19 | - Search for: '~'
+22:40:20 | Verify character '~' not in any row — empty state label is shown
+22:40:20 | Verify button 'Add Asset Class' is displayed ('~')
+22:40:20 | Verify footer label: 'Showing 0 to 0 of 0 items' ('~')
+22:40:20 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:40:20 | Step 6: Clear search
+22:40:20 | - Clear search input
+22:40:20 | Verify table data reset ('~')
+22:40:20 | - Get table data
+22:40:21 | - Click 'next' button on table
+22:40:23 | - Click 'next' button on table
+22:40:24 | - Go to the first page
+22:40:24 | - Comparing 120 items
+22:40:24 | Step 7: Search by: 'Name', with: '-'
+22:40:24 | - Search for: '-'
+22:40:24 | Verify results on table match: '-'
+22:40:24 | - Get table data
+22:40:26 | - Click 'next' button on table
+22:40:27 | - Click 'next' button on table
+22:40:28 | - Go to the first page
+22:40:28 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬────────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date           │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼────────────────────────┤
+│ aKyj_Auto-EypECuVd │ zSHyhwwHlA - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:53    │
+│ APii_Auto.IjxMlbfi │ pvFzNShinz - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:50    │
+│ APLU_Auto_NjicyMHn │ iPjTUpYRvN - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:52    │
+│ ApvJ_Auto-lQJruouB │ TQdOsUNgqp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33    │
+│ AutoPytDHbOhF-U    │ LvwOCXmyTD - description │ Hedge         │ B-Book       │ 8 May 2026 08:47:47    │
+│ -AUTOSULMGVAVGO    │ QrWBfwJqsI - description │ Hedge         │ A-Book       │ 8 May 2026 08:47:24    │
+│ AUTOSULMGVA-VGO    │ aTztYmXsRw - description │ Hedge         │ B-Book       │ 8 May 2026 08:47:01    │
+│ bEeI_Auto-YQpyfKdV │ vZhmFiIAgX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:10    │
+│ BHNm_Auto-WVIrEbfI │ pgjbdbdLhb - description │ Hedge         │ A-Book       │ 3 May 2026 15:42:48    │
+│ cBff_Auto-PzKtaVAW │ REGvAyIggZ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:21    │
+│ cIUQ_Auto-YjWLzNvl │ aVDCDgljkt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:58    │
+│ clos_Auto-dVvZZcUJ │ azSekioCPX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:13    │
+│ cMON_Auto_anzWnqCh │ NozWWuWpvw - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:39    │
+│ coUi_Auto/lRbEKhwY │ elQdCgUXTy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14    │
+│ CXYL_Auto-XoEgQjaO │ drmloJVCMV - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:49    │
+│ cyql_Auto.ouPuzntC │ aziGDHGyOg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:44    │
+│ dAJX_Auto_VwWwwegw │ SIabfRlOZc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23    │
+│ dBti_Auto.xdfdryXe │ rBLMcncYrs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:39    │
+│ DEfa_Auto-cfkiMOsh │ ovmpALttHm - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06    │
+│ DGaK_Auto.DOpXwkUE │ PVVlwdTcaV - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16    │
+│ dtcJ_Auto/LrlzMkxk │ WmuzzSCoGw - description │ Hedge         │ B-Book       │ 22 April 2026 09:07:05 │
+│ dvkS_Auto.dRzPsoGS │ lenGAIDFXS - description │ Hedge         │ B-Book       │ 8 May 2026 08:06:31    │
+│ DZyb_Auto/uSTCibnS │ cbuqsFFrQO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:31    │
+│ ecAK_Auto-TtnQXyEC │ mOBEJuUdnc - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:38    │
+│ EITs_Auto/LHHCiPwp │ cQwXufbUGv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35    │
+│ eYHS_Auto/JsDNmqQl │ ZYAJuaZRhE - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:32    │
+│ fmhz_Auto/hTyHbfEI │ sUKWioFOHy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07    │
+│ FOxh_Auto/RkNIHefL │ jrXoqCktqH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14    │
+│ FSOX_AUTO_BODHBCWO │ iuggBDhsFp - description │ Hedge         │ B-Book       │ 8 May 2026 08:46:39    │
+│ fVdZ_Auto.gmXWdlAj │ ejyDjzwBOM - description │ Net           │ A-Book       │ 8 May 2026 08:06:24    │
+│ GnWF_Auto/frIMUldB │ XvtyxwWxYn - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:30    │
+│ gSKu_Auto-HcrahNSf │ ugtkCzuVvF - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35    │
+│ GVFo_Auto/yRodjPWm │ GnhDmFnCUO - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23    │
+│ hABA_Auto.rPVlkrZY │ kNdfWYxuiG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:28    │
+│ haUr_Auto_dOCsPwZv │ ZUTHedNWfQ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:26    │
+│ HMkx_Auto-GWtQjPiV │ eImbswDjqL - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:34    │
+│ HpZV_Auto.xcyXbRqX │ yHpqXwFFFt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:42    │
+│ hvlX_Auto-EKxBtHmP │ MaRSUwBUdd - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:07    │
+│ iBfk_Auto/RCapkDMx │ jsgnvpqebv - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:29    │
+│ iHyR_Auto_OUJlFEIz │ oenMehFYCb - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:17    │
+│ iIVb_Auto-DUFlWpAf │ jvhxjmSCot - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:55    │
+│ iJon_Auto.imGJgDJk │ CYIDwDEyJf - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:02    │
+│ ixdD_Auto-PbagopYN │ UHvyCpMHGt - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:46    │
+│ Jpgt_Auto/JAJJAriL │ KSdMDsznNC - description │ Hedge         │ A-Book       │ 8 May 2026 08:53:54    │
+│ kEsi_Auto/EeUYYrDW │ eXHklZPEew - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:05    │
+│ KFDI_Auto.TPqpxSet │ ULIhqEUcaU - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:24    │
+│ KVvz_Auto_smMaujfd │ UMDWTowoyX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:44    │
+│ kyaC_Auto-CecgjbKh │ SccZCbJYpU - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:27    │
+│ lKKq_Auto.mAWhFBUL │ vJzNyuHjyK - description │ Hedge         │ B-Book       │ 8 May 2026 04:40:14    │
+│ LkRS_Auto_vRIHwLyS │ TDHpLTinUv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:15    │
+│ LLgY_Auto_WENbGzan │ JibLxOvEFc - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:10    │
+│ lmrx_Auto_xUSYhiPK │ IDgGaEWffV - description │ Hedge         │ B-Book       │ 8 May 2026 08:44:39    │
+│ loqc_Auto_rsVjLndI │ zyckQkoClJ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:24    │
+│ lXoj_Auto.rJcfntxL │ jMDGjbQhQd - description │ Hedge         │ B-Book       │ 8 May 2026 04:27:10    │
+│ MUMe_Auto/DaBkPdrm │ EokJjJVmUJ - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33    │
+│ nQeV_Auto_feenLzKY │ wJhZiLapij - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:25    │
+│ nRZm_Auto_znnVjkJT │ yfxkisXaVN - description │ Hedge         │ B-Book       │ 8 May 2026 04:25:33    │
+│ NYwk_Auto.dSpzYQut │ czOeWJzaIc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:03    │
+│ Oeqq_Auto_OENDgvkG │ rIuBzNWPKn - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:49    │
+│ OQcq_Auto-kzqUwjzb │ CZHukHUjNG - description │ Hedge         │ A-Book       │ 8 May 2026 08:51:30    │
+│ oSER_Auto-pKDdwYfL │ xFqVUCJEoy - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:12    │
+│ OWQf_Auto_RQBpsNgZ │ bpiknPQxOX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:02    │
+│ PBCC_Auto_xizSVlkx │ ghfmrNRtkD - description │ Hedge         │ A-Book       │ 8 May 2026 04:24:36    │
+│ pDiy_Auto_aEMrooKp │ ILWmQoYwHD - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:03    │
+│ PKBN_Auto-aKjpSHcb │ izZdYpByHh - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:51    │
+│ pLib_Auto_TlXFFGmD │ OiGMNvkoBs - description │ Hedge         │ B-Book       │ 8 May 2026 04:16:41    │
+│ PmWG_Auto-mdHDvjya │ pHeOoQNcum - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:57    │
+│ pRwl_Auto-jhVkWwHd │ pgjodOKNbF - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:37    │
+│ QgpT_Auto/ngpGNCUk │ gdKZFmbKiC - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:29    │
+│ qldE_Auto-RjxrIzgi │ kSyefhGUpi - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:25    │
+│ qTZK_Auto/CaEfWonh │ ThswZwoIMA - description │ Net           │ B-Book       │ 8 May 2026 08:06:21    │
+│ rFhB_Auto_sKQtwkuZ │ mMepVcbYIu - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:53    │
+│ rHsT_Auto_GAJpWJYC │ choIDgoomp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:11    │
+│ Rszp_Auto.INczbrBY │ rvKQHJsFJg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:46    │
+│ RUqy_Auto_btdyYCck │ tekcUaliAX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:22    │
+│ rUys_Auto_YutJSVHj │ NJbTWXZJca - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:31    │
+│ SEby_Auto_kcfcItOh │ uzeNIgYpAO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:42    │
+│ siDg_Auto_jhoWZCPx │ mvpZrZDPvl - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:36    │
+│ sYyc_Auto_FoydRjFY │ FqPAqkmGrv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:51    │
+│ tCTK_Auto_DdLeCWQg │ McCrQDpyHl - description │ Hedge         │ B-Book       │ 8 May 2026 08:06:28    │
+│ TFJc_Auto.OgVNwgPr │ JSCGoLacnp - description │ Net           │ B-Book       │ 8 May 2026 08:06:26    │
+│ tHyI_Auto.LzvqAdyg │ LyhavjloKp - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:43    │
+│ tJRo_Auto.EImysQWD │ wgZuUHaoMs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:26    │
+│ TLRo_Auto.ArtEDOhB │ xTZHYKzcSH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:47    │
+│ TVdj_Auto_HcgvtlVf │ kkfbSCilIP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:08    │
+│ ULdx_Auto/OVWJnUXc │ zVzzjbvsOz - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07    │
+│ uqLH_Auto-xiUpYWng │ cKfhKXUGjj - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:20    │
+│ uUqu_Auto/fHrYIgiP │ CTsjSyIoar - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:05    │
+│ vHKf_Auto/iDTlnBbA │ DBoRHAuZDZ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04    │
+│ vJLH_Auto-nKCyTWcV │ nzrhFDMjfn - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:41    │
+│ VpMg_Auto_piVEiYZK │ hCmTwSSRxC - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:19    │
+│ VWSO_Auto.cNuMycKB │ EdKbkzlXmJ - description │ Hedge         │ A-Book       │ 8 May 2026 08:49:22    │
+│ VXdr_Auto-QaaAoBOW │ NHCvdlrple - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:01    │
+│ vXys_Auto_MSGeGZza │ zudMFbzkfq - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:12    │
+│ wbKV_Auto/CFZojmVq │ dgpjlGgdIO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:48    │
+│ wcbD_Auto_sTKOBDKg │ GjcbQukDBb - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:56    │
+│ wdRr_Auto.pmSwVXgX │ aEbdpqjdQY - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:27    │
+│ Wjhi_Auto/idlQSoFc │ SVhVZBIeua - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04    │
+│ WJxn_Auto.yLSutcWL │ KuAPZWZePK - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06    │
+│ wrAN_Auto_LQVxrTQi │ NLXsjXHUIz - description │ Hedge         │ B-Book       │ 8 May 2026 03:59:26    │
+│ wuTP_Auto-POqQhnvc │ xKOlZuDOtj - description │ Net           │ A-Book       │ 8 May 2026 03:59:27    │
+│ WzuR_Auto/APqdlsaS │ AmNqWTSIef - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:22    │
+│ xclT_Auto_ylEItTZK │ fBqKFrYCCi - description │ Hedge         │ B-Book       │ 7 May 2026 08:45:01    │
+│ XDzk_Auto-fKkMrKct │ PtjgSihvOl - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:20    │
+│ Xfox_Auto/qlpGpEXi │ NfDJuKoDFO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:56    │
+│ xgne_Auto-PFKmmNHp │ iNiFkulrvP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16    │
+│ yAuQ_Auto/JGLgqWSj │ PXmubPNQPl - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:19    │
+│ yAza_Auto.FsnrsJkL │ YFLzzqKSfz - description │ Net           │ A-Book       │ 8 May 2026 04:01:27    │
+│ ybhx_Auto_AiPgfcao │ xNQwJHgDpz - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:18    │
+│ ynoi_Auto-uDYUZWay │ POEtAJiJYw - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:17    │
+│ yQel_Auto_HDUGxdzf │ AfHsXzyvIR - description │ Net           │ A-Book       │ 8 May 2026 04:01:28    │
+│ yTVG_Auto_OzSDAZVh │ OVPGOOqPyC - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:45    │
+│ yXCp_Auto_FWvJPriE │ OMBvgSRrmF - description │ Net           │ A-Book       │ 8 May 2026 08:06:33    │
+│ ZAOm_Auto.zXmzbvPg │ eMKyXlWjxG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:21    │
+│ ZHiV_Auto.ZCHkihSt │ MnbmEqYjVt - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:28    │
+│ zlLw_Auto.CrLyDjwX │ CERYKshaeP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:37    │
+│ zMqE_Auto.ONVmHyVX │ nEVctPgrJB - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:40    │
+│ zRtw_Auto_CqJVBpgC │ rjwwZFtkxj - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:54    │
+│ zxHu_Auto-EuDYDHWD │ RyYYCrFltq - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:09    │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴────────────────────────┘
+22:40:28 | - Comparing 119 items
+22:40:28 | Step 8: Search by: 'Name', with: '.'
+22:40:28 | - Search for: '.'
+22:40:29 | Verify results on table match: '.'
+22:40:29 | - Get table data
+22:40:30 | - Go to the first page
+22:40:30 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ APii_Auto.IjxMlbfi │ pvFzNShinz - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:50 │
+│ cyql_Auto.ouPuzntC │ aziGDHGyOg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:44 │
+│ dBti_Auto.xdfdryXe │ rBLMcncYrs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:39 │
+│ DGaK_Auto.DOpXwkUE │ PVVlwdTcaV - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16 │
+│ dvkS_Auto.dRzPsoGS │ lenGAIDFXS - description │ Hedge         │ B-Book       │ 8 May 2026 08:06:31 │
+│ fVdZ_Auto.gmXWdlAj │ ejyDjzwBOM - description │ Net           │ A-Book       │ 8 May 2026 08:06:24 │
+│ hABA_Auto.rPVlkrZY │ kNdfWYxuiG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:28 │
+│ HpZV_Auto.xcyXbRqX │ yHpqXwFFFt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:42 │
+│ iJon_Auto.imGJgDJk │ CYIDwDEyJf - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:02 │
+│ KFDI_Auto.TPqpxSet │ ULIhqEUcaU - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:24 │
+│ lKKq_Auto.mAWhFBUL │ vJzNyuHjyK - description │ Hedge         │ B-Book       │ 8 May 2026 04:40:14 │
+│ lXoj_Auto.rJcfntxL │ jMDGjbQhQd - description │ Hedge         │ B-Book       │ 8 May 2026 04:27:10 │
+│ NYwk_Auto.dSpzYQut │ czOeWJzaIc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:03 │
+│ Rszp_Auto.INczbrBY │ rvKQHJsFJg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:46 │
+│ TFJc_Auto.OgVNwgPr │ JSCGoLacnp - description │ Net           │ B-Book       │ 8 May 2026 08:06:26 │
+│ tHyI_Auto.LzvqAdyg │ LyhavjloKp - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:43 │
+│ tJRo_Auto.EImysQWD │ wgZuUHaoMs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:26 │
+│ TLRo_Auto.ArtEDOhB │ xTZHYKzcSH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:47 │
+│ VWSO_Auto.cNuMycKB │ EdKbkzlXmJ - description │ Hedge         │ A-Book       │ 8 May 2026 08:49:22 │
+│ wdRr_Auto.pmSwVXgX │ aEbdpqjdQY - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:27 │
+│ WJxn_Auto.yLSutcWL │ KuAPZWZePK - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06 │
+│ yAza_Auto.FsnrsJkL │ YFLzzqKSfz - description │ Net           │ A-Book       │ 8 May 2026 04:01:27 │
+│ ZAOm_Auto.zXmzbvPg │ eMKyXlWjxG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:21 │
+│ ZHiV_Auto.ZCHkihSt │ MnbmEqYjVt - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:28 │
+│ zlLw_Auto.CrLyDjwX │ CERYKshaeP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:37 │
+│ zMqE_Auto.ONVmHyVX │ nEVctPgrJB - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:40 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:40:30 | - Comparing 26 items
+22:40:30 | Step 9: Search by: 'Name', with: '/'
+22:40:30 | - Search for: '/'
+22:40:31 | Verify results on table match: '/'
+22:40:31 | - Get table data
+22:40:32 | - Go to the first page
+22:40:32 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬────────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date           │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼────────────────────────┤
+│ coUi_Auto/lRbEKhwY │ elQdCgUXTy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14    │
+│ dtcJ_Auto/LrlzMkxk │ WmuzzSCoGw - description │ Hedge         │ B-Book       │ 22 April 2026 09:07:05 │
+│ DZyb_Auto/uSTCibnS │ cbuqsFFrQO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:31    │
+│ EITs_Auto/LHHCiPwp │ cQwXufbUGv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35    │
+│ eYHS_Auto/JsDNmqQl │ ZYAJuaZRhE - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:32    │
+│ fmhz_Auto/hTyHbfEI │ sUKWioFOHy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07    │
+│ FOxh_Auto/RkNIHefL │ jrXoqCktqH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14    │
+│ GnWF_Auto/frIMUldB │ XvtyxwWxYn - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:30    │
+│ GVFo_Auto/yRodjPWm │ GnhDmFnCUO - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23    │
+│ iBfk_Auto/RCapkDMx │ jsgnvpqebv - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:29    │
+│ Jpgt_Auto/JAJJAriL │ KSdMDsznNC - description │ Hedge         │ A-Book       │ 8 May 2026 08:53:54    │
+│ kEsi_Auto/EeUYYrDW │ eXHklZPEew - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:05    │
+│ MUMe_Auto/DaBkPdrm │ EokJjJVmUJ - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33    │
+│ QgpT_Auto/ngpGNCUk │ gdKZFmbKiC - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:29    │
+│ qTZK_Auto/CaEfWonh │ ThswZwoIMA - description │ Net           │ B-Book       │ 8 May 2026 08:06:21    │
+│ ULdx_Auto/OVWJnUXc │ zVzzjbvsOz - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07    │
+│ uUqu_Auto/fHrYIgiP │ CTsjSyIoar - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:05    │
+│ vHKf_Auto/iDTlnBbA │ DBoRHAuZDZ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04    │
+│ wbKV_Auto/CFZojmVq │ dgpjlGgdIO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:48    │
+│ Wjhi_Auto/idlQSoFc │ SVhVZBIeua - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04    │
+│ WzuR_Auto/APqdlsaS │ AmNqWTSIef - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:22    │
+│ Xfox_Auto/qlpGpEXi │ NfDJuKoDFO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:56    │
+│ yAuQ_Auto/JGLgqWSj │ PXmubPNQPl - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:19    │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴────────────────────────┘
+22:40:32 | - Comparing 23 items
+22:40:32 | Step 10: Search by: 'Name', with: '_'
+22:40:32 | - Search for: '_'
+22:40:33 | Verify results on table match: '_'
+22:40:33 | - Get table data
+22:40:35 | - Click 'next' button on table
+22:40:36 | - Click 'next' button on table
+22:40:37 | - Go to the first page
+22:40:37 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬────────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date           │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼────────────────────────┤
+│ aKyj_Auto-EypECuVd │ zSHyhwwHlA - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:53    │
+│ APii_Auto.IjxMlbfi │ pvFzNShinz - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:50    │
+│ APLU_Auto_NjicyMHn │ iPjTUpYRvN - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:52    │
+│ ApvJ_Auto-lQJruouB │ TQdOsUNgqp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33    │
+│ bEeI_Auto-YQpyfKdV │ vZhmFiIAgX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:10    │
+│ BHNm_Auto-WVIrEbfI │ pgjbdbdLhb - description │ Hedge         │ A-Book       │ 3 May 2026 15:42:48    │
+│ cBff_Auto-PzKtaVAW │ REGvAyIggZ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:21    │
+│ cIUQ_Auto-YjWLzNvl │ aVDCDgljkt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:58    │
+│ clos_Auto-dVvZZcUJ │ azSekioCPX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:13    │
+│ cMON_Auto_anzWnqCh │ NozWWuWpvw - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:39    │
+│ coUi_Auto/lRbEKhwY │ elQdCgUXTy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14    │
+│ CXYL_Auto-XoEgQjaO │ drmloJVCMV - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:49    │
+│ cyql_Auto.ouPuzntC │ aziGDHGyOg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:44    │
+│ dAJX_Auto_VwWwwegw │ SIabfRlOZc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23    │
+│ dBti_Auto.xdfdryXe │ rBLMcncYrs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:39    │
+│ DEfa_Auto-cfkiMOsh │ ovmpALttHm - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06    │
+│ DGaK_Auto.DOpXwkUE │ PVVlwdTcaV - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16    │
+│ dtcJ_Auto/LrlzMkxk │ WmuzzSCoGw - description │ Hedge         │ B-Book       │ 22 April 2026 09:07:05 │
+│ dvkS_Auto.dRzPsoGS │ lenGAIDFXS - description │ Hedge         │ B-Book       │ 8 May 2026 08:06:31    │
+│ DZyb_Auto/uSTCibnS │ cbuqsFFrQO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:31    │
+│ ecAK_Auto-TtnQXyEC │ mOBEJuUdnc - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:38    │
+│ EITs_Auto/LHHCiPwp │ cQwXufbUGv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35    │
+│ eYHS_Auto/JsDNmqQl │ ZYAJuaZRhE - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:32    │
+│ fmhz_Auto/hTyHbfEI │ sUKWioFOHy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07    │
+│ FOxh_Auto/RkNIHefL │ jrXoqCktqH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14    │
+│ FSOX_AUTO_BODHBCWO │ iuggBDhsFp - description │ Hedge         │ B-Book       │ 8 May 2026 08:46:39    │
+│ fVdZ_Auto.gmXWdlAj │ ejyDjzwBOM - description │ Net           │ A-Book       │ 8 May 2026 08:06:24    │
+│ GnWF_Auto/frIMUldB │ XvtyxwWxYn - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:30    │
+│ gSKu_Auto-HcrahNSf │ ugtkCzuVvF - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35    │
+│ GVFo_Auto/yRodjPWm │ GnhDmFnCUO - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23    │
+│ hABA_Auto.rPVlkrZY │ kNdfWYxuiG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:28    │
+│ haUr_Auto_dOCsPwZv │ ZUTHedNWfQ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:26    │
+│ HMkx_Auto-GWtQjPiV │ eImbswDjqL - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:34    │
+│ HpZV_Auto.xcyXbRqX │ yHpqXwFFFt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:42    │
+│ hvlX_Auto-EKxBtHmP │ MaRSUwBUdd - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:07    │
+│ iBfk_Auto/RCapkDMx │ jsgnvpqebv - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:29    │
+│ iHyR_Auto_OUJlFEIz │ oenMehFYCb - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:17    │
+│ iIVb_Auto-DUFlWpAf │ jvhxjmSCot - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:55    │
+│ iJon_Auto.imGJgDJk │ CYIDwDEyJf - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:02    │
+│ ixdD_Auto-PbagopYN │ UHvyCpMHGt - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:46    │
+│ Jpgt_Auto/JAJJAriL │ KSdMDsznNC - description │ Hedge         │ A-Book       │ 8 May 2026 08:53:54    │
+│ kEsi_Auto/EeUYYrDW │ eXHklZPEew - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:05    │
+│ KFDI_Auto.TPqpxSet │ ULIhqEUcaU - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:24    │
+│ KVvz_Auto_smMaujfd │ UMDWTowoyX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:44    │
+│ kyaC_Auto-CecgjbKh │ SccZCbJYpU - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:27    │
+│ lKKq_Auto.mAWhFBUL │ vJzNyuHjyK - description │ Hedge         │ B-Book       │ 8 May 2026 04:40:14    │
+│ LkRS_Auto_vRIHwLyS │ TDHpLTinUv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:15    │
+│ LLgY_Auto_WENbGzan │ JibLxOvEFc - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:10    │
+│ lmrx_Auto_xUSYhiPK │ IDgGaEWffV - description │ Hedge         │ B-Book       │ 8 May 2026 08:44:39    │
+│ loqc_Auto_rsVjLndI │ zyckQkoClJ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:24    │
+│ lXoj_Auto.rJcfntxL │ jMDGjbQhQd - description │ Hedge         │ B-Book       │ 8 May 2026 04:27:10    │
+│ MUMe_Auto/DaBkPdrm │ EokJjJVmUJ - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33    │
+│ nQeV_Auto_feenLzKY │ wJhZiLapij - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:25    │
+│ nRZm_Auto_znnVjkJT │ yfxkisXaVN - description │ Hedge         │ B-Book       │ 8 May 2026 04:25:33    │
+│ NYwk_Auto.dSpzYQut │ czOeWJzaIc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:03    │
+│ Oeqq_Auto_OENDgvkG │ rIuBzNWPKn - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:49    │
+│ OQcq_Auto-kzqUwjzb │ CZHukHUjNG - description │ Hedge         │ A-Book       │ 8 May 2026 08:51:30    │
+│ oSER_Auto-pKDdwYfL │ xFqVUCJEoy - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:12    │
+│ OWQf_Auto_RQBpsNgZ │ bpiknPQxOX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:02    │
+│ PBCC_Auto_xizSVlkx │ ghfmrNRtkD - description │ Hedge         │ A-Book       │ 8 May 2026 04:24:36    │
+│ pDiy_Auto_aEMrooKp │ ILWmQoYwHD - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:03    │
+│ PKBN_Auto-aKjpSHcb │ izZdYpByHh - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:51    │
+│ pLib_Auto_TlXFFGmD │ OiGMNvkoBs - description │ Hedge         │ B-Book       │ 8 May 2026 04:16:41    │
+│ PmWG_Auto-mdHDvjya │ pHeOoQNcum - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:57    │
+│ pRwl_Auto-jhVkWwHd │ pgjodOKNbF - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:37    │
+│ QgpT_Auto/ngpGNCUk │ gdKZFmbKiC - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:29    │
+│ qldE_Auto-RjxrIzgi │ kSyefhGUpi - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:25    │
+│ qTZK_Auto/CaEfWonh │ ThswZwoIMA - description │ Net           │ B-Book       │ 8 May 2026 08:06:21    │
+│ rFhB_Auto_sKQtwkuZ │ mMepVcbYIu - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:53    │
+│ rHsT_Auto_GAJpWJYC │ choIDgoomp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:11    │
+│ Rszp_Auto.INczbrBY │ rvKQHJsFJg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:46    │
+│ RUqy_Auto_btdyYCck │ tekcUaliAX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:22    │
+│ rUys_Auto_YutJSVHj │ NJbTWXZJca - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:31    │
+│ SEby_Auto_kcfcItOh │ uzeNIgYpAO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:42    │
+│ siDg_Auto_jhoWZCPx │ mvpZrZDPvl - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:36    │
+│ sYyc_Auto_FoydRjFY │ FqPAqkmGrv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:51    │
+│ tCTK_Auto_DdLeCWQg │ McCrQDpyHl - description │ Hedge         │ B-Book       │ 8 May 2026 08:06:28    │
+│ TFJc_Auto.OgVNwgPr │ JSCGoLacnp - description │ Net           │ B-Book       │ 8 May 2026 08:06:26    │
+│ tHyI_Auto.LzvqAdyg │ LyhavjloKp - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:43    │
+│ tJRo_Auto.EImysQWD │ wgZuUHaoMs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:26    │
+│ TLRo_Auto.ArtEDOhB │ xTZHYKzcSH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:47    │
+│ TVdj_Auto_HcgvtlVf │ kkfbSCilIP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:08    │
+│ ULdx_Auto/OVWJnUXc │ zVzzjbvsOz - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07    │
+│ uqLH_Auto-xiUpYWng │ cKfhKXUGjj - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:20    │
+│ uUqu_Auto/fHrYIgiP │ CTsjSyIoar - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:05    │
+│ vHKf_Auto/iDTlnBbA │ DBoRHAuZDZ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04    │
+│ vJLH_Auto-nKCyTWcV │ nzrhFDMjfn - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:41    │
+│ VpMg_Auto_piVEiYZK │ hCmTwSSRxC - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:19    │
+│ VWSO_Auto.cNuMycKB │ EdKbkzlXmJ - description │ Hedge         │ A-Book       │ 8 May 2026 08:49:22    │
+│ VXdr_Auto-QaaAoBOW │ NHCvdlrple - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:01    │
+│ vXys_Auto_MSGeGZza │ zudMFbzkfq - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:12    │
+│ wbKV_Auto/CFZojmVq │ dgpjlGgdIO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:48    │
+│ wcbD_Auto_sTKOBDKg │ GjcbQukDBb - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:56    │
+│ wdRr_Auto.pmSwVXgX │ aEbdpqjdQY - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:27    │
+│ Wjhi_Auto/idlQSoFc │ SVhVZBIeua - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04    │
+│ WJxn_Auto.yLSutcWL │ KuAPZWZePK - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06    │
+│ wrAN_Auto_LQVxrTQi │ NLXsjXHUIz - description │ Hedge         │ B-Book       │ 8 May 2026 03:59:26    │
+│ wuTP_Auto-POqQhnvc │ xKOlZuDOtj - description │ Net           │ A-Book       │ 8 May 2026 03:59:27    │
+│ WzuR_Auto/APqdlsaS │ AmNqWTSIef - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:22    │
+│ xclT_Auto_ylEItTZK │ fBqKFrYCCi - description │ Hedge         │ B-Book       │ 7 May 2026 08:45:01    │
+│ XDzk_Auto-fKkMrKct │ PtjgSihvOl - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:20    │
+│ Xfox_Auto/qlpGpEXi │ NfDJuKoDFO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:56    │
+│ xgne_Auto-PFKmmNHp │ iNiFkulrvP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16    │
+│ yAuQ_Auto/JGLgqWSj │ PXmubPNQPl - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:19    │
+│ yAza_Auto.FsnrsJkL │ YFLzzqKSfz - description │ Net           │ A-Book       │ 8 May 2026 04:01:27    │
+│ ybhx_Auto_AiPgfcao │ xNQwJHgDpz - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:18    │
+│ ynoi_Auto-uDYUZWay │ POEtAJiJYw - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:17    │
+│ yQel_Auto_HDUGxdzf │ AfHsXzyvIR - description │ Net           │ A-Book       │ 8 May 2026 04:01:28    │
+│ yTVG_Auto_OzSDAZVh │ OVPGOOqPyC - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:45    │
+│ yXCp_Auto_FWvJPriE │ OMBvgSRrmF - description │ Net           │ A-Book       │ 8 May 2026 08:06:33    │
+│ ZAOm_Auto.zXmzbvPg │ eMKyXlWjxG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:21    │
+│ ZHiV_Auto.ZCHkihSt │ MnbmEqYjVt - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:28    │
+│ zlLw_Auto.CrLyDjwX │ CERYKshaeP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:37    │
+│ zMqE_Auto.ONVmHyVX │ nEVctPgrJB - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:40    │
+│ zRtw_Auto_CqJVBpgC │ rjwwZFtkxj - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:54    │
+│ zxHu_Auto-EuDYDHWD │ RyYYCrFltq - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:09    │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴────────────────────────┘
+22:40:37 | - Comparing 116 items
+22:40:37 | Step 11: Search by: 'Name', with: '-'
+22:40:37 | - Search for: '-'
+22:40:38 | Verify results on table match: '-'
+22:40:38 | - Get table data
+22:40:39 | - Click 'next' button on table
+22:40:41 | - Click 'next' button on table
+22:40:42 | - Go to the first page
+22:40:42 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬────────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date           │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼────────────────────────┤
+│ aKyj_Auto-EypECuVd │ zSHyhwwHlA - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:53    │
+│ APii_Auto.IjxMlbfi │ pvFzNShinz - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:50    │
+│ APLU_Auto_NjicyMHn │ iPjTUpYRvN - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:52    │
+│ ApvJ_Auto-lQJruouB │ TQdOsUNgqp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33    │
+│ AutoPytDHbOhF-U    │ LvwOCXmyTD - description │ Hedge         │ B-Book       │ 8 May 2026 08:47:47    │
+│ -AUTOSULMGVAVGO    │ QrWBfwJqsI - description │ Hedge         │ A-Book       │ 8 May 2026 08:47:24    │
+│ AUTOSULMGVA-VGO    │ aTztYmXsRw - description │ Hedge         │ B-Book       │ 8 May 2026 08:47:01    │
+│ bEeI_Auto-YQpyfKdV │ vZhmFiIAgX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:10    │
+│ BHNm_Auto-WVIrEbfI │ pgjbdbdLhb - description │ Hedge         │ A-Book       │ 3 May 2026 15:42:48    │
+│ cBff_Auto-PzKtaVAW │ REGvAyIggZ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:21    │
+│ cIUQ_Auto-YjWLzNvl │ aVDCDgljkt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:58    │
+│ clos_Auto-dVvZZcUJ │ azSekioCPX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:13    │
+│ cMON_Auto_anzWnqCh │ NozWWuWpvw - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:39    │
+│ coUi_Auto/lRbEKhwY │ elQdCgUXTy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14    │
+│ CXYL_Auto-XoEgQjaO │ drmloJVCMV - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:49    │
+│ cyql_Auto.ouPuzntC │ aziGDHGyOg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:44    │
+│ dAJX_Auto_VwWwwegw │ SIabfRlOZc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23    │
+│ dBti_Auto.xdfdryXe │ rBLMcncYrs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:39    │
+│ DEfa_Auto-cfkiMOsh │ ovmpALttHm - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06    │
+│ DGaK_Auto.DOpXwkUE │ PVVlwdTcaV - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16    │
+│ dtcJ_Auto/LrlzMkxk │ WmuzzSCoGw - description │ Hedge         │ B-Book       │ 22 April 2026 09:07:05 │
+│ dvkS_Auto.dRzPsoGS │ lenGAIDFXS - description │ Hedge         │ B-Book       │ 8 May 2026 08:06:31    │
+│ DZyb_Auto/uSTCibnS │ cbuqsFFrQO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:31    │
+│ ecAK_Auto-TtnQXyEC │ mOBEJuUdnc - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:38    │
+│ EITs_Auto/LHHCiPwp │ cQwXufbUGv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35    │
+│ eYHS_Auto/JsDNmqQl │ ZYAJuaZRhE - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:32    │
+│ fmhz_Auto/hTyHbfEI │ sUKWioFOHy - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07    │
+│ FOxh_Auto/RkNIHefL │ jrXoqCktqH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:14    │
+│ FSOX_AUTO_BODHBCWO │ iuggBDhsFp - description │ Hedge         │ B-Book       │ 8 May 2026 08:46:39    │
+│ fVdZ_Auto.gmXWdlAj │ ejyDjzwBOM - description │ Net           │ A-Book       │ 8 May 2026 08:06:24    │
+│ GnWF_Auto/frIMUldB │ XvtyxwWxYn - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:30    │
+│ gSKu_Auto-HcrahNSf │ ugtkCzuVvF - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35    │
+│ GVFo_Auto/yRodjPWm │ GnhDmFnCUO - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23    │
+│ hABA_Auto.rPVlkrZY │ kNdfWYxuiG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:28    │
+│ haUr_Auto_dOCsPwZv │ ZUTHedNWfQ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:26    │
+│ HMkx_Auto-GWtQjPiV │ eImbswDjqL - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:34    │
+│ HpZV_Auto.xcyXbRqX │ yHpqXwFFFt - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:42    │
+│ hvlX_Auto-EKxBtHmP │ MaRSUwBUdd - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:07    │
+│ iBfk_Auto/RCapkDMx │ jsgnvpqebv - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:29    │
+│ iHyR_Auto_OUJlFEIz │ oenMehFYCb - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:17    │
+│ iIVb_Auto-DUFlWpAf │ jvhxjmSCot - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:55    │
+│ iJon_Auto.imGJgDJk │ CYIDwDEyJf - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:02    │
+│ ixdD_Auto-PbagopYN │ UHvyCpMHGt - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:46    │
+│ Jpgt_Auto/JAJJAriL │ KSdMDsznNC - description │ Hedge         │ A-Book       │ 8 May 2026 08:53:54    │
+│ kEsi_Auto/EeUYYrDW │ eXHklZPEew - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:05    │
+│ KFDI_Auto.TPqpxSet │ ULIhqEUcaU - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:24    │
+│ KVvz_Auto_smMaujfd │ UMDWTowoyX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:44    │
+│ kyaC_Auto-CecgjbKh │ SccZCbJYpU - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:27    │
+│ lKKq_Auto.mAWhFBUL │ vJzNyuHjyK - description │ Hedge         │ B-Book       │ 8 May 2026 04:40:14    │
+│ LkRS_Auto_vRIHwLyS │ TDHpLTinUv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:15    │
+│ LLgY_Auto_WENbGzan │ JibLxOvEFc - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:10    │
+│ lmrx_Auto_xUSYhiPK │ IDgGaEWffV - description │ Hedge         │ B-Book       │ 8 May 2026 08:44:39    │
+│ loqc_Auto_rsVjLndI │ zyckQkoClJ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:24    │
+│ lXoj_Auto.rJcfntxL │ jMDGjbQhQd - description │ Hedge         │ B-Book       │ 8 May 2026 04:27:10    │
+│ MUMe_Auto/DaBkPdrm │ EokJjJVmUJ - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33    │
+│ nQeV_Auto_feenLzKY │ wJhZiLapij - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:25    │
+│ nRZm_Auto_znnVjkJT │ yfxkisXaVN - description │ Hedge         │ B-Book       │ 8 May 2026 04:25:33    │
+│ NYwk_Auto.dSpzYQut │ czOeWJzaIc - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:03    │
+│ Oeqq_Auto_OENDgvkG │ rIuBzNWPKn - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:49    │
+│ OQcq_Auto-kzqUwjzb │ CZHukHUjNG - description │ Hedge         │ A-Book       │ 8 May 2026 08:51:30    │
+│ oSER_Auto-pKDdwYfL │ xFqVUCJEoy - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:12    │
+│ OWQf_Auto_RQBpsNgZ │ bpiknPQxOX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:02    │
+│ PBCC_Auto_xizSVlkx │ ghfmrNRtkD - description │ Hedge         │ A-Book       │ 8 May 2026 04:24:36    │
+│ pDiy_Auto_aEMrooKp │ ILWmQoYwHD - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:03    │
+│ PKBN_Auto-aKjpSHcb │ izZdYpByHh - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:51    │
+│ pLib_Auto_TlXFFGmD │ OiGMNvkoBs - description │ Hedge         │ B-Book       │ 8 May 2026 04:16:41    │
+│ PmWG_Auto-mdHDvjya │ pHeOoQNcum - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:57    │
+│ pRwl_Auto-jhVkWwHd │ pgjodOKNbF - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:37    │
+│ QgpT_Auto/ngpGNCUk │ gdKZFmbKiC - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:29    │
+│ qldE_Auto-RjxrIzgi │ kSyefhGUpi - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:25    │
+│ qTZK_Auto/CaEfWonh │ ThswZwoIMA - description │ Net           │ B-Book       │ 8 May 2026 08:06:21    │
+│ rFhB_Auto_sKQtwkuZ │ mMepVcbYIu - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:53    │
+│ rHsT_Auto_GAJpWJYC │ choIDgoomp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:11    │
+│ Rszp_Auto.INczbrBY │ rvKQHJsFJg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:46    │
+│ RUqy_Auto_btdyYCck │ tekcUaliAX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:22    │
+│ rUys_Auto_YutJSVHj │ NJbTWXZJca - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:31    │
+│ SEby_Auto_kcfcItOh │ uzeNIgYpAO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:42    │
+│ siDg_Auto_jhoWZCPx │ mvpZrZDPvl - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:36    │
+│ sYyc_Auto_FoydRjFY │ FqPAqkmGrv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:51    │
+│ tCTK_Auto_DdLeCWQg │ McCrQDpyHl - description │ Hedge         │ B-Book       │ 8 May 2026 08:06:28    │
+│ TFJc_Auto.OgVNwgPr │ JSCGoLacnp - description │ Net           │ B-Book       │ 8 May 2026 08:06:26    │
+│ tHyI_Auto.LzvqAdyg │ LyhavjloKp - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:43    │
+│ tJRo_Auto.EImysQWD │ wgZuUHaoMs - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:26    │
+│ TLRo_Auto.ArtEDOhB │ xTZHYKzcSH - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:47    │
+│ TVdj_Auto_HcgvtlVf │ kkfbSCilIP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:08    │
+│ ULdx_Auto/OVWJnUXc │ zVzzjbvsOz - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07    │
+│ uqLH_Auto-xiUpYWng │ cKfhKXUGjj - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:20    │
+│ uUqu_Auto/fHrYIgiP │ CTsjSyIoar - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:05    │
+│ vHKf_Auto/iDTlnBbA │ DBoRHAuZDZ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04    │
+│ vJLH_Auto-nKCyTWcV │ nzrhFDMjfn - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:41    │
+│ VpMg_Auto_piVEiYZK │ hCmTwSSRxC - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:19    │
+│ VWSO_Auto.cNuMycKB │ EdKbkzlXmJ - description │ Hedge         │ A-Book       │ 8 May 2026 08:49:22    │
+│ VXdr_Auto-QaaAoBOW │ NHCvdlrple - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:01    │
+│ vXys_Auto_MSGeGZza │ zudMFbzkfq - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:12    │
+│ wbKV_Auto/CFZojmVq │ dgpjlGgdIO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:48    │
+│ wcbD_Auto_sTKOBDKg │ GjcbQukDBb - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:56    │
+│ wdRr_Auto.pmSwVXgX │ aEbdpqjdQY - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:27    │
+│ Wjhi_Auto/idlQSoFc │ SVhVZBIeua - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04    │
+│ WJxn_Auto.yLSutcWL │ KuAPZWZePK - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:06    │
+│ wrAN_Auto_LQVxrTQi │ NLXsjXHUIz - description │ Hedge         │ B-Book       │ 8 May 2026 03:59:26    │
+│ wuTP_Auto-POqQhnvc │ xKOlZuDOtj - description │ Net           │ A-Book       │ 8 May 2026 03:59:27    │
+│ WzuR_Auto/APqdlsaS │ AmNqWTSIef - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:22    │
+│ xclT_Auto_ylEItTZK │ fBqKFrYCCi - description │ Hedge         │ B-Book       │ 7 May 2026 08:45:01    │
+│ XDzk_Auto-fKkMrKct │ PtjgSihvOl - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:20    │
+│ Xfox_Auto/qlpGpEXi │ NfDJuKoDFO - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:56    │
+│ xgne_Auto-PFKmmNHp │ iNiFkulrvP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:16    │
+│ yAuQ_Auto/JGLgqWSj │ PXmubPNQPl - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:19    │
+│ yAza_Auto.FsnrsJkL │ YFLzzqKSfz - description │ Net           │ A-Book       │ 8 May 2026 04:01:27    │
+│ ybhx_Auto_AiPgfcao │ xNQwJHgDpz - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:18    │
+│ ynoi_Auto-uDYUZWay │ POEtAJiJYw - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:17    │
+│ yQel_Auto_HDUGxdzf │ AfHsXzyvIR - description │ Net           │ A-Book       │ 8 May 2026 04:01:28    │
+│ yTVG_Auto_OzSDAZVh │ OVPGOOqPyC - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:45    │
+│ yXCp_Auto_FWvJPriE │ OMBvgSRrmF - description │ Net           │ A-Book       │ 8 May 2026 08:06:33    │
+│ ZAOm_Auto.zXmzbvPg │ eMKyXlWjxG - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:21    │
+│ ZHiV_Auto.ZCHkihSt │ MnbmEqYjVt - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:28    │
+│ zlLw_Auto.CrLyDjwX │ CERYKshaeP - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:37    │
+│ zMqE_Auto.ONVmHyVX │ nEVctPgrJB - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:40    │
+│ zRtw_Auto_CqJVBpgC │ rjwwZFtkxj - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:54    │
+│ zxHu_Auto-EuDYDHWD │ RyYYCrFltq - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:09    │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴────────────────────────┘
+22:40:42 | - Comparing 119 items
+22:40:42 | [Teardown] Clear search field
+22:40:42 | - Clear search input
+22:40:43 | - Stop recording screen

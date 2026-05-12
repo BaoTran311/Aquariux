@@ -1,0 +1,166 @@
+23:36:45 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:36:45 | [Setup] Setup 2FA via API
+23:36:45 | [API] Send API: POST /auth/v1/login/admin
+23:36:46 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-09T16:36:46.726864425Z"
+}
+
+
+23:36:46 | [API] Send API: GET /backoffice/v1/2fa/setup/totp
+23:36:46 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/setup/totp' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDQ2MDYsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY2NTA2LCJpYXQiOjE3NzgzNDQ2MDYsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjVmMTIzMTAwLWNjOGMtNGZjZi04NmNhLTllZjQyODVlOWE0YiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.B66sbRUIFYuRPhBvcNFn65E1hmLrc4EA4OeEDZIQuhOU7FdO5pX0vcvMQ1tmB_7yVEBl_HoSb3NG-AIaDawPQ97WouIi9z52jZOC7RtDxUIPLyx44tUmNJouoxmPAxIif_WBuNhrbFvvKOMlgiBQBYEavg19JMa9KeRjYzZUuBN0j21Da-TvYjx2p6Kbws6gGKCWaHv8wxdb3Tdi9pLpSsB7uWkvEMVXpBSWY-mw2Wyz80RN_xmp-TABrrf-vxzZ40wBA8wFhkoBW52Aw9p0J-fGN2Zyq87ST_VGbECK0dnUedr3YBjSzFqKAOkAtAAAlx74uXzNWH3LAM_qOYjKGw'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "secret": "SVIS6PNQYGWV5IBHL547W6YRNZV2XCVQ",
+        "qrCodeUrl": "otpauth://totp/nguyengiabao.tran1%40aquariux.com?secret=SVIS6PNQYGWV5IBHL547W6YRNZV2XCVQ&issuer=AQXOMS",
+        "accountName": "nguyengiabao.tran1@aquariux.com",
+        "issuer": "AQXOMS",
+        "message": "TOTP secret generated. Scan QR code with authenticator app, then verify."
+    },
+    "success": true,
+    "timestamp": "2026-05-09T16:36:47.171059710Z"
+}
+
+
+23:36:46 | [API] Send API: POST /backoffice/v1/2fa/totp/verify
+23:36:47 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/totp/verify' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDQ2MDYsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY2NTA2LCJpYXQiOjE3NzgzNDQ2MDYsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjVmMTIzMTAwLWNjOGMtNGZjZi04NmNhLTllZjQyODVlOWE0YiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.B66sbRUIFYuRPhBvcNFn65E1hmLrc4EA4OeEDZIQuhOU7FdO5pX0vcvMQ1tmB_7yVEBl_HoSb3NG-AIaDawPQ97WouIi9z52jZOC7RtDxUIPLyx44tUmNJouoxmPAxIif_WBuNhrbFvvKOMlgiBQBYEavg19JMa9KeRjYzZUuBN0j21Da-TvYjx2p6Kbws6gGKCWaHv8wxdb3Tdi9pLpSsB7uWkvEMVXpBSWY-mw2Wyz80RN_xmp-TABrrf-vxzZ40wBA8wFhkoBW52Aw9p0J-fGN2Zyq87ST_VGbECK0dnUedr3YBjSzFqKAOkAtAAAlx74uXzNWH3LAM_qOYjKGw' 
+--header 'Content-Length: 18' 
+--data-raw '{"code": "719631"}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:36:47.503079852Z"
+}
+
+
+23:36:47 | [API] Send API: POST /auth/v1/login/admin
+23:36:48 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-09T16:36:48.625987716Z"
+}
+
+
+23:36:48 | [API] Send API: GET /backoffice/v1/admin-users
+23:36:48 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDQ2MDgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY2NTA4LCJpYXQiOjE3NzgzNDQ2MDgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImIyZDg0ZWM4LTY4NjktNGY3Zi1iZWQ1LTVmMDE2ZjAzMWMyMCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.LmnIYDnCJOuWLY0ZWANsADudqOL6jbWifKfMOKPxWHHvVYuRRx9ME9pBmdpZKk2FKXd6FzkbavBBTA006RVAbb3SYDv8rDqYgQaTCaH99OciPMdTd5OthcJV5TW5VkPh2_qCJFvkCs0oBnQPrnbqwVq_E3ZMWqpMuwadPC0z_nfttC7W3opTrXtv70Y_xGKyUphY5A6S7b7LKvE-txaKSLDsPSRfW61MBaDMPjrl38MFlJhwiqELIg-iZlN4_TgQ7n1S28Nrodr-IaY2S95V2niG5SJosIbmvKCaLVVviBITkZSMtahk40ekwl1mGrD24UpAbJOjSwl1S283iZv17w'
+
+
+23:36:48 | [Setup] Init Web Driver
+23:36:50 | - Registered driver under 'web_main' (total: 1)
+23:36:50 | - Added web driver 'main' to driver_list (total: 1)
+23:36:50 | [Setup] Navigate to OMS site
+23:36:53 | [Setup] Login with default admin user
+23:36:53 | [Setup] Expand Accounts section
+23:36:54 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+23:36:54 | - Expand item: 'Accounts'
+23:36:54 | [Setup] Navigate to Trading Account Page
+23:36:54 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+23:36:54 | - Item: 'Accounts' already 'expand'
+23:36:54 | - Start recording screen
+23:36:54 | - Get table data
+23:36:55 | - Go to the first page
+23:36:55 | Step 1: Search by: 'Account ID', with: 'AQX-TA-00000068'
+23:36:55 | - Search for: 'AQX-TA-00000068'
+23:36:56 | Verify results on table data match: 'AQX-TA-00000068'
+23:36:56 | - Get table data
+23:36:57 | - Go to the first page
+23:36:57 | 
+Table Data:
+┌─────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000068 │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:66         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:32:49 │
+└─────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:36:57 | - Comparing 1 items
+23:36:57 | Step 2: Search by: 'Account ID', with: 'AQX-TA-00001754'
+23:36:57 | - Search for: 'AQX-TA-00001754'
+23:36:58 | Verify results on table data match: 'AQX-TA-00001754'
+23:36:58 | - Get table data
+23:36:59 | - Go to the first page
+23:36:59 | 
+Table Data:
+┌─────────────────┬────────────────────┬──────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                        │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼──────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00001754 │ mUJg_Auto-RlGbZgun │ auto_w7f6fdoxll@aquariux.com │ 1:24         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 06:38:17 │
+└─────────────────┴────────────────────┴──────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:36:59 | - Comparing 1 items
+23:36:59 | Step 3: Search by: 'Account ID', with: 'AQX-TA-100000000'
+23:36:59 | - Search for: 'AQX-TA-100000000'
+23:36:59 | Verify results on table data match: 'AQX-TA-100000000'
+23:36:59 | - Get table data
+23:37:01 | - Go to the first page
+23:37:01 | 
+Table Data:
+┌──────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id       │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├──────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-100000000 │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 09:32:55 │
+└──────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:37:01 | - Comparing 1 items
+23:37:01 | Step 4: Refresh page
+23:37:02 | Verify search field is cleared
+23:37:02 | Verify clear search icon is not displayed
+23:37:02 | - Check invisibility of locator: ('css selector', 'button[data-testid="trading-account-list-search-input-search-account-email-input-icon-right"]'): TRUE
+23:37:02 | [Teardown] Clear search field
+23:37:02 | - Clear search input
+23:37:03 | - Stop recording screen

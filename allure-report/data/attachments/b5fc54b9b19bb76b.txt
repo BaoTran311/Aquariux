@@ -1,0 +1,39 @@
+23:11:54 | - Running test case: test_TA_TBL_TC12_positive_column_sorting_with_search.py
+23:11:54 | - Start recording screen
+23:11:54 | - Get table data
+23:11:57 | - Click 'next' button on table
+23:11:58 | - Click 'next' button on table
+23:11:59 | - Go to the first page
+23:11:59 | Step 1: Search with: 'auto'
+23:11:59 | - Search for: 'auto'
+23:12:00 | Step 2: Click sort on column: 'Type'
+23:12:00 | - Sort by: 'Type'
+23:12:00 | Verify column sorts alphabetically a-z
+23:12:00 | - Get table data
+23:12:02 | - Click 'next' button on table
+23:12:04 | - Click 'next' button on table
+23:12:04 | - Go to the first page
+23:12:04 | - Comparing: 
+Actual:    ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+Expected:  ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+23:12:04 | Step 3: Click sort again on column: 'Type'
+23:12:04 | - Sort by: 'Type'
+23:12:04 | Verify column sorts alphabetically z-a
+23:12:04 | - Get table data
+23:12:07 | - Click 'next' button on table
+23:12:08 | - Click 'next' button on table
+23:12:09 | - Go to the first page
+23:12:09 | - Comparing: 
+Actual:    ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+Expected:  ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+23:12:09 | Step 4: Clear search
+23:12:09 | - Clear search input
+23:12:09 | Verify column still sorts alphabetically z-a
+23:12:09 | - Get table data
+23:12:11 | - Click 'next' button on table
+23:12:13 | - Click 'next' button on table
+23:12:13 | - Go to the first page
+23:12:13 | - Comparing: 
+Actual:    ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+Expected:  ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+23:12:14 | - Stop recording screen

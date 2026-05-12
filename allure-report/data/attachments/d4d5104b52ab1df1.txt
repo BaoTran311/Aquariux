@@ -1,0 +1,44 @@
+20:25:29 | - Running test case: test_UG_EDT_TC02_positive_text_fields_validation.py
+20:25:29 | - Get table data
+20:25:30 | - Go to the first page
+20:25:30 | [Setup] View row: 'PBCC_Auto_xizSVlkx' > Edit
+20:25:30 | - Get table data
+20:25:31 | - Found record: 'PBCC_Auto_xizSVlkx' column: 'Name' (page:1)
+20:25:31 | - View row: 'PBCC_Auto_xizSVlkx' (attempt:1)
+20:25:31 | - Click 'Edit' button
+20:25:32 | - Start recording screen
+20:25:32 | Step 1: Input then clear name
+20:25:32 | - Input name: 'xwPK_Auto/xikNPhzA'
+20:25:32 | - Clear input name
+20:25:32 | - Input description: ''
+20:25:32 | Verify error validation: 'Name is required'
+20:25:32 | Step 2: Input name exceeding 50 chars
+20:25:32 | - Input name: 'oYCV_Auto/pUpstwPGlmCICIsvxKtPENVqOsFlRTUXlOrhtslRdJToeQIWdb'
+20:25:32 | Verify name auto-trimmed to 50 chars
+20:25:32 | Step 3: Input NOT ALLOW special chars: '{(<%~$,^;!?&={>=%}@&'
+20:25:32 | - Input name: '{(<%~$,^;!?&={>=%}@&'
+20:25:32 | Verify error validation: 'Special characters are not allowed except (.), (_), (-), and (/)'
+20:25:32 | Step 4: Input name with leading spaces
+20:25:32 | - Input name: '      bQMz_Auto/fKcpLvFz'
+20:25:32 | Verify error validation: 'Special characters are not allowed except (.), (_), (-), and (/)'
+20:25:32 | Step 5: Input name with trailing spaces
+20:25:32 | - Input name: '        JwgN_Auto/UykTyZFH'
+20:25:32 | Verify error validation: 'Special characters are not allowed except (.), (_), (-), and (/)'
+20:25:32 | Step 6: Input ALLOW chars: '._-/'
+20:25:32 | - Input name: '._-/'
+20:25:32 | Verify no error validation is displayed
+20:25:32 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-input-name-field-error"]'): TRUE
+20:25:32 | Step 7: Input then clear desc
+20:25:32 | - Input description: 'xwzN_Auto/IcvSkVHI'
+20:25:32 | - Clear input description
+20:25:32 | Verify no error validation is displayed for optional field
+20:25:32 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-field-description-error"]'): TRUE
+20:25:32 | Verify label: 'Describe the user group'
+20:25:32 | Step 8: Input desc exceeding 200 chars
+20:25:32 | - Input description: 'wGec_Auto/QQXtFcagxLgcXpVbNaosDJlhZeSRhKJHlJCPWAAiAROrQBJSxomcZXiuAbJuDdxAdjBxtCeoMgZLCgzsGSKyOvTliOCkZDcrNTJBHOwvFGfcgTBTDnVoZPQlkKubiFXqDYcPrbFEopyeIPLIMUYlQAjckNPQEfKCnaLqsUbHOzrLufDVnOtYlkVaALDoZjZAYrOnGjwR'
+20:25:32 | Verify desc auto-trimmed to 200 chars
+20:25:32 | Step 9: Input valid description
+20:25:32 | - Input description: 'jaPv_Auto/nIKAdQwM'
+20:25:32 | Verify no error validation is displayed
+20:25:32 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-field-description-error"]'): TRUE
+20:25:33 | - Stop recording screen

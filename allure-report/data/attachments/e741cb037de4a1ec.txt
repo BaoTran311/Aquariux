@@ -1,0 +1,27 @@
+23:32:49 | - Running test case: test_TA_TBL_TC14_positive_filter_combine_search.py
+23:32:49 | - Start recording screen
+23:32:49 | - Get table data
+23:32:51 | - Go to the first page
+23:32:51 | Step 1: Search by: 'Name', with: 'mUJg_Auto-RlGbZgun'
+23:32:51 | - Search for: 'mUJg_Auto-RlGbZgun'
+23:32:51 | Step 2: Select 'Dealer' option
+23:32:51 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+23:32:51 | - Open dropdown Type
+23:32:51 | - Select Type
+23:32:51 | Step 3: Select 'Demo' option
+23:32:51 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+23:32:51 | - Open dropdown Mode
+23:32:52 | - Select Mode
+23:32:52 | Step 4: Select 'All Status' option
+23:32:52 | Verify table data reset combine filter (combine 'Dealer' and 'Demo' and 'All Status') with search: 'mUJg_Auto-RlGbZgun'
+23:32:52 | Step 5: Refresh page
+23:32:53 | Verify Default state of search bar: Search account, name or email
+23:32:53 | Verify Default state of Type: All Type
+23:32:53 | Verify Default state of Mode: All Mode
+23:32:53 | Verify Default state of Status: All Status
+23:32:53 | Verify table data reset (no filter)
+23:32:53 | - Get table data
+23:32:55 | - Go to the first page
+23:32:55 | - Comparing 10 items
+23:32:55 | [Teardown] Refresh the page
+23:32:57 | - Stop recording screen

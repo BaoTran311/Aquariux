@@ -1,0 +1,37 @@
+23:03:25 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:03:25 | - Start recording screen
+23:03:25 | - Get table data
+23:03:28 | - Click 'next' button on table
+23:03:29 | - Click 'next' button on table
+23:03:30 | - Go to the first page
+23:03:30 | Step 1: Search by: 'Email', with untrimmed spaces: '      auto_jo4ec6apcg9@aquariux.com'
+23:03:30 | - Search for: '      auto_jo4ec6apcg9@aquariux.com'
+23:03:30 | Verify search is not auto-trimmed — empty state label is shown ('      auto_jo4ec6apcg9@aquariux.com')
+23:03:31 | Verify button 'Add Asset Class' is displayed ('      auto_jo4ec6apcg9@aquariux.com')
+23:03:31 | Verify footer label: 'Showing 0 to 0 of 0 items' ('      auto_jo4ec6apcg9@aquariux.com')
+23:03:31 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+23:03:31 | Step 2: Clear search
+23:03:31 | - Clear search input
+23:03:31 | Verify table data reset ('      auto_jo4ec6apcg9@aquariux.com')
+23:03:31 | - Get table data
+23:03:33 | - Click 'next' button on table
+23:03:35 | - Click 'next' button on table
+23:03:35 | - Go to the first page
+23:03:35 | - Comparing 84 items
+23:03:35 | Step 3: Search by: 'Email', with untrimmed spaces: 'auto_jo4ec6apcg9@aquariux.com      '
+23:03:35 | - Search for: 'auto_jo4ec6apcg9@aquariux.com      '
+23:03:36 | Verify search is not auto-trimmed — empty state label is shown ('auto_jo4ec6apcg9@aquariux.com      ')
+23:03:37 | Verify button 'Add Asset Class' is displayed ('auto_jo4ec6apcg9@aquariux.com      ')
+23:03:37 | Verify footer label: 'Showing 0 to 0 of 0 items' ('auto_jo4ec6apcg9@aquariux.com      ')
+23:03:37 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+23:03:37 | Step 4: Clear search
+23:03:37 | - Clear search input
+23:03:37 | Verify table data reset ('auto_jo4ec6apcg9@aquariux.com      ')
+23:03:37 | - Get table data
+23:03:39 | - Click 'next' button on table
+23:03:40 | - Click 'next' button on table
+23:03:41 | - Go to the first page
+23:03:41 | - Comparing 84 items
+23:03:41 | [Teardown] Clear search field
+23:03:41 | - Clear search input
+23:03:42 | - Stop recording screen

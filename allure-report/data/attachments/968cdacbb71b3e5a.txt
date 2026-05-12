@@ -1,0 +1,22 @@
+01:54:16 | - Running test case: test_UG_ADD_TC13_positive_number_fields_validation.py
+01:54:16 | - Start recording screen
+01:54:16 | [Setup] Click on 'Add User Group' button
+01:54:16 | - Click 'Add User Group' button
+01:54:16 | Step 1: Input negative number: -51
+01:54:16 | - Input stop out level: -51
+01:54:16 | Verify Not accept negative number and show 51
+01:54:16 | Step 2: Input more than 2 decimal: 29.384348930426945
+01:54:16 | - Input stop out level: 29.384348930426945
+01:54:17 | - Click outside to close the panel
+01:54:18 | Verify auto complete 2 decimal
+01:54:18 | Step 3: Input non-numeric: |`%|-
+01:54:18 | - Input stop out level: '|`%|-'
+01:54:18 | - Click outside to close the panel
+01:54:18 | Verify placeholder restored
+01:54:18 | Step 4: Input valid number: (7, 2)
+01:54:18 | - Input stop out level: 7
+01:54:18 | Verify no error validation is displayed
+01:54:18 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-field-stop-out-level-error"]'): TRUE
+01:54:18 | [Teardown] Click 'x' icon to close the panel
+01:54:18 | - Click 'x' icon
+01:54:20 | - Stop recording screen

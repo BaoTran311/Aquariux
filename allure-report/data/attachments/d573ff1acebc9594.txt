@@ -1,0 +1,36 @@
+00:34:59 | - Running test case: test_UG_ADD_TC06_positive_success_creation.py
+00:34:59 | - Start recording screen
+00:35:00 | - Get table data
+00:35:01 | - Go to the first page
+00:35:01 | [Setup] Total rows data: 19
+00:35:01 | Step 1: Search with: 'ceGVpYQKPKEWFaagIlZp' (non-existent keyword)
+00:35:01 | - Search for: 'ceGVpYQKPKEWFaagIlZp'
+00:35:02 | Step 2: Click button 'Add User Group' on table
+00:35:02 | - Click on add button
+00:35:02 | Step 3: submit form with: 'name: AutoJDasShYM-do, description: XDxgaxrLhR - description, position_type: Hedge, book_type: A-Book, margin_call_level: 34.69, stop_out_level: 89.93, commission: 1.09'
+00:35:02 | - Input name: 'AutoJDasShYM-do'
+00:35:02 | - Input description: 'XDxgaxrLhR - description'
+00:35:02 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:35:02 | - Open dropdown Book Type
+00:35:02 | - Select Book Type
+00:35:02 | - Input margin call level: 34.69
+00:35:02 | - Input stop out level: 89.93
+00:35:02 | - Input commission: 1.09
+00:35:02 | - Click 'Save' button
+00:35:02 | Verify toast message: 'The user group has been created successfully'
+00:35:03 | Verify footer label +1: 'Showing 1 to 20 of 20 items'
+00:35:08 | - Wait for 'Showing 1 to 20 of 20 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): FALSE
+00:35:08 | ✘ Check Failed !
+Expected text to be: 'Showing 1 to 20 of 20 items', got: 'Showing 0 to 0 of 0 items'
+00:35:08 | Step 4: Search for newly created record: 'AutoJDasShYM-do'
+00:35:08 | - Clear search input
+00:35:08 | - Search for: 'AutoJDasShYM-do'
+00:35:09 | Verify newly created data on table
+00:35:09 | - Get table data
+00:35:10 | Step 5: View details of the newly created record
+00:35:10 | - Get table data
+00:35:11 | - Found record: 'AutoJDasShYM-do' column: 'Name' (page:1)
+00:35:11 | - View row: 'AutoJDasShYM-do' (attempt:1)
+00:35:11 | Verify details matches with created data
+00:35:12 | [Teardown] Refresh the page
+00:35:14 | - Stop recording screen
