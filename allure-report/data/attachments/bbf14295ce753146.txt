@@ -1,0 +1,16 @@
+22:10:44 | - Running test case: test_TA_VIW_TC05_positive_close_panel.py
+22:10:44 | - Start recording screen
+22:10:44 | - Get table data
+22:10:46 | - Go to the first page
+22:10:46 | Step 1: Action on row: 'wMlT_Auto-XWsBWPWg' > View
+22:10:46 | - Get table data
+22:10:47 | - Found record: 'wMlT_Auto-XWsBWPWg' column: 'Name' (page:1)
+22:10:47 | - View row: 'wMlT_Auto-XWsBWPWg' (attempt:1)
+22:10:47 | Step 2: Click 'x'
+22:10:47 | - Click 'x' icon
+22:10:47 | Verify panel closed
+22:10:48 | - Check invisibility of locator: ('css selector', 'span[data-testid$="-sheet-title"]'): TRUE
+22:10:48 | [Teardown] Click 'x' icon to close the panel
+22:10:48 | - Click 'x' icon
+22:10:49 | 🟡 Element not found for ('css selector', "button[data-slot='sheet-close']"): TimeoutException after 1(s)
+22:10:50 | - Stop recording screen

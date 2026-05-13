@@ -1,0 +1,57 @@
+00:36:00 | - Running test case: test_UG_ADD_TC07_positive_cross_browser_sync.py
+00:36:00 | - Start recording screen
+00:36:00 | - Get table data
+00:36:02 | - Go to the first page
+00:36:02 | [Setup] Total rows data: 24
+00:36:02 | [Setup] Click on 'Add User Group' button
+00:36:02 | - Click 'Add User Group' button
+00:36:03 | - Registered driver under 'web_secondary' (total: 2)
+00:36:03 | - Added web driver 'secondary' to driver_list (total: 2)
+00:36:03 | [Setup] Login on browser 2
+00:36:06 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+00:36:06 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+00:36:06 | - Input password: 'Autotest@12345'
+00:36:07 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+00:36:07 | - Click on login button
+00:36:07 | - Waiting for new code generated (old: '399816') ...
+00:36:30 | - New code generated ! (802265)
+00:36:31 | - Input TOTP code: '802265'
+00:36:32 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+00:36:32 | - Expand item: 'Accounts'
+00:36:32 | [Setup] Navigate Asset Classes Page
+00:36:32 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+00:36:32 | - Item: 'Accounts' already 'expand'
+00:36:32 | Step 1: submit form with: 'name: aWOV_Auto/JbVddMCe, description: syAjUflePp - description, position_type: Hedge, book_type: A-Book, margin_call_level: 47.97, stop_out_level: 79.73, commission: 1.3'
+00:36:32 | - Input name: 'aWOV_Auto/JbVddMCe'
+00:36:32 | - Input description: 'syAjUflePp - description'
+00:36:32 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:36:32 | - Open dropdown Book Type
+00:36:32 | - Select Book Type
+00:36:33 | - Input margin call level: 47.97
+00:36:33 | - Input stop out level: 79.73
+00:36:33 | - Input commission: 1.3
+00:36:33 | - Click 'Save' button
+00:36:33 | Verify toast message: 'The user group has been created successfully'
+00:36:34 | Verify table footer remains un-changed: 'Showing 1 to 24 of 24 items' (browser 2)
+00:36:34 | - Wait for 'Showing 1 to 24 of 24 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+00:36:34 | Step 2: Search for newly created record: 'aWOV_Auto/JbVddMCe' (browser 2)
+00:36:34 | - Search for: 'aWOV_Auto/JbVddMCe'
+00:36:34 | Verify newly created data on table (browser 2)
+00:36:34 | - Get table data
+00:36:35 | Step 3: View details of the newly created record (browser 2)
+00:36:35 | - Get table data
+00:36:37 | - Found record: 'aWOV_Auto/JbVddMCe' column: 'Name' (page:1)
+00:36:37 | - View row: 'aWOV_Auto/JbVddMCe' (attempt:1)
+00:36:37 | Verify details matches with created data (browser 2)
+00:36:37 | Step 4: Clear search bar
+00:36:37 | - Click 'x' icon
+00:36:37 | - Clear search input
+00:36:38 | Verify footer label +1: 'Showing 1 to 25 of 25 items' (browser 2)
+00:36:38 | - Wait for 'Showing 1 to 25 of 25 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+00:36:38 | [Teardown] Refresh the page
+00:36:39 | [Teardown] Quit Browser 2
+00:36:39 | - Quit driver 'web_secondary'
+00:36:40 | - Stop recording screen
+00:36:40 | [Teardown] Quit Web Driver
+00:36:40 | - Quit driver 'web_main'
+00:36:40 | - All drivers quit and registry cleared

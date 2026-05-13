@@ -1,0 +1,33 @@
+22:36:51 | - Running test case: test_UG_TBL_TC04_positive_table_pagination_page_number.py
+22:36:51 | - Start recording screen
+22:36:52 | - Get table data
+22:36:53 | - Click 'next' button on table
+22:36:55 | - Click 'next' button on table
+22:36:56 | - Go to the first page
+22:36:56 | Step 1: Randomly jump to page number: 3
+22:36:56 | - Click on page number 3 button
+22:36:56 | Verify page number 3 has selected color
+22:36:56 | Verify footer label: 'Showing 81 to 120 of 120 items'
+22:36:56 | - Wait for 'Showing 81 to 120 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:56 | Verify table data (page: 3)
+22:36:56 | - Get table data
+22:36:58 | - Comparing 40 items
+22:36:58 | Verify next button is disabled on the last page
+22:36:58 | Step 2: Randomly jump to page number: 2
+22:36:58 | - Click on page number 2 button
+22:36:58 | Verify page number 2 has selected color
+22:36:58 | Verify footer label: 'Showing 41 to 80 of 120 items'
+22:36:58 | - Wait for 'Showing 41 to 80 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:58 | Verify table data (page: 2)
+22:36:58 | - Get table data
+22:36:59 | - Comparing 40 items
+22:36:59 | Step 3: Randomly jump to page number: 1
+22:36:59 | - Click on page number 1 button
+22:36:59 | Verify page number 1 has selected color
+22:37:00 | Verify footer label: 'Showing 1 to 40 of 120 items'
+22:37:00 | - Wait for 'Showing 1 to 40 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:37:00 | Verify table data (page: 1)
+22:37:00 | - Get table data
+22:37:02 | - Comparing 40 items
+22:37:02 | Verify prev button is disabled on the first page
+22:37:03 | - Stop recording screen

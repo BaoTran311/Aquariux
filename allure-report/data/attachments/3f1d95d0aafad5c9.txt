@@ -1,0 +1,146 @@
+10:53:25 | - Running test case: test_TA_ADD_TC09_positive_duplicate_creation.py
+10:53:25 | - Start recording screen
+10:53:25 | - Get table data
+10:53:28 | - Go to the first page
+10:53:28 | [Setup] Total rows data: 9
+10:53:28 | [API] Send API: GET /backoffice/v1/users/available-users
+10:53:28 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/users/available-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1NTc4NTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTc5NzU4LCJpYXQiOjE3Nzg1NTc4NTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA5MjVlMGEwLTVmZGItNDdkNS1hM2Y5LTI0N2MxNjAyMmU3ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.GjzeXLhoPlrWh9h-d-JaBvVJYXXd_u-Gp4GGiSxcSkut_Ozw38NcOqQlAiAcRfyDGmPB0QvT0-INf7Sw_k1z_GOQ286leSW2AJGqJZkCaAtQaZ5DvQb-Jp_CdDc4uq1vkHGf4SAuhmJLdHE-_iMSypOfD7DTK66Fdtat5LSCGfJnQkHajtll-WoUjZgrSeGuq3KUvTtLj2EWoaZgrZUYBHLi7nnCm83lv06eJKhODDVRgElFRh1dALrkeraT-KLkhYsikvgIxbAOwZWVRwnEfWG4OaS04uI8lRbNjGnaxT7yivVDX8cHWIC8s8cHUck6GfSezDt5RXzb_ltDnrMfHg'
+
+
+10:53:28 | [Setup] Click on 'Add Account' button
+10:53:28 | - Click 'Add Account' button
+10:53:29 | Step 1: Submit form: 'trading_user: zWcj_Auto-VNvlZmyd, account_type: Trader, account_mode: Live, leverage: 52, currency: USD - US Dollar, trade_permission: True, status: Active'
+10:53:30 | - Check invisibility of locator: ('css selector', 'div[role="option"]'): TRUE
+10:53:30 | - Open dropdown Name
+10:53:31 | - Select Name
+10:53:31 | - Input leverage: 52
+10:53:31 | - Set trade permission: enable
+10:53:32 | - Set status: 'Active'
+10:53:32 | - Click 'Save' button
+10:53:32 | Verify success toast
+10:53:33 | Step 2: Sort DESC by Created Date
+10:53:33 | - Sort by: 'Created Date'
+10:53:35 | - Sort by: 'Created Date'
+10:53:36 | - Get table data
+10:53:38 | - Go to the first page
+10:53:39 | 
+Table Data:
+┌─────────────────┬────────────────────┬────────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬──────────────────────┐
+│ account_id      │ name               │ email                          │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date         │
+├─────────────────┼────────────────────┼────────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼──────────────────────┤
+│ AQX-TA-00001658 │ zWcj_Auto-VNvlZmyd │ auto_2stod3cq4mqx@aquariux.com │ 1:52         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 12 May 2026 03:53:33 │
+│ AQX-TA-00001299 │ binh               │ bqn@yopmail.com                │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 11 May 2026 17:00:04 │
+│ AQX-TA-00001298 │ binh               │ bqn@yopmail.com                │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 11 May 2026 17:00:04 │
+│ AQX-TA-00001296 │ binh               │ bqn@yopmail.com                │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:03 │
+│ AQX-TA-00001293 │ (name)12           │ name@gmail.com                 │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:03 │
+│ AQX-TA-00001292 │ AtGd_Auto/kvsEWCTn │ auto_4p9hxtkp@aquariux.com     │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 11 May 2026 17:00:02 │
+│ AQX-TA-00001291 │ OSqo_Auto/KJNsfHHm │ auto_wmmsecng@aquariux.com     │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:02 │
+│ AQX-TA-00001290 │ (name)12           │ name@gmail.com                 │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:02 │
+│ AQX-TA-00001288 │ (name)12           │ name@gmail.com                 │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:01 │
+│ AQX-TA-00001283 │ (name)12           │ name@gmail.com                 │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 11 May 2026 17:00:00 │
+└─────────────────┴────────────────────┴────────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴──────────────────────┘
+10:53:39 | [Setup] Click on 'Add Account' button
+10:53:39 | - Click 'Add Account' button
+10:53:39 | Step 3: Submit form: 'trading_user: zWcj_Auto-VNvlZmyd, account_type: Trader, account_mode: Live, leverage: 52, currency: USD - US Dollar, trade_permission: True, status: Active'
+10:53:40 | - Check invisibility of locator: ('css selector', 'div[role="option"]'): TRUE
+10:53:40 | - Open dropdown Name
+10:53:41 | - Select Name
+10:53:41 | - Input leverage: 52
+10:53:42 | - Set trade permission: enable
+10:53:42 | - Set status: 'Active'
+10:53:42 | - Click 'Save' button
+10:53:43 | Verify success toast
+10:53:43 | Step 4: Sort DESC by Created Date
+10:53:43 | - Sort by: 'Created Date'
+10:53:45 | - Sort by: 'Created Date'
+10:53:46 | - Get table data
+10:53:48 | - Go to the first page
+10:53:49 | 
+Table Data:
+┌─────────────────┬────────────────────┬────────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬──────────────────────┐
+│ account_id      │ name               │ email                          │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date         │
+├─────────────────┼────────────────────┼────────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼──────────────────────┤
+│ AQX-TA-00001659 │ zWcj_Auto-VNvlZmyd │ auto_2stod3cq4mqx@aquariux.com │ 1:52         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 12 May 2026 03:53:43 │
+│ AQX-TA-00001658 │ zWcj_Auto-VNvlZmyd │ auto_2stod3cq4mqx@aquariux.com │ 1:52         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 12 May 2026 03:53:33 │
+│ AQX-TA-00001299 │ binh               │ bqn@yopmail.com                │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 11 May 2026 17:00:04 │
+│ AQX-TA-00001298 │ binh               │ bqn@yopmail.com                │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 11 May 2026 17:00:04 │
+│ AQX-TA-00001296 │ binh               │ bqn@yopmail.com                │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:03 │
+│ AQX-TA-00001293 │ (name)12           │ name@gmail.com                 │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:03 │
+│ AQX-TA-00001292 │ AtGd_Auto/kvsEWCTn │ auto_4p9hxtkp@aquariux.com     │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 11 May 2026 17:00:02 │
+│ AQX-TA-00001291 │ OSqo_Auto/KJNsfHHm │ auto_wmmsecng@aquariux.com     │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:02 │
+│ AQX-TA-00001290 │ (name)12           │ name@gmail.com                 │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:02 │
+│ AQX-TA-00001288 │ (name)12           │ name@gmail.com                 │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Inactive     │ 11 May 2026 17:00:01 │
+│ AQX-TA-00001283 │ (name)12           │ name@gmail.com                 │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 11 May 2026 17:00:00 │
+└─────────────────┴────────────────────┴────────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴──────────────────────┘
+10:53:49 | Verify Account ID is different
+10:53:49 | ✘ Check Failed !
+Expected: 'AQX-TA-00001283', got: 'AQX-TA-00001283'
+10:53:49 | [API] Send API: GET /backoffice/v1/accounts
+10:53:49 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1NTc4NTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTc5NzU4LCJpYXQiOjE3Nzg1NTc4NTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA5MjVlMGEwLTVmZGItNDdkNS1hM2Y5LTI0N2MxNjAyMmU3ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.GjzeXLhoPlrWh9h-d-JaBvVJYXXd_u-Gp4GGiSxcSkut_Ozw38NcOqQlAiAcRfyDGmPB0QvT0-INf7Sw_k1z_GOQ286leSW2AJGqJZkCaAtQaZ5DvQb-Jp_CdDc4uq1vkHGf4SAuhmJLdHE-_iMSypOfD7DTK66Fdtat5LSCGfJnQkHajtll-WoUjZgrSeGuq3KUvTtLj2EWoaZgrZUYBHLi7nnCm83lv06eJKhODDVRgElFRh1dALrkeraT-KLkhYsikvgIxbAOwZWVRwnEfWG4OaS04uI8lRbNjGnaxT7yivVDX8cHWIC8s8cHUck6GfSezDt5RXzb_ltDnrMfHg'
+
+
+10:53:49 | [Teardown] Send API to delete the created account: 019e1a51-b7d9-7d71-ae8a-7ed974c487dc
+10:53:49 | [API] Send API: DELETE /backoffice/v1/accounts/019e1a51-b7d9-7d71-ae8a-7ed974c487dc
+10:53:50 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e1a51-b7d9-7d71-ae8a-7ed974c487dc' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1NTc4NTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTc5NzU4LCJpYXQiOjE3Nzg1NTc4NTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA5MjVlMGEwLTVmZGItNDdkNS1hM2Y5LTI0N2MxNjAyMmU3ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.GjzeXLhoPlrWh9h-d-JaBvVJYXXd_u-Gp4GGiSxcSkut_Ozw38NcOqQlAiAcRfyDGmPB0QvT0-INf7Sw_k1z_GOQ286leSW2AJGqJZkCaAtQaZ5DvQb-Jp_CdDc4uq1vkHGf4SAuhmJLdHE-_iMSypOfD7DTK66Fdtat5LSCGfJnQkHajtll-WoUjZgrSeGuq3KUvTtLj2EWoaZgrZUYBHLi7nnCm83lv06eJKhODDVRgElFRh1dALrkeraT-KLkhYsikvgIxbAOwZWVRwnEfWG4OaS04uI8lRbNjGnaxT7yivVDX8cHWIC8s8cHUck6GfSezDt5RXzb_ltDnrMfHg' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-12T03:53:50.282668160Z"
+}
+
+
+10:53:50 | [API] Send API: GET /backoffice/v1/accounts
+10:53:50 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1NTc4NTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTc5NzU4LCJpYXQiOjE3Nzg1NTc4NTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA5MjVlMGEwLTVmZGItNDdkNS1hM2Y5LTI0N2MxNjAyMmU3ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.GjzeXLhoPlrWh9h-d-JaBvVJYXXd_u-Gp4GGiSxcSkut_Ozw38NcOqQlAiAcRfyDGmPB0QvT0-INf7Sw_k1z_GOQ286leSW2AJGqJZkCaAtQaZ5DvQb-Jp_CdDc4uq1vkHGf4SAuhmJLdHE-_iMSypOfD7DTK66Fdtat5LSCGfJnQkHajtll-WoUjZgrSeGuq3KUvTtLj2EWoaZgrZUYBHLi7nnCm83lv06eJKhODDVRgElFRh1dALrkeraT-KLkhYsikvgIxbAOwZWVRwnEfWG4OaS04uI8lRbNjGnaxT7yivVDX8cHWIC8s8cHUck6GfSezDt5RXzb_ltDnrMfHg'
+
+
+10:53:50 | [Teardown] Send API to delete the created account: 019e1a51-8ff8-7daa-962d-6663fd73e0b6
+10:53:50 | [API] Send API: DELETE /backoffice/v1/accounts/019e1a51-8ff8-7daa-962d-6663fd73e0b6
+10:53:50 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e1a51-8ff8-7daa-962d-6663fd73e0b6' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1NTc4NTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTc5NzU4LCJpYXQiOjE3Nzg1NTc4NTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA5MjVlMGEwLTVmZGItNDdkNS1hM2Y5LTI0N2MxNjAyMmU3ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.GjzeXLhoPlrWh9h-d-JaBvVJYXXd_u-Gp4GGiSxcSkut_Ozw38NcOqQlAiAcRfyDGmPB0QvT0-INf7Sw_k1z_GOQ286leSW2AJGqJZkCaAtQaZ5DvQb-Jp_CdDc4uq1vkHGf4SAuhmJLdHE-_iMSypOfD7DTK66Fdtat5LSCGfJnQkHajtll-WoUjZgrSeGuq3KUvTtLj2EWoaZgrZUYBHLi7nnCm83lv06eJKhODDVRgElFRh1dALrkeraT-KLkhYsikvgIxbAOwZWVRwnEfWG4OaS04uI8lRbNjGnaxT7yivVDX8cHWIC8s8cHUck6GfSezDt5RXzb_ltDnrMfHg' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-12T03:53:51.100980245Z"
+}
+
+
+10:53:50 | [Teardown] Refresh the page
+10:53:53 | - Stop recording screen

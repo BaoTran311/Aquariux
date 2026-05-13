@@ -1,0 +1,20 @@
+01:03:16 | - Running test case: test_UG_DEL_TC02_positive_cancel_from_edit_panel.py
+01:03:16 | - Start recording screen
+01:03:16 | - Get table data
+01:03:18 | - Go to the first page
+01:03:18 | - Get table data
+01:03:19 | - Go to the first page
+01:03:19 | [Setup] Total rows data: 27
+01:03:19 | Step 1: View row: 'aiZh_Auto_KfVPcHVs' > Edit
+01:03:19 | - Get table data
+01:03:21 | - Found record: 'aiZh_Auto_KfVPcHVs' column: 'Name' (page:1)
+01:03:21 | - View row: 'aiZh_Auto_KfVPcHVs' (attempt:1)
+01:03:21 | - Click 'Edit' button
+01:03:22 | Step 2: Click on 'Delete' button
+01:03:22 | - Click 'Delete' button
+01:03:22 | Verify delete confirmation title: 'Permanently delete (aiZh_Auto_KfVPcHVs)?'
+01:03:22 | Verify delete confirmation content: 'Deleting this user group is permanent and cannot be undone. This may affect historical records and reports.\nPlease only proceed if you are certain this user group is no longer needed.'
+01:03:23 | Step 3: Click outside to close the modal
+01:03:23 | Verify delete confirmation title: 'Permanently delete (aiZh_Auto_KfVPcHVs)?'
+01:03:23 | [Teardown] Refresh the page
+01:03:25 | - Stop recording screen

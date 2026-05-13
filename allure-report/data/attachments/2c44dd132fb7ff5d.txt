@@ -1,0 +1,27 @@
+01:03:08 | - Running test case: test_UG_DEL_TC02_positive_cancel_from_edit_panel.py
+01:03:08 | - Start recording screen
+01:03:08 | - Get table data
+01:03:09 | - Go to the first page
+01:03:09 | - Get table data
+01:03:11 | - Go to the first page
+01:03:11 | [Setup] Total rows data: 27
+01:03:11 | Step 1: View row: 'Dsjb_Auto-GIIsuoap' > Edit
+01:03:11 | - Get table data
+01:03:12 | - Found record: 'Dsjb_Auto-GIIsuoap' column: 'Name' (page:1)
+01:03:12 | - View row: 'Dsjb_Auto-GIIsuoap' (attempt:1)
+01:03:12 | - Click 'Edit' button
+01:03:12 | Step 2: Click on 'Delete' button
+01:03:12 | - Click 'Delete' button
+01:03:13 | Verify delete confirmation title: 'Permanently delete (Dsjb_Auto-GIIsuoap)?'
+01:03:13 | Verify delete confirmation content: 'Deleting this user group is permanent and cannot be undone. This may affect historical records and reports.\nPlease only proceed if you are certain this user group is no longer needed.'
+01:03:14 | Step 3: Click on button 'Maybe Later'
+01:03:14 | - Click 'Maybe Later' button
+01:03:14 | Verify modal is closed
+01:03:14 | - Check invisibility of locator: ('css selector', 'span[data-slot="dialog-title"]'): TRUE
+01:03:14 | Verify 'Edit User Group' remains open
+01:03:14 | Step 4: Close the panel
+01:03:14 | - Click 'x' icon
+01:03:14 | Verify footer remains un-changed
+01:03:14 | - Wait for 'Showing 1 to 27 of 27 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+01:03:14 | [Teardown] Refresh the page
+01:03:16 | - Stop recording screen

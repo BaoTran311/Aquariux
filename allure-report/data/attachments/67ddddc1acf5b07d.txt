@@ -1,0 +1,26 @@
+10:51:27 | - Running test case: test_TA_ADD_TC02_positive_trading_user_validation.py
+10:51:27 | [API] Send API: GET /backoffice/v1/users/available-users
+10:51:28 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/users/available-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1NTc4NTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTc5NzU4LCJpYXQiOjE3Nzg1NTc4NTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA5MjVlMGEwLTVmZGItNDdkNS1hM2Y5LTI0N2MxNjAyMmU3ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.GjzeXLhoPlrWh9h-d-JaBvVJYXXd_u-Gp4GGiSxcSkut_Ozw38NcOqQlAiAcRfyDGmPB0QvT0-INf7Sw_k1z_GOQ286leSW2AJGqJZkCaAtQaZ5DvQb-Jp_CdDc4uq1vkHGf4SAuhmJLdHE-_iMSypOfD7DTK66Fdtat5LSCGfJnQkHajtll-WoUjZgrSeGuq3KUvTtLj2EWoaZgrZUYBHLi7nnCm83lv06eJKhODDVRgElFRh1dALrkeraT-KLkhYsikvgIxbAOwZWVRwnEfWG4OaS04uI8lRbNjGnaxT7yivVDX8cHWIC8s8cHUck6GfSezDt5RXzb_ltDnrMfHg'
+
+
+10:51:28 | - Start recording screen
+10:51:28 | [Setup] Click on 'Add Account' button
+10:51:28 | - Click 'Add Account' button
+10:51:28 | Step 1: Click 'Save'
+10:51:28 | - Click 'Save' button
+10:51:29 | Verify error validation: 'Trading user is required'
+10:51:29 | Step 2: Open Trading User dropdown
+10:51:29 | - Open dropdown Name
+10:51:30 | Verify options match available trading user
+10:51:30 | - Comparing: 
+Actual:    ['ablQ_Auto.bfzETPWE', 'AtGd_Auto/kvsEWCTn', 'binh', 'CH', 'dpQx_Auto-dUAVuBJC', '(name)12', 'OSqo_Auto/KJNsfHHm', 'wMlT_Auto-XWsBWPWg', 'zWcj_Auto-VNvlZmyd']
+Expected:  ['ablQ_Auto.bfzETPWE', 'AtGd_Auto/kvsEWCTn', 'binh', 'CH', 'dpQx_Auto-dUAVuBJC', '(name)12', 'OSqo_Auto/KJNsfHHm', 'wMlT_Auto-XWsBWPWg', 'zWcj_Auto-VNvlZmyd']
+10:51:30 | [Teardown] Refresh the page
+10:51:34 | - Stop recording screen

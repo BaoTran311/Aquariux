@@ -1,0 +1,85 @@
+20:28:40 | - Running test case: test_UG_EDT_TC08_positive_close_panel.py
+20:28:40 | - Start recording screen
+20:28:40 | [API] Send API: POST /backoffice/v1/user-groups
+20:28:41 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 192' 
+--data-raw '{"name": "lyzx_Auto/WdKUOuin", "description": "hMHcAbdPgq - description", "positionType": "HEDGE", "bookType": "A_BOOK", "marginCallLevel": 94.47, "stopOutLevel": 38.35, "commissionRate": 2.0}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:28:41.016685580Z"
+}
+
+
+20:28:41 | [API] Send API: GET /backoffice/v1/user-groups
+20:28:41 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ'
+
+
+20:28:41 | [Setup] Send API to create new user group: name: lyzx_Auto/WdKUOuin, description: hMHcAbdPgq - description, position_type: Hedge, book_type: A-Book, margin_call_level: 94.47, stop_out_level: 38.35, commission: 2.0, created_date: 09 May 2026 13:28:41, id: 019e0ced-0733-710f-be2e-5fee9cbfcb75
+20:28:41 | [Setup] Refresh page to load changes
+20:28:42 | Step 1: View row: 'lyzx_Auto/WdKUOuin' > Edit
+20:28:42 | - Get table data
+20:28:44 | - Found record: 'lyzx_Auto/WdKUOuin' column: 'Name' (page:1)
+20:28:44 | - View row: 'lyzx_Auto/WdKUOuin' (attempt:1)
+20:28:44 | - Click 'Edit' button
+20:28:45 | Step 2: Fill edit form
+20:28:45 | - Input name: 'DXNs_Auto/FjpvYWpU'
+20:28:45 | - Input description: 'AZimEnpRso - description'
+20:28:45 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+20:28:45 | - Open dropdown Book Type
+20:28:45 | - Select Book Type
+20:28:45 | - Input margin call level: 87.53
+20:28:45 | - Input stop out level: 90.3
+20:28:45 | - Input commission: 7.37
+20:28:46 | Step 3: Click icon 'x' to close the panel
+20:28:46 | - Click 'x' icon
+20:28:46 | Verify panel is closed
+20:28:46 | - Check invisibility of locator: ('css selector', 'span[data-testid$="-sheet-title"]'): TRUE
+20:28:46 | Step 4: View row: 'lyzx_Auto/WdKUOuin' > Edit again
+20:28:46 | - Get table data
+20:28:47 | - Found record: 'lyzx_Auto/WdKUOuin' column: 'Name' (page:1)
+20:28:47 | - View row: 'lyzx_Auto/WdKUOuin' (attempt:1)
+20:28:48 | - Click 'Edit' button
+20:28:48 | Verify values are not saved
+20:28:49 | Step 5: Close the panel
+20:28:49 | - Click 'x' icon
+20:28:49 | Step 6: Search for: 'lyzx_Auto/WdKUOuin'
+20:28:49 | - Search for: 'lyzx_Auto/WdKUOuin'
+20:28:49 | Verify table data remains un-changed
+20:28:49 | - Get table data
+20:28:50 | [Teardown] Refresh the page
+20:28:52 | Send API to delete the created asset: 019e0ced-0733-710f-be2e-5fee9cbfcb75
+20:28:52 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0ced-0733-710f-be2e-5fee9cbfcb75
+20:28:52 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0ced-0733-710f-be2e-5fee9cbfcb75' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:28:52.547981246Z"
+}
+
+
+20:28:53 | - Stop recording screen

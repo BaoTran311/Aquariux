@@ -1,0 +1,89 @@
+20:26:08 | - Running test case: test_UG_EDT_TC05_positive_cross_page_sync.py
+20:26:08 | - Start recording screen
+20:26:08 | [API] Send API: POST /backoffice/v1/user-groups
+20:26:09 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 192' 
+--data-raw '{"name": "jFot_Auto.PCIomTJP", "description": "drQNrqXgry - description", "positionType": "HEDGE", "bookType": "A_BOOK", "marginCallLevel": 97.97, "stopOutLevel": 37.13, "commissionRate": 6.8}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:26:09.035726907Z"
+}
+
+
+20:26:09 | [API] Send API: GET /backoffice/v1/user-groups
+20:26:09 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ'
+
+
+20:26:09 | [Setup] Send API to create new user group: name: jFot_Auto.PCIomTJP, description: drQNrqXgry - description, position_type: Hedge, book_type: A-Book, margin_call_level: 97.97, stop_out_level: 37.13, commission: 6.8, created_date: 09 May 2026 13:26:09, id: 019e0cea-b588-72d4-8137-a58e15d5eb5c
+20:26:09 | [Setup] Refresh page to load changes
+20:26:10 | Step 1: Edit record 'jFot_Auto.PCIomTJP' name to: 'rLHs_Auto.OHxBAzXw'
+20:26:10 | - Search for: 'jFot_Auto.PCIomTJP'
+20:26:11 | - View row: 'jFot_Auto.PCIomTJP' (attempt:1)
+20:26:13 | - Click 'Edit' button
+20:26:13 | - Input name: 'rLHs_Auto.OHxBAzXw'
+20:26:13 | - Click 'Save' button
+20:26:13 | Verify toast message: 'The user group has been updated successfully'
+20:26:13 | [Setup] Navigate to Trading Users Page
+20:26:13 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+20:26:13 | - Item: 'Accounts' already 'expand'
+20:26:13 | Step 2: Click on 'Add Trading User' button
+20:26:13 | - Click 'Add Trading User' button
+20:26:14 | [API] Send API: GET /backoffice/v1/user-groups/available-user-groups
+20:26:14 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/available-user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ'
+
+
+20:26:14 | Step 3: Open 'User Group' dropdown
+20:26:14 | - Open dropdown: User Group
+20:26:15 | Verify options match available user groups
+20:26:15 | - Comparing: 
+Actual:    ['BHNm_Auto-WVIrEbfI', 'IlhN_Auto_yarpEETE', 'lKKq_Auto.mAWhFBUL', 'PBCC_Auto_xizSVlkx', 'pLib_Auto_TlXFFGmD', 'PROFESSIONAL', 'rLHs_Auto.OHxBAzXw', 'SFPF_Auto-jlSwSEjR', 'XAEE_AUTO-YFXADWKZ', 'xsFe_Auto_PEYCyvPA']
+Expected:  ['BHNm_Auto-WVIrEbfI', 'IlhN_Auto_yarpEETE', 'lKKq_Auto.mAWhFBUL', 'PBCC_Auto_xizSVlkx', 'pLib_Auto_TlXFFGmD', 'PROFESSIONAL', 'rLHs_Auto.OHxBAzXw', 'SFPF_Auto-jlSwSEjR', 'XAEE_AUTO-YFXADWKZ', 'xsFe_Auto_PEYCyvPA']
+20:26:15 | Send API to delete the created asset: 019e0cea-b588-72d4-8137-a58e15d5eb5c
+20:26:15 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0cea-b588-72d4-8137-a58e15d5eb5c
+20:26:15 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0cea-b588-72d4-8137-a58e15d5eb5c' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:26:15.458429698Z"
+}
+
+
+20:26:15 | [Teardown] Refresh page
+20:26:21 | 🟡 Element not found for ('css selector', 'input[data-testid="user-group-list-search-input-search-name-input-input"]'): TimeoutException after 5(s)
+20:26:26 | 🟡 Element not found for ('css selector', 'input[data-testid="user-group-list-search-input-search-name-input-input"]'): TimeoutException after 5(s)
+20:26:26 | [Teardown] Go back to User Group Page
+20:26:26 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+20:26:26 | - Item: 'Accounts' already 'expand'
+20:26:28 | - Stop recording screen

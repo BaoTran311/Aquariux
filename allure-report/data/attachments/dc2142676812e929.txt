@@ -1,0 +1,26 @@
+00:35:37 | - Running test case: test_UG_ADD_TC11_negative_network_error.py
+00:35:37 | - Start recording screen
+00:35:37 | - Get table data
+00:35:39 | - Go to the first page
+00:35:39 | [Setup] Click on 'Add User Group' button
+00:35:39 | - Click 'Add User Group' button
+00:35:39 | Step 1: Fill form with: 'name: Cqcj_Auto-cUWVtbbZ, description: SzImZqvaqe - description, position_type: Hedge, book_type: B-Book, margin_call_level: 95.25, stop_out_level: 73.83, commission: 8.13'
+00:35:39 | - Input name: 'Cqcj_Auto-cUWVtbbZ'
+00:35:39 | - Input description: 'SzImZqvaqe - description'
+00:35:39 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:35:39 | - Open dropdown Book Type
+00:35:39 | - Select Book Type
+00:35:39 | - Input margin call level: 95.25
+00:35:39 | - Input stop out level: 73.83
+00:35:39 | - Input commission: 8.13
+00:35:40 | Step 2: Disconnect network
+00:35:40 | Step 3: Click 'Save' button
+00:35:40 | - Click 'Save' button
+00:35:40 | Verify toast message: 'Network error. Please check your connection.'
+00:35:40 | Verify pre-filled values remain un-changed
+00:35:40 | Step 4: Close the panel
+00:35:40 | - Click 'x' icon
+00:35:40 | Verify footer label remains un-changed
+00:35:40 | - Wait for 'Showing 1 to 23 of 23 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+00:35:40 | [Teardown] Restore network connection
+00:35:43 | - Stop recording screen

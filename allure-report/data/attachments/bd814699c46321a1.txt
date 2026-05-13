@@ -1,0 +1,23 @@
+01:02:41 | - Running test case: test_UG_DEL_TC01_positive_cancel_from_action.py
+01:02:41 | - Start recording screen
+01:02:42 | - Get table data
+01:02:43 | - Go to the first page
+01:02:43 | - Get table data
+01:02:45 | - Go to the first page
+01:02:45 | [Setup] Total rows data: 27
+01:02:45 | Step 1: Action on row: 'dtcJ_Auto/LrlzMkxk' > Delete
+01:02:45 | - Get table data
+01:02:46 | - Found record: 'dtcJ_Auto/LrlzMkxk' column: 'Name' (page:1)
+01:02:46 | - Delete row: 'dtcJ_Auto/LrlzMkxk' (attempt:1)
+01:02:46 | Verify delete confirmation title: 'Permanently delete (dtcJ_Auto/LrlzMkxk)?'
+01:02:46 | Verify delete confirmation content
+01:02:47 | Step 2: Click on button 'Maybe Later'
+01:02:47 | - Click 'Maybe Later' button
+01:02:47 | Verify modal is closed
+01:02:47 | - Check invisibility of locator: ('css selector', 'span[data-slot="dialog-title"]'): TRUE
+01:02:47 | Verify footer label remains un-changed
+01:02:47 | - Wait for 'Showing 1 to 27 of 27 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+01:02:47 | [Teardown] Click 'x' icon to close the panel
+01:02:47 | - Click 'x' icon
+01:02:48 | 🟡 Element not found for ('css selector', "button[data-slot='sheet-close']"): TimeoutException after 1(s)
+01:02:49 | - Stop recording screen

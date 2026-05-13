@@ -1,0 +1,202 @@
+22:45:27 | - Running test case: test_TA_EDT_TC08_positive_cross_browser_sync.py
+22:45:27 | - Start recording screen
+22:45:27 | [Setup] Send API to create new account
+22:45:27 | [API] Send API: GET /backoffice/v1/users/available-users
+22:45:27 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/users/available-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg'
+
+ ⬅️  Response Received: 
+{
+    "data": [
+        {
+            "id": "019e1ae7-6a5f-78f1-ae79-f3fd67d55df6",
+            "name": "1"
+        },
+        {
+            "id": "019e1a60-7a49-7633-b749-b93c36a38e71",
+            "name": "binh"
+        },
+        {
+            "id": "019e1b1e-c281-7b7f-91e6-7413972e0f03",
+            "name": "CH"
+        },
+        {
+            "id": "019e1a71-957b-7902-ae88-707380a73be9",
+            "name": "FIIF_AUTO RTULDMGM"
+        },
+        {
+            "id": "019e1611-acb4-7df6-ac45-f8bd88e43e23",
+            "name": "(name)12"
+        },
+        "... (2 more)"
+    ],
+    "success": true,
+    "timestamp": "2026-05-12T15:45:27.788080966Z"
+}
+
+
+22:45:27 | [API] Send API: POST /backoffice/v1/accounts
+22:45:27 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg' 
+--header 'Content-Length: 199' 
+--data-raw '{"userId": "019e1b1e-c281-7b7f-91e6-7413972e0f03", "status": "ACTIVE", "mode": "LIVE", "canTrade": true, "accountType": "TRADER", "currencyId": "019db3cc-c60d-7f5b-9190-9cb2556a7e3c", "leverage": 44}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-12T15:45:28.110914845Z"
+}
+
+
+22:45:27 | [API] Send API: GET /backoffice/v1/accounts
+22:45:28 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg'
+
+
+22:45:28 | [Setup] Refresh page to load changes
+22:45:31 | - Registered driver under 'web_secondary' (total: 2)
+22:45:31 | - Added web driver 'secondary' to driver_list (total: 2)
+22:45:31 | [Setup] Login on browser 2
+22:45:36 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+22:45:36 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+22:45:36 | - Input password: 'Autotest@12345'
+22:45:37 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+22:45:37 | - Click on login button
+22:45:38 | - Waiting for new code generated (old: '669519') ...
+22:46:00 | - New code generated ! (594083)
+22:46:01 | - Input TOTP code: '594083'
+22:46:05 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+22:46:05 | - Expand item: 'Accounts'
+22:46:05 | [Setup] Navigate to User Group page
+22:46:05 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+22:46:05 | - Item: 'Accounts' already 'expand'
+22:46:06 | Step 1: View row: 'CH' > Edit
+22:46:07 | - Search for: 'AQX-TA-00002148'
+22:46:08 | - Get table data
+22:46:10 | - Total records: 1
+22:46:10 | - Found record: 'CH' column: 'Name' (page:1)
+22:46:11 | - View row: 'CH'
+22:46:11 | - Click 'Edit' button
+22:46:12 | Step 2: Edit with 'trading_user: , account_type: Trader, account_mode: Live, leverage: 79, currency: USD - US Dollar, trade_permission: False, status: Inactive'
+22:46:12 | - Input leverage: 79
+22:46:13 | - Set trade permission: disable
+22:46:13 | - Set status: 'Inactive'
+22:46:14 | - Click 'Save' button
+22:46:14 | Verify toast message: 'The trading account has been updated successfully'
+22:46:15 | Step 3: Search with old name: 'CH' (browser 2)
+22:46:15 | - Search for: 'CH'
+22:46:16 | Verify no result label
+22:46:16 | Step 4: Search with updated name: '[~~missing-key-name~~]' (browser 2)
+22:46:16 | - Search for: '[~~missing-key-name~~]'
+22:46:17 | Verify table data updated accordingly
+22:46:17 | - Get table data
+22:46:24 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:46:24 | - Table is empty
+22:46:24 | - Comparison: 
+===========================================================
+Field         | Expected             | Actual              
+-----------------------------------------------------------
+action        | MISSING              | None                
+book_type     | MISSING              | None                
+created_date  | 12 May 2026 15:45:28 | None                
+description   | MISSING              | None                
+name          | CH                   | None                
+position_type | MISSING              | None                
+===========================================================
+22:46:24 | ✘ Check Failed !
+⟶ Extra: book_type, position_type, action, description
+⟶ Value mismatch on fields: created_date, name (Operator: EQUAL)
+22:46:24 | Step 5: View details of 'CH'
+22:46:24 | - Search for: 'AQX-TA-00002148'
+22:46:25 | - Get table data
+22:46:33 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:46:33 | - Table is empty
+22:46:33 | - Go to next page to find record of: 'CH'
+22:46:33 | - Click 'next' button on table
+22:46:33 | - Get table data
+22:46:40 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:46:40 | - Table is empty
+22:46:41 | - Go to next page to find record of: 'CH'
+22:46:41 | - Click 'next' button on table
+22:46:41 | - Get table data
+22:46:48 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:46:48 | - Table is empty
+22:46:48 | - Go to next page to find record of: 'CH'
+22:46:48 | - Click 'next' button on table
+22:46:49 | - Get table data
+22:46:56 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:46:56 | - Table is empty
+22:46:56 | - Go to next page to find record of: 'CH'
+22:46:56 | - Click 'next' button on table
+22:46:57 | - Get table data
+22:47:04 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:47:04 | - Table is empty
+22:47:04 | - Go to next page to find record of: 'CH'
+22:47:04 | - Click 'next' button on table
+22:47:04 | - Get table data
+22:47:12 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:47:12 | - Table is empty
+22:47:12 | - Go to next page to find record of: 'CH'
+22:47:12 | - Click 'next' button on table
+22:47:12 | - Get table data
+22:47:19 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:47:19 | - Table is empty
+22:47:20 | - Go to next page to find record of: 'CH'
+22:47:20 | - Click 'next' button on table
+22:47:20 | - Get table data
+22:47:27 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:47:27 | - Table is empty
+22:47:28 | - Go to next page to find record of: 'CH'
+22:47:28 | - Click 'next' button on table
+22:47:28 | - Get table data
+22:47:35 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:47:35 | - Table is empty
+22:47:35 | - Go to next page to find record of: 'CH'
+22:47:35 | - Click 'next' button on table
+22:47:36 | - Get table data
+22:47:43 | 🟡 Element not found for ('css selector', 'table tbody tr[data-slot="table-row"]'): TimeoutException after 5(s)
+22:47:43 | - Table is empty
+22:47:43 | - Go to next page to find record of: 'CH'
+22:47:43 | - Click 'next' button on table
+22:47:44 | - Go to the first page
+22:47:49 | 🟡 Element not found for ('css selector', 'button[data-testid*="-pagination-page-1"]'): TimeoutException after 5(s)
+22:47:49 | [Teardown] Quit browser 2
+22:47:49 | - Quit driver 'web_secondary'
+22:47:49 | [Teardown] Send API to delete the created account: 019e1cdd-5625-736b-a1cd-d561429cfd72
+22:47:49 | [API] Send API: DELETE /backoffice/v1/accounts/019e1cdd-5625-736b-a1cd-d561429cfd72
+22:47:50 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e1cdd-5625-736b-a1cd-d561429cfd72' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-12T15:47:50.435319437Z"
+}
+
+
+22:47:51 | - Stop recording screen

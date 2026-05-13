@@ -1,0 +1,64 @@
+23:32:30 | - Running test case: test_TA_TBL_TC13_positive_dropdown_functionality.py
+23:32:30 | - Start recording screen
+23:32:31 | - Get table data
+23:32:32 | - Go to the first page
+23:32:32 | Step 1: Select 'All Status' option
+23:32:32 | Verify table data reset ('All Status')
+23:32:32 | - Get table data
+23:32:33 | - Go to the first page
+23:32:33 | 
+Table Data:
+┌──────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id       │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├──────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000068  │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:66         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:32:49 │
+│ AQX-TA-00000129  │ wMlT_Auto-XWsBWPWg │ auto_ld1vys1aj@aquariux.com   │ 1:100        │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 4 May 2026 13:53:05 │
+│ AQX-TA-00000376  │ -AutoXjbUYwleGN    │ auto_h26h8bj8@aquariux.com    │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:31:58 │
+│ AQX-TA-00000377  │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:32:00 │
+│ AQX-TA-00000378  │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:32:01 │
+│ AQX-TA-00000379  │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:32:02 │
+│ AQX-TA-00000380  │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:32:03 │
+│ AQX-TA-00001753  │ mUJg_Auto-RlGbZgun │ auto_w7f6fdoxll@aquariux.com  │ 1:50         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 06:35:31 │
+│ AQX-TA-00001754  │ mUJg_Auto-RlGbZgun │ auto_w7f6fdoxll@aquariux.com  │ 1:24         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 06:38:17 │
+│ AQX-TA-100000000 │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 09:32:55 │
+└──────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:32:33 | - Comparing 10 items
+23:32:33 | Step 2: Select 'Active' option
+23:32:33 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+23:32:33 | - Open dropdown Status
+23:32:33 | - Select Status
+23:32:34 | Verify table data reset ('Active')
+23:32:34 | - Get table data
+23:32:35 | - Go to the first page
+23:32:35 | 
+Table Data:
+┌──────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id       │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├──────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000068  │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:66         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:32:49 │
+│ AQX-TA-00000129  │ wMlT_Auto-XWsBWPWg │ auto_ld1vys1aj@aquariux.com   │ 1:100        │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 4 May 2026 13:53:05 │
+│ AQX-TA-00000376  │ -AutoXjbUYwleGN    │ auto_h26h8bj8@aquariux.com    │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:31:58 │
+│ AQX-TA-00000377  │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:32:00 │
+│ AQX-TA-00000378  │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:32:01 │
+│ AQX-TA-00000379  │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:32:02 │
+│ AQX-TA-00000380  │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:1          │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 16:32:03 │
+│ AQX-TA-00001753  │ mUJg_Auto-RlGbZgun │ auto_w7f6fdoxll@aquariux.com  │ 1:50         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 06:35:31 │
+│ AQX-TA-00001754  │ mUJg_Auto-RlGbZgun │ auto_w7f6fdoxll@aquariux.com  │ 1:24         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 06:38:17 │
+│ AQX-TA-100000000 │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 09:32:55 │
+└──────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:32:35 | - Comparing 10 items
+23:32:35 | Step 3: Select 'Inactive' option
+23:32:35 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+23:32:35 | - Open dropdown Status
+23:32:35 | - Select Status
+23:32:35 | Verify table data reset ('Inactive')
+23:32:35 | Step 4: Refresh page
+23:32:37 | Verify Default state of Type: All Type
+23:32:37 | Verify Default state of Mode: All Mode
+23:32:37 | Verify Default state of Status: All Status
+23:32:37 | Verify table data reset (no filter)
+23:32:37 | - Get table data
+23:32:38 | - Go to the first page
+23:32:38 | - Comparing 10 items
+23:32:38 | [Teardown] Refresh the page
+23:32:40 | - Stop recording screen

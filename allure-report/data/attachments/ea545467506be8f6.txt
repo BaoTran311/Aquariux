@@ -1,0 +1,134 @@
+23:01:49 | - Running test case: test_TA_TBL_TC09_resize_columns_table_overflow.py
+23:01:49 | - Start recording screen
+23:01:49 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:01:49 | - Size of column: 'Name': 'height: 40, width: 151'
+23:01:49 | - Size of column: 'Email': 'height: 40, width: 151'
+23:01:49 | - Size of column: 'Leverage': 'height: 40, width: 151'
+23:01:49 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:01:49 | - Size of column: 'Type': 'height: 40, width: 151'
+23:01:49 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:01:49 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:01:49 | - Size of column: 'Status': 'height: 40, width: 151'
+23:01:49 | Step 1: Widen first col until overflow the table viewport
+23:01:49 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:49 | - Expanding 'Account ID' to fill viewport
+23:01:49 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:01:49 | - Increase column: 'Account ID' by 1465px
+23:01:50 | - Size of column: 'Account ID': 'height: 40, width: 1616'
+23:01:50 | - Table is overflow viewport (attempt:2)
+23:01:50 | Verify column 'Name' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Name': 'height: 40, width: 151, x: 1889, y: 237'
+23:01:50 | Verify column 'Email' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Email': 'height: 40, width: 151, x: 2040, y: 237'
+23:01:50 | Verify column 'Leverage' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Leverage': 'height: 40, width: 151, x: 2191, y: 237'
+23:01:50 | Verify column 'Currency' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Currency': 'height: 40, width: 151, x: 2342, y: 237'
+23:01:50 | Verify column 'Type' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Type': 'height: 40, width: 151, x: 2493, y: 237'
+23:01:50 | Verify column 'Mode' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Mode': 'height: 40, width: 151, x: 2644, y: 237'
+23:01:50 | Verify column 'Trade Permission' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Trade Permission': 'height: 40, width: 151, x: 2795, y: 237'
+23:01:50 | Verify column 'Status' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Status': 'height: 40, width: 151, x: 2946, y: 237'
+23:01:50 | Verify column 'Created Date' overflows past the viewport
+23:01:50 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:50 | - Rect of column: 'Created Date': 'height: 40, width: 151, x: 3097, y: 237'
+23:01:50 | Verify column 'Account ID' sits inside the viewport
+23:01:51 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:51 | - Rect of column: 'Account ID': 'height: 40, width: 1616, x: 273, y: 237'
+23:01:51 | Verify column 'Action' sits inside the viewport
+23:01:51 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:51 | - Rect of column: 'Action': 'height: 40, width: 100, x: 1779, y: 237'
+23:01:51 | Step 2: Scroll table horizontally to the most right
+23:01:51 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | Verify column 'Name' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Name': 'height: 40, width: 151, x: 420, y: 237'
+23:01:52 | Verify column 'Email' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Email': 'height: 40, width: 151, x: 571, y: 237'
+23:01:52 | Verify column 'Leverage' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Leverage': 'height: 40, width: 151, x: 722, y: 237'
+23:01:52 | Verify column 'Currency' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Currency': 'height: 40, width: 151, x: 873, y: 237'
+23:01:52 | Verify column 'Type' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Type': 'height: 40, width: 151, x: 1024, y: 237'
+23:01:52 | Verify column 'Mode' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Mode': 'height: 40, width: 151, x: 1175, y: 237'
+23:01:52 | Verify column 'Trade Permission' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Trade Permission': 'height: 40, width: 151, x: 1326, y: 237'
+23:01:52 | Verify column 'Status' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Status': 'height: 40, width: 151, x: 1477, y: 237'
+23:01:52 | Verify column 'Created Date' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Created Date': 'height: 40, width: 151, x: 1628, y: 237'
+23:01:52 | Verify column 'Action' sits inside the viewport
+23:01:52 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:52 | - Rect of column: 'Action': 'height: 40, width: 100, x: 1779, y: 237'
+23:01:52 | Verify column 'Account ID' overflows past the viewport
+23:01:53 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:53 | - Rect of column: 'Account ID': 'height: 40, width: 1616, x: -1196, y: 237'
+23:01:53 | Step 3: Scroll table horizontally to the most left
+23:01:53 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | Verify column 'Name' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Name': 'height: 40, width: 151, x: 1889, y: 237'
+23:01:54 | Verify column 'Email' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Email': 'height: 40, width: 151, x: 2040, y: 237'
+23:01:54 | Verify column 'Leverage' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Leverage': 'height: 40, width: 151, x: 2191, y: 237'
+23:01:54 | Verify column 'Currency' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Currency': 'height: 40, width: 151, x: 2342, y: 237'
+23:01:54 | Verify column 'Type' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Type': 'height: 40, width: 151, x: 2493, y: 237'
+23:01:54 | Verify column 'Mode' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Mode': 'height: 40, width: 151, x: 2644, y: 237'
+23:01:54 | Verify column 'Trade Permission' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Trade Permission': 'height: 40, width: 151, x: 2795, y: 237'
+23:01:54 | Verify column 'Status' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Status': 'height: 40, width: 151, x: 2946, y: 237'
+23:01:54 | Verify column 'Created Date' overflows past the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Created Date': 'height: 40, width: 151, x: 3097, y: 237'
+23:01:54 | Verify column 'Account ID' sits inside the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Account ID': 'height: 40, width: 1616, x: 273, y: 237'
+23:01:54 | Verify column 'Action' sits inside the viewport again
+23:01:54 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+23:01:54 | - Rect of column: 'Action': 'height: 40, width: 100, x: 1779, y: 237'
+23:01:54 | Step 4: Refresh page
+23:02:01 | Verify column widths match initial sizes after refresh
+23:02:01 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:02:01 | - Size of column: 'Name': 'height: 40, width: 151'
+23:02:01 | - Size of column: 'Email': 'height: 40, width: 151'
+23:02:01 | - Size of column: 'Leverage': 'height: 40, width: 151'
+23:02:01 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:02:01 | - Size of column: 'Type': 'height: 40, width: 151'
+23:02:01 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:02:01 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:02:01 | - Size of column: 'Status': 'height: 40, width: 151'
+23:02:01 | [Teardown] Refresh the page
+23:02:04 | - Stop recording screen

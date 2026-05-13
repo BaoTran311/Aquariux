@@ -1,0 +1,61 @@
+23:02:05 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:02:05 | - Start recording screen
+23:02:06 | - Get table data
+23:02:08 | - Click 'next' button on table
+23:02:09 | - Click 'next' button on table
+23:02:11 | - Go to the first page
+23:02:11 | Step 1: Search by: 'Account ID', with: 'AQX-TA-00000253'
+23:02:11 | - Search for: 'AQX-TA-00000253'
+23:02:11 | Verify results on table data match: 'AQX-TA-00000253'
+23:02:11 | - Get table data
+23:02:13 | - Go to the first page
+23:02:13 | 
+Table Data:
+┌─────────────────┬────────────────────┬─────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                       │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼─────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000253 │ wMlT_Auto-XWsBWPWg │ auto_ld1vys1aj@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:07 │
+└─────────────────┴────────────────────┴─────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:02:13 | Length mismatch: actual has 1 items, expected has 2 items
+23:02:13 | ✘ Check Failed !
+List of dicts validation failed !
+⟶ Length mismatch: actual length=1, expected length=2
+23:02:13 | Step 2: Search by: 'Account ID', with: 'AQX-TA-00000270'
+23:02:13 | - Search for: 'AQX-TA-00000270'
+23:02:13 | Verify results on table data match: 'AQX-TA-00000270'
+23:02:13 | - Get table data
+23:02:14 | - Go to the first page
+23:02:14 | 
+Table Data:
+┌─────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000270 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:35 │
+└─────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:02:14 | Length mismatch: actual has 1 items, expected has 2 items
+23:02:14 | ✘ Check Failed !
+List of dicts validation failed !
+⟶ Length mismatch: actual length=1, expected length=2
+23:02:14 | Step 3: Search by: 'Account ID', with: 'AQX-TA-00000244'
+23:02:14 | - Search for: 'AQX-TA-00000244'
+23:02:15 | Verify results on table data match: 'AQX-TA-00000244'
+23:02:15 | - Get table data
+23:02:16 | - Go to the first page
+23:02:16 | 
+Table Data:
+┌─────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000244 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:52 │
+└─────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:02:16 | Length mismatch: actual has 1 items, expected has 2 items
+23:02:16 | ✘ Check Failed !
+List of dicts validation failed !
+⟶ Length mismatch: actual length=1, expected length=2
+23:02:16 | Step 4: Refresh page
+23:02:18 | Verify search field is cleared
+23:02:18 | Verify clear search icon is not displayed
+23:02:18 | - Check invisibility of locator: ('css selector', 'button[data-testid="trading-account-list-search-input-search-account-email-input-icon-right"]'): TRUE
+23:02:18 | [Teardown] Clear search field
+23:02:18 | - Clear search input
+23:02:19 | - Stop recording screen

@@ -1,0 +1,1402 @@
+23:25:37 | - Running test case: test_TA_TBL_TC06_positive_table_pagination_with_filter.py
+23:25:37 | - Start recording screen
+23:25:37 | - Get table data
+23:25:40 | - Click 'next' button on table
+23:25:41 | - Click 'next' button on table
+23:25:42 | - Go to the first page
+23:25:42 | Step 1: Select 'Status' option
+23:25:42 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+23:25:42 | - Open dropdown Status
+23:25:42 | - Select Status
+23:25:47 | 🟡 Element not found for ('css selector', 'div[data-testid="trading-account-list-select-status-option-true"]'): TimeoutException after 5(s)
+23:25:48 | - Stop recording screen
+23:25:48 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8c-f50e-726c-8ac2-9e582c3ae054
+23:25:49 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8c-f50e-726c-8ac2-9e582c3ae054' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:49.335020698Z"
+}
+
+
+23:25:49 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8c-f94f-7d23-b1f5-f16bab898a1c
+23:25:49 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8c-f94f-7d23-b1f5-f16bab898a1c' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:49.752585067Z"
+}
+
+
+23:25:49 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8c-fd99-7e85-b9e7-f6ecaae4b348
+23:25:49 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8c-fd99-7e85-b9e7-f6ecaae4b348' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:50.068522199Z"
+}
+
+
+23:25:49 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-0172-7599-8009-fd37bb7a26bb
+23:25:50 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-0172-7599-8009-fd37bb7a26bb' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:50.512073868Z"
+}
+
+
+23:25:50 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-069b-7a1e-a562-bd51f1d4f82a
+23:25:50 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-069b-7a1e-a562-bd51f1d4f82a' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:50.839195372Z"
+}
+
+
+23:25:50 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-0abd-73e1-84d8-70b412c5d9ce
+23:25:50 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-0abd-73e1-84d8-70b412c5d9ce' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:51.165127401Z"
+}
+
+
+23:25:50 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-0eb4-75d4-8e3a-89b6057a1d3d
+23:25:51 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-0eb4-75d4-8e3a-89b6057a1d3d' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:51.490624555Z"
+}
+
+
+23:25:51 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-1306-79da-a419-5afeb6f49086
+23:25:51 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-1306-79da-a419-5afeb6f49086' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:51.823917842Z"
+}
+
+
+23:25:51 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-17e0-7d91-83de-64e72b7cfe3d
+23:25:52 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-17e0-7d91-83de-64e72b7cfe3d' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:52.255428559Z"
+}
+
+
+23:25:52 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-1c32-7823-b27c-42f2532c36f7
+23:25:52 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-1c32-7823-b27c-42f2532c36f7' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:52.585225765Z"
+}
+
+
+23:25:52 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-20cb-7318-9248-8d38c514ba3d
+23:25:52 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-20cb-7318-9248-8d38c514ba3d' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:52.898533853Z"
+}
+
+
+23:25:52 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-25d4-7beb-9102-85893eba0f5c
+23:25:53 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-25d4-7beb-9102-85893eba0f5c' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:53.213195269Z"
+}
+
+
+23:25:53 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-2a2d-7bec-a8fa-c50905fee7e1
+23:25:53 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-2a2d-7bec-a8fa-c50905fee7e1' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:53.568107803Z"
+}
+
+
+23:25:53 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-2e6c-7c5d-82ab-eeb5311b8bfc
+23:25:53 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-2e6c-7c5d-82ab-eeb5311b8bfc' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:53.894722691Z"
+}
+
+
+23:25:53 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-32fa-7a5f-8739-31dbcd81bf64
+23:25:54 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-32fa-7a5f-8739-31dbcd81bf64' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:54.304061622Z"
+}
+
+
+23:25:54 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-3783-759c-8ecb-04994e4caf23
+23:25:54 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-3783-759c-8ecb-04994e4caf23' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:54.646776142Z"
+}
+
+
+23:25:54 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-3bf9-7890-975d-cdd4715b7e4c
+23:25:54 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-3bf9-7890-975d-cdd4715b7e4c' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:55.115681793Z"
+}
+
+
+23:25:54 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-4160-72fe-8f70-2ab6a567f038
+23:25:55 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-4160-72fe-8f70-2ab6a567f038' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:55.440111745Z"
+}
+
+
+23:25:55 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-4588-7be3-9160-da178170c4f4
+23:25:55 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-4588-7be3-9160-da178170c4f4' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:55.754311194Z"
+}
+
+
+23:25:55 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-4a0c-7a60-8296-62cd2102bcdb
+23:25:55 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-4a0c-7a60-8296-62cd2102bcdb' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:56.079370333Z"
+}
+
+
+23:25:55 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-4e72-76cd-b0d2-a4c9c8c99699
+23:25:56 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-4e72-76cd-b0d2-a4c9c8c99699' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:56.435320321Z"
+}
+
+
+23:25:56 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-5347-7ab0-80ae-b0afcf1d95ce
+23:25:56 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-5347-7ab0-80ae-b0afcf1d95ce' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:56.756892338Z"
+}
+
+
+23:25:56 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-574e-78cf-8b89-79e11aba8928
+23:25:56 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-574e-78cf-8b89-79e11aba8928' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:57.164834324Z"
+}
+
+
+23:25:56 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-5b68-7c10-8f4e-bc26647478e2
+23:25:57 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-5b68-7c10-8f4e-bc26647478e2' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:57.596633154Z"
+}
+
+
+23:25:57 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-602b-7cb7-844a-722b31115e8b
+23:25:57 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-602b-7cb7-844a-722b31115e8b' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:58.017724566Z"
+}
+
+
+23:25:57 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-64bc-77e3-b7bf-fb6865077725
+23:25:58 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-64bc-77e3-b7bf-fb6865077725' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:58.448113009Z"
+}
+
+
+23:25:58 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-6910-7bd0-92b6-d0a2332af2cf
+23:25:58 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-6910-7bd0-92b6-d0a2332af2cf' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:58.888169116Z"
+}
+
+
+23:25:58 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-6df2-7982-9dde-87218d1f80e1
+23:25:58 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-6df2-7982-9dde-87218d1f80e1' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:59.212430216Z"
+}
+
+
+23:25:58 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-7272-73ac-b8d3-0eff84445693
+23:25:59 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-7272-73ac-b8d3-0eff84445693' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:59.620705836Z"
+}
+
+
+23:25:59 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-7777-7011-bafb-ff7b3277402c
+23:25:59 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-7777-7011-bafb-ff7b3277402c' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:25:59.935590133Z"
+}
+
+
+23:25:59 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-7ddf-7f23-9a6c-ada176750d26
+23:26:00 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-7ddf-7f23-9a6c-ada176750d26' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:00.394053040Z"
+}
+
+
+23:26:00 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-82a8-7d6f-a304-cee9b35091b7
+23:26:00 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-82a8-7d6f-a304-cee9b35091b7' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:00.804763448Z"
+}
+
+
+23:26:00 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-86d6-7497-8005-768e47d14a5b
+23:26:00 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-86d6-7497-8005-768e47d14a5b' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:01.124415754Z"
+}
+
+
+23:26:00 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-8ba7-7973-a956-c82c90441052
+23:26:01 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-8ba7-7973-a956-c82c90441052' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:01.442028674Z"
+}
+
+
+23:26:01 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-9039-77ee-b8e7-cef4cf460643
+23:26:01 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-9039-77ee-b8e7-cef4cf460643' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:01.765230381Z"
+}
+
+
+23:26:01 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-94de-7e97-ae18-bab5beabe061
+23:26:01 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-94de-7e97-ae18-bab5beabe061' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:02.090212979Z"
+}
+
+
+23:26:01 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-9af3-75cf-8a70-28b2d29279d8
+23:26:02 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-9af3-75cf-8a70-28b2d29279d8' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:02.414978085Z"
+}
+
+
+23:26:02 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-a14f-7b0b-a00d-f8d23ddd74d2
+23:26:02 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-a14f-7b0b-a00d-f8d23ddd74d2' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:02.832763618Z"
+}
+
+
+23:26:02 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-a82b-7be8-bbdb-08023a3d9617
+23:26:02 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-a82b-7be8-bbdb-08023a3d9617' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:03.144032782Z"
+}
+
+
+23:26:02 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-ae12-7944-a02a-25d1d4ea9405
+23:26:03 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-ae12-7944-a02a-25d1d4ea9405' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:03.581337028Z"
+}
+
+
+23:26:03 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-b3f4-7dde-ab18-fe7c5acd6dc8
+23:26:03 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-b3f4-7dde-ab18-fe7c5acd6dc8' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:03.998912758Z"
+}
+
+
+23:26:03 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-bb35-7959-9e83-f9bf4fb21025
+23:26:04 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-bb35-7959-9e83-f9bf4fb21025' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:04.314366243Z"
+}
+
+
+23:26:04 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-c1fd-7da8-bffb-c5ab95f585ed
+23:26:04 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-c1fd-7da8-bffb-c5ab95f585ed' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:04.720074642Z"
+}
+
+
+23:26:04 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-c85c-70af-a56d-54448cbf57e8
+23:26:04 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-c85c-70af-a56d-54448cbf57e8' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:05.037623632Z"
+}
+
+
+23:26:04 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-ce19-7235-9c10-1c63a3c92940
+23:26:05 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-ce19-7235-9c10-1c63a3c92940' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:05.350459395Z"
+}
+
+
+23:26:05 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-d479-7c31-8bb5-1fd93856c1fa
+23:26:05 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-d479-7c31-8bb5-1fd93856c1fa' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:05.663311109Z"
+}
+
+
+23:26:05 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-da59-7998-9e09-d0f67f8849ee
+23:26:05 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-da59-7998-9e09-d0f67f8849ee' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:05.983338169Z"
+}
+
+
+23:26:05 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-e06f-755b-b512-a5069d9dfd44
+23:26:06 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-e06f-755b-b512-a5069d9dfd44' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:06.401943731Z"
+}
+
+
+23:26:06 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-e6d5-76aa-a86c-263b25e367a0
+23:26:06 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-e6d5-76aa-a86c-263b25e367a0' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:06.713643091Z"
+}
+
+
+23:26:06 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-ee1a-7044-92c0-2de1528811a3
+23:26:06 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-ee1a-7044-92c0-2de1528811a3' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:07.143257804Z"
+}
+
+
+23:26:06 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-f525-7916-86d9-7917fb84faa6
+23:26:07 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-f525-7916-86d9-7917fb84faa6' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:07.561559183Z"
+}
+
+
+23:26:07 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8d-fbcc-76d3-9624-97cb2caf5a4f
+23:26:07 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8d-fbcc-76d3-9624-97cb2caf5a4f' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:07.972986820Z"
+}
+
+
+23:26:07 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-01fa-7095-b09c-c5589d27b015
+23:26:08 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-01fa-7095-b09c-c5589d27b015' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:08.381348120Z"
+}
+
+
+23:26:08 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-089f-7133-b0fd-92063233a032
+23:26:08 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-089f-7133-b0fd-92063233a032' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:08.812966898Z"
+}
+
+
+23:26:08 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-0f25-7be7-8d55-655f37806062
+23:26:08 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-0f25-7be7-8d55-655f37806062' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:09.135549588Z"
+}
+
+
+23:26:08 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-1557-734f-8811-e66e28416384
+23:26:09 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-1557-734f-8811-e66e28416384' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:09.448881407Z"
+}
+
+
+23:26:09 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-1c03-7293-b1cd-c5d5b61d8152
+23:26:09 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-1c03-7293-b1cd-c5d5b61d8152' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:09.761971164Z"
+}
+
+
+23:26:09 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-22dd-767b-8edd-df7c744d2620
+23:26:09 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-22dd-767b-8edd-df7c744d2620' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:10.190021509Z"
+}
+
+
+23:26:09 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-287f-7d29-84f2-fbe1dfcac809
+23:26:10 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-287f-7d29-84f2-fbe1dfcac809' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:10.518852353Z"
+}
+
+
+23:26:10 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-2efc-7541-b5d4-8605190c1c6c
+23:26:10 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-2efc-7541-b5d4-8605190c1c6c' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:10.871363529Z"
+}
+
+
+23:26:10 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-355a-7970-af8f-09b571de1765
+23:26:11 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-355a-7970-af8f-09b571de1765' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:11.280081494Z"
+}
+
+
+23:26:11 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-3c25-7fa9-95e7-e274738b477c
+23:26:11 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-3c25-7fa9-95e7-e274738b477c' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:11.688714798Z"
+}
+
+
+23:26:11 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-4298-7751-b72f-8c0b8d741fce
+23:26:11 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-4298-7751-b72f-8c0b8d741fce' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:12.111907935Z"
+}
+
+
+23:26:11 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-4911-7511-8d6e-005351026474
+23:26:12 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-4911-7511-8d6e-005351026474' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:12.427088587Z"
+}
+
+
+23:26:12 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-4f0c-7a56-8b15-22c66134c9e0
+23:26:12 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-4f0c-7a56-8b15-22c66134c9e0' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:12.746067383Z"
+}
+
+
+23:26:12 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-5527-73db-b863-dcc9db6795e7
+23:26:12 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-5527-73db-b863-dcc9db6795e7' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:13.176676187Z"
+}
+
+
+23:26:12 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-5cd1-7c5b-aeb9-42c179e36f65
+23:26:13 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-5cd1-7c5b-aeb9-42c179e36f65' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:13.594542182Z"
+}
+
+
+23:26:13 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-640d-714f-a9b7-f0492deb8dab
+23:26:13 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-640d-714f-a9b7-f0492deb8dab' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:13.907345665Z"
+}
+
+
+23:26:13 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-6a9e-7f9b-a5f1-703e639bac36
+23:26:13 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-6a9e-7f9b-a5f1-703e639bac36' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:14.216876540Z"
+}
+
+
+23:26:13 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-70e0-7549-9e0b-95765d9d06be
+23:26:14 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-70e0-7549-9e0b-95765d9d06be' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:14.529442800Z"
+}
+
+
+23:26:14 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-7758-77a4-a871-4ab0b7a03d04
+23:26:14 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-7758-77a4-a871-4ab0b7a03d04' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:14.985856902Z"
+}
+
+
+23:26:14 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-7d6d-779d-a9e0-804b063d60fc
+23:26:15 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-7d6d-779d-a9e0-804b063d60fc' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:15.426767641Z"
+}
+
+
+23:26:15 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-83f3-7daf-9679-8b164852bf12
+23:26:15 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-83f3-7daf-9679-8b164852bf12' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:15.874625631Z"
+}
+
+
+23:26:15 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-8adf-700b-8aa9-7efeede08f1b
+23:26:15 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-8adf-700b-8aa9-7efeede08f1b' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:16.200332238Z"
+}
+
+
+23:26:15 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-917f-789f-8f80-db1da28f5731
+23:26:16 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-917f-789f-8f80-db1da28f5731' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:16.516003095Z"
+}
+
+
+23:26:16 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-9770-776a-b9b5-bca34072928a
+23:26:16 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-9770-776a-b9b5-bca34072928a' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:16.840730770Z"
+}
+
+
+23:26:16 | [API] Send API: DELETE /backoffice/v1/accounts/019e0d8e-9f94-7546-9dc4-2a8b09809017
+23:26:17 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e0d8e-9f94-7546-9dc4-2a8b09809017' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzNDM3OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzY1NjkyLCJpYXQiOjE3NzgzNDM3OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjFmNDRkYTIzLTYxYjktNGM1YS1hOWU3LTI1M2E2ODA2ZDQxZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Hlnu5jvSuk0JAwNBzkOHRyc39veoA86jD3k3aiiMZUkqOt4V2tF3x-eoJgQFzE_N5qFo9PKsqjxLe2pWL_pkJ2A814yx4Ud7XZTvVCuE1q7PL38qjFZt6evL8hNd_147fPuTpXTXjDgEu0LDY0c-n27GGsCo9XnR_P-1Kjvg9HOqVfR8tEtsSY3ymvyXTPmKc8kJ0mbEmuQqFdPd2iCcsx46U4w-OgZTjTJNZovF_meo5XRZaR2USBHhoPym0qlEg7eQv5JpMhD8EjTcJhSEYuDWwBYrLY7ZktgBDvSZszRgevioBC_IA7lnE6ob9BA4gpteHbrQ3O3KwbjjDRN-5A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T16:26:17.270250273Z"
+}
+
+
+23:26:17 | [Teardown] Delete 77 trading accounts
+23:26:17 | [Teardown] Quit Web Driver
+23:26:17 | - Quit driver 'web_main'
+23:26:17 | - All drivers quit and registry cleared
