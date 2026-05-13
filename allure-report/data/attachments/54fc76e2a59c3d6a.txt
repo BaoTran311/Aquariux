@@ -1,0 +1,69 @@
+22:37:41 | - Running test case: test_UG_TBL_TC07_resize_columns_minimum.py
+22:37:41 | - Start recording screen
+22:37:41 | - Size of column: 'Name': 'height: 40, width: 301'
+22:37:41 | - Size of column: 'Description': 'height: 40, width: 301'
+22:37:41 | - Size of column: 'Position Type': 'height: 40, width: 301'
+22:37:41 | - Size of column: 'Book Type': 'height: 40, width: 301'
+22:37:41 | - Size of column: 'Position Type': 'height: 40, width: 301'
+22:37:41 | Step 1: Shrink column 'Position Type' toward minimum width
+22:37:41 | - Shrinking column 'Position Type' to minimum (current: 301px)
+22:37:41 | - Decrease column: 'Position Type' by 210.7px
+22:37:42 | - Size of column: 'Position Type': 'height: 40, width: 91'
+22:37:42 | - Decrease column: 'Position Type' by 63.699999999999996px
+22:37:44 | - Size of column: 'Position Type': 'height: 40, width: 80'
+22:37:44 | - Decrease column: 'Position Type' by 56.0px
+22:37:45 | - Size of column: 'Position Type': 'height: 40, width: 80'
+22:37:45 | - Column reached minimum width: 80px
+22:37:45 | Verify column 'Position Type' width decreased toward minimum
+22:37:45 | - Size of column: 'Position Type': 'height: 40, width: 80'
+22:37:45 | Verify label of 'Position Type' truncated
+22:37:45 | Verify column has min width limit
+22:37:45 | - Size of column: 'Book Type': 'height: 40, width: 301'
+22:37:45 | Step 2: Shrink column 'Book Type' toward minimum width
+22:37:45 | - Shrinking column 'Book Type' to minimum (current: 301px)
+22:37:45 | - Decrease column: 'Book Type' by 210.7px
+22:37:47 | - Size of column: 'Book Type': 'height: 40, width: 91'
+22:37:47 | - Decrease column: 'Book Type' by 63.699999999999996px
+22:37:48 | - Size of column: 'Book Type': 'height: 40, width: 80'
+22:37:48 | - Decrease column: 'Book Type' by 56.0px
+22:37:49 | - Size of column: 'Book Type': 'height: 40, width: 80'
+22:37:49 | - Column reached minimum width: 80px
+22:37:49 | Verify column 'Book Type' width decreased toward minimum
+22:37:49 | - Size of column: 'Book Type': 'height: 40, width: 80'
+22:37:49 | Verify label of 'Book Type' truncated
+22:37:49 | Verify column has min width limit
+22:37:49 | - Size of column: 'Name': 'height: 40, width: 301'
+22:37:49 | Step 3: Shrink column 'Name' toward minimum width
+22:37:49 | - Shrinking column 'Name' to minimum (current: 301px)
+22:37:49 | - Decrease column: 'Name' by 210.7px
+22:37:51 | - Size of column: 'Name': 'height: 40, width: 91'
+22:37:51 | - Decrease column: 'Name' by 63.699999999999996px
+22:37:52 | - Size of column: 'Name': 'height: 40, width: 80'
+22:37:52 | - Decrease column: 'Name' by 56.0px
+22:37:53 | - Size of column: 'Name': 'height: 40, width: 80'
+22:37:53 | - Column reached minimum width: 80px
+22:37:53 | Verify column 'Name' width decreased toward minimum
+22:37:53 | - Size of column: 'Name': 'height: 40, width: 80'
+22:37:53 | Verify label of 'Name' truncated
+22:37:53 | Verify column has min width limit
+22:37:53 | - Size of column: 'Description': 'height: 40, width: 301'
+22:37:53 | Step 4: Shrink column 'Description' toward minimum width
+22:37:53 | - Shrinking column 'Description' to minimum (current: 301px)
+22:37:53 | - Decrease column: 'Description' by 210.7px
+22:37:55 | - Size of column: 'Description': 'height: 40, width: 91'
+22:37:55 | - Decrease column: 'Description' by 63.699999999999996px
+22:37:56 | - Size of column: 'Description': 'height: 40, width: 80'
+22:37:56 | - Decrease column: 'Description' by 56.0px
+22:37:57 | - Size of column: 'Description': 'height: 40, width: 80'
+22:37:57 | - Column reached minimum width: 80px
+22:37:57 | Verify column 'Description' width decreased toward minimum
+22:37:57 | - Size of column: 'Description': 'height: 40, width: 80'
+22:37:57 | Verify label of 'Description' truncated
+22:37:57 | Verify column has min width limit
+22:37:57 | Step 5: Refresh page
+22:37:58 | Verify column widths match initial sizes after refresh
+22:37:58 | - Size of column: 'Position Type': 'height: 40, width: 301'
+22:37:58 | - Size of column: 'Book Type': 'height: 40, width: 301'
+22:37:58 | - Size of column: 'Name': 'height: 40, width: 301'
+22:37:58 | - Size of column: 'Description': 'height: 40, width: 301'
+22:37:59 | - Stop recording screen

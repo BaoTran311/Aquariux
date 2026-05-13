@@ -1,0 +1,33 @@
+22:41:54 | - Running test case: test_UG_TBL_TC10_positive_column_sorting.py
+22:41:54 | - Start recording screen
+22:41:54 | - Get table data
+22:41:56 | - Click 'next' button on table
+22:41:57 | - Click 'next' button on table
+22:41:58 | - Go to the first page
+22:41:58 | Step 1: Check sort button for column: 'Book Type'
+22:41:58 | Verify sort button for column 'Book Type' is displayed
+22:41:58 | Step 2: Click sort on column: 'Book Type'
+22:41:58 | - Sort by: 'Book Type'
+22:41:58 | Verify column sorts alphabetically a-z
+22:41:58 | - Get table data
+22:42:00 | - Click 'next' button on table
+22:42:01 | - Click 'next' button on table
+22:42:02 | - Go to the first page
+22:42:02 | - Comparing: 
+Actual:    ['A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book']
+Expected:  ['A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book']
+22:42:02 | Step 3: Click sort again on column: 'Book Type'
+22:42:02 | - Sort by: 'Book Type'
+22:42:02 | Verify column sorts alphabetically z-a
+22:42:02 | - Get table data
+22:42:04 | - Click 'next' button on table
+22:42:05 | - Click 'next' button on table
+22:42:06 | - Go to the first page
+22:42:06 | - Comparing: 
+Actual:    ['B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book']
+Expected:  ['B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'B-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book', 'A-Book']
+22:42:06 | Step 4: Refresh page
+22:42:07 | Verify default sorted by 'Name'
+22:42:07 | - Get table data
+22:42:09 | - Comparing 40 items
+22:42:10 | - Stop recording screen

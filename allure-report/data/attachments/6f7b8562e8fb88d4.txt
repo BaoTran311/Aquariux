@@ -1,0 +1,33 @@
+22:41:36 | - Running test case: test_UG_TBL_TC10_positive_column_sorting.py
+22:41:36 | - Start recording screen
+22:41:37 | - Get table data
+22:41:38 | - Click 'next' button on table
+22:41:40 | - Click 'next' button on table
+22:41:41 | - Go to the first page
+22:41:41 | Step 1: Check sort button for column: 'Position Type'
+22:41:41 | Verify sort button for column 'Position Type' is displayed
+22:41:41 | Step 2: Click sort on column: 'Position Type'
+22:41:41 | - Sort by: 'Position Type'
+22:41:41 | Verify column sorts alphabetically a-z
+22:41:41 | - Get table data
+22:41:43 | - Click 'next' button on table
+22:41:44 | - Click 'next' button on table
+22:41:45 | - Go to the first page
+22:41:45 | - Comparing: 
+Actual:    ['Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Net', 'Net', 'Net', 'Net', 'Net', 'Net', 'Net']
+Expected:  ['Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Net', 'Net', 'Net', 'Net', 'Net', 'Net', 'Net']
+22:41:45 | Step 3: Click sort again on column: 'Position Type'
+22:41:45 | - Sort by: 'Position Type'
+22:41:45 | Verify column sorts alphabetically z-a
+22:41:45 | - Get table data
+22:41:47 | - Click 'next' button on table
+22:41:48 | - Click 'next' button on table
+22:41:49 | - Go to the first page
+22:41:49 | - Comparing: 
+Actual:    ['Net', 'Net', 'Net', 'Net', 'Net', 'Net', 'Net', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge']
+Expected:  ['Net', 'Net', 'Net', 'Net', 'Net', 'Net', 'Net', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge', 'Hedge']
+22:41:49 | Step 4: Refresh page
+22:41:50 | Verify default sorted by 'Name'
+22:41:50 | - Get table data
+22:41:52 | - Comparing 40 items
+22:41:53 | - Stop recording screen

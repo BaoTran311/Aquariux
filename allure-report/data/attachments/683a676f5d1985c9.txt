@@ -1,0 +1,74 @@
+22:39:36 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:39:36 | - Start recording screen
+22:39:37 | - Get table data
+22:39:38 | - Click 'next' button on table
+22:39:39 | - Click 'next' button on table
+22:39:41 | - Go to the first page
+22:39:41 | Step 1: Search by: 'Name', with: 'mUme_aUto/DABKpDrM'
+22:39:41 | - Search for: 'mUme_aUto/DABKpDrM'
+22:39:41 | Verify results match on table data (case-insensitive): 'mUme_aUto/DABKpDrM'
+22:39:41 | - Get table data
+22:39:42 | - Go to the first page
+22:39:42 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ MUMe_Auto/DaBkPdrm │ EokJjJVmUJ - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:33 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:42 | - Comparing 1 items
+22:39:42 | Step 2: Search by: 'Name', with: 'lOQC_AuTO_RSVJlndI'
+22:39:42 | - Search for: 'lOQC_AuTO_RSVJlndI'
+22:39:43 | Verify results match on table data (case-insensitive): 'lOQC_AuTO_RSVJlndI'
+22:39:43 | - Get table data
+22:39:44 | - Go to the first page
+22:39:44 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ loqc_Auto_rsVjLndI │ zyckQkoClJ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:24 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:44 | - Comparing 1 items
+22:39:44 | Step 3: Search by: 'Name', with: 'ECak_aUto-TtNQxYEC'
+22:39:44 | - Search for: 'ECak_aUto-TtNQxYEC'
+22:39:45 | Verify results match on table data (case-insensitive): 'ECak_aUto-TtNQxYEC'
+22:39:45 | - Get table data
+22:39:46 | - Go to the first page
+22:39:46 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ ecAK_Auto-TtnQXyEC │ mOBEJuUdnc - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:38 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:46 | - Comparing 1 items
+22:39:46 | Step 4: Search by: 'Name', with: 'apLu_AuTo_njIcYmhn'
+22:39:46 | - Search for: 'apLu_AuTo_njIcYmhn'
+22:39:46 | Verify results match on table data (case-insensitive): 'apLu_AuTo_njIcYmhn'
+22:39:46 | - Get table data
+22:39:47 | - Go to the first page
+22:39:47 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ APLU_Auto_NjicyMHn │ iPjTUpYRvN - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:52 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:47 | - Comparing 1 items
+22:39:47 | Step 5: Search by: 'Name', with: 'dtcj_AUtO/lRlZmKXk'
+22:39:47 | - Search for: 'dtcj_AUtO/lRlZmKXk'
+22:39:48 | Verify results match on table data (case-insensitive): 'dtcj_AUtO/lRlZmKXk'
+22:39:48 | - Get table data
+22:39:49 | - Go to the first page
+22:39:49 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬────────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date           │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼────────────────────────┤
+│ dtcJ_Auto/LrlzMkxk │ WmuzzSCoGw - description │ Hedge         │ B-Book       │ 22 April 2026 09:07:05 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴────────────────────────┘
+22:39:49 | - Comparing 1 items
+22:39:49 | [Teardown] Clear search field
+22:39:49 | - Clear search input
+22:39:50 | - Stop recording screen

@@ -1,0 +1,40 @@
+10:52:52 | - Running test case: test_TA_ADD_TC07_negative_network_error.py
+10:52:52 | - Start recording screen
+10:52:52 | - Get table data
+10:52:55 | - Go to the first page
+10:52:55 | [Setup] Total rows data: 9
+10:52:55 | [Setup] Click on 'Add Account' button
+10:52:55 | - Click 'Add Account' button
+10:52:55 | [API] Send API: GET /backoffice/v1/users/available-users
+10:52:56 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/users/available-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1NTc4NTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTc5NzU4LCJpYXQiOjE3Nzg1NTc4NTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA5MjVlMGEwLTVmZGItNDdkNS1hM2Y5LTI0N2MxNjAyMmU3ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.GjzeXLhoPlrWh9h-d-JaBvVJYXXd_u-Gp4GGiSxcSkut_Ozw38NcOqQlAiAcRfyDGmPB0QvT0-INf7Sw_k1z_GOQ286leSW2AJGqJZkCaAtQaZ5DvQb-Jp_CdDc4uq1vkHGf4SAuhmJLdHE-_iMSypOfD7DTK66Fdtat5LSCGfJnQkHajtll-WoUjZgrSeGuq3KUvTtLj2EWoaZgrZUYBHLi7nnCm83lv06eJKhODDVRgElFRh1dALrkeraT-KLkhYsikvgIxbAOwZWVRwnEfWG4OaS04uI8lRbNjGnaxT7yivVDX8cHWIC8s8cHUck6GfSezDt5RXzb_ltDnrMfHg'
+
+
+10:52:56 | Step 1: Submit form: 'trading_user: rJdE_Auto lPU_HRIxoUTA, account_type: Trader, account_mode: Live, leverage: 52, currency: USD - US Dollar, trade_permission: True, status: Active' without submit
+10:52:57 | - Check invisibility of locator: ('css selector', 'div[role="option"]'): TRUE
+10:52:57 | - Open dropdown Name
+10:52:58 | - Select Name
+10:52:58 | - Input leverage: 52
+10:52:58 | - Set trade permission: enable
+10:52:59 | - Set status: 'Active'
+10:52:59 | Step 2: Disconnect network
+10:52:59 | Step 3: Click Save button
+10:52:59 | - Click 'Save' button
+10:52:59 | Verify network error toast
+10:53:00 | Verify pre-filled values unchanged
+10:53:02 | Step 4: Click Save & Create Another button
+10:53:02 | - Click 'Save & Create Another' button
+10:53:03 | Verify network error toast again
+10:53:03 | Verify pre-filled values keep unchanged
+10:53:05 | Step 5: Close the panel
+10:53:05 | - Click 'x' icon
+10:53:06 | Verify footer unchanged
+10:53:06 | - Wait for 'Showing 1 to 9 of 9 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+10:53:06 | [Teardown] Restore network connection
+10:53:09 | - Stop recording screen

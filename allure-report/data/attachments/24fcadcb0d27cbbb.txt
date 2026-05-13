@@ -1,0 +1,110 @@
+20:53:14 | - Running test case: test_UG_EDT_TC11_positive_cross_browser_sync.py
+20:53:14 | - Get table data
+20:53:16 | - Go to the first page
+20:53:16 | [Setup] View row: 'BHNm_Auto-WVIrEbfI' > Edit
+20:53:16 | - Get table data
+20:53:17 | - Found record: 'BHNm_Auto-WVIrEbfI' column: 'Name' (page:1)
+20:53:17 | - View row: 'BHNm_Auto-WVIrEbfI' (attempt:1)
+20:53:17 | - Click 'Edit' button
+20:53:18 | - Start recording screen
+20:53:18 | [API] Send API: POST /backoffice/v1/user-groups
+20:53:18 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzQ3NjEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU2NjYxLCJpYXQiOjE3NzgzMzQ3NjEsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA1ZjM3MGQzLTIzNDEtNGNhNy1iZTRlLTdhOGU2OTE1ZmU3YyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.dhU5BMr80OFFLqEt8gQzJ4mcwonZmsFd9lexwl-cRLEqPG10CKMfe-vY1Eo2fEBeH-EvtV4W20HmbpmA7tKeKspKHjp3lJq5Vni8isTMzJbtScL_3nRWn1WkKPSCgWTb76o4zvBRKszBQlgnOlAxe3Xno8-PFfQpfZucis7CMYW_OwjBSFlnze7Db9m75a9kfeor1kloC3ob8GHn5gTX7Sn77rv_VqQ3D_R1UDXy8J1CGGqyyNJRF1tT8pSgEeXam-1lmRvATZqAuCUOj2951u4lND_wlr7nXne7x6B5nWfeJFicc92Z54x0-P5a2cb9g7zr2PwkGejdy5RxmYkxlQ' 
+--header 'Content-Length: 193' 
+--data-raw '{"name": "Mdno_Auto-xfeDOZap", "description": "eetDTIeVbB - description", "positionType": "HEDGE", "bookType": "B_BOOK", "marginCallLevel": 93.57, "stopOutLevel": 55.29, "commissionRate": 2.77}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:53:18.556675497Z"
+}
+
+
+20:53:18 | [API] Send API: GET /backoffice/v1/user-groups
+20:53:19 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzQ3NjEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU2NjYxLCJpYXQiOjE3NzgzMzQ3NjEsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA1ZjM3MGQzLTIzNDEtNGNhNy1iZTRlLTdhOGU2OTE1ZmU3YyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.dhU5BMr80OFFLqEt8gQzJ4mcwonZmsFd9lexwl-cRLEqPG10CKMfe-vY1Eo2fEBeH-EvtV4W20HmbpmA7tKeKspKHjp3lJq5Vni8isTMzJbtScL_3nRWn1WkKPSCgWTb76o4zvBRKszBQlgnOlAxe3Xno8-PFfQpfZucis7CMYW_OwjBSFlnze7Db9m75a9kfeor1kloC3ob8GHn5gTX7Sn77rv_VqQ3D_R1UDXy8J1CGGqyyNJRF1tT8pSgEeXam-1lmRvATZqAuCUOj2951u4lND_wlr7nXne7x6B5nWfeJFicc92Z54x0-P5a2cb9g7zr2PwkGejdy5RxmYkxlQ'
+
+
+20:53:19 | [Setup] Send API to create new user group: name: Mdno_Auto-xfeDOZap, description: eetDTIeVbB - description, position_type: Hedge, book_type: B-Book, margin_call_level: 93.57, stop_out_level: 55.29, commission: 2.77, created_date: 09 May 2026 13:53:18, id: 019e0d03-92d6-73cc-bc66-de8efae1308a
+20:53:19 | [Setup] Refresh page to load changes
+20:53:21 | - Registered driver under 'web_secondary' (total: 2)
+20:53:21 | - Added web driver 'secondary' to driver_list (total: 2)
+20:53:21 | [Setup] Login on browser 2
+20:53:25 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+20:53:25 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+20:53:25 | - Input password: 'Autotest@12345'
+20:53:26 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+20:53:26 | - Click on login button
+20:53:26 | - Waiting for new code generated (old: '349927') ...
+20:53:30 | - New code generated ! (776229)
+20:53:31 | - Input TOTP code: '776229'
+20:53:32 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-market"]'): FALSE
+20:53:32 | - Expand item: 'Market'
+20:53:32 | [Setup] Navigate to User Group page
+20:53:33 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+20:53:33 | - Expand item: 'Accounts'
+20:53:33 | Step 1: View row: 'Mdno_Auto-xfeDOZap' > Edit
+20:53:34 | - Get table data
+20:53:36 | - Found record: 'Mdno_Auto-xfeDOZap' column: 'Name' (page:1)
+20:53:36 | - View row: 'Mdno_Auto-xfeDOZap' (attempt:1)
+20:53:36 | - Click 'Edit' button
+20:53:36 | Step 2: Edit with 'name: bpGV_Auto_zaxvdTSj, description: olcVbfsFir - description, position_type: Hedge, book_type: B-Book, margin_call_level: 71.25, stop_out_level: 22.68, commission: 3.09'
+20:53:36 | - Input name: 'bpGV_Auto_zaxvdTSj'
+20:53:36 | - Input description: 'olcVbfsFir - description'
+20:53:36 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+20:53:36 | - Open dropdown Book Type
+20:53:36 | - Select Book Type
+20:53:36 | - Input margin call level: 71.25
+20:53:36 | - Input stop out level: 22.68
+20:53:37 | - Input commission: 3.09
+20:53:37 | - Click 'Save' button
+20:53:37 | Verify toast message: 'The user group has been updated successfully'
+20:53:37 | Step 3: Search with old name: 'Mdno_Auto-xfeDOZap' (browser 2)
+20:53:37 | - Search for: 'Mdno_Auto-xfeDOZap'
+20:53:38 | Verify no result label
+20:53:38 | Step 4: Search with updated name: 'bpGV_Auto_zaxvdTSj' (browser 2)
+20:53:38 | - Search for: 'bpGV_Auto_zaxvdTSj'
+20:53:39 | Verify table data updated accordingly
+20:53:39 | - Get table data
+20:53:40 | Step 5: View details of 'bpGV_Auto_zaxvdTSj'
+20:53:40 | - Get table data
+20:53:41 | - Found record: 'bpGV_Auto_zaxvdTSj' column: 'Name' (page:1)
+20:53:41 | - View row: 'bpGV_Auto_zaxvdTSj' (attempt:1)
+20:53:41 | Verify details updated accordingly
+20:53:42 | [Teardown] Quit browser 2
+20:53:42 | - Quit driver 'web_secondary'
+20:53:42 | Send API to delete the created asset: 019e0d03-92d6-73cc-bc66-de8efae1308a
+20:53:42 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0d03-92d6-73cc-bc66-de8efae1308a
+20:53:42 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0d03-92d6-73cc-bc66-de8efae1308a' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzQ3NjEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU2NjYxLCJpYXQiOjE3NzgzMzQ3NjEsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjA1ZjM3MGQzLTIzNDEtNGNhNy1iZTRlLTdhOGU2OTE1ZmU3YyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.dhU5BMr80OFFLqEt8gQzJ4mcwonZmsFd9lexwl-cRLEqPG10CKMfe-vY1Eo2fEBeH-EvtV4W20HmbpmA7tKeKspKHjp3lJq5Vni8isTMzJbtScL_3nRWn1WkKPSCgWTb76o4zvBRKszBQlgnOlAxe3Xno8-PFfQpfZucis7CMYW_OwjBSFlnze7Db9m75a9kfeor1kloC3ob8GHn5gTX7Sn77rv_VqQ3D_R1UDXy8J1CGGqyyNJRF1tT8pSgEeXam-1lmRvATZqAuCUOj2951u4lND_wlr7nXne7x6B5nWfeJFicc92Z54x0-P5a2cb9g7zr2PwkGejdy5RxmYkxlQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:53:42.788221676Z"
+}
+
+
+20:53:43 | - Stop recording screen
+20:53:45 | [Teardown] Quit Web Driver
+20:53:45 | - Quit driver 'web_main'
+20:53:45 | - All drivers quit and registry cleared

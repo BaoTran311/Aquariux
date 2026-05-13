@@ -1,0 +1,33 @@
+23:08:30 | - Running test case: test_TA_TBL_TC11_positive_column_sorting.py
+23:08:30 | - Start recording screen
+23:08:30 | - Get table data
+23:08:32 | - Click 'next' button on table
+23:08:34 | - Click 'next' button on table
+23:08:35 | - Go to the first page
+23:08:35 | Step 1: Check sort button for column: 'Type'
+23:08:35 | Verify sort button for column 'Type' is displayed
+23:08:35 | Step 2: Click sort on column: 'Type'
+23:08:35 | - Sort by: 'Type'
+23:08:35 | Verify column sorts alphabetically a-z
+23:08:35 | - Get table data
+23:08:37 | - Click 'next' button on table
+23:08:39 | - Click 'next' button on table
+23:08:39 | - Go to the first page
+23:08:39 | - Comparing: 
+Actual:    ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+Expected:  ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+23:08:39 | Step 3: Click sort again on column: 'Type'
+23:08:39 | - Sort by: 'Type'
+23:08:39 | Verify column sorts alphabetically z-a
+23:08:39 | - Get table data
+23:08:41 | - Click 'next' button on table
+23:08:43 | - Click 'next' button on table
+23:08:44 | - Go to the first page
+23:08:44 | - Comparing: 
+Actual:    ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+Expected:  ['Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader', 'Trader']
+23:08:44 | Step 4: Refresh page
+23:08:45 | Verify default sorted by 'Account ID'
+23:08:45 | - Get table data
+23:08:47 | - Comparing 40 items
+23:08:48 | - Stop recording screen

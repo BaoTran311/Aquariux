@@ -1,0 +1,23 @@
+22:10:08 | - Running test case: test_TA_VIW_TC01_positive_default_state.py
+22:10:08 | - Start recording screen
+22:10:08 | - Get table data
+22:10:09 | - Go to the first page
+22:10:09 | Step 1: Action on row: 'wMlT_Auto-XWsBWPWg' > View
+22:10:09 | - View row: 'wMlT_Auto-XWsBWPWg' (attempt:1)
+22:10:10 | Verify panel title
+22:10:10 | Verify tabs list
+22:10:10 | - Comparing: 
+Actual:    ['Overview', 'Audit Log']
+Expected:  ['Overview', 'Audit Log']
+22:10:10 | Verify 'Overview' selected by default
+22:10:10 | Verify detail labels
+22:10:10 | - Comparing: 
+Actual:    ['Account Funds', 'Account ID', 'Account Mode', 'Account Type', 'Country', 'Created Date', 'Currency', 'Email', 'Last Updated', 'Leverage', 'Name', 'Phone', 'Trade Permission']
+Expected:  ['Account Funds', 'Account ID', 'Account Mode', 'Account Type', 'Country', 'Created Date', 'Currency', 'Email', 'Last Updated', 'Leverage', 'Name', 'Phone', 'Trade Permission']
+22:10:10 | Verify CTAs
+22:10:10 | Step 2: Click outside
+22:10:10 | - Click outside to close the panel
+22:10:10 | Verify panel stays open
+22:10:10 | [Teardown] Click 'x' icon to close the panel
+22:10:10 | - Click 'x' icon
+22:10:11 | - Stop recording screen

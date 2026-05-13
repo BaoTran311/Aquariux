@@ -1,0 +1,37 @@
+23:02:50 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:02:50 | - Start recording screen
+23:02:50 | - Get table data
+23:02:52 | - Click 'next' button on table
+23:02:54 | - Click 'next' button on table
+23:02:54 | - Go to the first page
+23:02:54 | Step 1: Search by: 'Account ID', with untrimmed spaces: '        AQX-TA-00000236'
+23:02:54 | - Search for: '        AQX-TA-00000236'
+23:02:55 | Verify search is not auto-trimmed — empty state label is shown ('        AQX-TA-00000236')
+23:02:55 | Verify button 'Add Asset Class' is displayed ('        AQX-TA-00000236')
+23:02:55 | Verify footer label: 'Showing 0 to 0 of 0 items' ('        AQX-TA-00000236')
+23:02:55 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+23:02:55 | Step 2: Clear search
+23:02:55 | - Clear search input
+23:02:55 | Verify table data reset ('        AQX-TA-00000236')
+23:02:55 | - Get table data
+23:02:58 | - Click 'next' button on table
+23:02:59 | - Click 'next' button on table
+23:03:00 | - Go to the first page
+23:03:00 | - Comparing 84 items
+23:03:00 | Step 3: Search by: 'Account ID', with untrimmed spaces: 'AQX-TA-00000236      '
+23:03:00 | - Search for: 'AQX-TA-00000236      '
+23:03:00 | Verify search is not auto-trimmed — empty state label is shown ('AQX-TA-00000236      ')
+23:03:01 | Verify button 'Add Asset Class' is displayed ('AQX-TA-00000236      ')
+23:03:01 | Verify footer label: 'Showing 0 to 0 of 0 items' ('AQX-TA-00000236      ')
+23:03:01 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+23:03:01 | Step 4: Clear search
+23:03:01 | - Clear search input
+23:03:01 | Verify table data reset ('AQX-TA-00000236      ')
+23:03:01 | - Get table data
+23:03:03 | - Click 'next' button on table
+23:03:05 | - Click 'next' button on table
+23:03:05 | - Go to the first page
+23:03:06 | - Comparing 84 items
+23:03:06 | [Teardown] Clear search field
+23:03:06 | - Clear search input
+23:03:07 | - Stop recording screen

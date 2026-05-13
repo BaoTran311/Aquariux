@@ -1,0 +1,72 @@
+20:27:09 | - Running test case: test_UG_EDT_TC06_positive_success_single_field.py
+20:27:09 | - Start recording screen
+20:27:09 | [API] Send API: POST /backoffice/v1/user-groups
+20:27:09 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 193' 
+--data-raw '{"name": "YtRL_Auto-oOSZNBda", "description": "WhzAubkMdi - description", "positionType": "HEDGE", "bookType": "B_BOOK", "marginCallLevel": 20.65, "stopOutLevel": 59.39, "commissionRate": 8.01}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:27:09.603898942Z"
+}
+
+
+20:27:09 | [API] Send API: GET /backoffice/v1/user-groups
+20:27:09 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ'
+
+
+20:27:09 | [Setup] Send API to create new user group: name: YtRL_Auto-oOSZNBda, description: WhzAubkMdi - description, position_type: Hedge, book_type: B-Book, margin_call_level: 20.65, stop_out_level: 59.39, commission: 8.01, created_date: 09 May 2026 13:27:09, id: 019e0ceb-a220-71e7-9462-63ed121fe4aa
+20:27:09 | [Setup] Refresh page to load changes
+20:27:11 | Step 1: View row: 'YtRL_Auto-oOSZNBda' > Edit
+20:27:11 | - Search for: 'YtRL_Auto-oOSZNBda'
+20:27:11 | - Select col: 'Name' value: 'YtRL_Auto-oOSZNBda'
+20:27:12 | - Click 'Edit' button
+20:27:12 | - Input description: 'bOkRYgXbEv - description'
+20:27:12 | Step 2: Submit edit 'Description' with: 'bOkRYgXbEv - description'
+20:27:12 | - Input description: 'bOkRYgXbEv - description'
+20:27:12 | - Click 'Save' button
+20:27:12 | Verify toast message: 'The user group has been updated successfully'
+20:27:17 | 🟡 Element not found for ('css selector', 'div[data-testid="toast-message"]'): TimeoutException after 5(s)
+20:27:17 | ✘ Check Failed !
+Expected text to be: 'The user group has been updated successfully', got: ''
+20:27:17 | Step 3: Search for: 'YtRL_Auto-oOSZNBda'
+20:27:17 | - Clear search input
+20:27:18 | 🟡 ElementClickInterceptedException for locator ('css selector', 'button[data-testid="user-group-list-search-input-search-name-input-icon-right"]') (attempt 1/3), retrying...
+20:27:20 | 🟡 ElementClickInterceptedException for locator ('css selector', 'button[data-testid="user-group-list-search-input-search-name-input-icon-right"]') (attempt 2/3), retrying...
+20:27:22 | 🟡 ElementClickInterceptedException for locator ('css selector', 'button[data-testid="user-group-list-search-input-search-name-input-icon-right"]') after 3 attempts
+20:27:22 | [Teardown] Refresh the page
+20:27:23 | Send API to delete the created asset: 019e0ceb-a220-71e7-9462-63ed121fe4aa
+20:27:23 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0ceb-a220-71e7-9462-63ed121fe4aa
+20:27:24 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0ceb-a220-71e7-9462-63ed121fe4aa' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:27:24.339302733Z"
+}
+
+
+20:27:25 | - Stop recording screen

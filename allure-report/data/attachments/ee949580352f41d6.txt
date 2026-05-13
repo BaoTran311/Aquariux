@@ -1,0 +1,29 @@
+00:35:24 | - Running test case: test_UG_ADD_TC09_positive_from_table_button.py
+00:35:24 | - Start recording screen
+00:35:25 | - Get table data
+00:35:26 | - Go to the first page
+00:35:26 | [Setup] Total rows data: 22
+00:35:26 | Step 1: Show empty label by searching a non-exist name
+00:35:26 | - Search for: 'kzgfXSVPopHuqDRbKGoU'
+00:35:27 | Step 2: Click button 'Add User Group' on table
+00:35:27 | - Click on add button
+00:35:27 | Step 3: submit form with: 'name: SFPF_Auto-jlSwSEjR, description: uIIYTknjkp - description, position_type: Hedge, book_type: B-Book, margin_call_level: 14.82, stop_out_level: 52.33, commission: 4.35'
+00:35:27 | - Input name: 'SFPF_Auto-jlSwSEjR'
+00:35:28 | - Input description: 'uIIYTknjkp - description'
+00:35:28 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:35:28 | - Open dropdown Book Type
+00:35:28 | - Select Book Type
+00:35:28 | - Input margin call level: 14.82
+00:35:28 | - Input stop out level: 52.33
+00:35:28 | - Input commission: 4.35
+00:35:29 | - Click 'Save' button
+00:35:29 | Verify toast message: 'The user group has been created successfully'
+00:35:29 | Verify footer label +1: 'Showing 1 to 23 of 23 items'
+00:35:29 | - Clear search input
+00:35:30 | - Wait for 'Showing 1 to 23 of 23 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+00:35:30 | Step 4: Search for newly created record: 'SFPF_Auto-jlSwSEjR'
+00:35:30 | - Search for: 'SFPF_Auto-jlSwSEjR'
+00:35:30 | Verify newly created data on table
+00:35:30 | - Get table data
+00:35:31 | [Teardown] Refresh the page
+00:35:33 | - Stop recording screen

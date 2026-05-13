@@ -1,0 +1,93 @@
+22:10:35 | - Running test case: test_TA_VIW_TC04_negative_view_deleted_record.py
+22:10:35 | - Start recording screen
+22:10:36 | [Setup] Send API to create new account
+22:10:36 | [API] Send API: GET /backoffice/v1/users/available-users
+22:10:36 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/users/available-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1MTIxOTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTEzMDk4LCJpYXQiOjE3Nzg1MTIxOTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6Ijg2YTU4MTgxLWZhM2EtNGYxMy1iZTAyLWIxZWZkZWU2NmQ3ZCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ZKxgZvq5y_Py0lzq-uB5vFn1aTN4SszepIq8AligFZ1TCUplcKPAasK4bGtwHetYhbIJB7FpmMpaGxxFqt2kM-rO9nH4_ryahzuJXVTPUlkVpJyUTfelNS5utRKu2_Jfw2FpS2ssKMcD1ITxyb2SHkWWuYoUz5_3nCAEx19YwKLMawr9BqFfvTisyni6NefgSAJXL-aUlOYlC7-eQNx7YqSUV0xTidCmPtzqsANk6HBo1yysgZYCER1NI93Ht1G-mY_krViUQ_JWFMaOLbgK3b0U-ZaogIPPFDdn1ieGzGxih0xiUIPfwML3jQaTodp14jksIVaKsLr2cPMmqnBH9A'
+
+
+22:10:36 | [API] Send API: POST /backoffice/v1/accounts
+22:10:36 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1MTIxOTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTEzMDk4LCJpYXQiOjE3Nzg1MTIxOTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6Ijg2YTU4MTgxLWZhM2EtNGYxMy1iZTAyLWIxZWZkZWU2NmQ3ZCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ZKxgZvq5y_Py0lzq-uB5vFn1aTN4SszepIq8AligFZ1TCUplcKPAasK4bGtwHetYhbIJB7FpmMpaGxxFqt2kM-rO9nH4_ryahzuJXVTPUlkVpJyUTfelNS5utRKu2_Jfw2FpS2ssKMcD1ITxyb2SHkWWuYoUz5_3nCAEx19YwKLMawr9BqFfvTisyni6NefgSAJXL-aUlOYlC7-eQNx7YqSUV0xTidCmPtzqsANk6HBo1yysgZYCER1NI93Ht1G-mY_krViUQ_JWFMaOLbgK3b0U-ZaogIPPFDdn1ieGzGxih0xiUIPfwML3jQaTodp14jksIVaKsLr2cPMmqnBH9A' 
+--header 'Content-Length: 199' 
+--data-raw '{"userId": "019e15bd-f9e0-71e8-86a7-55ae7e12dbea", "status": "ACTIVE", "mode": "LIVE", "canTrade": true, "accountType": "TRADER", "currencyId": "019db3cc-c60d-7f5b-9190-9cb2556a7e3c", "leverage": 36}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-11T15:10:36.891841321Z"
+}
+
+
+22:10:36 | [API] Send API: GET /backoffice/v1/accounts
+22:10:37 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1MTIxOTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTEzMDk4LCJpYXQiOjE3Nzg1MTIxOTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6Ijg2YTU4MTgxLWZhM2EtNGYxMy1iZTAyLWIxZWZkZWU2NmQ3ZCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ZKxgZvq5y_Py0lzq-uB5vFn1aTN4SszepIq8AligFZ1TCUplcKPAasK4bGtwHetYhbIJB7FpmMpaGxxFqt2kM-rO9nH4_ryahzuJXVTPUlkVpJyUTfelNS5utRKu2_Jfw2FpS2ssKMcD1ITxyb2SHkWWuYoUz5_3nCAEx19YwKLMawr9BqFfvTisyni6NefgSAJXL-aUlOYlC7-eQNx7YqSUV0xTidCmPtzqsANk6HBo1yysgZYCER1NI93Ht1G-mY_krViUQ_JWFMaOLbgK3b0U-ZaogIPPFDdn1ieGzGxih0xiUIPfwML3jQaTodp14jksIVaKsLr2cPMmqnBH9A'
+
+
+22:10:37 | [Setup] Refresh page to load changes
+22:10:38 | [Setup] Send API to delete the created account: 019e1797-113d-7830-a02c-81be3e660c78
+22:10:38 | [API] Send API: DELETE /backoffice/v1/accounts/019e1797-113d-7830-a02c-81be3e660c78
+22:10:38 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e1797-113d-7830-a02c-81be3e660c78' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1MTIxOTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTEzMDk4LCJpYXQiOjE3Nzg1MTIxOTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6Ijg2YTU4MTgxLWZhM2EtNGYxMy1iZTAyLWIxZWZkZWU2NmQ3ZCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ZKxgZvq5y_Py0lzq-uB5vFn1aTN4SszepIq8AligFZ1TCUplcKPAasK4bGtwHetYhbIJB7FpmMpaGxxFqt2kM-rO9nH4_ryahzuJXVTPUlkVpJyUTfelNS5utRKu2_Jfw2FpS2ssKMcD1ITxyb2SHkWWuYoUz5_3nCAEx19YwKLMawr9BqFfvTisyni6NefgSAJXL-aUlOYlC7-eQNx7YqSUV0xTidCmPtzqsANk6HBo1yysgZYCER1NI93Ht1G-mY_krViUQ_JWFMaOLbgK3b0U-ZaogIPPFDdn1ieGzGxih0xiUIPfwML3jQaTodp14jksIVaKsLr2cPMmqnBH9A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-11T15:10:38.950715781Z"
+}
+
+
+22:10:38 | [Setup] Refresh page to load changes
+22:10:40 | Step 1: Search with: 'AQX-TA-00001091'
+22:10:40 | - Search for: 'AQX-TA-00001091'
+22:10:40 | Verify table empty label
+22:10:41 | [Teardown] Refresh the page
+22:10:42 | [Teardown] Send API to delete the created account: 019e1797-113d-7830-a02c-81be3e660c78
+22:10:42 | [API] Send API: DELETE /backoffice/v1/accounts/019e1797-113d-7830-a02c-81be3e660c78
+22:10:42 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e1797-113d-7830-a02c-81be3e660c78' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1MTIxOTgsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTEzMDk4LCJpYXQiOjE3Nzg1MTIxOTgsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6Ijg2YTU4MTgxLWZhM2EtNGYxMy1iZTAyLWIxZWZkZWU2NmQ3ZCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ZKxgZvq5y_Py0lzq-uB5vFn1aTN4SszepIq8AligFZ1TCUplcKPAasK4bGtwHetYhbIJB7FpmMpaGxxFqt2kM-rO9nH4_ryahzuJXVTPUlkVpJyUTfelNS5utRKu2_Jfw2FpS2ssKMcD1ITxyb2SHkWWuYoUz5_3nCAEx19YwKLMawr9BqFfvTisyni6NefgSAJXL-aUlOYlC7-eQNx7YqSUV0xTidCmPtzqsANk6HBo1yysgZYCER1NI93Ht1G-mY_krViUQ_JWFMaOLbgK3b0U-ZaogIPPFDdn1ieGzGxih0xiUIPfwML3jQaTodp14jksIVaKsLr2cPMmqnBH9A' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "errorCode": "TA_0001",
+    "errorName": "Trading Account Not Found",
+    "message": "Trading account not found with id: 019e1797-113d-7830-a02c-81be3e660c78",
+    "success": false,
+    "timestamp": "2026-05-11T15:10:42.955423167Z"
+}
+
+
+22:10:42 | ✘ Request failed (404): {"errorCode":"TA_0001","errorName":"Trading Account Not Found","message":"Trading account not found with id: 019e1797-113d-7830-a02c-81be3e660c78","success":false,"timestamp":"2026-05-11T15:10:42.955423167Z"} after 1 attempt(s)
+22:10:43 | - Stop recording screen

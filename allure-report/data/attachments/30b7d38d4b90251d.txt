@@ -1,0 +1,11 @@
+22:40:44 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:40:44 | - Start recording screen
+22:40:44 | Step 1: Search with: 'pjrCUEOJzDMKVzyoWmYN' (non-existent keyword)
+22:40:44 | - Search for: 'pjrCUEOJzDMKVzyoWmYN'
+22:40:45 | Verify empty state label is shown
+22:40:45 | Verify button 'Add User Group' is displayed
+22:40:45 | Verify footer label: 'Showing 0 to 0 of 0 items'
+22:40:45 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:40:45 | [Teardown] Clear search field
+22:40:45 | - Clear search input
+22:40:46 | - Stop recording screen

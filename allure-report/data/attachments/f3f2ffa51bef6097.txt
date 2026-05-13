@@ -1,0 +1,50 @@
+22:36:35 | - Running test case: test_UG_TBL_TC04_positive_table_pagination_page_number.py
+22:36:35 | - Start recording screen
+22:36:35 | - Get table data
+22:36:37 | - Click 'next' button on table
+22:36:38 | - Click 'next' button on table
+22:36:39 | - Go to the first page
+22:36:39 | Step 1: Click page number: 1
+22:36:39 | - Click on page number 1 button
+22:36:39 | Verify page number 1 has selected color
+22:36:39 | Verify footer label: 'Showing 1 to 40 of 120 items'
+22:36:39 | - Wait for 'Showing 1 to 40 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:39 | Verify table data (page: 1)
+22:36:39 | - Get table data
+22:36:41 | - Comparing 40 items
+22:36:41 | Verify prev button is disabled on the first page
+22:36:41 | Step 2: Click page number: 2
+22:36:41 | - Click on page number 2 button
+22:36:41 | Verify page number 2 has selected color
+22:36:41 | Verify footer label: 'Showing 41 to 80 of 120 items'
+22:36:41 | - Wait for 'Showing 41 to 80 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:41 | Verify table data (page: 2)
+22:36:41 | - Get table data
+22:36:43 | - Comparing 40 items
+22:36:43 | Step 3: Click page number: 3
+22:36:43 | - Click on page number 3 button
+22:36:43 | Verify page number 3 has selected color
+22:36:43 | Verify footer label: 'Showing 81 to 120 of 120 items'
+22:36:43 | - Wait for 'Showing 81 to 120 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:43 | Verify table data (page: 3)
+22:36:43 | - Get table data
+22:36:45 | - Comparing 40 items
+22:36:45 | Verify next button is disabled on the last page
+22:36:45 | Step 4: Click page number: 2
+22:36:45 | - Click on page number 2 button
+22:36:45 | Verify page number 2 has selected color
+22:36:46 | Verify footer label: 'Showing 41 to 80 of 120 items'
+22:36:46 | - Wait for 'Showing 41 to 80 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:46 | Verify table data (page: 2)
+22:36:46 | - Get table data
+22:36:47 | - Comparing 40 items
+22:36:47 | Step 5: Click page number: 1
+22:36:47 | - Click on page number 1 button
+22:36:47 | Verify page number 1 has selected color
+22:36:48 | Verify footer label: 'Showing 1 to 40 of 120 items'
+22:36:48 | - Wait for 'Showing 1 to 40 of 120 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:36:48 | Verify table data (page: 1)
+22:36:48 | - Get table data
+22:36:50 | - Comparing 40 items
+22:36:50 | Verify prev button is disabled on the first page
+22:36:51 | - Stop recording screen

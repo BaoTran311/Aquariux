@@ -1,0 +1,37 @@
+23:03:07 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:03:07 | - Start recording screen
+23:03:08 | - Get table data
+23:03:10 | - Click 'next' button on table
+23:03:11 | - Click 'next' button on table
+23:03:12 | - Go to the first page
+23:03:12 | Step 1: Search by: 'Name', with untrimmed spaces: '      DWxb_Auto/PvcaIxOr'
+23:03:12 | - Search for: '      DWxb_Auto/PvcaIxOr'
+23:03:13 | Verify search is not auto-trimmed — empty state label is shown ('      DWxb_Auto/PvcaIxOr')
+23:03:13 | Verify button 'Add Asset Class' is displayed ('      DWxb_Auto/PvcaIxOr')
+23:03:13 | Verify footer label: 'Showing 0 to 0 of 0 items' ('      DWxb_Auto/PvcaIxOr')
+23:03:13 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+23:03:13 | Step 2: Clear search
+23:03:13 | - Clear search input
+23:03:13 | Verify table data reset ('      DWxb_Auto/PvcaIxOr')
+23:03:13 | - Get table data
+23:03:15 | - Click 'next' button on table
+23:03:17 | - Click 'next' button on table
+23:03:18 | - Go to the first page
+23:03:18 | - Comparing 84 items
+23:03:18 | Step 3: Search by: 'Name', with untrimmed spaces: 'DWxb_Auto/PvcaIxOr      '
+23:03:18 | - Search for: 'DWxb_Auto/PvcaIxOr      '
+23:03:18 | Verify search is not auto-trimmed — empty state label is shown ('DWxb_Auto/PvcaIxOr      ')
+23:03:19 | Verify button 'Add Asset Class' is displayed ('DWxb_Auto/PvcaIxOr      ')
+23:03:19 | Verify footer label: 'Showing 0 to 0 of 0 items' ('DWxb_Auto/PvcaIxOr      ')
+23:03:19 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+23:03:19 | Step 4: Clear search
+23:03:19 | - Clear search input
+23:03:19 | Verify table data reset ('DWxb_Auto/PvcaIxOr      ')
+23:03:19 | - Get table data
+23:03:21 | - Click 'next' button on table
+23:03:23 | - Click 'next' button on table
+23:03:23 | - Go to the first page
+23:03:23 | - Comparing 84 items
+23:03:23 | [Teardown] Clear search field
+23:03:23 | - Clear search input
+23:03:24 | - Stop recording screen

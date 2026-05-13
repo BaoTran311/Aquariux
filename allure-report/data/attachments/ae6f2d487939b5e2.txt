@@ -1,0 +1,9 @@
+10:53:17 | - Running test case: test_TA_ADD_TC08_negative_leave_empty_form.py
+10:53:17 | - Start recording screen
+10:53:18 | Step 1: Click 'Add Account'
+10:53:18 | - Click 'Add Account' button
+10:53:19 | Step 2: Leave empty form and click Save & Create Another
+10:53:19 | - Click 'Save & Create Another' button
+10:53:19 | Verify default placeholders for all fields
+10:53:22 | [Teardown] Refresh the page
+10:53:24 | - Stop recording screen
