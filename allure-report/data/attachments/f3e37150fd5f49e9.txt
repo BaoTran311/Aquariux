@@ -1,0 +1,64 @@
+21:55:42 | - Running test case: test_AK_TBL_TC04_positive_search.py
+21:55:42 | - Start recording screen
+21:55:43 | Step 1: Search by 'Name' partial: 'inib_Auto_A'
+21:55:43 | - Search for: inib_Auto_A
+21:55:43 | Verify table data matches partial: 'inib_Auto_A'
+21:55:43 | - Get table data
+21:55:45 | - Go to the first page
+21:55:45 | 
+Table Data:
+┌────────────────────┬──────────────────────────────────────┬──────────────┬──────────────┬──────────────────────┐
+│ name               │ id                                   │ expires      │ status       │ created_date         │
+├────────────────────┼──────────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
+│ inib_Auto_AmwcPjgH │ 019e489c-b50e-7d87-945e-6705cf51fe7d │ Never        │ Active       │ 21 May 2026 03:38:10 │
+└────────────────────┴──────────────────────────────────────┴──────────────┴──────────────┴──────────────────────┘
+21:55:45 | - Total records: 1
+21:55:45 | - Comparing 1 items
+21:55:45 | Step 2: Search by 'Name' partial: 'ARCz_Au'
+21:55:45 | - Search for: ARCz_Au
+21:55:46 | Verify table data matches partial: 'ARCz_Au'
+21:55:46 | - Get table data
+21:55:48 | - Go to the first page
+21:55:48 | 
+Table Data:
+┌────────────────────┬──────────────────────────────────────┬──────────────┬──────────────┬──────────────────────┐
+│ name               │ id                                   │ expires      │ status       │ created_date         │
+├────────────────────┼──────────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
+│ ARCz_Auto-XFBjEeih │ 019e368b-ffad-73d1-bd45-6050bd33e8f4 │ Never        │ Active       │ 17 May 2026 15:26:45 │
+└────────────────────┴──────────────────────────────────────┴──────────────┴──────────────┴──────────────────────┘
+21:55:48 | - Total records: 1
+21:55:48 | - Comparing 1 items
+21:55:48 | Step 3: Search by 'Name' partial: 'AU'
+21:55:48 | - Search for: AU
+21:55:48 | Verify table data matches partial: 'AU'
+21:55:48 | - Get table data
+21:55:50 | - Go to the first page
+21:55:51 | 
+Table Data:
+┌────────────────────┬──────────────────────────────────────┬───────────────────────┬──────────────┬────────────────────────┐
+│ name               │ id                                   │ expires               │ status       │ created_date           │
+├────────────────────┼──────────────────────────────────────┼───────────────────────┼──────────────┼────────────────────────┤
+│ BADV_Auto_jotOuODp │ 019e6259-1676-7848-ac11-d68343ee5ccb │ Never                 │ Active       │ 26 May 2026 03:34:26   │
+│ JhOm_Auto.nkwuKNYT │ 019e495b-d800-7b13-9297-be90f1cd80f0 │ Never                 │ Active       │ 21 May 2026 07:06:56   │
+│ ulrK_Auto-iKezxpKV │ 019e4958-a2af-7266-818a-9656babd79a2 │ Never                 │ Active       │ 21 May 2026 07:03:26   │
+│ wuSS_Auto/rURKRZgW │ 019e4949-aada-7a81-b8e9-526294e77231 │ Never                 │ Active       │ 21 May 2026 06:47:05   │
+│ tiuV_Auto_qnJtvvxI │ 019e48ea-bd00-72dd-bc78-00d9816762a9 │ Never                 │ Active       │ 21 May 2026 05:03:23   │
+│ inib_Auto_AmwcPjgH │ 019e489c-b50e-7d87-945e-6705cf51fe7d │ Never                 │ Active       │ 21 May 2026 03:38:10   │
+│ oWvG_Auto-LpaCcXyb │ 019e4864-5171-7a60-b38d-4c9b1b1889e6 │ Never                 │ Active       │ 21 May 2026 02:36:34   │
+│ AUD/CAD            │ 019e4840-961c-727c-9a1b-f3265fddc7c8 │ Never                 │ Active       │ 21 May 2026 01:57:32   │
+│ wjvu_Auto-IvfkhqFZ │ 019e36a9-efc4-7a02-aa49-e647148295dc │ Never                 │ Active       │ 17 May 2026 15:59:27   │
+│ VUUT_Auto-GTRYxCyJ │ 019e3696-18f6-795e-b7da-ee4a40dddf8d │ 28 May 2026 23:59:59  │ Active       │ 17 May 2026 15:37:46   │
+│ RwIR_Auto-GcddgQsl │ 019e3695-9e0b-7f9a-a97a-5cc6dd19be56 │ Never                 │ Active       │ 17 May 2026 15:37:15   │
+│ MGtG_Auto/UKLwKEwg │ 019e368d-d900-7e53-8b60-9ffbd88c61db │ Never                 │ Active       │ 17 May 2026 15:28:46   │
+│ ARCz_Auto-XFBjEeih │ 019e368b-ffad-73d1-bd45-6050bd33e8f4 │ Never                 │ Active       │ 17 May 2026 15:26:45   │
+│ YDla_Auto.zGgRxjjt │ 019e368a-7593-7308-ad7d-d1f18ffed66f │ Never                 │ Active       │ 17 May 2026 15:25:04   │
+│ vamO_Auto/dkOkswQd │ 019e3683-beb9-7102-8ff9-d4eb8838777f │ Never                 │ Active       │ 17 May 2026 15:17:44   │
+│ liUM_Auto-gLeqyttD │ 019e3682-0b6b-71f9-a195-36845e6fc630 │ Never                 │ Active       │ 17 May 2026 15:15:52   │
+│ AUD/CAD            │ 019e2034-7881-7606-87c2-ae19b24f93bd │ 21 May 2026 23:59:59  │ Active       │ 13 May 2026 07:19:30   │
+│ AUD/CAD            │ 019dcd81-833f-7798-9efd-23c2f9fb3d64 │ 1 April 2026 23:59:59 │ Active       │ 27 April 2026 05:55:10 │
+└────────────────────┴──────────────────────────────────────┴───────────────────────┴──────────────┴────────────────────────┘
+21:55:51 | - Total records: 18
+21:55:51 | - Comparing 18 items
+21:55:51 | [Teardown] Clear search field
+21:55:51 | - Clear search input
+21:55:52 | - Stop recording screen

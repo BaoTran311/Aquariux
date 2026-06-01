@@ -1,0 +1,18 @@
+00:34:05 | - Running test case: test_UG_ADD_TC03_negative_required_fields.py
+00:34:05 | - Start recording screen
+00:34:06 | [Setup] Click on 'Add User Group' button
+00:34:06 | - Click 'Add User Group' button
+00:34:06 | Step 1: Submit form without field: 'Commission'
+00:34:06 | - Input name: 'bZcM_Auto_fDbeNoLr'
+00:34:06 | - Input description: 'NvTNHFXMbM - description'
+00:34:06 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:34:06 | - Open dropdown Book Type
+00:34:06 | - Select Book Type
+00:34:06 | - Input margin call level: 95.32
+00:34:06 | - Input stop out level: 89.62
+00:34:07 | - Click 'Save' button
+00:34:07 | Verify error validation: 'Commission is required'
+00:34:07 | Verify panel remains open
+00:34:07 | [Teardown] Click 'x' icon to close the panel
+00:34:07 | - Click 'x' icon
+00:34:08 | - Stop recording screen

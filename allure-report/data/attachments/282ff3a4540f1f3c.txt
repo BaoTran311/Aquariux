@@ -1,0 +1,27 @@
+09:03:32 | - Running test case: test_AK_GEN_TC06_negative_network_error.py
+09:03:32 | - Get table data
+09:03:34 | - Click 'next' button on table
+09:03:36 | - Click 'next' button on table
+09:03:37 | - Go to the first page
+09:03:37 | - Total records: 55
+09:03:37 | - Start recording screen
+09:03:37 | [Setup] Open Generate API Key panel
+09:03:37 | - Click 'Generate API Key' button
+09:03:38 | Step 1: Fill form with: 'name: RGIU_Auto/RQsjHBug, expiry: No Expiry, status: Active'
+09:03:38 | - Input name: 'RGIU_Auto/RQsjHBug'
+09:03:38 | - Select expiry: 'No Expiry'
+09:03:38 | - Toggle status to 'Active'
+09:03:39 | Step 2: Disconnect network
+09:03:39 | Step 3: Click Generate
+09:03:39 | - Click 'Generate Key' button
+09:03:39 | Verify toast message: 'Network error. Please check your connection.'
+09:03:40 | Verify pre-filled values remain un-changed
+09:03:40 | Step 4: Close the panel
+09:03:40 | - Click 'x' icon
+09:03:41 | Verify footer label remains un-changed
+09:03:41 | - Wait for 'Showing 1 to 20 of 55 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+09:03:41 | [Teardown] Restore network connection
+09:03:41 | [Teardown] Close panel if open
+09:03:41 | - Close panel
+09:03:47 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+09:03:48 | - Stop recording screen

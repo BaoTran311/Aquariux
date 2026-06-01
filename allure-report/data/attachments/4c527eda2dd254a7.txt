@@ -1,0 +1,22 @@
+22:09:53 | - Running test case: test_AK_VIW_TC01_positive_default_state.py
+22:09:53 | - Start recording screen
+22:09:53 | Step 1: Click on row: 'banhdainam@gmail.com'
+22:09:53 | - Select col: 'Name' value: 'banhdainam@gmail.com'
+22:09:54 | Verify panel title: 'banhdainam@gmail.com' with status badge: 'Active'
+22:09:54 | Verify tabs: ['Overview', 'Audit Log']
+22:09:55 | - Comparing: 
+Actual:    ['Overview', 'Audit Log']
+Expected:  ['Overview', 'Audit Log']
+22:09:55 | Verify tab 'Overview' selected by default
+22:09:55 | Verify detail labels match spec
+22:09:55 | - Comparing: 
+Actual:    ['Name', 'ID', 'Expires Date', 'Created Date', 'Last Updated']
+Expected:  ['Name', 'ID', 'Expires Date', 'Created Date', 'Last Updated']
+22:09:55 | Verify CTAs: 'Cancel', 'Edit'
+22:09:56 | Step 2: Try clicking outside
+22:09:56 | - Click outside to close the panel
+22:09:56 | Verify panel remains open
+22:09:57 | [Teardown] Close panel if open
+22:09:57 | - Close panel
+22:10:02 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+22:10:03 | - Stop recording screen

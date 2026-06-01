@@ -1,0 +1,19 @@
+21:56:03 | - Running test case: test_AK_TBL_TC04_positive_search.py
+21:56:03 | - Start recording screen
+21:56:04 | Step 1: Search with non-existent: 'vHxWjNXloSiapzvKomge'
+21:56:04 | - Search for: vHxWjNXloSiapzvKomge
+21:56:04 | Verify empty label shown
+21:56:05 | Verify footer: 'Showing 0 to 0 of 0 items'
+21:56:05 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+21:56:05 | Step 2: Clear search
+21:56:05 | - Clear search input
+21:56:06 | Step 3: Search with non-existent: '     '
+21:56:06 | - Search for:      
+21:56:06 | Verify empty label shown
+21:56:07 | Verify footer: 'Showing 0 to 0 of 0 items'
+21:56:07 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+21:56:07 | Step 4: Clear search
+21:56:07 | - Clear search input
+21:56:07 | [Teardown] Clear search field
+21:56:07 | - Clear search input
+21:56:09 | - Stop recording screen

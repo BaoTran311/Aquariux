@@ -1,0 +1,11 @@
+21:59:36 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+21:59:36 | - Start recording screen
+21:59:36 | Step 1: Search with: 'auto'
+21:59:36 | - Search for: auto
+21:59:37 | Step 2: Click sort on column: 'Expires'
+21:59:37 | - Sort by: 'Expires'
+21:59:37 | Verify column sorts chronologically oldest → newest
+21:59:37 | - Get table data
+21:59:39 | - Go to the first page
+21:59:39 | - Total records: 15
+21:59:40 | - Stop recording screen

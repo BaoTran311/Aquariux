@@ -1,0 +1,113 @@
+23:00:37 | - Running test case: test_TA_TBL_TC07_resize_columns.py
+23:00:37 | - Start recording screen
+23:00:37 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Name': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Email': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Leverage': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Type': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Status': 'height: 40, width: 151'
+23:00:37 | - Size of column: 'Email': 'height: 40, width: 151'
+23:00:37 | Step 1: Increase size of column: 'Email'
+23:00:37 | - Increase column: 'Email' by 58px
+23:00:39 | Verify column 'Email' size reflects 'increase'
+23:00:39 | - Size of column: 'Email': 'height: 40, width: 207'
+23:00:39 | - Size of column: 'Email': 'height: 40, width: 207'
+23:00:39 | Step 2: Increase size of column: 'Email'
+23:00:39 | - Increase column: 'Email' by 58px
+23:00:41 | Verify column 'Email' size reflects 'increase'
+23:00:41 | - Size of column: 'Email': 'height: 40, width: 263'
+23:00:42 | - Size of column: 'Type': 'height: 40, width: 151'
+23:00:42 | Step 3: Decrease size of column: 'Type'
+23:00:42 | - Decrease column: 'Type' by 58px
+23:00:44 | Verify column 'Type' size reflects 'decrease'
+23:00:44 | - Size of column: 'Type': 'height: 40, width: 95'
+23:00:44 | - Size of column: 'Type': 'height: 40, width: 95'
+23:00:44 | Step 4: Decrease size of column: 'Type'
+23:00:44 | - Decrease column: 'Type' by 58px
+23:00:46 | Verify column 'Type' size reflects 'decrease'
+23:00:46 | - Size of column: 'Type': 'height: 40, width: 80'
+23:00:46 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:00:46 | Step 5: Decrease size of column: 'Account ID'
+23:00:46 | - Decrease column: 'Account ID' by 58px
+23:00:48 | Verify column 'Account ID' size reflects 'decrease'
+23:00:48 | - Size of column: 'Account ID': 'height: 40, width: 95'
+23:00:48 | - Size of column: 'Account ID': 'height: 40, width: 95'
+23:00:48 | Step 6: Decrease size of column: 'Account ID'
+23:00:48 | - Decrease column: 'Account ID' by 58px
+23:00:50 | Verify column 'Account ID' size reflects 'decrease'
+23:00:50 | - Size of column: 'Account ID': 'height: 40, width: 80'
+23:00:50 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:00:50 | Step 7: Decrease size of column: 'Trade Permission'
+23:00:50 | - Decrease column: 'Trade Permission' by 58px
+23:00:52 | Verify column 'Trade Permission' size reflects 'decrease'
+23:00:52 | - Size of column: 'Trade Permission': 'height: 40, width: 95'
+23:00:52 | - Size of column: 'Trade Permission': 'height: 40, width: 95'
+23:00:52 | Step 8: Increase size of column: 'Trade Permission'
+23:00:52 | - Increase column: 'Trade Permission' by 58px
+23:00:54 | Verify column 'Trade Permission' size reflects 'increase'
+23:00:54 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:00:54 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:00:54 | Step 9: Increase size of column: 'Mode'
+23:00:54 | - Increase column: 'Mode' by 58px
+23:00:56 | Verify column 'Mode' size reflects 'increase'
+23:00:56 | - Size of column: 'Mode': 'height: 40, width: 207'
+23:00:56 | - Size of column: 'Mode': 'height: 40, width: 207'
+23:00:56 | Step 10: Decrease size of column: 'Mode'
+23:00:56 | - Decrease column: 'Mode' by 58px
+23:00:58 | Verify column 'Mode' size reflects 'decrease'
+23:00:58 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:00:58 | - Size of column: 'Status': 'height: 40, width: 151'
+23:00:58 | Step 11: Decrease size of column: 'Status'
+23:00:58 | - Decrease column: 'Status' by 58px
+23:01:00 | Verify column 'Status' size reflects 'decrease'
+23:01:00 | - Size of column: 'Status': 'height: 40, width: 95'
+23:01:00 | - Size of column: 'Status': 'height: 40, width: 95'
+23:01:00 | Step 12: Increase size of column: 'Status'
+23:01:00 | - Increase column: 'Status' by 58px
+23:01:03 | Verify column 'Status' size reflects 'increase'
+23:01:03 | - Size of column: 'Status': 'height: 40, width: 151'
+23:01:03 | - Size of column: 'Leverage': 'height: 40, width: 151'
+23:01:03 | Step 13: Increase size of column: 'Leverage'
+23:01:03 | - Increase column: 'Leverage' by 58px
+23:01:05 | Verify column 'Leverage' size reflects 'increase'
+23:01:05 | - Size of column: 'Leverage': 'height: 40, width: 207'
+23:01:05 | - Size of column: 'Leverage': 'height: 40, width: 207'
+23:01:05 | Step 14: Increase size of column: 'Leverage'
+23:01:05 | - Increase column: 'Leverage' by 58px
+23:01:07 | Verify column 'Leverage' size reflects 'increase'
+23:01:07 | - Size of column: 'Leverage': 'height: 40, width: 263'
+23:01:07 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:01:07 | Step 15: Decrease size of column: 'Currency'
+23:01:07 | - Decrease column: 'Currency' by 58px
+23:01:09 | Verify column 'Currency' size reflects 'decrease'
+23:01:09 | - Size of column: 'Currency': 'height: 40, width: 95'
+23:01:09 | - Size of column: 'Currency': 'height: 40, width: 95'
+23:01:09 | Step 16: Increase size of column: 'Currency'
+23:01:09 | - Increase column: 'Currency' by 58px
+23:01:11 | Verify column 'Currency' size reflects 'increase'
+23:01:11 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:01:11 | - Size of column: 'Name': 'height: 40, width: 151'
+23:01:11 | Step 17: Increase size of column: 'Name'
+23:01:11 | - Increase column: 'Name' by 58px
+23:01:13 | Verify column 'Name' size reflects 'increase'
+23:01:13 | - Size of column: 'Name': 'height: 40, width: 207'
+23:01:13 | - Size of column: 'Name': 'height: 40, width: 207'
+23:01:13 | Step 18: Increase size of column: 'Name'
+23:01:13 | - Increase column: 'Name' by 58px
+23:01:15 | Verify column 'Name' size reflects 'increase'
+23:01:15 | - Size of column: 'Name': 'height: 40, width: 263'
+23:01:15 | Step 19: Refresh page
+23:01:16 | Verify column sizes restored for: Email, Type, Account ID, Trade Permission, Mode, Status, Leverage, Currency, Name
+23:01:16 | - Size of column: 'Email': 'height: 40, width: 151'
+23:01:16 | - Size of column: 'Type': 'height: 40, width: 151'
+23:01:16 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:01:16 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:01:16 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:01:16 | - Size of column: 'Status': 'height: 40, width: 151'
+23:01:16 | - Size of column: 'Leverage': 'height: 40, width: 151'
+23:01:16 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:01:16 | - Size of column: 'Name': 'height: 40, width: 151'
+23:01:17 | - Stop recording screen

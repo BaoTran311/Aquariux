@@ -1,0 +1,150 @@
+00:33:13 | - Running test case: test_UG_ADD_TC01_positive_default_state.py
+00:33:13 | [Setup] Setup 2FA via API
+00:33:13 | [API] Send API: POST /auth/v1/login/admin
+00:33:14 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-08T17:33:14.589016745Z"
+}
+
+
+00:33:14 | [API] Send API: GET /backoffice/v1/2fa/setup/totp
+00:33:14 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/setup/totp' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjE1OTQsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgzNDk0LCJpYXQiOjE3NzgyNjE1OTQsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjgyYzFkOWQ0LWMzYTMtNDFmMC04ZTg3LTg3ZDA4Y2ZiNDlkMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Gp0RpJwZpfH6R1sHGDJ4mtx_atrXVP-4Ee3ynBnzH_N5d6MWwci2bBA2Tff1V40u6VA824nICnfOs4ie5t3RlSpaZtTI_vNSRB4sqRTDoMd7WQsOnTU63nJOrsYYJIXuzMa5oqoFQzzljbPsthwoKsKiAi5nwEMA5wGo2BtZ_zZX6_PHh2EY3V5quFnHLck4z0fcHUSXuyanEKnZPdKCkai4tl7R_Qd-k5tu1WVx7IXl1xqkBDWbmRCk9gaG_FCg6rLcuO2BvrOsHTvpFw4miVZTwLimYHCc9h_WcZpqVglRshkOcmz_SzM8we0GnTG5n1yZsGyqjSOTMsUz2TARHg'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "secret": "JI4XAOZLWMVFYXX2C6BYCPZAL576MBQT",
+        "qrCodeUrl": "otpauth://totp/nguyengiabao.tran1%40aquariux.com?secret=JI4XAOZLWMVFYXX2C6BYCPZAL576MBQT&issuer=AQXOMS",
+        "accountName": "nguyengiabao.tran1@aquariux.com",
+        "issuer": "AQXOMS",
+        "message": "TOTP secret generated. Scan QR code with authenticator app, then verify."
+    },
+    "success": true,
+    "timestamp": "2026-05-08T17:33:14.877959170Z"
+}
+
+
+00:33:14 | [API] Send API: POST /backoffice/v1/2fa/totp/verify
+00:33:14 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/totp/verify' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjE1OTQsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgzNDk0LCJpYXQiOjE3NzgyNjE1OTQsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjgyYzFkOWQ0LWMzYTMtNDFmMC04ZTg3LTg3ZDA4Y2ZiNDlkMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Gp0RpJwZpfH6R1sHGDJ4mtx_atrXVP-4Ee3ynBnzH_N5d6MWwci2bBA2Tff1V40u6VA824nICnfOs4ie5t3RlSpaZtTI_vNSRB4sqRTDoMd7WQsOnTU63nJOrsYYJIXuzMa5oqoFQzzljbPsthwoKsKiAi5nwEMA5wGo2BtZ_zZX6_PHh2EY3V5quFnHLck4z0fcHUSXuyanEKnZPdKCkai4tl7R_Qd-k5tu1WVx7IXl1xqkBDWbmRCk9gaG_FCg6rLcuO2BvrOsHTvpFw4miVZTwLimYHCc9h_WcZpqVglRshkOcmz_SzM8we0GnTG5n1yZsGyqjSOTMsUz2TARHg' 
+--header 'Content-Length: 18' 
+--data-raw '{"code": "577433"}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-08T17:33:15.147289883Z"
+}
+
+
+00:33:14 | [API] Send API: POST /auth/v1/login/admin
+00:33:15 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-08T17:33:15.781137286Z"
+}
+
+
+00:33:15 | [API] Send API: GET /backoffice/v1/admin-users
+00:33:15 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjE1OTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgzNDk1LCJpYXQiOjE3NzgyNjE1OTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjkyODA5MzJkLTA1NDItNDg2NC04YTE3LWEyMTVmOTEwODY1OSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.VnD5n9MPXrB6fVUeZpni8DeBPhVv2_rpz14FdCXYPIkiVFm8RYgyOBShcef4gCfLej5revHU92VkQ6k1tMAXIM6ezXGIuqLdbZkiPyfzVBiGvXA6GimHFuTopwouRQCK6vu4zpwCMakw-7YoCYvkzxfAd2LkT_6N7gehoSILYzm7VM7Jgsx603lW33IagCDE9XRYMc6e5TACtFmiHq_OuMoMiPdMlgOLjcSeROGWEIgvcSMngPdxobiBWWHt49g3hkzQB1QjoY9tYmh6pPS3mNsx0lJFyW_323VQV7p3zbKuTQ46uar6eDfPdQEsE2TR6z8Cu4YnwjNuggS2vVMG7g'
+
+
+00:33:15 | [Setup] Init Web Driver
+00:33:17 | - Registered driver under 'web_main' (total: 1)
+00:33:17 | - Added web driver 'main' to driver_list (total: 1)
+00:33:17 | [Setup] Navigate to OMS site
+00:33:19 | [Setup] Login with default admin user
+00:33:20 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+00:33:20 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+00:33:20 | - Input password: 'Autotest@12345'
+00:33:20 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+00:33:20 | - Click on login button
+00:33:21 | - Waiting for new code generated (old: '577433') ...
+00:33:30 | - New code generated ! (065262)
+00:33:31 | - Input TOTP code: '065262'
+00:33:31 | [Setup] Expand Accounts section
+00:33:32 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+00:33:32 | - Expand item: 'Accounts'
+00:33:32 | [Setup] Navigate to User Group Page
+00:33:32 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+00:33:32 | - Item: 'Accounts' already 'expand'
+00:33:32 | - Start recording screen
+00:33:32 | Step 1: Click on 'Add User Group' button
+00:33:32 | - Click 'Add User Group' button
+00:33:32 | Verify panel title: 'Add User Group' & desc: Create a new user group
+00:33:32 | Verify default labels for all fields
+00:33:32 | Verify icon '*' for field: ['Name', 'Position Type', 'Book Type', 'Margin Call Level', 'Stop Out Level', 'Commission']
+00:33:32 | - Comparing: 
+Actual:    ['Name *', 'Position Type *', 'Book Type *', 'Margin Call Level *', 'Stop Out Level *', 'Commission *']
+Expected:  ['Name *', 'Position Type *', 'Book Type *', 'Margin Call Level *', 'Stop Out Level *', 'Commission *']
+00:33:32 | Verify CTAs: 'Save & Create Another' vs 'Save'
+00:33:32 | Step 2: Hover on ic tooltip of 'Position Type'
+00:33:32 | - Hover on 'Position Type' tooltip ic
+00:33:35 | Verify tooltip: 'Only hedge is currently supported. Netting will be supported in future releases.'
+00:33:35 | Step 3: Hover on ic tooltip of 'Margin Call Level'
+00:33:35 | - Hover on 'Margin Call Level' tooltip ic
+00:33:38 | Verify tooltip: 'Equity‑to‑margin percentage at which the system warns that margin is getting low.'
+00:33:38 | Step 4: Hover on ic tooltip of 'Stop Out Level'
+00:33:38 | - Hover on 'Stop Out Level' tooltip ic
+00:33:41 | Verify tooltip: 'Equity‑to‑margin percentage where positions are auto‑closed to protect the account from large losses.'
+00:33:41 | Step 5: Hover on ic tooltip of 'Commission'
+00:33:41 | - Hover on 'Commission' tooltip ic
+00:33:44 | Verify tooltip: 'Per‑lot fee applied on each position open and close.'
+00:33:44 | [Teardown] Click 'x' icon to close the panel
+00:33:44 | - Click 'x' icon
+00:33:45 | - Stop recording screen

@@ -1,0 +1,33 @@
+23:06:37 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:06:37 | - Start recording screen
+23:06:37 | - Get table data
+23:06:40 | - Click 'next' button on table
+23:06:41 | - Click 'next' button on table
+23:06:42 | - Go to the first page
+23:06:42 | Step 1: Search with: 'wMlT_Auto-XWsBWPWg', then clear via icon
+23:06:42 | - Search for: 'wMlT_Auto-XWsBWPWg'
+23:06:42 | - Clear search input
+23:06:43 | Verify search field is cleared (by_icon: True)
+23:06:43 | Verify clear search icon is not displayed (by_icon: True)
+23:06:43 | - Check invisibility of locator: ('css selector', 'button[data-testid="trading-account-list-search-input-search-account-email-input-icon-right"]'): TRUE
+23:06:43 | Verify table data reset (by_icon: True)
+23:06:43 | - Get table data
+23:06:45 | - Click 'next' button on table
+23:06:46 | - Click 'next' button on table
+23:06:47 | - Go to the first page
+23:06:47 | - Comparing 84 items
+23:06:47 | Step 2: Search with: 'wMlT_Auto-XWsBWPWg', then clear via keyboard
+23:06:47 | - Search for: 'wMlT_Auto-XWsBWPWg'
+23:06:48 | - Clear search input
+23:06:48 | Verify search field is cleared (by_icon: False)
+23:06:48 | Verify clear search icon is not displayed (by_icon: False)
+23:06:48 | - Check invisibility of locator: ('css selector', 'button[data-testid="trading-account-list-search-input-search-account-email-input-icon-right"]'): TRUE
+23:06:48 | Verify table data reset (by_icon: False)
+23:06:48 | - Get table data
+23:06:50 | - Click 'next' button on table
+23:06:51 | - Click 'next' button on table
+23:06:52 | - Go to the first page
+23:06:52 | - Comparing 84 items
+23:06:52 | [Teardown] Clear search field
+23:06:52 | - Clear search input
+23:06:53 | - Stop recording screen

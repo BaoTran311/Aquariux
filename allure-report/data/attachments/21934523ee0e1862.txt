@@ -1,0 +1,37 @@
+22:38:50 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:38:50 | - Start recording screen
+22:38:50 | - Get table data
+22:38:52 | - Click 'next' button on table
+22:38:53 | - Click 'next' button on table
+22:38:54 | - Go to the first page
+22:38:54 | Step 1: Search by: 'Description', with untrimmed spaces: '         aziGDHGyOg - description'
+22:38:54 | - Search for: '         aziGDHGyOg - description'
+22:38:55 | Verify search is not auto-trimmed — empty state label is shown ('         aziGDHGyOg - description')
+22:38:55 | Verify button 'Add Asset Class' is displayed ('         aziGDHGyOg - description')
+22:38:55 | Verify footer label: 'Showing 0 to 0 of 0 items' ('         aziGDHGyOg - description')
+22:38:55 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:38:55 | Step 2: Clear search
+22:38:55 | - Clear search input
+22:38:55 | Verify table data reset ('         aziGDHGyOg - description')
+22:38:55 | - Get table data
+22:38:57 | - Click 'next' button on table
+22:38:58 | - Click 'next' button on table
+22:38:59 | - Go to the first page
+22:38:59 | - Comparing 120 items
+22:38:59 | Step 3: Search by: 'Description', with untrimmed spaces: 'aziGDHGyOg - description      '
+22:38:59 | - Search for: 'aziGDHGyOg - description      '
+22:39:00 | Verify search is not auto-trimmed — empty state label is shown ('aziGDHGyOg - description      ')
+22:39:00 | Verify button 'Add Asset Class' is displayed ('aziGDHGyOg - description      ')
+22:39:00 | Verify footer label: 'Showing 0 to 0 of 0 items' ('aziGDHGyOg - description      ')
+22:39:00 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:39:00 | Step 4: Clear search
+22:39:00 | - Clear search input
+22:39:00 | Verify table data reset ('aziGDHGyOg - description      ')
+22:39:00 | - Get table data
+22:39:02 | - Click 'next' button on table
+22:39:03 | - Click 'next' button on table
+22:39:04 | - Go to the first page
+22:39:04 | - Comparing 120 items
+22:39:04 | [Teardown] Clear search field
+22:39:04 | - Clear search input
+22:39:05 | - Stop recording screen

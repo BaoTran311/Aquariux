@@ -1,0 +1,29 @@
+15:23:07 | - Running test case: test_TA_DEL_TC06_negative_network_error_from_edit_panel.py
+15:23:07 | - Start recording screen
+15:23:08 | - Get table data
+15:23:10 | - Click 'next' button on table
+15:23:11 | - Click 'next' button on table
+15:23:13 | - Go to the first page
+15:23:13 | - Get table data
+15:23:15 | - Click 'next' button on table
+15:23:17 | - Click 'next' button on table
+15:23:18 | - Go to the first page
+15:23:19 | [Setup] Total rows data: 119
+15:23:19 | Step 1: View row: 'AQX-TA-00000568' > Edit
+15:23:19 | - Search for: 'AQX-TA-00000568'
+15:23:19 | - Delete row: 'wMlT_Auto-XWsBWPWg' (attempt:1)
+15:23:19 | Step 2: Disconnect network
+15:23:19 | Step 3: Confirm delete
+15:23:19 | - Modal confirm
+15:23:19 | Verify toast message: 'Network error. Please check your connection.'
+15:23:20 | Verify confirmation modal remains open
+15:23:20 | Step 4: Restore network & refresh page
+15:23:21 | Verify footer label unchanged
+15:23:21 | - Wait for 'Showing 1 to 40 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+15:23:21 | Step 5: Search for: 'AQX-TA-00000568'
+15:23:21 | - Search for: 'AQX-TA-00000568'
+15:23:22 | Verify table data remains unchanged
+15:23:22 | - Get table data
+15:23:23 | [Teardown] Restore network connection
+15:23:23 | [Teardown] Refresh the page
+15:23:25 | - Stop recording screen

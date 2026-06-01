@@ -1,0 +1,145 @@
+21:29:53 | - Running test case: test_AK_DEL_TC01_positive_cancel.py
+21:29:53 | [Setup] Setup 2FA via API
+21:29:53 | [API] Send API: POST /auth/v1/login/admin
+21:29:54 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-06-01T14:29:54.205329213Z"
+}
+
+
+21:29:54 | [API] Send API: GET /backoffice/v1/2fa/setup/totp
+21:29:54 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/setup/totp' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODAzMjQxOTQsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwMzI1MDk0LCJpYXQiOjE3ODAzMjQxOTQsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImIwMzczMjZhLTBlNDktNDVmNi1iYzQ1LTRmNzIwZmRiZGZlNCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.dD7WOzHU1BOH9p4pMrcKkRRYndZzwfl2uRVPGm9q4L2_pc8GAtg7GboekXR25zZJ-Ok0F8MnwEwzvI_ki_foSbX68r91EKjH0RQL-PoQX_1Tx0IWFlXH4SsE-aByOFhyiVB3Z0u8Ebz1uu52eKyf0EpvYFni7Bmb2us_sOJgn07pAO3Qa0q2RHovkuwyef1TS_DAM3TIkyh4hgDMFDycr31ycZAgwqfs0wrOJb0LClizGAPKr1LbI66twR_N9ELWrao6kx6vqN4IoRaJWoXWZ9rWEzKNRLXVk9P5ISZ2oYaI5Uc5cZY0phwd4D3V4r2iEHDJ-BGasQgJCjQKp5m1EQ'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "secret": "XE64XGSRYI2FYK26BLTGMD6D7W2NHXZC",
+        "qrCodeUrl": "otpauth://totp/nguyengiabao.tran1%40aquariux.com?secret=XE64XGSRYI2FYK26BLTGMD6D7W2NHXZC&issuer=AQXOMS",
+        "accountName": "nguyengiabao.tran1@aquariux.com",
+        "issuer": "AQXOMS",
+        "message": "TOTP secret generated. Scan QR code with authenticator app, then verify."
+    },
+    "success": true,
+    "timestamp": "2026-06-01T14:29:54.464165585Z"
+}
+
+
+21:29:54 | [API] Send API: POST /backoffice/v1/2fa/totp/verify
+21:29:54 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/totp/verify' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODAzMjQxOTQsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwMzI1MDk0LCJpYXQiOjE3ODAzMjQxOTQsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImIwMzczMjZhLTBlNDktNDVmNi1iYzQ1LTRmNzIwZmRiZGZlNCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.dD7WOzHU1BOH9p4pMrcKkRRYndZzwfl2uRVPGm9q4L2_pc8GAtg7GboekXR25zZJ-Ok0F8MnwEwzvI_ki_foSbX68r91EKjH0RQL-PoQX_1Tx0IWFlXH4SsE-aByOFhyiVB3Z0u8Ebz1uu52eKyf0EpvYFni7Bmb2us_sOJgn07pAO3Qa0q2RHovkuwyef1TS_DAM3TIkyh4hgDMFDycr31ycZAgwqfs0wrOJb0LClizGAPKr1LbI66twR_N9ELWrao6kx6vqN4IoRaJWoXWZ9rWEzKNRLXVk9P5ISZ2oYaI5Uc5cZY0phwd4D3V4r2iEHDJ-BGasQgJCjQKp5m1EQ' 
+--header 'Content-Length: 18' 
+--data-raw '{"code": "022902"}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-01T14:29:54.725995456Z"
+}
+
+
+21:29:54 | [API] Send API: POST /auth/v1/login/admin
+21:29:55 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-06-01T14:29:55.311763907Z"
+}
+
+
+21:29:55 | [API] Send API: GET /backoffice/v1/admin-users
+21:29:55 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODAzMjQxOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwMzI1MDk1LCJpYXQiOjE3ODAzMjQxOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjViYTk3Y2Q2LWI0OWQtNGU4MC05OTY3LTZlMTg0NmY0MTg3NSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.LvMNRN8zFNEm8Mvp43bzs0hrt6O3IiV3DvTul7OERF85XX1Zms3S3_r0VCgaPkK2doXKYDAQtzhdEClvAxuZ4uJY74mZn9B39K8U34lmKcKUt6_nNayOnBvxDY0D_ZoqsCUmW9Gq5NRRfhaseBjxz9B8hbQHlbjjBC0NprbYvkzpI_FENQQ3ED715DNG1QtX21_vfW2XmmO0BLuTxRLqOImFb_XnuJp3Hkw31e5dZ8Q-D4b832bfNMfjcy7obuzUQlAG74_gowKzInytHTdlzV5S3XvM1V6CpGBtzeq0Psl-GrQteYeqGLJDrTnHvqfwDwZWE_6FBI53jCdwaR8nmw'
+
+
+21:29:55 | [Setup] Init Web Driver
+21:29:56 | - Registered driver under 'web_main' (total: 1)
+21:29:56 | - Added web driver 'main' to driver_list (total: 1)
+21:29:56 | [Setup] Navigate to OMS site
+21:29:58 | [Setup] Login with default admin user
+21:29:59 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+21:29:59 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+21:30:00 | - Input password: 'Autotest@12345'
+21:30:01 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+21:30:01 | - Click on login button
+21:30:01 | - Waiting for new code generated (old: '022902') ...
+21:30:01 | - New code generated ! (894647)
+21:30:02 | - Input TOTP code: '894647'
+21:30:05 | [Setup] Navigate to API Keys page
+21:30:05 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-settings"]'): FALSE
+21:30:05 | - Expand item: 'Settings'
+21:30:06 | - Get table data
+21:30:08 | - Click 'next' button on table
+21:30:10 | - Click 'next' button on table
+21:30:11 | - Go to the first page
+21:30:11 | - Total records: 58
+21:30:11 | - Start recording screen
+21:30:15 | [Setup] Total API keys: 58
+21:30:15 | Step 1: Action on row: 'QIIB_Auto-qhBANyqE' > Delete
+21:30:15 | - Search for: QIIB_Auto-qhBANyqE
+21:30:15 | - Delete row: 'QIIB_Auto-qhBANyqE' (attempt: 1)
+21:30:17 | Verify delete confirmation title
+21:30:17 | Verify delete confirmation content
+21:30:17 | Step 2: Try clicking outside
+21:30:18 | Verify modal remains open
+21:30:18 | Step 3: Click 'x' icon
+21:30:18 | Verify modal is closed
+21:30:18 | - Check invisibility of locator: ('css selector', 'span[data-slot="dialog-title"]'): TRUE
+21:30:18 | Step 4: Clear search
+21:30:18 | - Clear search input
+21:30:19 | Verify footer label unchanged
+21:30:20 | - Wait for 'Showing 1 to 20 of 58 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+21:30:20 | [Teardown] Refresh the page
+21:30:22 | - Stop recording screen

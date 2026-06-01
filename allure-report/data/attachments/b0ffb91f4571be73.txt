@@ -1,0 +1,18 @@
+22:56:49 | - Running test case: test_TA_TBL_TC02_positive_table_data_validation.py
+22:56:49 | - Start recording screen
+22:56:49 | - Get table data
+22:56:51 | - Go to the first page
+22:56:51 | Step 1: Observe asset classes table
+22:56:51 | Verify column labels: Account ID, Name, Email, Leverage, Currency, Type, Mode, Trade Permission, Status, Created Date, Action
+22:56:51 | - Table Labels: ['Account ID', 'Name', 'Email', 'Leverage', 'Currency', 'Type', 'Mode', 'Trade Permission', 'Status', 'Created Date', 'Action']
+22:56:51 | - Comparing: 
+Actual:    ['Account ID', 'Name', 'Email', 'Leverage', 'Currency', 'Type', 'Mode', 'Trade Permission', 'Status', 'Created Date', 'Action']
+Expected:  ['Account ID', 'Name', 'Email', 'Leverage', 'Currency', 'Type', 'Mode', 'Trade Permission', 'Status', 'Created Date', 'Action']
+22:56:51 | Verify column 'Account ID' is sorted alphabetically by default
+22:56:51 | - Get table data
+22:56:52 | - Go to the first page
+22:56:52 | - Comparing: 
+Actual:    ['AQX-TA-00000068', 'AQX-TA-00000129', 'AQX-TA-00001753', 'AQX-TA-00001754', 'AQX-TA-100000000']
+Expected:  ['AQX-TA-00000068', 'AQX-TA-00000129', 'AQX-TA-00001753', 'AQX-TA-00001754', 'AQX-TA-100000000']
+22:56:52 | Verify date/time column 'Created Date' uses format '%d %B %Y %H:%M:%S'
+22:56:53 | - Stop recording screen

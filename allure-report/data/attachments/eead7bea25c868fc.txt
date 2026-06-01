@@ -1,0 +1,38 @@
+22:31:58 | - Running test case: test_AK_TBL_TC08_positive_column_sorting.py
+22:31:58 | - Start recording screen
+22:31:59 | Step 1: Check sort button for column: 'Expires'
+22:31:59 | Verify sort button for column 'Expires' is displayed
+22:31:59 | Step 2: Click sort on column: 'Expires'
+22:31:59 | - Sort by: 'Expires'
+22:32:00 | Verify column sorts chronologically oldest → newest
+22:32:00 | - Get table data
+22:32:02 | - Click 'next' button on table
+22:32:04 | - Click 'next' button on table
+22:32:05 | - Go to the first page
+22:32:05 | - Total records: 52
+22:32:05 | - Comparing: 
+Actual:    ['1 January 2020 00:00:00', '1 January 2020 00:00:00', '11 March 2026 23:59:59', '1 April 2026 23:59:59', '12 May 2026 23:59:59', '15 May 2026 23:59:59', '17 May 2026 23:59:59', '19 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '23 May 2026 23:59:59', '28 May 2026 23:59:59', '28 May 2026 23:59:59', '1 June 2027 23:59:59', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '10 May 2030 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never']
+Expected:  ['1 January 2020 00:00:00', '1 January 2020 00:00:00', '11 March 2026 23:59:59', '1 April 2026 23:59:59', '12 May 2026 23:59:59', '15 May 2026 23:59:59', '17 May 2026 23:59:59', '19 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '23 May 2026 23:59:59', '28 May 2026 23:59:59', '28 May 2026 23:59:59', '1 June 2027 23:59:59', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '10 May 2030 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never']
+22:32:05 | Step 3: Click sort again on column: 'Expires'
+22:32:05 | - Sort by: 'Expires'
+22:32:06 | Verify column sorts chronologically newest → oldest
+22:32:06 | - Get table data
+22:32:08 | - Click 'next' button on table
+22:32:10 | - Click 'next' button on table
+22:32:11 | - Go to the first page
+22:32:11 | - Total records: 52
+22:32:11 | - Comparing: 
+Actual:    ['Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '10 May 2030 23:59:59', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '1 June 2027 23:59:59', '28 May 2026 23:59:59', '28 May 2026 23:59:59', '23 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '19 May 2026 23:59:59', '17 May 2026 23:59:59', '15 May 2026 23:59:59', '12 May 2026 23:59:59', '1 April 2026 23:59:59', '11 March 2026 23:59:59', '1 January 2020 00:00:00', '1 January 2020 00:00:00']
+Expected:  ['Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '10 May 2030 23:59:59', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '1 June 2027 23:59:59', '28 May 2026 23:59:59', '28 May 2026 23:59:59', '23 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '19 May 2026 23:59:59', '17 May 2026 23:59:59', '15 May 2026 23:59:59', '12 May 2026 23:59:59', '1 April 2026 23:59:59', '11 March 2026 23:59:59', '1 January 2020 00:00:00', '1 January 2020 00:00:00']
+22:32:11 | Step 4: Refresh page
+22:32:12 | Verify default sorted by 'Created Date' desc
+22:32:12 | - Get table data
+22:32:14 | - Click 'next' button on table
+22:32:16 | - Click 'next' button on table
+22:32:17 | - Go to the first page
+22:32:17 | - Total records: 52
+22:32:17 | - Comparing: 
+Actual:    ['26 May 2026 03:34:26', '26 May 2026 01:06:21', '24 May 2026 05:20:35', '21 May 2026 07:06:56', '21 May 2026 07:03:26', '21 May 2026 06:47:05', '21 May 2026 05:03:23', '21 May 2026 03:38:10', '21 May 2026 03:17:46', '21 May 2026 02:36:34', '21 May 2026 02:13:17', '21 May 2026 02:00:48', '21 May 2026 01:58:44', '21 May 2026 01:57:32', '21 May 2026 01:19:11', '20 May 2026 08:44:08', '20 May 2026 07:41:22', '20 May 2026 02:23:01', '17 May 2026 15:59:27', '17 May 2026 15:57:31', '17 May 2026 15:37:46', '17 May 2026 15:37:15', '17 May 2026 15:28:46', '17 May 2026 15:26:45', '17 May 2026 15:25:04', '17 May 2026 15:17:44', '17 May 2026 15:15:52', '15 May 2026 09:53:25', '13 May 2026 09:52:25', '13 May 2026 07:19:30', '10 May 2026 06:30:12', '10 May 2026 06:30:04', '10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01', '6 May 2026 08:29:14', '4 May 2026 07:20:37', '30 April 2026 01:03:42', '27 April 2026 05:55:10', '21 April 2026 13:33:02', '21 April 2026 09:29:33', '21 April 2026 09:27:41', '21 April 2026 09:25:26', '21 April 2026 09:09:08', '12 April 2026 13:45:07', '12 April 2026 13:36:52', '12 April 2026 13:21:31', '12 April 2026 04:41:01', '8 April 2026 09:14:05', '31 March 2026 03:05:08']
+Expected:  ['26 May 2026 03:34:26', '26 May 2026 01:06:21', '24 May 2026 05:20:35', '21 May 2026 07:06:56', '21 May 2026 07:03:26', '21 May 2026 06:47:05', '21 May 2026 05:03:23', '21 May 2026 03:38:10', '21 May 2026 03:17:46', '21 May 2026 02:36:34', '21 May 2026 02:13:17', '21 May 2026 02:00:48', '21 May 2026 01:58:44', '21 May 2026 01:57:32', '21 May 2026 01:19:11', '20 May 2026 08:44:08', '20 May 2026 07:41:22', '20 May 2026 02:23:01', '17 May 2026 15:59:27', '17 May 2026 15:57:31', '17 May 2026 15:37:46', '17 May 2026 15:37:15', '17 May 2026 15:28:46', '17 May 2026 15:26:45', '17 May 2026 15:25:04', '17 May 2026 15:17:44', '17 May 2026 15:15:52', '15 May 2026 09:53:25', '13 May 2026 09:52:25', '13 May 2026 07:19:30', '10 May 2026 06:30:12', '10 May 2026 06:30:04', '10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01', '6 May 2026 08:29:14', '4 May 2026 07:20:37', '30 April 2026 01:03:42', '27 April 2026 05:55:10', '21 April 2026 13:33:02', '21 April 2026 09:29:33', '21 April 2026 09:27:41', '21 April 2026 09:25:26', '21 April 2026 09:09:08', '12 April 2026 13:45:07', '12 April 2026 13:36:52', '12 April 2026 13:21:31', '12 April 2026 04:41:01', '8 April 2026 09:14:05', '31 March 2026 03:05:08']
+22:32:17 | [Teardown] Refresh the page
+22:32:19 | - Stop recording screen

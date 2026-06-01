@@ -1,0 +1,49 @@
+21:55:30 | - Running test case: test_AK_TBL_TC04_positive_search.py
+21:55:30 | - Start recording screen
+21:55:30 | Step 1: Search by 'ID': '019e0c68-96a2-769e-bcf9-583561edcc92'
+21:55:30 | - Search for: 019e0c68-96a2-769e-bcf9-583561edcc92
+21:55:31 | Verify table data matches: '019e0c68-96a2-769e-bcf9-583561edcc92'
+21:55:31 | - Get table data
+21:55:33 | - Go to the first page
+21:55:33 | 
+Table Data:
+┌────────────────────────┬──────────────────────────────────────┬───────────────────────────┬──────────────┬─────────────────────┐
+│ name                   │ id                                   │ expires                   │ status       │ created_date        │
+├────────────────────────┼──────────────────────────────────────┼───────────────────────────┼──────────────┼─────────────────────┤
+│ Active Key With Expiry │ 019e0c68-96a2-769e-bcf9-583561edcc92 │ 31 December 2027 23:59:59 │ Active       │ 9 May 2026 11:04:01 │
+└────────────────────────┴──────────────────────────────────────┴───────────────────────────┴──────────────┴─────────────────────┘
+21:55:33 | - Total records: 1
+21:55:33 | - Comparing 1 items
+21:55:33 | Step 2: Search by 'ID': '019daf5f-a056-7dce-b923-ce283a5fd2d3'
+21:55:33 | - Search for: 019daf5f-a056-7dce-b923-ce283a5fd2d3
+21:55:34 | Verify table data matches: '019daf5f-a056-7dce-b923-ce283a5fd2d3'
+21:55:34 | - Get table data
+21:55:36 | - Go to the first page
+21:55:36 | 
+Table Data:
+┌──────────────┬──────────────────────────────────────┬───────────────────────────┬──────────────┬────────────────────────┐
+│ name         │ id                                   │ expires                   │ status       │ created_date           │
+├──────────────┼──────────────────────────────────────┼───────────────────────────┼──────────────┼────────────────────────┤
+│ WilliamBanh  │ 019daf5f-a056-7dce-b923-ce283a5fd2d3 │ 31 December 2035 23:59:59 │ Active       │ 21 April 2026 09:29:33 │
+└──────────────┴──────────────────────────────────────┴───────────────────────────┴──────────────┴────────────────────────┘
+21:55:36 | - Total records: 1
+21:55:36 | - Comparing 1 items
+21:55:36 | Step 3: Search by 'ID': '019daf5b-dbb2-7fd8-9893-22aca78037da'
+21:55:36 | - Search for: 019daf5b-dbb2-7fd8-9893-22aca78037da
+21:55:36 | Verify table data matches: '019daf5b-dbb2-7fd8-9893-22aca78037da'
+21:55:36 | - Get table data
+21:55:38 | - Go to the first page
+21:55:39 | 
+Table Data:
+┌──────────────┬──────────────────────────────────────┬───────────────────────────┬──────────────┬────────────────────────┐
+│ name         │ id                                   │ expires                   │ status       │ created_date           │
+├──────────────┼──────────────────────────────────────┼───────────────────────────┼──────────────┼────────────────────────┤
+│ WilliamBanh  │ 019daf5b-dbb2-7fd8-9893-22aca78037da │ 31 December 2035 23:59:59 │ Active       │ 21 April 2026 09:25:26 │
+└──────────────┴──────────────────────────────────────┴───────────────────────────┴──────────────┴────────────────────────┘
+21:55:39 | - Total records: 1
+21:55:39 | - Comparing 1 items
+21:55:39 | Step 4: Refresh page
+21:55:40 | Verify search field is cleared
+21:55:40 | [Teardown] Clear search field
+21:55:40 | - Clear search input
+21:55:42 | - Stop recording screen

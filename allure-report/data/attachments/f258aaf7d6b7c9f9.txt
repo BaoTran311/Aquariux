@@ -1,0 +1,895 @@
+13:42:38 | - Running test case: test_AK_EDT_TC02_positive_fields_validation.py
+13:42:38 | - Start recording screen
+13:42:38 | [API] Send API: POST /backoffice/v1/api-keys
+13:42:39 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODAyOTYxMDEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwMjk3MDAxLCJpYXQiOjE3ODAyOTYxMDEsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImNhOTNlNWI4LWFiODgtNDlhNS1hMzEzLTEzODk2YjY1NmQ5YyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.G8fPGmgJX-4qUYGSJYRttjAhsX7KKCiIEzv5i0KAR8TCROqqgghgN9bR2t630rGGrgYhbGz71mErYuMLKAWWDnSaXvS-z1YwTyhmq4bqy85mVscQARX2ppgIcoflXqweiS2NldokVvevtQzjxc9n80CTXhrVTSOodArWm8vSFJmtYf1ceFi5yLbjuva7obdBhcuczCeZAtO0rHlpjOTMTtpU98EItYQ8woRC_xYhh8m_d2c7q9vZfKxv6lAll72NzlIN5wkdne1X4vRFuc6CbPi0RRVriG8u7m8gDqzc78X-t91NwPnnuRyI54NXaDkiyFYqjivV2uB48Cj4kshdNw' 
+--header 'Content-Length: 50' 
+--data-raw '{"name": "sAzL_Auto-luyHVumy", "status": "active"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "id": "019e81eb-8fc1-7eb0-ab32-c1b3fd4d26bf",
+        "apiKey": "aqx_d1e14be6_a0cbe11e9c8a4077b53f4b7a76cce8f0",
+        "name": "sAzL_Auto-luyHVumy",
+        "expiresAt": null,
+        "createdAt": "2026-06-01T06:42:39.169099051Z",
+        "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "updatedAt": "2026-06-01T06:42:39.169099051Z",
+        "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43"
+    },
+    "success": true,
+    "timestamp": "2026-06-01T06:42:39.173594717Z"
+}
+
+
+13:42:39 | [Setup] Generate API key: 'sAzL_Auto-luyHVumy'
+13:42:39 | [Setup] Refresh page to load changes
+13:42:40 | [Setup] Open edit panel for: 'sAzL_Auto-luyHVumy'
+13:42:40 | - Search for: sAzL_Auto-luyHVumy
+13:42:41 | - View row: 'sAzL_Auto-luyHVumy' (attempt: 1)
+13:42:42 | - Click 'Edit' button
+13:42:42 | Step 1: Toggle status from 'Active' to 'Inactive'
+13:42:42 | - Toggle status to 'Inactive'
+13:42:43 | Verify toggle state: 'Inactive'
+13:42:43 | Step 2: Toggle status back to 'Active'
+13:42:43 | - Toggle status to 'Active'
+13:42:44 | Verify toggle state: 'Active'
+13:42:44 | [Teardown] Close panel if open
+13:42:44 | - Close panel
+13:42:50 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+13:42:50 | [API] Send API: GET /backoffice/v1/api-keys
+13:42:50 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODAyOTYxMDEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwMjk3MDAxLCJpYXQiOjE3ODAyOTYxMDEsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImNhOTNlNWI4LWFiODgtNDlhNS1hMzEzLTEzODk2YjY1NmQ5YyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.G8fPGmgJX-4qUYGSJYRttjAhsX7KKCiIEzv5i0KAR8TCROqqgghgN9bR2t630rGGrgYhbGz71mErYuMLKAWWDnSaXvS-z1YwTyhmq4bqy85mVscQARX2ppgIcoflXqweiS2NldokVvevtQzjxc9n80CTXhrVTSOodArWm8vSFJmtYf1ceFi5yLbjuva7obdBhcuczCeZAtO0rHlpjOTMTtpU98EItYQ8woRC_xYhh8m_d2c7q9vZfKxv6lAll72NzlIN5wkdne1X4vRFuc6CbPi0RRVriG8u7m8gDqzc78X-t91NwPnnuRyI54NXaDkiyFYqjivV2uB48Cj4kshdNw'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "endRow": 40,
+        "hasNextPage": true,
+        "hasPreviousPage": false,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "list": [
+            {
+                "id": "019e81eb-8fc1-7eb0-ab32-c1b3fd4d26bf",
+                "keyId": "d1e14be6",
+                "name": "sAzL_Auto-luyHVumy",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-06-01T06:42:39.169238Z",
+                "updatedAt": "2026-06-01T06:42:39.169238Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e8143-bbf5-7f65-b88a-3e62733b96de",
+                "keyId": "33ff6975",
+                "name": "QIIB_Auto-qhBANyqE",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-06-01T03:39:20.436601Z",
+                "updatedAt": "2026-06-01T03:39:20.436601Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e811c-443f-734d-88f4-1fd2122e9750",
+                "keyId": "ccb463e9",
+                "name": "pHuV_Auto.CjmmydRv",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-06-01T02:56:13.887214Z",
+                "updatedAt": "2026-06-01T02:56:13.887214Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e7315-6c67-79d3-b952-f32627028539",
+                "keyId": "e4d50c8d",
+                "name": "RMTest_Key_yxkle",
+                "isEnabled": false,
+                "expiresAt": null,
+                "createdAt": "2026-05-29T09:34:04.391296Z",
+                "updatedAt": "2026-06-01T03:38:45.025084Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "createdByName": "Auto",
+                "updatedByName": "Bao"
+            },
+            {
+                "id": "019e7198-9ff2-77e9-9e24-93d8b39c851c",
+                "keyId": "9fa64191",
+                "name": "AutoTest_qspkv",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-29T02:38:08.369683Z",
+                "updatedAt": "2026-05-29T07:34:32.688205Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e7195-04cf-772c-8646-d2b6bbe0f0f9",
+                "keyId": "4487198c",
+                "name": "AutoTest_rrwkc",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-29T02:34:12.046512Z",
+                "updatedAt": "2026-05-29T02:34:12.046512Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e718b-7a28-7f81-810f-33172041d0a1",
+                "keyId": "47014e31",
+                "name": "AutoTest_jyndm",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-29T02:23:46.727954Z",
+                "updatedAt": "2026-05-29T02:23:46.727954Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e6259-1676-7848-ac11-d68343ee5ccb",
+                "keyId": "6c7c3e9d",
+                "name": "BADV_Auto_jotOuODp",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-26T03:34:26.145115Z",
+                "updatedAt": "2026-05-29T02:08:57.556546Z",
+                "createdBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "updatedBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "createdByName": "Bao",
+                "updatedByName": "Bao"
+            },
+            {
+                "id": "019e586d-8f74-7e9b-ae8e-3a04306f4513",
+                "keyId": "a772a148",
+                "name": "banhdainam@gmail.com",
+                "isEnabled": true,
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-05-24T05:20:35.665187Z",
+                "updatedAt": "2026-05-24T05:20:35.665187Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e495b-d800-7b13-9297-be90f1cd80f0",
+                "keyId": "5e456f4b",
+                "name": "JhOm_Auto.nkwuKNYT",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-21T07:06:56.383455Z",
+                "updatedAt": "2026-05-21T07:06:56.383455Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e4958-a2af-7266-818a-9656babd79a2",
+                "keyId": "2ffe1974",
+                "name": "ulrK_Auto-iKezxpKV",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-21T07:03:26.127060Z",
+                "updatedAt": "2026-05-21T07:03:26.127060Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e4949-aada-7a81-b8e9-526294e77231",
+                "keyId": "2969ad90",
+                "name": "wuSS_Auto/rURKRZgW",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-21T06:47:05.178261Z",
+                "updatedAt": "2026-05-21T06:47:05.178261Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e48ea-bd00-72dd-bc78-00d9816762a9",
+                "keyId": "fd2acfdb",
+                "name": "tiuV_Auto_qnJtvvxI",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-21T05:03:23.903666Z",
+                "updatedAt": "2026-05-21T05:03:23.903666Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e489c-b50e-7d87-945e-6705cf51fe7d",
+                "keyId": "3499f892",
+                "name": "inib_Auto_AmwcPjgH",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-21T03:38:10.061365Z",
+                "updatedAt": "2026-05-21T07:12:30.910797Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "createdByName": "Auto",
+                "updatedByName": "Bao"
+            },
+            {
+                "id": "019e488a-086e-7ea5-968a-c18177e25a6b",
+                "keyId": "0ea692d4",
+                "name": "bao_api_key",
+                "isEnabled": true,
+                "expiresAt": "2026-05-21T23:59:59Z",
+                "createdAt": "2026-05-21T03:17:46.222106Z",
+                "updatedAt": "2026-05-21T03:17:46.222106Z",
+                "createdBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "updatedBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "createdByName": "Bao",
+                "updatedByName": "Bao"
+            },
+            {
+                "id": "019e4864-5171-7a60-b38d-4c9b1b1889e6",
+                "keyId": "8e9ad6dd",
+                "name": "oWvG_Auto-LpaCcXyb",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-21T02:36:34.544845Z",
+                "updatedAt": "2026-05-22T03:05:20.827048Z",
+                "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+                "updatedBy": "019d905a-af1a-7338-89fd-594d5810f966",
+                "createdByName": "Auto",
+                "updatedByName": "NAM"
+            },
+            {
+                "id": "019e484e-ff43-7bc0-bd18-1a8796a03acc",
+                "keyId": "877ccbf6",
+                "name": "dtest",
+                "isEnabled": true,
+                "expiresAt": "2026-05-21T23:59:59Z",
+                "createdAt": "2026-05-21T02:13:17.230074Z",
+                "updatedAt": "2026-05-21T02:13:17.230074Z",
+                "createdBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "updatedBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "createdByName": "Denlie",
+                "updatedByName": "Denlie"
+            },
+            {
+                "id": "019e4843-912d-7127-af8a-30231261580e",
+                "keyId": "7fcc3f9e",
+                "name": "asdasdasd",
+                "isEnabled": true,
+                "expiresAt": "2026-05-23T23:59:59Z",
+                "createdAt": "2026-05-21T02:00:48.172320Z",
+                "updatedAt": "2026-05-21T02:05:50.778157Z",
+                "createdBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "updatedBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "createdByName": "Denlie",
+                "updatedByName": "Denlie"
+            },
+            {
+                "id": "019e4841-ae11-763c-b46f-643d4efe0805",
+                "keyId": "2e008451",
+                "name": "asd",
+                "isEnabled": true,
+                "expiresAt": "2030-05-10T23:59:59Z",
+                "createdAt": "2026-05-21T01:58:44.496827Z",
+                "updatedAt": "2026-05-21T01:58:44.496827Z",
+                "createdBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "updatedBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "createdByName": "Denlie",
+                "updatedByName": "Denlie"
+            },
+            {
+                "id": "019e4840-961c-727c-9a1b-f3265fddc7c8",
+                "keyId": "1fe0be0d",
+                "name": "AUD/CAD",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-21T01:57:32.787611Z",
+                "updatedAt": "2026-05-21T01:57:32.787611Z",
+                "createdBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "updatedBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "createdByName": "Denlie",
+                "updatedByName": "Denlie"
+            },
+            {
+                "id": "019e481d-77aa-749b-9360-2cf941d24ee1",
+                "keyId": "33b26f49",
+                "name": "test",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-21T01:19:11.269861Z",
+                "updatedAt": "2026-05-21T01:19:11.269861Z",
+                "createdBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "updatedBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "createdByName": "Bao",
+                "updatedByName": "Bao"
+            },
+            {
+                "id": "019e448e-7ae8-7f5d-8553-7b80a8fe261f",
+                "keyId": "fa948b6b",
+                "name": "OxigenProviderVN",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-20T08:44:08.808070Z",
+                "updatedAt": "2026-05-20T08:44:08.808070Z",
+                "createdBy": "019d905a-af1a-7338-89fd-594d5810f966",
+                "updatedBy": "019d905a-af1a-7338-89fd-594d5810f966",
+                "createdByName": "NAM",
+                "updatedByName": "NAM"
+            },
+            {
+                "id": "019e4455-01dc-7675-ae65-31264585581b",
+                "keyId": "13184a78",
+                "name": "HI_BAO_PLEASE_DONT_DELETE",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-20T07:41:22.268043Z",
+                "updatedAt": "2026-05-20T07:41:22.268043Z",
+                "createdBy": "019d2e45-8bbd-7c55-8dcf-88079a758622",
+                "updatedBy": "019d2e45-8bbd-7c55-8dcf-88079a758622",
+                "createdByName": "Uyen",
+                "updatedByName": "Uyen"
+            },
+            {
+                "id": "019e4331-8f32-7e17-9183-d662d083e775",
+                "keyId": "d9f87121",
+                "name": "test_api_key",
+                "isEnabled": true,
+                "expiresAt": "2026-05-19T23:59:59Z",
+                "createdAt": "2026-05-20T02:23:01.938306Z",
+                "updatedAt": "2026-05-22T03:01:59.899537Z",
+                "createdBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "updatedBy": "019d905a-af1a-7338-89fd-594d5810f966",
+                "createdByName": "Bao",
+                "updatedByName": "NAM"
+            },
+            {
+                "id": "019e36a9-efc4-7a02-aa49-e647148295dc",
+                "keyId": "5c3dd054",
+                "name": "wjvu_Auto-IvfkhqFZ",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-17T15:59:27.171896Z",
+                "updatedAt": "2026-05-22T02:58:11.473442Z",
+                "createdBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "updatedBy": "019d905a-af1a-7338-89fd-594d5810f966",
+                "createdByName": "Auto",
+                "updatedByName": "NAM"
+            },
+            {
+                "id": "019e36a8-2bdf-7a28-9083-fd17e35db5a8",
+                "keyId": "f026f8f3",
+                "name": "test",
+                "isEnabled": true,
+                "expiresAt": "2026-05-17T23:59:59Z",
+                "createdAt": "2026-05-17T15:57:31.486917Z",
+                "updatedAt": "2026-05-17T15:57:31.486917Z",
+                "createdBy": "019e1f24-7579-753d-837e-c12d9c620461",
+                "updatedBy": "019e1f24-7579-753d-837e-c12d9c620461",
+                "createdByName": "Duke",
+                "updatedByName": "Duke"
+            },
+            {
+                "id": "019e3696-18f6-795e-b7da-ee4a40dddf8d",
+                "keyId": "1517903b",
+                "name": "VUUT_Auto-GTRYxCyJ",
+                "isEnabled": true,
+                "expiresAt": "2026-05-28T23:59:59Z",
+                "createdAt": "2026-05-17T15:37:46.996911Z",
+                "updatedAt": "2026-05-22T02:59:12.047180Z",
+                "createdBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "updatedBy": "019d905a-af1a-7338-89fd-594d5810f966",
+                "createdByName": "Auto",
+                "updatedByName": "NAM"
+            },
+            {
+                "id": "019e3695-9e0b-7f9a-a97a-5cc6dd19be56",
+                "keyId": "f0459195",
+                "name": "RwIR_Auto-GcddgQsl",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-17T15:37:15.530427Z",
+                "updatedAt": "2026-05-17T15:37:15.530427Z",
+                "createdBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "updatedBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e368d-d900-7e53-8b60-9ffbd88c61db",
+                "keyId": "2063fb6a",
+                "name": "MGtG_Auto/UKLwKEwg",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-17T15:28:46.336298Z",
+                "updatedAt": "2026-05-17T15:28:46.336298Z",
+                "createdBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "updatedBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e368b-ffad-73d1-bd45-6050bd33e8f4",
+                "keyId": "1543542c",
+                "name": "ARCz_Auto-XFBjEeih",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-17T15:26:45.164767Z",
+                "updatedAt": "2026-05-17T15:26:45.164767Z",
+                "createdBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "updatedBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e368a-7593-7308-ad7d-d1f18ffed66f",
+                "keyId": "0b255b0a",
+                "name": "YDla_Auto.zGgRxjjt",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-17T15:25:04.275190Z",
+                "updatedAt": "2026-05-17T15:25:04.275190Z",
+                "createdBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "updatedBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e3683-beb9-7102-8ff9-d4eb8838777f",
+                "keyId": "5b0e97c1",
+                "name": "vamO_Auto/dkOkswQd",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-17T15:17:44.248663Z",
+                "updatedAt": "2026-05-17T15:17:44.248663Z",
+                "createdBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "updatedBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e3682-0b6b-71f9-a195-36845e6fc630",
+                "keyId": "e57aeb91",
+                "name": "liUM_Auto-gLeqyttD",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-17T15:15:52.810611Z",
+                "updatedAt": "2026-05-17T15:15:52.810611Z",
+                "createdBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "updatedBy": "83116879-056c-472a-a1a7-d715ccd84e2b",
+                "createdByName": "Auto",
+                "updatedByName": "Auto"
+            },
+            {
+                "id": "019e2b0e-1ccd-767a-ad10-4f655c6e728d",
+                "keyId": "29682a91",
+                "name": "Denlie ATTABOY",
+                "isEnabled": true,
+                "expiresAt": "2026-05-15T23:59:59Z",
+                "createdAt": "2026-05-15T09:53:25.708940Z",
+                "updatedAt": "2026-05-15T09:53:25.708940Z",
+                "createdBy": "019d759f-7cd2-7acf-bdef-cb23a85dfe5b",
+                "updatedBy": "019d759f-7cd2-7acf-bdef-cb23a85dfe5b",
+                "createdByName": "FE E2E Test",
+                "updatedByName": "FE E2E Test"
+            },
+            {
+                "id": "019e20c0-7b0e-73ef-b6af-1f2597fb3a8a",
+                "keyId": "9ad7f5af",
+                "name": "JW Birthday Finished",
+                "isEnabled": true,
+                "expiresAt": "2026-05-12T23:59:59Z",
+                "createdAt": "2026-05-13T09:52:25.869940Z",
+                "updatedAt": "2026-05-13T09:52:25.869940Z",
+                "createdBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "updatedBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "createdByName": "Denlie",
+                "updatedByName": "Denlie"
+            },
+            {
+                "id": "019e2034-7881-7606-87c2-ae19b24f93bd",
+                "keyId": "a952776a",
+                "name": "AUD/CAD",
+                "isEnabled": true,
+                "expiresAt": "2026-05-21T23:59:59Z",
+                "createdAt": "2026-05-13T07:19:30.176582Z",
+                "updatedAt": "2026-05-21T02:34:59.729048Z",
+                "createdBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "updatedBy": "019d2e42-cbce-7f22-811f-726310304a8e",
+                "createdByName": "Denlie",
+                "updatedByName": "Denlie"
+            },
+            {
+                "id": "019e1094-4476-7a9f-b67f-f25626909e7e",
+                "keyId": "68cfff9a",
+                "name": "Past Expiry Key",
+                "isEnabled": true,
+                "expiresAt": "2020-01-01T00:00:00Z",
+                "createdAt": "2026-05-10T06:30:12.854243Z",
+                "updatedAt": "2026-05-10T06:30:12.854243Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e1094-246b-7191-bfc6-2338c794750a",
+                "keyId": "c0aacb9b",
+                "name": "Inactive Pre-provisioned Key",
+                "isEnabled": false,
+                "expiresAt": null,
+                "createdAt": "2026-05-10T06:30:04.650313Z",
+                "updatedAt": "2026-05-10T06:30:04.650313Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e1094-1b11-729c-833c-43be480723f1",
+                "keyId": "193ba65a",
+                "name": "Active Key With Expiry",
+                "isEnabled": true,
+                "expiresAt": "2027-12-31T23:59:59Z",
+                "createdAt": "2026-05-10T06:30:02.256799Z",
+                "updatedAt": "2026-05-10T06:30:02.256799Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e1094-0e8e-7035-a3a3-d1ffc9c541a1",
+                "keyId": "6b8b288b",
+                "name": "Integration Test Key",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-05-10T06:29:59.039087Z",
+                "updatedAt": "2026-05-10T06:29:59.039087Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            }
+        ],
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "nextPage": 0,
+        "pageNum": 1,
+        "pageSize": 40,
+        "pages": 2,
+        "prePage": 0,
+        "size": 0,
+        "startRow": 1,
+        "total": 58
+    },
+    "success": true,
+    "timestamp": "2026-06-01T06:42:50.818883594Z"
+}
+
+
+13:42:50 | [API] Send API: GET /backoffice/v1/api-keys
+13:42:51 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys?pageNum=2&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODAyOTYxMDEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwMjk3MDAxLCJpYXQiOjE3ODAyOTYxMDEsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImNhOTNlNWI4LWFiODgtNDlhNS1hMzEzLTEzODk2YjY1NmQ5YyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.G8fPGmgJX-4qUYGSJYRttjAhsX7KKCiIEzv5i0KAR8TCROqqgghgN9bR2t630rGGrgYhbGz71mErYuMLKAWWDnSaXvS-z1YwTyhmq4bqy85mVscQARX2ppgIcoflXqweiS2NldokVvevtQzjxc9n80CTXhrVTSOodArWm8vSFJmtYf1ceFi5yLbjuva7obdBhcuczCeZAtO0rHlpjOTMTtpU98EItYQ8woRC_xYhh8m_d2c7q9vZfKxv6lAll72NzlIN5wkdne1X4vRFuc6CbPi0RRVriG8u7m8gDqzc78X-t91NwPnnuRyI54NXaDkiyFYqjivV2uB48Cj4kshdNw'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "endRow": 58,
+        "hasNextPage": false,
+        "hasPreviousPage": true,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "list": [
+            {
+                "id": "019e0c68-db93-79b5-b293-0cc445ca7206",
+                "keyId": "42fd11ad",
+                "name": "Past Expiry Key",
+                "isEnabled": true,
+                "expiresAt": "2020-01-01T00:00:00Z",
+                "createdAt": "2026-05-09T11:04:19.091124Z",
+                "updatedAt": "2026-05-09T11:04:19.091124Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e0c68-a2a8-77e0-b265-22edcdec76a0",
+                "keyId": "50a57ec1",
+                "name": "Inactive Pre-provisioned Key",
+                "isEnabled": false,
+                "expiresAt": null,
+                "createdAt": "2026-05-09T11:04:04.519716Z",
+                "updatedAt": "2026-05-09T11:04:04.519716Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e0c68-96a2-769e-bcf9-583561edcc92",
+                "keyId": "ee704ce6",
+                "name": "Active Key With Expiry",
+                "isEnabled": true,
+                "expiresAt": "2027-12-31T23:59:59Z",
+                "createdAt": "2026-05-09T11:04:01.441663Z",
+                "updatedAt": "2026-05-09T11:04:01.441663Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019dfc67-cbac-7d85-9330-2d776d21d975",
+                "keyId": "5c93eb3c",
+                "name": "BQN_TEST",
+                "isEnabled": true,
+                "expiresAt": "2027-06-01T23:59:59Z",
+                "createdAt": "2026-05-06T08:29:14.027857Z",
+                "updatedAt": "2026-05-06T08:29:14.027857Z",
+                "createdBy": "019dd302-2ba7-7f10-81cf-0758d92dfec3",
+                "updatedBy": "019dd302-2ba7-7f10-81cf-0758d92dfec3",
+                "createdByName": "Binh",
+                "updatedByName": "Binh"
+            },
+            {
+                "id": "019df1dc-41db-794a-a80c-f322d81bf149",
+                "keyId": "24ae9073",
+                "name": "Testing",
+                "isEnabled": true,
+                "expiresAt": "2026-05-28T23:59:59Z",
+                "createdAt": "2026-05-04T07:20:37.082376Z",
+                "updatedAt": "2026-05-04T07:20:37.082376Z",
+                "createdBy": "019d2e3f-1663-7ce3-bd5a-230b81ca3360",
+                "updatedBy": "019d2e3f-1663-7ce3-bd5a-230b81ca3360",
+                "createdByName": "Alexis Soo",
+                "updatedByName": "Alexis Soo"
+            },
+            {
+                "id": "019ddbe9-bf4e-7696-9dcf-ad2af75ba332",
+                "keyId": "f540503e",
+                "name": "cytest",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-04-30T01:03:42.384606Z",
+                "updatedAt": "2026-04-30T01:03:42.384606Z",
+                "createdBy": "019d25ed-f4ef-7989-9e3c-2c8af202afb2",
+                "updatedBy": "019d25ed-f4ef-7989-9e3c-2c8af202afb2",
+                "createdByName": "System Administrator",
+                "updatedByName": "System Administrator"
+            },
+            {
+                "id": "019dcd81-833f-7798-9efd-23c2f9fb3d64",
+                "keyId": "32c0b1cb",
+                "name": "AUD/CAD",
+                "isEnabled": true,
+                "expiresAt": "2026-04-01T23:59:59Z",
+                "createdAt": "2026-04-27T05:55:10.270457Z",
+                "updatedAt": "2026-04-27T05:55:10.270457Z",
+                "createdBy": "019d3c4d-0079-7f79-a4ab-1f45eca837f0",
+                "updatedBy": "019d3c4d-0079-7f79-a4ab-1f45eca837f0",
+                "createdByName": "JX",
+                "updatedByName": "JX"
+            },
+            {
+                "id": "019db03e-8b76-747c-aec8-b2c53eb919ff",
+                "keyId": "8e7b4d2c",
+                "name": "tuan test",
+                "isEnabled": true,
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T13:33:02.197832Z",
+                "updatedAt": "2026-04-21T13:33:02.197832Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019daf5f-a056-7dce-b923-ce283a5fd2d3",
+                "keyId": "d80e2dd4",
+                "name": "WilliamBanh",
+                "isEnabled": true,
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T09:29:33.013441Z",
+                "updatedAt": "2026-04-21T09:29:33.013441Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019daf5d-ee6c-7583-8de9-76043f7d04ff",
+                "keyId": "4280e585",
+                "name": "WilliamBanh",
+                "isEnabled": true,
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T09:27:41.931789Z",
+                "updatedAt": "2026-04-21T09:27:41.931789Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019daf5b-dbb2-7fd8-9893-22aca78037da",
+                "keyId": "5758aeb2",
+                "name": "WilliamBanh",
+                "isEnabled": true,
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T09:25:26.062094Z",
+                "updatedAt": "2026-04-21T09:25:26.062094Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019daf4c-f169-7b2f-a77d-c0b1b4ffe50a",
+                "keyId": "8cde6011",
+                "name": "WilliamBanh",
+                "isEnabled": true,
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T09:09:08.567483Z",
+                "updatedAt": "2026-04-21T09:09:08.567483Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019d9256-e8cc-7e4e-a7c9-168d96221aa5",
+                "keyId": "2699c03f",
+                "name": "CAICAI4",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-04-12T13:45:07.075395Z",
+                "updatedAt": "2026-04-12T13:45:07.075395Z",
+                "createdBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "updatedBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "createdByName": "jing wei backup",
+                "updatedByName": "jing wei backup"
+            },
+            {
+                "id": "019d9256-e8cc-733c-a973-d79a2e4e0ac3",
+                "keyId": "021029f7",
+                "name": "CAICAI3",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-04-12T13:36:52.651425Z",
+                "updatedAt": "2026-05-22T03:07:56.313802Z",
+                "createdBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "updatedBy": "019d905a-af1a-7338-89fd-594d5810f966",
+                "createdByName": "jing wei backup",
+                "updatedByName": "NAM"
+            },
+            {
+                "id": "019d9256-e8cc-791d-b955-7784bd8abbac",
+                "keyId": "35d5c72b",
+                "name": "CAICAI2",
+                "isEnabled": false,
+                "expiresAt": null,
+                "createdAt": "2026-04-12T13:21:31.683008Z",
+                "updatedAt": "2026-04-12T13:21:36.231703Z",
+                "createdBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "updatedBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "createdByName": "jing wei backup",
+                "updatedByName": "jing wei backup"
+            },
+            {
+                "id": "019d9256-e8cc-7050-bf49-ed58656bf9dc",
+                "keyId": "fea52206",
+                "name": "CAICAI",
+                "isEnabled": false,
+                "expiresAt": null,
+                "createdAt": "2026-04-12T04:41:01.081819Z",
+                "updatedAt": "2026-04-12T13:21:10.861579Z",
+                "createdBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "updatedBy": "019d2e40-881a-7940-9f89-1d8134b37317",
+                "createdByName": "jing wei backup",
+                "updatedByName": "Jing Wei"
+            },
+            {
+                "id": "019d9256-e8cc-7ef9-b9cd-442429ee327a",
+                "keyId": "61bafe7b",
+                "name": "Alexis",
+                "isEnabled": true,
+                "expiresAt": null,
+                "createdAt": "2026-04-08T09:14:05.436587Z",
+                "updatedAt": "2026-04-08T09:14:05.436587Z",
+                "createdBy": "019d2e3f-1663-7ce3-bd5a-230b81ca3360",
+                "updatedBy": "019d2e3f-1663-7ce3-bd5a-230b81ca3360",
+                "createdByName": "Alexis Soo",
+                "updatedByName": "Alexis Soo"
+            },
+            {
+                "id": "019d9256-e8cc-79a4-975e-451fd4fd2fb2",
+                "keyId": "a38ae43d",
+                "name": "Jiun Xian",
+                "isEnabled": false,
+                "expiresAt": "2026-03-11T23:59:59Z",
+                "createdAt": "2026-03-31T03:05:08.792259Z",
+                "updatedAt": "2026-04-06T03:41:35.362811Z",
+                "createdBy": "019d3c4d-0079-7f79-a4ab-1f45eca837f0",
+                "updatedBy": "019d3c4d-0079-7f79-a4ab-1f45eca837f0",
+                "createdByName": "JX",
+                "updatedByName": "JX"
+            }
+        ],
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "nextPage": 0,
+        "pageNum": 2,
+        "pageSize": 40,
+        "pages": 2,
+        "prePage": 0,
+        "size": 0,
+        "startRow": 41,
+        "total": 58
+    },
+    "success": true,
+    "timestamp": "2026-06-01T06:42:51.220545146Z"
+}
+
+
+13:42:51 | [API] Send API: DELETE /backoffice/v1/api-keys/019e81eb-8fc1-7eb0-ab32-c1b3fd4d26bf
+13:42:51 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019e81eb-8fc1-7eb0-ab32-c1b3fd4d26bf' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODAyOTYxMDEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwMjk3MDAxLCJpYXQiOjE3ODAyOTYxMDEsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImNhOTNlNWI4LWFiODgtNDlhNS1hMzEzLTEzODk2YjY1NmQ5YyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.G8fPGmgJX-4qUYGSJYRttjAhsX7KKCiIEzv5i0KAR8TCROqqgghgN9bR2t630rGGrgYhbGz71mErYuMLKAWWDnSaXvS-z1YwTyhmq4bqy85mVscQARX2ppgIcoflXqweiS2NldokVvevtQzjxc9n80CTXhrVTSOodArWm8vSFJmtYf1ceFi5yLbjuva7obdBhcuczCeZAtO0rHlpjOTMTtpU98EItYQ8woRC_xYhh8m_d2c7q9vZfKxv6lAll72NzlIN5wkdne1X4vRFuc6CbPi0RRVriG8u7m8gDqzc78X-t91NwPnnuRyI54NXaDkiyFYqjivV2uB48Cj4kshdNw' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-01T06:42:51.896983335Z"
+}
+
+
+13:42:52 | - Stop recording screen

@@ -1,0 +1,33 @@
+22:40:46 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:40:46 | - Start recording screen
+22:40:47 | - Get table data
+22:40:48 | - Click 'next' button on table
+22:40:50 | - Click 'next' button on table
+22:40:51 | - Go to the first page
+22:40:51 | Step 1: Search with: 'wcbD_Auto_sTKOBDKg', then clear via icon
+22:40:51 | - Search for: 'wcbD_Auto_sTKOBDKg'
+22:40:51 | - Clear search input
+22:40:52 | Verify search field is cleared (by_icon: True)
+22:40:52 | Verify clear search icon is not displayed (by_icon: True)
+22:40:52 | - Check invisibility of locator: ('css selector', 'button[data-testid="user-group-list-search-input-search-name-input-icon-right"]'): TRUE
+22:40:52 | Verify table data reset (by_icon: True)
+22:40:52 | - Get table data
+22:40:53 | - Click 'next' button on table
+22:40:54 | - Click 'next' button on table
+22:40:56 | - Go to the first page
+22:40:56 | - Comparing 120 items
+22:40:56 | Step 2: Search with: 'wcbD_Auto_sTKOBDKg', then clear via keyboard
+22:40:56 | - Search for: 'wcbD_Auto_sTKOBDKg'
+22:40:56 | - Clear search input
+22:40:56 | Verify search field is cleared (by_icon: False)
+22:40:56 | Verify clear search icon is not displayed (by_icon: False)
+22:40:56 | - Check invisibility of locator: ('css selector', 'button[data-testid="user-group-list-search-input-search-name-input-icon-right"]'): TRUE
+22:40:56 | Verify table data reset (by_icon: False)
+22:40:56 | - Get table data
+22:40:58 | - Click 'next' button on table
+22:40:59 | - Click 'next' button on table
+22:41:00 | - Go to the first page
+22:41:01 | - Comparing 120 items
+22:41:01 | [Teardown] Clear search field
+22:41:01 | - Clear search input
+22:41:02 | - Stop recording screen

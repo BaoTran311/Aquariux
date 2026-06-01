@@ -1,0 +1,25 @@
+22:07:30 | - Running test case: test_AK_GEN_TC10_positive_cross_browser_sync.py
+22:07:30 | - Start recording screen
+22:07:30 | [Setup] Open Generate API Key panel
+22:07:30 | - Click 'Generate API Key' button
+22:07:32 | [Setup] Total API keys: 53
+22:07:34 | - Registered driver under 'web_secondary' (total: 2)
+22:07:34 | - Added web driver 'secondary' to driver_list (total: 2)
+22:07:34 | [Setup] Login on browser 2
+22:07:37 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+22:07:37 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+22:07:37 | - Input password: 'Autotest@12345'
+22:07:38 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+22:07:38 | - Click on login button
+22:07:38 | - Waiting for new code generated (old: '788311') ...
+22:08:00 | - New code generated ! (259786)
+22:08:01 | - Input TOTP code: '259786'
+22:08:06 | 🟡 Element not found for ('css selector', 'input[data-testid="totp-otp-input"]'): TimeoutException after 5(s)
+22:08:06 | [Teardown] Close panel if open
+22:08:06 | - Close panel
+22:08:12 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+22:08:13 | - Stop recording screen
+22:08:13 | [Teardown] Quit Web Driver
+22:08:13 | - Quit driver 'web_main'
+22:08:13 | - Quit driver 'web_secondary'
+22:08:13 | - All drivers quit and registry cleared

@@ -1,0 +1,32 @@
+22:45:06 | - Running test case: test_UG_TBL_TC13_positive_filter_combine_search.py
+22:45:06 | - Start recording screen
+22:45:06 | - Get table data
+22:45:08 | - Click 'next' button on table
+22:45:09 | - Click 'next' button on table
+22:45:10 | - Go to the first page
+22:45:11 | Step 1: Select 'Net' option
+22:45:11 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+22:45:11 | - Open dropdown Position Type
+22:45:11 | - Select Position Type
+22:45:11 | Step 2: Select 'A-Book' option
+22:45:11 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+22:45:11 | - Open dropdown Book Type
+22:45:11 | - Select Book Type
+22:45:11 | Step 3: Search by: 'Description', with: 'aEbdpqjdQY - description'
+22:45:11 | - Search for: 'aEbdpqjdQY - description'
+22:45:11 | Verify table data reset combine filter ('Net' & 'A-Book') with search: 'aEbdpqjdQY - description'
+22:45:11 | Step 4: Refresh page
+22:45:12 | Verify Default state of search bar: Search name
+22:45:12 | Verify Default state of Position Type: All Position Type
+22:45:12 | Verify Default state of Book Type: All Book Type
+22:45:12 | Verify table data reset (no filter & search)
+22:45:12 | - Get table data
+22:45:14 | - Click 'next' button on table
+22:45:15 | - Click 'next' button on table
+22:45:17 | - Go to the first page
+22:45:17 | - Comparing 120 items
+22:45:17 | [Teardown] Refresh the page
+22:45:19 | - Stop recording screen
+22:45:19 | [Teardown] Quit Web Driver
+22:45:19 | - Quit driver 'web_main'
+22:45:19 | - All drivers quit and registry cleared

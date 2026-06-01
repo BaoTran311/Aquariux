@@ -1,0 +1,23 @@
+22:00:07 | - Running test case: test_AK_TBL_TC10_positive_search_with_filter.py
+22:00:07 | - Start recording screen
+22:00:07 | Step 1: Filter by status: 'Inactive'
+22:00:09 | - Filter by status: 'Inactive'
+22:00:09 | Step 2: Search by 'Name': 'BADV_Auto_jotOuOD'
+22:00:09 | - Search for: BADV_Auto_jotOuOD
+22:00:10 | Verify table data matches search + filter
+22:00:10 | Step 3: Clear search
+22:00:10 | - Clear search input
+22:00:11 | Step 4: Search by 'Name': 'ARCz_Auto'
+22:00:11 | - Search for: ARCz_Auto
+22:00:11 | Verify table data matches search + filter
+22:00:12 | Step 5: Clear search
+22:00:12 | - Clear search input
+22:00:12 | Step 6: Search by 'Name': 'Test'
+22:00:12 | - Search for: Test
+22:00:13 | Verify table data matches search + filter
+22:00:13 | Step 7: Clear search
+22:00:13 | - Clear search input
+22:00:14 | [Teardown] Clear search and reset filter
+22:00:14 | - Clear search input
+22:00:16 | - Filter by status: 'All Status'
+22:00:17 | - Stop recording screen

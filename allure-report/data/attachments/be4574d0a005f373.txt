@@ -1,0 +1,32 @@
+10:51:34 | - Running test case: test_TA_ADD_TC03_positive_leverage_validation.py
+10:51:34 | - Start recording screen
+10:51:35 | [Setup] Click on 'Add Account' button
+10:51:35 | - Click 'Add Account' button
+10:51:35 | Step 1: Leave leverage empty
+10:51:35 | Step 2: Click 'Save'
+10:51:35 | - Click 'Save' button
+10:51:35 | Verify error validation: 'Leverage is required'
+10:51:36 | Step 3: Input leverage: 501
+10:51:36 | - Clear input leverage
+10:51:36 | - Input leverage: 501
+10:51:36 | - Click outside to close the panel
+10:51:37 | Verify error validation: 'Leverage cannot exceed 500'
+10:51:37 | Step 4: Input non-numeric: 'NWnri'
+10:51:37 | - Clear input leverage
+10:51:38 | - Input leverage: 'NWnri'
+10:51:38 | - Click outside to close the panel
+10:51:39 | Verify placeholder restored
+10:51:39 | Verify required error: 'Leverage is required'
+10:51:40 | Step 5: Input non-numeric: '[{^}]'
+10:51:40 | - Clear input leverage
+10:51:40 | - Input leverage: '[{^}]'
+10:51:40 | - Click outside to close the panel
+10:51:41 | Verify placeholder restored
+10:51:42 | Verify required error: 'Leverage is required'
+10:51:42 | Step 6: Input valid leverage
+10:51:42 | - Clear input leverage
+10:51:42 | - Input leverage: 83
+10:51:43 | - Click outside to close the panel
+10:51:43 | Verify no error
+10:51:43 | - Check invisibility of locator: ('css selector', 'span[data-testid="trading-account-form-field-leverage-error"]'): TRUE
+10:51:46 | - Stop recording screen

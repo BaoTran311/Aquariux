@@ -1,0 +1,23 @@
+21:30:44 | - Running test case: test_AK_DEL_TC01_positive_cancel.py
+21:30:44 | - Start recording screen
+21:30:46 | [Setup] Total API keys: 58
+21:30:46 | Step 1: View row: 'AutoTest_qspkv' > Edit > Delete
+21:30:46 | - Search for: AutoTest_qspkv
+21:30:47 | - View row: 'AutoTest_qspkv' (attempt: 1)
+21:30:48 | - Click 'Edit' button
+21:30:48 | - Click 'Delete' button
+21:30:49 | Verify delete confirmation title
+21:30:49 | Verify delete confirmation content
+21:30:49 | Step 2: Try clicking outside
+21:30:50 | Verify modal remains open
+21:30:50 | Step 3: Click 'Maybe Later' button
+21:30:50 | - Click 'Maybe Later' button
+21:30:50 | Verify modal is closed
+21:30:50 | - Check invisibility of locator: ('css selector', 'span[data-slot="dialog-title"]'): TRUE
+21:30:50 | - Close panel
+21:30:51 | Step 4: Clear search
+21:30:51 | - Clear search input
+21:30:51 | Verify footer label unchanged
+21:30:52 | - Wait for 'Showing 1 to 20 of 58 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+21:30:52 | [Teardown] Refresh the page
+21:30:54 | - Stop recording screen

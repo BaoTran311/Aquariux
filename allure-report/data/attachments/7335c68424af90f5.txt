@@ -1,0 +1,18 @@
+00:33:59 | - Running test case: test_UG_ADD_TC03_negative_required_fields.py
+00:33:59 | - Start recording screen
+00:33:59 | [Setup] Click on 'Add User Group' button
+00:33:59 | - Click 'Add User Group' button
+00:33:59 | Step 1: Submit form without field: 'Margin Call Level'
+00:33:59 | - Input name: 'SKdv_Auto.HwqnaybR'
+00:33:59 | - Input description: 'DtxjyEjJgg - description'
+00:33:59 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:33:59 | - Open dropdown Book Type
+00:33:59 | - Select Book Type
+00:34:00 | - Input stop out level: 80.46
+00:34:00 | - Input commission: 7.88
+00:34:00 | - Click 'Save' button
+00:34:00 | Verify error validation: 'Margin call level is required'
+00:34:00 | Verify panel remains open
+00:34:00 | [Teardown] Click 'x' icon to close the panel
+00:34:00 | - Click 'x' icon
+00:34:02 | - Stop recording screen

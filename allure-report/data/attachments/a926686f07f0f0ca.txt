@@ -1,0 +1,20 @@
+21:30:34 | - Running test case: test_AK_DEL_TC01_positive_cancel.py
+21:30:34 | - Start recording screen
+21:30:36 | [Setup] Total API keys: 58
+21:30:36 | Step 1: Action on row: 'hnSi_Auto-MuJTiUbp' > Delete
+21:30:36 | - Search for: hnSi_Auto-MuJTiUbp
+21:30:37 | - Delete row: 'hnSi_Auto-MuJTiUbp' (attempt: 1)
+21:30:38 | Verify delete confirmation title
+21:30:38 | Verify delete confirmation content
+21:30:38 | Step 2: Try clicking outside
+21:30:39 | Verify modal remains open
+21:30:39 | Step 3: Click 'Maybe Later' button
+21:30:39 | - Click 'Maybe Later' button
+21:30:40 | Verify modal is closed
+21:30:40 | - Check invisibility of locator: ('css selector', 'span[data-slot="dialog-title"]'): TRUE
+21:30:40 | Step 4: Clear search
+21:30:40 | - Clear search input
+21:30:40 | Verify footer label unchanged
+21:30:41 | - Wait for 'Showing 1 to 20 of 58 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+21:30:41 | [Teardown] Refresh the page
+21:30:43 | - Stop recording screen

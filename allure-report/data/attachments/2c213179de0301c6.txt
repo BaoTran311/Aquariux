@@ -1,0 +1,41 @@
+22:42:09 | - Running test case: test_TA_EDT_TC03_positive_leverage_validation.py
+22:42:09 | - Start recording screen
+22:42:09 | - Get table data
+22:42:12 | - Go to the first page
+22:42:12 | - Total records: 8
+22:42:12 | Step 1: View row: '(name)12' > Edit
+22:42:12 | - Search for: 'AQX-TA-00001283'
+22:42:13 | - Get table data
+22:42:15 | - Total records: 1
+22:42:15 | - Found record: '(name)12' column: 'Name' (page:1)
+22:42:16 | - View row: '(name)12'
+22:42:17 | - Click 'Edit' button
+22:42:17 | Step 2: Leave leverage empty
+22:42:17 | - Clear input leverage
+22:42:17 | - Click outside to close the panel
+22:42:18 | Verify error validation: 'Leverage is required'
+22:42:18 | Step 3: Input leverage: 501
+22:42:18 | - Clear input leverage
+22:42:18 | - Input leverage: 501
+22:42:19 | - Click outside to close the panel
+22:42:19 | Verify error validation: 'Leverage cannot exceed 500'
+22:42:20 | Step 4: Input non-numeric: 'qWhSg'
+22:42:20 | - Clear input leverage
+22:42:20 | - Input leverage: 'qWhSg'
+22:42:20 | - Click outside to close the panel
+22:42:21 | Verify placeholder restored
+22:42:22 | Verify required error: 'Leverage is required'
+22:42:22 | Step 5: Input non-numeric: '](;+\\'
+22:42:22 | - Clear input leverage
+22:42:22 | - Input leverage: '](;+\\'
+22:42:23 | - Click outside to close the panel
+22:42:23 | Verify placeholder restored
+22:42:24 | Verify required error: 'Leverage is required'
+22:42:24 | Step 6: Input valid leverage
+22:42:24 | - Clear input leverage
+22:42:25 | - Input leverage: 41
+22:42:25 | - Click outside to close the panel
+22:42:26 | Verify no error
+22:42:26 | - Check invisibility of locator: ('css selector', 'span[data-testid="trading-account-form-field-leverage-error"]'): TRUE
+22:42:26 | [Teardown] Refresh the page
+22:42:28 | - Stop recording screen

@@ -1,0 +1,90 @@
+11:10:02 | - Running test case: test_TA_ADD_TC010_positive_cross_browser_sync.py
+11:10:02 | - Start recording screen
+11:10:03 | - Get table data
+11:10:05 | - Go to the first page
+11:10:05 | [Setup] Total rows data: 2
+11:10:05 | [Setup] Click on 'Add Account' button
+11:10:05 | - Click 'Add Account' button
+11:10:07 | - Registered driver under 'web_secondary' (total: 2)
+11:10:07 | - Added web driver 'secondary' to driver_list (total: 2)
+11:10:07 | [Setup] Login on browser 2
+11:10:12 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+11:10:12 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+11:10:12 | - Input password: 'Autotest@12345'
+11:10:13 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+11:10:13 | - Click on login button
+11:10:14 | - Waiting for new code generated (old: '477675') ...
+11:10:30 | - New code generated ! (817296)
+11:10:31 | - Input TOTP code: '817296'
+11:10:34 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+11:10:34 | - Expand item: 'Accounts'
+11:10:35 | [Setup] Navigate Asset Classes Page
+11:10:35 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+11:10:35 | - Item: 'Accounts' already 'expand'
+11:10:35 | [API] Send API: GET /backoffice/v1/users/available-users
+11:10:36 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/users/available-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg1NTg5NDMsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NTgwODQzLCJpYXQiOjE3Nzg1NTg5NDMsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImY0MTNhZjJiLTViZGMtNGQ2OC1iYWQ5LWJjMTdjZDlhODY4NyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.Bvsxo9zvT1DIbc9UMD7SQfW3Z2B34dMBWevta8sQ3uQhdEbzfkY9UI1H9N2CwBOmn3pzXbsCL4C4fU5t0i6ts5GApPSogEzB_tovOikErZupl9SnFLhRbG8YzHHA6ZdZZhT7Y5dveXCQhRZoAqAodX5UZZeJB-Mi5dKp11flNG74pwYQQdJ0ouELIO6PlAB6hpQsMrxduXJ7gDdbZB85kSjQFuRP_yJzBV0bKppR7bJNlkxpTygQ7d_enwe8NsDScX61n1Ex1nUOw5vIY5tBVj3IW-vQ9YkRu9YWgayA0QhZXTMsh5k48Mn1V-iJLNl78KPomDpi2KpcRWfNsEOR3Q'
+
+
+11:10:36 | Step 1: Submit form: 'trading_user: (name)12, account_type: Trader, account_mode: Live, leverage: 75, currency: USD - US Dollar, trade_permission: True, status: Active'
+11:10:37 | - Check invisibility of locator: ('css selector', 'div[role="option"]'): TRUE
+11:10:37 | - Open dropdown Name
+11:10:38 | - Select Name
+11:10:38 | - Input leverage: 75
+11:10:38 | - Set trade permission: enable
+11:10:39 | - Set status: 'Active'
+11:10:39 | - Click 'Save' button
+11:10:40 | Verify toast message: 'The trading account has been created successfully'
+11:10:40 | Verify table footer remains un-changed: 'Showing 1 to 2 of 2 items' (browser 2)
+11:10:40 | - Wait for 'Showing 1 to 2 of 2 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+11:10:41 | Step 2: Search for newly created record: '(name)12' (browser 2)
+11:10:41 | - Search for: '(name)12'
+11:10:42 | Step 3: Sort DESC by: Created Date
+11:10:42 | - Sort by: 'Created Date'
+11:10:42 | - Sort by: 'Created Date'
+11:10:42 | Verify newly created data on table (browser 2)
+11:10:42 | - Get table data
+11:10:45 | Step 4: View details of the newly created record (browser 2)
+11:10:45 | - Get table data
+11:10:47 | - Found record: '(name)12' column: 'Name' (page:1)
+11:10:47 | - View row: '(name)12' (attempt:1)
+11:10:48 | Verify details matches with created data (browser 2)
+11:10:48 | - Comparison: 
+====================================================================
+Field            | Expected                | Actual                 
+--------------------------------------------------------------------
+account_mode     | Live                    | Live                   
+account_type     | Trader                  | Trader                 
+created_date     | 12 May 2026 04:10:39    | 12 May 2026 04:10:40
+--
+created_date_by  | Auto                    | MISSING                
+currency         | USD                     | USD                    
+last_updated     | 12 May 2026 04:10:39    | 12 May 2026 04:10:40
+--
+last_updated_by  | Auto                    | MISSING                
+leverage         | 1:75                    | 1:75                   
+name             | (name)12                | --                     
+status           | Active                  | Active                 
+trade_permission | Yes                     | Yes                    
+====================================================================
+11:10:48 | ✘ Check Failed !
+⟶ Missing: last_updated_by, created_date_by
+⟶ Value mismatch on fields: created_date, last_updated, name (Operator: EQUAL)
+11:10:49 | Step 5: Clear search bar
+11:10:49 | - Click 'x' icon
+11:10:49 | - Clear search input
+11:10:49 | Verify footer label +1: 'Showing 1 to 3 of 3 items' (browser 2)
+11:10:49 | - Wait for 'Showing 1 to 3 of 3 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+11:10:50 | [Teardown] Refresh the page
+11:10:51 | [Teardown] Quit Browser 2
+11:10:51 | - Quit driver 'web_secondary'
+11:10:54 | - Stop recording screen
+11:10:54 | [Teardown] Quit Web Driver
+11:10:54 | - Quit driver 'web_main'
+11:10:54 | - All drivers quit and registry cleared

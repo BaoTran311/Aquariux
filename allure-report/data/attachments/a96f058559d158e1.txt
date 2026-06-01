@@ -1,0 +1,20 @@
+23:14:52 | - Running test case: test_TA_TBL_TC14_positive_filter_combine_search.py
+23:14:52 | - Start recording screen
+23:14:52 | - Get table data
+23:14:54 | - Click 'next' button on table
+23:14:56 | - Click 'next' button on table
+23:14:57 | - Go to the first page
+23:14:57 | Step 1: Search by: 'Name', with: '-AutoXjbUYwleGN'
+23:14:57 | - Search for: '-AutoXjbUYwleGN'
+23:14:57 | Step 2: Select 'Dealer' option
+23:14:57 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+23:14:57 | - Open dropdown Type
+23:14:57 | - Select Type
+23:14:57 | Step 3: Select 'All Mode' option
+23:14:57 | Step 4: Select 'Active' option
+23:14:57 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+23:14:57 | - Open dropdown Status
+23:14:57 | - Select Status
+23:15:03 | 🟡 Element not found for ('css selector', 'div[data-testid="trading-account-list-select-status-option-true"]'): TimeoutException after 5(s)
+23:15:03 | [Teardown] Refresh the page
+23:15:05 | - Stop recording screen

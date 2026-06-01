@@ -1,0 +1,95 @@
+20:29:16 | - Running test case: test_UG_EDT_TC09_positive_valid_duplicate_name.py
+20:29:16 | - Get table data
+20:29:17 | - Go to the first page
+20:29:17 | [Setup] View row: 'BHNm_Auto-WVIrEbfI' > Edit
+20:29:17 | - Get table data
+20:29:19 | - Found record: 'BHNm_Auto-WVIrEbfI' column: 'Name' (page:1)
+20:29:19 | - View row: 'BHNm_Auto-WVIrEbfI' (attempt:1)
+20:29:19 | - Click 'Edit' button
+20:29:19 | - Start recording screen
+20:29:20 | [API] Send API: POST /backoffice/v1/user-groups
+20:29:20 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 193' 
+--data-raw '{"name": "QyCK_Auto.KbFRHNIS", "description": "HgyoqhvBag - description", "positionType": "HEDGE", "bookType": "A_BOOK", "marginCallLevel": 76.31, "stopOutLevel": 75.93, "commissionRate": 7.77}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:29:20.376292557Z"
+}
+
+
+20:29:20 | [API] Send API: GET /backoffice/v1/user-groups
+20:29:20 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ'
+
+
+20:29:20 | [Setup] Send API to create new user group: name: QyCK_Auto.KbFRHNIS, description: HgyoqhvBag - description, position_type: Hedge, book_type: A-Book, margin_call_level: 76.31, stop_out_level: 75.93, commission: 7.77, created_date: 09 May 2026 13:29:20, id: 019e0ced-a0f5-7134-a7c5-aa2d26e7cec9
+20:29:20 | [Setup] Refresh page to load changes
+20:29:22 | Step 1: View row: 'QyCK_Auto.KbFRHNIS' > Edit
+20:29:22 | - Get table data
+20:29:23 | - Found record: 'QyCK_Auto.KbFRHNIS' column: 'Name' (page:1)
+20:29:23 | - View row: 'QyCK_Auto.KbFRHNIS' (attempt:1)
+20:29:23 | - Click 'Edit' button
+20:29:24 | Step 2: Submit edit form with: 'name: qYck_AUto.kBFrHNiS' (duplicated with 'qYck_AUto.kBFrHNiS')
+20:29:24 | - Input name: 'qYck_AUto.kBFrHNiS'
+20:29:24 | - Click 'Save' button
+20:29:24 | Verify toast message: 'The user group has been updated successfully'
+20:29:24 | Verify table data updated accordingly
+20:29:24 | - Get table data
+20:29:25 | - Go to the first page
+20:29:25 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬────────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date           │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼────────────────────────┤
+│ BHNm_Auto-WVIrEbfI │ pgjbdbdLhb - description │ Hedge         │ A-Book       │ 3 May 2026 15:42:48    │
+│ IlhN_Auto_yarpEETE │ YkZWJkOoce - description │ Hedge         │ A-Book       │ 8 May 2026 17:35:17    │
+│ lKKq_Auto.mAWhFBUL │ vJzNyuHjyK - description │ Hedge         │ B-Book       │ 8 May 2026 04:40:14    │
+│ PBCC_Auto_xizSVlkx │ ghfmrNRtkD - description │ Hedge         │ A-Book       │ 8 May 2026 04:24:36    │
+│ pLib_Auto_TlXFFGmD │ OiGMNvkoBs - description │ Hedge         │ B-Book       │ 8 May 2026 04:16:41    │
+│ PROFESSIONAL       │ Professional traders     │ Hedge         │ B-Book       │ 25 March 2026 16:57:24 │
+│ qYck_AUto.kBFrHNiS │ HgyoqhvBag - description │ Hedge         │ A-Book       │ 9 May 2026 13:29:20    │
+│ rjrf_Auto/JpIvuJWI │ bzHJzAtmgI - description │ Hedge         │ B-Book       │ 9 May 2026 13:26:29    │
+│ SFPF_Auto-jlSwSEjR │ uIIYTknjkp - description │ Hedge         │ B-Book       │ 8 May 2026 17:35:29    │
+│ XAEE_AUTO-YFXADWKZ │ lvgnwKNGeU - description │ Hedge         │ B-Book       │ 8 May 2026 17:34:34    │
+│ xsFe_Auto_PEYCyvPA │ syXjWecGJg - description │ Hedge         │ B-Book       │ 8 May 2026 18:12:28    │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴────────────────────────┘
+20:29:25 | Step 3: View details of 'qYck_AUto.kBFrHNiS'
+20:29:25 | - Get table data
+20:29:27 | - Found record: 'qYck_AUto.kBFrHNiS' column: 'Name' (page:1)
+20:29:27 | - View row: 'qYck_AUto.kBFrHNiS' (attempt:1)
+20:29:27 | Verify details updated accordingly
+20:29:28 | Send API to delete the created asset: 019e0ced-a0f5-7134-a7c5-aa2d26e7cec9
+20:29:28 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0ced-a0f5-7134-a7c5-aa2d26e7cec9
+20:29:28 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0ced-a0f5-7134-a7c5-aa2d26e7cec9' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzMwOTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU0OTk1LCJpYXQiOjE3NzgzMzMwOTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImFiZTdjNWFkLWRhMjQtNDI5ZS05Y2JmLTIwMThkZDMwM2NlMSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.J2rtuCHK308I-ITRAzBXutfKuu24etSl8wJ6jxXsvITlZeMiWwN6xRsT7Zi_wsw9wcRl2GnBc2Bcx0bYA_S3dNuWYF2Em9fMHs4YMo3z55MuoeTl7mlIjqzJjQKsQ_pbGdMKytZDRYJ-TI6IDxvz_gWfscYjAAgJprajbg6dBgFgMVWmSf0bAFjr9MP_MMHqG0EKlaR7TAKSMxKqzZpebS1k75E3UECjXkFpnXHswwj1PYlScOu78jojedRhQUZvGYUFCqClg1MJYRKLvYPd1h-grUqm96uJP_OxWtFncuo7olsw-5G9-yXVwA7Llf3lGw3LXsEAjqHp1cIaScRpSQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:29:28.570598377Z"
+}
+
+
+20:29:29 | - Stop recording screen

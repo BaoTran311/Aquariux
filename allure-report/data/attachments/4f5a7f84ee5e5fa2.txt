@@ -1,0 +1,154 @@
+00:39:49 | - Running test case: test_UG_ADD_TC06_positive_success_creation.py
+00:39:49 | [Setup] Setup 2FA via API
+00:39:49 | [API] Send API: POST /auth/v1/login/admin
+00:39:50 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-08T17:39:50.785212083Z"
+}
+
+
+00:39:50 | [API] Send API: GET /backoffice/v1/2fa/setup/totp
+00:39:50 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/setup/totp' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjE5OTAsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgzODkwLCJpYXQiOjE3NzgyNjE5OTAsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjNlMGM3MDZlLTZjNzAtNGNiOS1hNjY2LWVmYTQwZGNlZTJmYSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.KcOxbUbwRgbbFt6NfHMRD2yYNgu0c8AzlT1mF-VkueOTaQkO0-14pWPAqfVtiUXLgZUjbtL_92JlaCETle1A-AYENNHgMjPXJMvLbaWRj9PLe_2-4Lcn7BI0q8786O2TCnc1CfMWFEW---hDgZC4RsxDUA2HzBOaQNPqoReLEgNEgoxBCRn-Zdpm5gTUdBue4Q6_uuWhz6mSVDN8Nu7tNzKQuPh4VZNPiRU5p9UI7dm0r5bDSHf3u8TWoW-LpMdA4na-EAz38gHgOe_Eg7LHXhpb7wx1kZzwOUVdnSA_BflxTGpJTXQLp7AbPa22NN6qt0Ao9WebIST-EFdDng3pVQ'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "secret": "2MZAXF6JSRHWHZCC3WGMVSF2NGM7CVNV",
+        "qrCodeUrl": "otpauth://totp/nguyengiabao.tran1%40aquariux.com?secret=2MZAXF6JSRHWHZCC3WGMVSF2NGM7CVNV&issuer=AQXOMS",
+        "accountName": "nguyengiabao.tran1@aquariux.com",
+        "issuer": "AQXOMS",
+        "message": "TOTP secret generated. Scan QR code with authenticator app, then verify."
+    },
+    "success": true,
+    "timestamp": "2026-05-08T17:39:51.163678377Z"
+}
+
+
+00:39:50 | [API] Send API: POST /backoffice/v1/2fa/totp/verify
+00:39:51 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/totp/verify' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjE5OTAsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgzODkwLCJpYXQiOjE3NzgyNjE5OTAsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjNlMGM3MDZlLTZjNzAtNGNiOS1hNjY2LWVmYTQwZGNlZTJmYSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.KcOxbUbwRgbbFt6NfHMRD2yYNgu0c8AzlT1mF-VkueOTaQkO0-14pWPAqfVtiUXLgZUjbtL_92JlaCETle1A-AYENNHgMjPXJMvLbaWRj9PLe_2-4Lcn7BI0q8786O2TCnc1CfMWFEW---hDgZC4RsxDUA2HzBOaQNPqoReLEgNEgoxBCRn-Zdpm5gTUdBue4Q6_uuWhz6mSVDN8Nu7tNzKQuPh4VZNPiRU5p9UI7dm0r5bDSHf3u8TWoW-LpMdA4na-EAz38gHgOe_Eg7LHXhpb7wx1kZzwOUVdnSA_BflxTGpJTXQLp7AbPa22NN6qt0Ao9WebIST-EFdDng3pVQ' 
+--header 'Content-Length: 18' 
+--data-raw '{"code": "010836"}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-08T17:39:51.458360239Z"
+}
+
+
+00:39:51 | [API] Send API: POST /auth/v1/login/admin
+00:39:51 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-08T17:39:52.088706545Z"
+}
+
+
+00:39:51 | [API] Send API: GET /backoffice/v1/admin-users
+00:39:52 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjE5OTIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgzODkyLCJpYXQiOjE3NzgyNjE5OTIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjZmNWI2YmIwLWEwZTYtNDk2YS05ZDc4LTQ4NjRjZWViNzQwMyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.D7CKL-c_qehcMlv0FNCd3dh9-nd-WXpmWJdHVZPcerGdOj7nxFLpJ-lVCB-yiUaArU9DTylxUP_dz8jY1UPY9G5O3ua0izaPB_yTtp4ZvIl1QJDtWsLwfLPOf6Dn_psbXZROa2YGq30tc_7lCEPHqrjXVr9qhw0rZ7ZiqcHDtlT0gzwxkeXY_JRQEehBCVvlZDHNctuS1070v0HoekRhulI1oVnwNDH9Ab8RqlNTzIKrRiltH68UdDrfdS_D7QUcvRGldDvqutQVHY7gKpQgy1ZpVrxE2VSfN2Gl5jho_gkjbEVKR2uhw9f7VuKL1vWhm3K8LEmvxhCs-mpadnGZRw'
+
+
+00:39:52 | [Setup] Init Web Driver
+00:39:54 | - Registered driver under 'web_main' (total: 1)
+00:39:54 | - Added web driver 'main' to driver_list (total: 1)
+00:39:54 | [Setup] Navigate to OMS site
+00:39:55 | [Setup] Login with default admin user
+00:39:56 | [Setup] Expand Accounts section
+00:39:56 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+00:39:56 | - Expand item: 'Accounts'
+00:39:56 | [Setup] Navigate to User Group Page
+00:39:56 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+00:39:56 | - Item: 'Accounts' already 'expand'
+00:39:56 | - Start recording screen
+00:39:57 | - Get table data
+00:39:58 | - Go to the first page
+00:39:58 | [Setup] Total rows data: 25
+00:39:58 | Step 1: Search with: 'imayEkXPxnvNIXfnEBTf' (non-existent keyword)
+00:39:58 | - Search for: 'imayEkXPxnvNIXfnEBTf'
+00:39:59 | Step 2: Click button 'Add User Group' on table
+00:39:59 | - Click on add button
+00:39:59 | Step 3: submit form with: 'name: AutoTXEvgiJue-K, description: tdtNrkdKLN - description, position_type: Hedge, book_type: B-Book, margin_call_level: 78.33, stop_out_level: 34.36, commission: 7.48'
+00:39:59 | - Input name: 'AutoTXEvgiJue-K'
+00:39:59 | - Input description: 'tdtNrkdKLN - description'
+00:40:00 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:40:00 | - Open dropdown Book Type
+00:40:00 | - Select Book Type
+00:40:00 | - Input margin call level: 78.33
+00:40:00 | - Input stop out level: 34.36
+00:40:00 | - Input commission: 7.48
+00:40:00 | - Click 'Save' button
+00:40:00 | Verify toast message: 'The user group has been created successfully'
+00:40:01 | Step 4: Clear search
+00:40:01 | - Clear search input
+00:40:01 | Verify footer label +1: 'Showing 1 to 26 of 26 items'
+00:40:02 | - Wait for 'Showing 1 to 26 of 26 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+00:40:02 | Step 5: Search for newly created record: 'AutoTXEvgiJue-K'
+00:40:02 | - Search for: 'AutoTXEvgiJue-K'
+00:40:03 | Verify newly created data on table
+00:40:03 | - Get table data
+00:40:04 | Step 6: View details of the newly created record
+00:40:04 | - Get table data
+00:40:05 | - Found record: 'AutoTXEvgiJue-K' column: 'Name' (page:1)
+00:40:05 | - View row: 'AutoTXEvgiJue-K' (attempt:1)
+00:40:05 | Verify details matches with created data
+00:40:05 | [Teardown] Refresh the page
+00:40:07 | - Stop recording screen
+00:40:07 | [Teardown] Quit Web Driver
+00:40:07 | - Quit driver 'web_main'
+00:40:07 | - All drivers quit and registry cleared
