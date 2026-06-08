@@ -1,0 +1,22 @@
+00:34:22 | - Running test case: test_UG_ADD_TC05_positive_close_panel.py
+00:34:22 | - Start recording screen
+00:34:22 | [Setup] Click on 'Add User Group' button
+00:34:22 | - Click 'Add User Group' button
+00:34:22 | Step 1: Fill form with: {'name': 'uZSg_Auto/AWpraKbP', 'description': 'ZEkwzMVsVT - description', 'position_type': 'Hedge', 'book_type': 'A-Book', 'margin_call_level': 28.38, 'stop_out_level': 41.89, 'commission': 4.54}
+00:34:22 | - Input name: 'uZSg_Auto/AWpraKbP'
+00:34:22 | - Input description: 'ZEkwzMVsVT - description'
+00:34:22 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:34:22 | - Open dropdown Book Type
+00:34:22 | - Select Book Type
+00:34:23 | - Input margin call level: 28.38
+00:34:23 | - Input stop out level: 41.89
+00:34:23 | - Input commission: 4.54
+00:34:23 | Step 2: Click icon 'x' to close the panel
+00:34:23 | - Click 'x' icon
+00:34:23 | Verify panel is closed
+00:34:24 | - Check invisibility of locator: ('css selector', 'span[data-testid$="-sheet-title"]'): TRUE
+00:34:24 | Step 3: Click on 'Add User Group' button
+00:34:24 | - Click 'Add User Group' button
+00:34:24 | Verify pre-filled values reset
+00:34:24 | [Teardown] Refresh the page
+00:34:26 | - Stop recording screen

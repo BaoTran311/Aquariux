@@ -1,0 +1,16 @@
+23:39:03 | - Running test case: test_UG_VIW_TC02_positive_close_panel.py
+23:39:03 | - Start recording screen
+23:39:03 | - Get table data
+23:39:04 | - Go to the first page
+23:39:04 | Step 1: Action on row: 'FSOX_AUTO_BODHBCWO' > View
+23:39:04 | - Get table data
+23:39:05 | - Found record: 'FSOX_AUTO_BODHBCWO' column: 'Name' (page:1)
+23:39:05 | - View row: 'FSOX_AUTO_BODHBCWO' (attempt:1)
+23:39:06 | Step 2: Click icon 'x' to close the panel
+23:39:06 | - Click 'x' icon
+23:39:07 | Verify panel is closed
+23:39:07 | - Check invisibility of locator: ('css selector', 'span[data-testid$="-sheet-title"]'): TRUE
+23:39:07 | [Teardown] Click 'x' icon to close the panel
+23:39:07 | - Click 'x' icon
+23:39:08 | 🟡 Element not found for ('css selector', "button[data-slot='sheet-close']"): TimeoutException after 1(s)
+23:39:09 | - Stop recording screen

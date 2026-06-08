@@ -1,0 +1,34 @@
+22:49:42 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+22:49:42 | - Start recording screen
+22:49:42 | Step 1: Search with: 'auto'
+22:49:42 | - Search for: auto
+22:49:42 | Step 2: Click sort on column: 'Expires'
+22:49:42 | - Sort by: 'Expires'
+22:49:43 | Verify column sorts chronologically oldest → newest
+22:49:43 | - Get table data
+22:49:45 | - Go to the first page
+22:49:45 | - Total records: 15
+22:49:45 | - Comparing: 
+Actual:    ['28 May 2026 23:59:59', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never']
+Expected:  ['28 May 2026 23:59:59', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never']
+22:49:45 | Step 3: Click sort again on column: 'Expires'
+22:49:45 | - Sort by: 'Expires'
+22:49:45 | Verify column sorts chronologically newest → oldest
+22:49:45 | - Get table data
+22:49:47 | - Go to the first page
+22:49:48 | - Total records: 15
+22:49:48 | - Comparing: 
+Actual:    ['Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', '28 May 2026 23:59:59']
+Expected:  ['Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', '28 May 2026 23:59:59']
+22:49:48 | Step 4: Clear search
+22:49:48 | - Clear search input
+22:49:48 | Verify column still sorts chronologically newest → oldest
+22:49:48 | - Get table data
+22:49:50 | - Click 'next' button on table
+22:49:51 | - Click 'next' button on table
+22:49:52 | - Go to the first page
+22:49:53 | - Total records: 52
+22:49:53 | - Comparing: 
+Actual:    ['Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '10 May 2030 23:59:59', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '1 June 2027 23:59:59', '28 May 2026 23:59:59', '28 May 2026 23:59:59', '23 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '19 May 2026 23:59:59', '17 May 2026 23:59:59', '15 May 2026 23:59:59', '12 May 2026 23:59:59', '1 April 2026 23:59:59', '11 March 2026 23:59:59', '1 January 2020 00:00:00', '1 January 2020 00:00:00']
+Expected:  ['Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '10 May 2030 23:59:59', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '1 June 2027 23:59:59', '28 May 2026 23:59:59', '28 May 2026 23:59:59', '23 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '21 May 2026 23:59:59', '19 May 2026 23:59:59', '17 May 2026 23:59:59', '15 May 2026 23:59:59', '12 May 2026 23:59:59', '1 April 2026 23:59:59', '11 March 2026 23:59:59', '1 January 2020 00:00:00', '1 January 2020 00:00:00']
+22:49:54 | - Stop recording screen

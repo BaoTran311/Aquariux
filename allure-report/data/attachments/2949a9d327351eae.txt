@@ -1,0 +1,130 @@
+22:01:05 | - Running test case: test_AK_TBL_TC12_positive_pagination_button_nav.py
+22:01:05 | - Start recording screen
+22:01:05 | - Get table data
+22:01:07 | - Click 'next' button on table
+22:01:08 | - Click 'next' button on table
+22:01:10 | - Go to the first page
+22:01:10 | 
+Table Data:
+┌──────────────────────────────┬──────────────────────────────────────┬───────────────────────────┬──────────────┬────────────────────────┐
+│ name                         │ id                                   │ expires                   │ status       │ created_date           │
+├──────────────────────────────┼──────────────────────────────────────┼───────────────────────────┼──────────────┼────────────────────────┤
+│ oeip_auto-sxmlmehi           │ 019e69f3-6ada-776b-94b2-d1c9e0c52d9e │ Never                     │ Active       │ 27 May 2026 15:00:20   │
+│ AAAAAAMVTU_AUTO-KKKVCCYU     │ 019e69f3-6a1d-7819-84d8-401575215eb2 │ Never                     │ Active       │ 27 May 2026 15:00:20   │
+│ aaaaaazzzj_auto-cmmjqrni     │ 019e69f3-6959-707b-b597-1b09f445edf8 │ Never                     │ Active       │ 27 May 2026 15:00:20   │
+│ ymwi_auto-gkliykwi           │ 019e69f3-682c-7599-9cb0-41b875959e05 │ Never                     │ Active       │ 27 May 2026 15:00:20   │
+│ AAAAAAXHYZ_AUTO-SEUVITKX     │ 019e69f3-6768-70e6-84f2-f29f946e6a7e │ Never                     │ Active       │ 27 May 2026 15:00:19   │
+│ AAAAAAWBPI_AUTO-SXSKGKFU     │ 019e69f3-66ac-7b3f-a611-9fc04f9fb8ed │ Never                     │ Active       │ 27 May 2026 15:00:19   │
+│ XzaR_Auto-dzVkotrv           │ 019e69f3-658b-777e-9408-7bc50d06029a │ Never                     │ Active       │ 27 May 2026 15:00:19   │
+│ FVzH_Auto-jNQQgOFO           │ 019e69f3-6448-7c92-8411-c491a3612758 │ Never                     │ Active       │ 27 May 2026 15:00:19   │
+│ BADV_Auto_jotOuODp           │ 019e6259-1676-7848-ac11-d68343ee5ccb │ Never                     │ Active       │ 26 May 2026 03:34:26   │
+│ 123123123123                 │ 019e61d1-8379-7d2e-bbbd-d5bf405d21e5 │ Never                     │ Active       │ 26 May 2026 01:06:21   │
+│ banhdainam@gmail.com         │ 019e586d-8f74-7e9b-ae8e-3a04306f4513 │ 31 December 2035 23:59:59 │ Active       │ 24 May 2026 05:20:35   │
+│ JhOm_Auto.nkwuKNYT           │ 019e495b-d800-7b13-9297-be90f1cd80f0 │ Never                     │ Active       │ 21 May 2026 07:06:56   │
+│ ulrK_Auto-iKezxpKV           │ 019e4958-a2af-7266-818a-9656babd79a2 │ Never                     │ Active       │ 21 May 2026 07:03:26   │
+│ wuSS_Auto/rURKRZgW           │ 019e4949-aada-7a81-b8e9-526294e77231 │ Never                     │ Active       │ 21 May 2026 06:47:05   │
+│ tiuV_Auto_qnJtvvxI           │ 019e48ea-bd00-72dd-bc78-00d9816762a9 │ Never                     │ Active       │ 21 May 2026 05:03:23   │
+│ inib_Auto_AmwcPjgH           │ 019e489c-b50e-7d87-945e-6705cf51fe7d │ Never                     │ Active       │ 21 May 2026 03:38:10   │
+│ bao_api_key                  │ 019e488a-086e-7ea5-968a-c18177e25a6b │ 21 May 2026 23:59:59      │ Active       │ 21 May 2026 03:17:46   │
+│ oWvG_Auto-LpaCcXyb           │ 019e4864-5171-7a60-b38d-4c9b1b1889e6 │ Never                     │ Active       │ 21 May 2026 02:36:34   │
+│ dtest                        │ 019e484e-ff43-7bc0-bd18-1a8796a03acc │ 21 May 2026 23:59:59      │ Active       │ 21 May 2026 02:13:17   │
+│ asdasdasd                    │ 019e4843-912d-7127-af8a-30231261580e │ 23 May 2026 23:59:59      │ Active       │ 21 May 2026 02:00:48   │
+│ asd                          │ 019e4841-ae11-763c-b46f-643d4efe0805 │ 10 May 2030 23:59:59      │ Active       │ 21 May 2026 01:58:44   │
+│ AUD/CAD                      │ 019e4840-961c-727c-9a1b-f3265fddc7c8 │ Never                     │ Active       │ 21 May 2026 01:57:32   │
+│ test                         │ 019e481d-77aa-749b-9360-2cf941d24ee1 │ Never                     │ Active       │ 21 May 2026 01:19:11   │
+│ OxigenProviderVN             │ 019e448e-7ae8-7f5d-8553-7b80a8fe261f │ Never                     │ Active       │ 20 May 2026 08:44:08   │
+│ HI_BAO_PLEASE_DONT_DELETE    │ 019e4455-01dc-7675-ae65-31264585581b │ Never                     │ Active       │ 20 May 2026 07:41:22   │
+│ test_api_key                 │ 019e4331-8f32-7e17-9183-d662d083e775 │ 19 May 2026 23:59:59      │ Active       │ 20 May 2026 02:23:01   │
+│ wjvu_Auto-IvfkhqFZ           │ 019e36a9-efc4-7a02-aa49-e647148295dc │ Never                     │ Active       │ 17 May 2026 15:59:27   │
+│ test                         │ 019e36a8-2bdf-7a28-9083-fd17e35db5a8 │ 17 May 2026 23:59:59      │ Active       │ 17 May 2026 15:57:31   │
+│ VUUT_Auto-GTRYxCyJ           │ 019e3696-18f6-795e-b7da-ee4a40dddf8d │ 28 May 2026 23:59:59      │ Active       │ 17 May 2026 15:37:46   │
+│ RwIR_Auto-GcddgQsl           │ 019e3695-9e0b-7f9a-a97a-5cc6dd19be56 │ Never                     │ Active       │ 17 May 2026 15:37:15   │
+│ MGtG_Auto/UKLwKEwg           │ 019e368d-d900-7e53-8b60-9ffbd88c61db │ Never                     │ Active       │ 17 May 2026 15:28:46   │
+│ ARCz_Auto-XFBjEeih           │ 019e368b-ffad-73d1-bd45-6050bd33e8f4 │ Never                     │ Active       │ 17 May 2026 15:26:45   │
+│ YDla_Auto.zGgRxjjt           │ 019e368a-7593-7308-ad7d-d1f18ffed66f │ Never                     │ Active       │ 17 May 2026 15:25:04   │
+│ vamO_Auto/dkOkswQd           │ 019e3683-beb9-7102-8ff9-d4eb8838777f │ Never                     │ Active       │ 17 May 2026 15:17:44   │
+│ liUM_Auto-gLeqyttD           │ 019e3682-0b6b-71f9-a195-36845e6fc630 │ Never                     │ Active       │ 17 May 2026 15:15:52   │
+│ Denlie ATTABOY               │ 019e2b0e-1ccd-767a-ad10-4f655c6e728d │ 15 May 2026 23:59:59      │ Active       │ 15 May 2026 09:53:25   │
+│ JW Birthday Finished         │ 019e20c0-7b0e-73ef-b6af-1f2597fb3a8a │ 12 May 2026 23:59:59      │ Active       │ 13 May 2026 09:52:25   │
+│ AUD/CAD                      │ 019e2034-7881-7606-87c2-ae19b24f93bd │ 21 May 2026 23:59:59      │ Active       │ 13 May 2026 07:19:30   │
+│ Past Expiry Key              │ 019e1094-4476-7a9f-b67f-f25626909e7e │ 1 January 2020 00:00:00   │ Active       │ 10 May 2026 06:30:12   │
+│ Inactive Pre-provisioned Key │ 019e1094-246b-7191-bfc6-2338c794750a │ Never                     │ Inactive     │ 10 May 2026 06:30:04   │
+│ Active Key With Expiry       │ 019e1094-1b11-729c-833c-43be480723f1 │ 31 December 2027 23:59:59 │ Active       │ 10 May 2026 06:30:02   │
+│ Integration Test Key         │ 019e1094-0e8e-7035-a3a3-d1ffc9c541a1 │ Never                     │ Active       │ 10 May 2026 06:29:59   │
+│ Past Expiry Key              │ 019e0c68-db93-79b5-b293-0cc445ca7206 │ 1 January 2020 00:00:00   │ Active       │ 9 May 2026 11:04:19    │
+│ Inactive Pre-provisioned Key │ 019e0c68-a2a8-77e0-b265-22edcdec76a0 │ Never                     │ Inactive     │ 9 May 2026 11:04:04    │
+│ Active Key With Expiry       │ 019e0c68-96a2-769e-bcf9-583561edcc92 │ 31 December 2027 23:59:59 │ Active       │ 9 May 2026 11:04:01    │
+│ BQN_TEST                     │ 019dfc67-cbac-7d85-9330-2d776d21d975 │ 1 June 2027 23:59:59      │ Active       │ 6 May 2026 08:29:14    │
+│ Testing                      │ 019df1dc-41db-794a-a80c-f322d81bf149 │ 28 May 2026 23:59:59      │ Active       │ 4 May 2026 07:20:37    │
+│ cytest                       │ 019ddbe9-bf4e-7696-9dcf-ad2af75ba332 │ Never                     │ Active       │ 30 April 2026 01:03:42 │
+│ AUD/CAD                      │ 019dcd81-833f-7798-9efd-23c2f9fb3d64 │ 1 April 2026 23:59:59     │ Active       │ 27 April 2026 05:55:10 │
+│ tuan test                    │ 019db03e-8b76-747c-aec8-b2c53eb919ff │ 31 December 2035 23:59:59 │ Active       │ 21 April 2026 13:33:02 │
+│ WilliamBanh                  │ 019daf5f-a056-7dce-b923-ce283a5fd2d3 │ 31 December 2035 23:59:59 │ Active       │ 21 April 2026 09:29:33 │
+│ WilliamBanh                  │ 019daf5d-ee6c-7583-8de9-76043f7d04ff │ 31 December 2035 23:59:59 │ Active       │ 21 April 2026 09:27:41 │
+│ WilliamBanh                  │ 019daf5b-dbb2-7fd8-9893-22aca78037da │ 31 December 2035 23:59:59 │ Active       │ 21 April 2026 09:25:26 │
+│ WilliamBanh                  │ 019daf4c-f169-7b2f-a77d-c0b1b4ffe50a │ 31 December 2035 23:59:59 │ Active       │ 21 April 2026 09:09:08 │
+│ CAICAI4                      │ 019d9256-e8cc-7e4e-a7c9-168d96221aa5 │ Never                     │ Active       │ 12 April 2026 13:45:07 │
+│ CAICAI3                      │ 019d9256-e8cc-733c-a973-d79a2e4e0ac3 │ Never                     │ Active       │ 12 April 2026 13:36:52 │
+│ CAICAI2                      │ 019d9256-e8cc-791d-b955-7784bd8abbac │ Never                     │ Inactive     │ 12 April 2026 13:21:31 │
+│ CAICAI                       │ 019d9256-e8cc-7050-bf49-ed58656bf9dc │ Never                     │ Inactive     │ 12 April 2026 04:41:01 │
+│ Alexis                       │ 019d9256-e8cc-7ef9-b9cd-442429ee327a │ Never                     │ Active       │ 8 April 2026 09:14:05  │
+│ Jiun Xian                    │ 019d9256-e8cc-79a4-975e-451fd4fd2fb2 │ 11 March 2026 23:59:59    │ Inactive     │ 31 March 2026 03:05:08 │
+└──────────────────────────────┴──────────────────────────────────────┴───────────────────────────┴──────────────┴────────────────────────┘
+22:01:10 | - Total records: 60
+22:01:10 | Step 1: Observe initial table state
+22:01:10 | Verify table shows 3 page numbers
+22:01:10 | Verify page number 1 has selected color
+22:01:11 | Verify footer label: 'Showing 1 to 20 of 60 items'
+22:01:11 | - Wait for 'Showing 1 to 20 of 60 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:01:11 | Verify table data (page: 1)
+22:01:11 | - Get table data
+22:01:13 | - Total records: 20
+22:01:13 | - Comparing 20 items
+22:01:13 | Verify prev button is disabled on the first page
+22:01:13 | Step 2: Navigate to next page: 2
+22:01:13 | - Click 'next' button on table
+22:01:13 | Verify page number 2 has selected color
+22:01:14 | Verify footer label: 'Showing 21 to 40 of 60 items'
+22:01:14 | - Wait for 'Showing 21 to 40 of 60 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:01:14 | Verify table data (page: 2)
+22:01:14 | - Get table data
+22:01:16 | - Total records: 20
+22:01:16 | - Comparing 20 items
+22:01:16 | Step 3: Navigate to next page: 3
+22:01:16 | - Click 'next' button on table
+22:01:16 | Verify page number 3 has selected color
+22:01:16 | Verify footer label: 'Showing 41 to 60 of 60 items'
+22:01:16 | - Wait for 'Showing 41 to 60 of 60 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:01:17 | Verify table data (page: 3)
+22:01:17 | - Get table data
+22:01:18 | - Total records: 20
+22:01:18 | - Comparing 20 items
+22:01:18 | Verify next button is disabled on the last page
+22:01:19 | Verify page number 3 has selected color
+22:01:19 | Verify footer label: 'Showing 41 to 60 of 60 items'
+22:01:19 | - Wait for 'Showing 41 to 60 of 60 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:01:19 | Verify table data (page: 3)
+22:01:19 | - Get table data
+22:01:21 | - Total records: 20
+22:01:21 | - Comparing 20 items
+22:01:21 | Step 4: Navigate to prev page: 2
+22:01:21 | - Click 'prev' button on table
+22:01:21 | Verify page number 2 has selected color
+22:01:22 | Verify footer label: 'Showing 21 to 40 of 60 items'
+22:01:22 | - Wait for 'Showing 21 to 40 of 60 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:01:22 | Verify table data (page: 2)
+22:01:22 | - Get table data
+22:01:24 | - Total records: 20
+22:01:24 | - Comparing 20 items
+22:01:24 | Step 5: Navigate to prev page: 1
+22:01:24 | - Click 'prev' button on table
+22:01:24 | Verify page number 1 has selected color
+22:01:24 | Verify footer label: 'Showing 1 to 20 of 60 items'
+22:01:24 | - Wait for 'Showing 1 to 20 of 60 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:01:25 | Verify table data (page: 1)
+22:01:25 | - Get table data
+22:01:26 | - Total records: 20
+22:01:26 | - Comparing 20 items
+22:01:26 | Verify prev button is disabled on the last page
+22:01:27 | [Teardown] Refresh the page
+22:01:29 | - Stop recording screen

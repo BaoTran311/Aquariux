@@ -1,0 +1,75 @@
+01:05:07 | - Running test case: test_UG_DEL_TC09_positive_network_error_from_action.py
+01:05:07 | - Start recording screen
+01:05:08 | [API] Send API: POST /backoffice/v1/user-groups
+01:05:08 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjMzMjIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4Mjg1MjIyLCJpYXQiOjE3NzgyNjMzMjIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImY2MTZmMzg5LTkwYTUtNDkxNy1hN2NkLTE1NzJmNjc2ZjYwYiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.IzTEWJ5Ivk08QGz7YC7X7ZVCZ2GRavBs1bbcmCT-C4wyGCFDNIJwln9zNFRIkJldt1AS-E-tVLp7DW---c5l4LcW7XcyxpUgFZu0Zyi_B9CuWZ1vOUHqIpa1JZ_zkN_143U8LNFGzFfnz9AJoKsz48--oyLDStNRCNkgMNxmuLnEdMq9Zn0c7LoE7oxqlkRpjebWs_GWJ_dbxioIsPX92qPXhrJlRJApfx_bUsSKHPLVkTxZlraG5ncZYCiDysQwCSe8aq_TReKYOq8CnFVoVOJBOMAdnWgF5GxPRrvXoDyQb17HyU0I5EWNdOrdZI7wdt-HJx9y2mMwlaxTEuU4tQ' 
+--header 'Content-Length: 192' 
+--data-raw '{"name": "gbaK_Auto/sOpsEeQi", "description": "XoYnsldziU - description", "positionType": "HEDGE", "bookType": "B_BOOK", "marginCallLevel": 75.2, "stopOutLevel": 93.66, "commissionRate": 8.38}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-08T18:05:08.539059205Z"
+}
+
+
+01:05:08 | [API] Send API: GET /backoffice/v1/user-groups
+01:05:08 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjMzMjIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4Mjg1MjIyLCJpYXQiOjE3NzgyNjMzMjIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImY2MTZmMzg5LTkwYTUtNDkxNy1hN2NkLTE1NzJmNjc2ZjYwYiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.IzTEWJ5Ivk08QGz7YC7X7ZVCZ2GRavBs1bbcmCT-C4wyGCFDNIJwln9zNFRIkJldt1AS-E-tVLp7DW---c5l4LcW7XcyxpUgFZu0Zyi_B9CuWZ1vOUHqIpa1JZ_zkN_143U8LNFGzFfnz9AJoKsz48--oyLDStNRCNkgMNxmuLnEdMq9Zn0c7LoE7oxqlkRpjebWs_GWJ_dbxioIsPX92qPXhrJlRJApfx_bUsSKHPLVkTxZlraG5ncZYCiDysQwCSe8aq_TReKYOq8CnFVoVOJBOMAdnWgF5GxPRrvXoDyQb17HyU0I5EWNdOrdZI7wdt-HJx9y2mMwlaxTEuU4tQ'
+
+
+01:05:08 | [Setup] Send API to create new user group: name: gbaK_Auto/sOpsEeQi, description: XoYnsldziU - description, position_type: Hedge, book_type: B-Book, margin_call_level: 75.2, stop_out_level: 93.66, commission: 8.38, created_date: 08 May 2026 18:05:08, id: 019e08c3-c634-7322-a349-452e8bff8c5d
+01:05:08 | [Setup] Refresh page to load changes
+01:05:09 | - Get table data
+01:05:11 | - Go to the first page
+01:05:11 | [Setup] Total rows data: 28
+01:05:11 | Step 1: Action on row: 'gbaK_Auto/sOpsEeQi' > Delete
+01:05:11 | - Search for: 'gbaK_Auto/sOpsEeQi'
+01:05:11 | - Delete row: 'gbaK_Auto/sOpsEeQi' (attempt:1)
+01:05:11 | Step 2: Disconnect network
+01:05:11 | Step 3: Click 'Delete' on confirmation modal
+01:05:11 | - Modal confirm
+01:05:11 | Verify toast message: 'Network error. Please check your connection.'
+01:05:12 | Verify confirmation modal remains opens
+01:05:12 | Step 4: Restore network
+01:05:12 | Step 5: Refresh page
+01:05:13 | Verify footer label remains un-changed: 'Showing 1 to 28 of 28 items'
+01:05:13 | - Wait for 'Showing 1 to 28 of 28 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+01:05:13 | Step 6: Search for: 'gbaK_Auto/sOpsEeQi'
+01:05:13 | - Search for: 'gbaK_Auto/sOpsEeQi'
+01:05:14 | Verify table data remains un-changed
+01:05:14 | - Get table data
+01:05:15 | [Teardown] Restore network connection
+01:05:15 | [Teardown] Refresh the page
+01:05:16 | Send API to delete the created asset: 019e08c3-c634-7322-a349-452e8bff8c5d
+01:05:16 | [API] Send API: DELETE /backoffice/v1/user-groups/019e08c3-c634-7322-a349-452e8bff8c5d
+01:05:16 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e08c3-c634-7322-a349-452e8bff8c5d' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjMzMjIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4Mjg1MjIyLCJpYXQiOjE3NzgyNjMzMjIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImY2MTZmMzg5LTkwYTUtNDkxNy1hN2NkLTE1NzJmNjc2ZjYwYiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.IzTEWJ5Ivk08QGz7YC7X7ZVCZ2GRavBs1bbcmCT-C4wyGCFDNIJwln9zNFRIkJldt1AS-E-tVLp7DW---c5l4LcW7XcyxpUgFZu0Zyi_B9CuWZ1vOUHqIpa1JZ_zkN_143U8LNFGzFfnz9AJoKsz48--oyLDStNRCNkgMNxmuLnEdMq9Zn0c7LoE7oxqlkRpjebWs_GWJ_dbxioIsPX92qPXhrJlRJApfx_bUsSKHPLVkTxZlraG5ncZYCiDysQwCSe8aq_TReKYOq8CnFVoVOJBOMAdnWgF5GxPRrvXoDyQb17HyU0I5EWNdOrdZI7wdt-HJx9y2mMwlaxTEuU4tQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-08T18:05:16.939800733Z"
+}
+
+
+01:05:17 | - Stop recording screen

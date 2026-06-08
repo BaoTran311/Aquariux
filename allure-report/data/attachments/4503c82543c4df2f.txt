@@ -1,0 +1,57 @@
+21:56:09 | - Running test case: test_AK_TBL_TC05_positive_resize_columns.py
+21:56:09 | - Start recording screen
+21:56:13 | - Size of column: 'Name': 'height: 40, width: 279'
+21:56:13 | - Size of column: 'ID': 'height: 40, width: 279'
+21:56:13 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:56:13 | - Size of column: 'Status': 'height: 40, width: 279'
+21:56:13 | - Size of column: 'Created Date': 'height: 40, width: 279'
+21:56:13 | - Size of column: 'Action': 'height: 40, width: 100'
+21:56:13 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:56:13 | Step 1: Decrease size of column: 'Expires'
+21:56:13 | - Decrease column: 'Expires' by 58px
+21:56:16 | Verify column 'Expires' size reflects 'decrease'
+21:56:16 | - Size of column: 'Expires': 'height: 40, width: 335'
+21:56:16 | - Size of column: 'Expires': 'height: 40, width: 335'
+21:56:16 | Step 2: Increase size of column: 'Expires'
+21:56:16 | - Increase column: 'Expires' by 58px
+21:56:19 | Verify column 'Expires' size reflects 'increase'
+21:56:19 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:56:19 | - Size of column: 'Name': 'height: 40, width: 279'
+21:56:19 | Step 3: Increase size of column: 'Name'
+21:56:19 | - Increase column: 'Name' by 58px
+21:56:22 | Verify column 'Name' size reflects 'increase'
+21:56:22 | - Size of column: 'Name': 'height: 40, width: 334'
+21:56:23 | - Size of column: 'Name': 'height: 40, width: 334'
+21:56:23 | Step 4: Increase size of column: 'Name'
+21:56:23 | - Increase column: 'Name' by 58px
+21:56:25 | Verify column 'Name' size reflects 'increase'
+21:56:26 | - Size of column: 'Name': 'height: 40, width: 389'
+21:56:26 | - Size of column: 'ID': 'height: 40, width: 279'
+21:56:26 | Step 5: Increase size of column: 'ID'
+21:56:26 | - Increase column: 'ID' by 58px
+21:56:29 | Verify column 'ID' size reflects 'increase'
+21:56:29 | - Size of column: 'ID': 'height: 40, width: 334'
+21:56:29 | - Size of column: 'ID': 'height: 40, width: 334'
+21:56:29 | Step 6: Increase size of column: 'ID'
+21:56:29 | - Increase column: 'ID' by 58px
+21:56:32 | Verify column 'ID' size reflects 'increase'
+21:56:32 | - Size of column: 'ID': 'height: 40, width: 389'
+21:56:33 | - Size of column: 'Status': 'height: 40, width: 279'
+21:56:33 | Step 7: Increase size of column: 'Status'
+21:56:33 | - Increase column: 'Status' by 58px
+21:56:35 | Verify column 'Status' size reflects 'increase'
+21:56:36 | - Size of column: 'Status': 'height: 40, width: 334'
+21:56:36 | - Size of column: 'Status': 'height: 40, width: 334'
+21:56:36 | Step 8: Increase size of column: 'Status'
+21:56:36 | - Increase column: 'Status' by 58px
+21:56:39 | Verify column 'Status' size reflects 'increase'
+21:56:39 | - Size of column: 'Status': 'height: 40, width: 389'
+21:56:39 | Step 9: Refresh page
+21:56:41 | Verify column sizes restored for: Name, ID, Expires, Status, Created Date, Action
+21:56:43 | - Size of column: 'Name': 'height: 40, width: 279'
+21:56:43 | - Size of column: 'ID': 'height: 40, width: 279'
+21:56:43 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:56:43 | - Size of column: 'Status': 'height: 40, width: 279'
+21:56:43 | - Size of column: 'Created Date': 'height: 40, width: 279'
+21:56:43 | - Size of column: 'Action': 'height: 40, width: 100'
+21:56:44 | - Stop recording screen

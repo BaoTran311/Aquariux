@@ -1,0 +1,55 @@
+21:55:53 | - Running test case: test_AK_TBL_TC04_positive_search.py
+21:55:53 | - Start recording screen
+21:55:53 | Step 1: Search by 'ID' partial: '019e3696-1'
+21:55:53 | - Search for: 019e3696-1
+21:55:53 | Verify table data matches partial: '019e3696-1'
+21:55:53 | - Get table data
+21:55:55 | - Go to the first page
+21:55:56 | 
+Table Data:
+┌────────────────────┬──────────────────────────────────────┬──────────────────────┬──────────────┬──────────────────────┐
+│ name               │ id                                   │ expires              │ status       │ created_date         │
+├────────────────────┼──────────────────────────────────────┼──────────────────────┼──────────────┼──────────────────────┤
+│ VUUT_Auto-GTRYxCyJ │ 019e3696-18f6-795e-b7da-ee4a40dddf8d │ 28 May 2026 23:59:59 │ Active       │ 17 May 2026 15:37:46 │
+└────────────────────┴──────────────────────────────────────┴──────────────────────┴──────────────┴──────────────────────┘
+21:55:56 | - Total records: 1
+21:55:56 | - Comparing 1 items
+21:55:56 | Step 2: Search by 'ID' partial: '019e36'
+21:55:56 | - Search for: 019e36
+21:55:56 | Verify table data matches partial: '019e36'
+21:55:56 | - Get table data
+21:55:58 | - Go to the first page
+21:55:58 | 
+Table Data:
+┌────────────────────┬──────────────────────────────────────┬──────────────────────┬──────────────┬──────────────────────┐
+│ name               │ id                                   │ expires              │ status       │ created_date         │
+├────────────────────┼──────────────────────────────────────┼──────────────────────┼──────────────┼──────────────────────┤
+│ wjvu_Auto-IvfkhqFZ │ 019e36a9-efc4-7a02-aa49-e647148295dc │ Never                │ Active       │ 17 May 2026 15:59:27 │
+│ test               │ 019e36a8-2bdf-7a28-9083-fd17e35db5a8 │ 17 May 2026 23:59:59 │ Active       │ 17 May 2026 15:57:31 │
+│ VUUT_Auto-GTRYxCyJ │ 019e3696-18f6-795e-b7da-ee4a40dddf8d │ 28 May 2026 23:59:59 │ Active       │ 17 May 2026 15:37:46 │
+│ RwIR_Auto-GcddgQsl │ 019e3695-9e0b-7f9a-a97a-5cc6dd19be56 │ Never                │ Active       │ 17 May 2026 15:37:15 │
+│ MGtG_Auto/UKLwKEwg │ 019e368d-d900-7e53-8b60-9ffbd88c61db │ Never                │ Active       │ 17 May 2026 15:28:46 │
+│ ARCz_Auto-XFBjEeih │ 019e368b-ffad-73d1-bd45-6050bd33e8f4 │ Never                │ Active       │ 17 May 2026 15:26:45 │
+│ YDla_Auto.zGgRxjjt │ 019e368a-7593-7308-ad7d-d1f18ffed66f │ Never                │ Active       │ 17 May 2026 15:25:04 │
+│ vamO_Auto/dkOkswQd │ 019e3683-beb9-7102-8ff9-d4eb8838777f │ Never                │ Active       │ 17 May 2026 15:17:44 │
+│ liUM_Auto-gLeqyttD │ 019e3682-0b6b-71f9-a195-36845e6fc630 │ Never                │ Active       │ 17 May 2026 15:15:52 │
+└────────────────────┴──────────────────────────────────────┴──────────────────────┴──────────────┴──────────────────────┘
+21:55:58 | - Total records: 9
+21:55:58 | - Comparing 9 items
+21:55:58 | Step 3: Search by 'ID' partial: '019e48ea-bd00-72dd-bc78-00d9816762'
+21:55:58 | - Search for: 019e48ea-bd00-72dd-bc78-00d9816762
+21:55:59 | Verify table data matches partial: '019e48ea-bd00-72dd-bc78-00d9816762'
+21:55:59 | - Get table data
+21:56:01 | - Go to the first page
+21:56:01 | 
+Table Data:
+┌────────────────────┬──────────────────────────────────────┬──────────────┬──────────────┬──────────────────────┐
+│ name               │ id                                   │ expires      │ status       │ created_date         │
+├────────────────────┼──────────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
+│ tiuV_Auto_qnJtvvxI │ 019e48ea-bd00-72dd-bc78-00d9816762a9 │ Never        │ Active       │ 21 May 2026 05:03:23 │
+└────────────────────┴──────────────────────────────────────┴──────────────┴──────────────┴──────────────────────┘
+21:56:01 | - Total records: 1
+21:56:01 | - Comparing 1 items
+21:56:01 | [Teardown] Clear search field
+21:56:01 | - Clear search input
+21:56:03 | - Stop recording screen

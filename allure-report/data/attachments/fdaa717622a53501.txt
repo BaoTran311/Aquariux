@@ -1,0 +1,37 @@
+22:38:33 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:38:33 | - Start recording screen
+22:38:33 | - Get table data
+22:38:35 | - Click 'next' button on table
+22:38:36 | - Click 'next' button on table
+22:38:37 | - Go to the first page
+22:38:37 | Step 1: Search by: 'Name', with untrimmed spaces: '      FSOX_AUTO_BODHBCWO'
+22:38:37 | - Search for: '      FSOX_AUTO_BODHBCWO'
+22:38:38 | Verify search is not auto-trimmed — empty state label is shown ('      FSOX_AUTO_BODHBCWO')
+22:38:39 | Verify button 'Add Asset Class' is displayed ('      FSOX_AUTO_BODHBCWO')
+22:38:39 | Verify footer label: 'Showing 0 to 0 of 0 items' ('      FSOX_AUTO_BODHBCWO')
+22:38:39 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:38:39 | Step 2: Clear search
+22:38:39 | - Clear search input
+22:38:39 | Verify table data reset ('      FSOX_AUTO_BODHBCWO')
+22:38:39 | - Get table data
+22:38:40 | - Click 'next' button on table
+22:38:42 | - Click 'next' button on table
+22:38:43 | - Go to the first page
+22:38:43 | - Comparing 120 items
+22:38:43 | Step 3: Search by: 'Name', with untrimmed spaces: 'FSOX_AUTO_BODHBCWO     '
+22:38:43 | - Search for: 'FSOX_AUTO_BODHBCWO     '
+22:38:43 | Verify search is not auto-trimmed — empty state label is shown ('FSOX_AUTO_BODHBCWO     ')
+22:38:44 | Verify button 'Add Asset Class' is displayed ('FSOX_AUTO_BODHBCWO     ')
+22:38:44 | Verify footer label: 'Showing 0 to 0 of 0 items' ('FSOX_AUTO_BODHBCWO     ')
+22:38:44 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:38:44 | Step 4: Clear search
+22:38:44 | - Clear search input
+22:38:44 | Verify table data reset ('FSOX_AUTO_BODHBCWO     ')
+22:38:44 | - Get table data
+22:38:46 | - Click 'next' button on table
+22:38:47 | - Click 'next' button on table
+22:38:48 | - Go to the first page
+22:38:48 | - Comparing 120 items
+22:38:48 | [Teardown] Clear search field
+22:38:48 | - Clear search input
+22:38:49 | - Stop recording screen

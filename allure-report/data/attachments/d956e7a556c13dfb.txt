@@ -1,0 +1,39 @@
+00:33:45 | - Running test case: test_UG_ADD_TC02_positive_fields_validation.py
+00:33:45 | - Start recording screen
+00:33:46 | [Setup] Click on 'Add User Group' button
+00:33:46 | - Click 'Add User Group' button
+00:33:46 | Step 1: Input then clear name
+00:33:46 | - Input name: 'wCdX_Auto/XotWCYiu'
+00:33:46 | - Clear input name
+00:33:46 | - Input description: ''
+00:33:46 | Verify error validation: 'Name is required'
+00:33:46 | Step 2: Input name exceeding 50 chars
+00:33:46 | - Input name: 'xsXb_Auto/efAaSWBzZBrLtkFNpHLEocUKmcPAnyfsPmFKKiOoqzZUYZAWxQ'
+00:33:46 | Verify name auto-trimmed to 50 chars
+00:33:46 | Step 3: Input NOT ALLOW special chars: '!|[#&@?;*`^\\$(~%};,='
+00:33:46 | - Input name: '!|[#&@?;*`^\\$(~%};,='
+00:33:46 | Verify error validation: 'Special characters are not allowed except (.), (_), (-), and (/)'
+00:33:46 | Step 4: Input name with leading spaces
+00:33:46 | - Input name: '      dpYH_Auto/GaOLBoHL'
+00:33:46 | Verify error validation: 'Special characters are not allowed except (.), (_), (-), and (/)'
+00:33:46 | Step 5: Input name with trailing spaces
+00:33:46 | - Input name: '        peeR_Auto/PppXOYfK'
+00:33:46 | Verify error validation: 'Special characters are not allowed except (.), (_), (-), and (/)'
+00:33:46 | Step 6: Input ALLOW chars: '._-/'
+00:33:46 | - Input name: '._-/'
+00:33:46 | Verify no error validation is displayed
+00:33:46 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-input-name-field-error"]'): TRUE
+00:33:46 | Step 7: Input then clear desc
+00:33:46 | - Input description: 'HmER_Auto/uCkLVRzf'
+00:33:46 | - Clear input description
+00:33:46 | Verify no error validation is displayed for optional field
+00:33:46 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-field-description-error"]'): TRUE
+00:33:46 | Verify label: 'Describe the user group'
+00:33:46 | Step 8: Input desc exceeding 200 chars
+00:33:46 | - Input description: 'OSvX_Auto/XUjlibaCtPrLIKzKTpjzshalAYNUsapBWNHhTfgCeDOGowhDAourkWBEKwVWlpRIIUdQpJUNWUArxLIIwJLyOBxmTBbcnZzVlASGBhqVwTxuuPaJoAgwXNxDJPaHvIrCdSMCBfxCtpoxjZBZItQPvOqjZNXZJsGWFxTspDTwFEIIeiQtbPiFGWEveMOBArzrbuMHvRxy'
+00:33:46 | Verify desc auto-trimmed to 200 chars
+00:33:46 | Step 9: Input valid description
+00:33:46 | - Input description: 'toLu_Auto/KTXdYkPL'
+00:33:46 | Verify no error validation is displayed
+00:33:46 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-field-description-error"]'): TRUE
+00:33:48 | - Stop recording screen

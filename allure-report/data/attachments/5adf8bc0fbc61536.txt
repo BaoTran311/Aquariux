@@ -1,0 +1,38 @@
+21:59:41 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+21:59:41 | - Start recording screen
+21:59:41 | Step 1: Search with: 'auto'
+21:59:41 | - Search for: auto
+21:59:41 | Step 2: Click sort on column: 'Status'
+21:59:41 | - Sort by: 'Status'
+21:59:42 | Verify column sorts alphabetically a-z
+21:59:42 | - Get table data
+21:59:44 | - Go to the first page
+21:59:44 | - Total records: 15
+21:59:44 | - Comparing: 
+Actual:    ['Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+Expected:  ['Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+21:59:44 | Step 3: Click sort again on column: 'Status'
+21:59:44 | - Sort by: 'Status'
+21:59:44 | Verify column sorts alphabetically z-a
+21:59:44 | - Get table data
+21:59:46 | - Go to the first page
+21:59:47 | - Total records: 15
+21:59:47 | - Comparing: 
+Actual:    ['Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+Expected:  ['Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+21:59:47 | Step 4: Clear search
+21:59:47 | - Clear search input
+21:59:47 | Verify column still sorts alphabetically z-a
+21:59:47 | - Get table data
+21:59:49 | - Click 'next' button on table
+21:59:50 | - Click 'next' button on table
+21:59:51 | - Go to the first page
+21:59:52 | - Total records: 52
+21:59:52 | - Comparing: 
+Actual:    ['Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive']
+Expected:  ['Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+21:59:52 | ✘ Check Failed !
+Column 'Status' not sorted desc.
+Actual:   ['Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive']
+Expected: ['Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+21:59:53 | - Stop recording screen

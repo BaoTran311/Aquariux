@@ -1,0 +1,38 @@
+14:58:21 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+14:58:21 | - Start recording screen
+14:58:21 | - Clear search input
+14:58:23 | - Get table data
+14:58:25 | - Click 'next' button on table
+14:58:26 | - Go to the first page
+14:58:26 | - Total records: 25
+14:58:26 | Step 1: Search with: 'key'
+14:58:26 | - Search for: key
+14:58:26 | Step 2: Click sort on column: 'Status'
+14:58:26 | - Sort by: 'Status'
+14:58:27 | Verify column sorts alphabetically a-z
+14:58:27 | - Get table data
+14:58:29 | - Go to the first page
+14:58:29 | - Total records: 5
+14:58:29 | - Comparing: 
+Actual:    ['Active', 'Active', 'Active', 'Active', 'Inactive']
+Expected:  ['Active', 'Active', 'Active', 'Active', 'Inactive']
+14:58:29 | Step 3: Click sort again on column: 'Status'
+14:58:29 | - Sort by: 'Status'
+14:58:30 | Verify column sorts alphabetically z-a
+14:58:30 | - Get table data
+14:58:32 | - Go to the first page
+14:58:32 | - Total records: 5
+14:58:32 | - Comparing: 
+Actual:    ['Inactive', 'Active', 'Active', 'Active', 'Active']
+Expected:  ['Inactive', 'Active', 'Active', 'Active', 'Active']
+14:58:32 | Step 4: Clear search
+14:58:32 | - Clear search input
+14:58:33 | Verify column still sorts alphabetically z-a
+14:58:33 | - Get table data
+14:58:35 | - Click 'next' button on table
+14:58:36 | - Go to the first page
+14:58:36 | - Total records: 25
+14:58:36 | - Comparing: 
+Actual:    ['Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+Expected:  ['Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+14:58:37 | - Stop recording screen

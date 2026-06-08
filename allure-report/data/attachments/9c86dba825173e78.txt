@@ -1,0 +1,17 @@
+22:10:57 | - Running test case: test_TA_VIW_TC06_positive_redirect_to_account_funds.py
+22:10:57 | - Start recording screen
+22:10:57 | - Get table data
+22:10:59 | - Go to the first page
+22:10:59 | Step 1: View details: wMlT_Auto-XWsBWPWg
+22:10:59 | - Select col: 'Name' value: 'wMlT_Auto-XWsBWPWg'
+22:10:59 | Step 2: - Click 'View account funds'
+22:10:59 | - Click 'View account funds'
+22:10:59 | Verify page url
+22:10:59 | Verify Account ID is auto filled to searchbox
+22:10:59 | [Teardown] Go back to Trading Accounts Page
+22:10:59 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+22:10:59 | - Item: 'Accounts' already 'expand'
+22:11:01 | - Stop recording screen
+22:11:01 | [Teardown] Quit Web Driver
+22:11:01 | - Quit driver 'web_main'
+22:11:01 | - All drivers quit and registry cleared

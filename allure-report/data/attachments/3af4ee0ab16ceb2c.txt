@@ -1,0 +1,14 @@
+21:58:22 | - Running test case: test_AK_TBL_TC08_positive_column_sorting.py
+21:58:22 | - Start recording screen
+21:58:22 | Step 1: Check sort button for column: 'Expires'
+21:58:22 | Verify sort button for column 'Expires' is displayed
+21:58:23 | Step 2: Click sort on column: 'Expires'
+21:58:23 | - Sort by: 'Expires'
+21:58:23 | Verify column sorts chronologically oldest → newest
+21:58:23 | - Get table data
+21:58:25 | - Click 'next' button on table
+21:58:26 | - Click 'next' button on table
+21:58:27 | - Go to the first page
+21:58:28 | - Total records: 52
+21:58:28 | [Teardown] Refresh the page
+21:58:30 | - Stop recording screen

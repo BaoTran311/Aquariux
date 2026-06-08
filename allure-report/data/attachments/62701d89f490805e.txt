@@ -1,0 +1,80 @@
+22:39:22 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:39:22 | - Start recording screen
+22:39:22 | - Get table data
+22:39:24 | - Click 'next' button on table
+22:39:25 | - Click 'next' button on table
+22:39:26 | - Go to the first page
+22:39:26 | Step 1: Search by: 'Description', with: 'ch'
+22:39:26 | - Search for: 'ch'
+22:39:27 | Verify results on table data match partial keyword: 'ch'
+22:39:27 | - Get table data
+22:39:28 | - Go to the first page
+22:39:28 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ cMON_Auto_anzWnqCh │ NozWWuWpvw - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:39 │
+│ rHsT_Auto_GAJpWJYC │ choIDgoomp - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:11 │
+│ ZHiV_Auto.ZCHkihSt │ MnbmEqYjVt - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:28 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:28 | - Comparing 3 items
+22:39:28 | Step 2: Search by: 'Description', with: 'vZ'
+22:39:28 | - Search for: 'vZ'
+22:39:28 | Verify results on table data match partial keyword: 'vZ'
+22:39:28 | - Get table data
+22:39:30 | - Go to the first page
+22:39:30 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ bEeI_Auto-YQpyfKdV │ vZhmFiIAgX - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:10 │
+│ clos_Auto-dVvZZcUJ │ azSekioCPX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:13 │
+│ KVvz_Auto_smMaujfd │ UMDWTowoyX - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:44 │
+│ ULdx_Auto/OVWJnUXc │ zVzzjbvsOz - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:07 │
+│ Wjhi_Auto/idlQSoFc │ SVhVZBIeua - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:30 | - Comparing 5 items
+22:39:30 | Step 3: Search by: 'Description', with: 'cQwXufbUGv - '
+22:39:30 | - Search for: 'cQwXufbUGv - '
+22:39:30 | Verify results on table data match partial keyword: 'cQwXufbUGv - '
+22:39:30 | - Get table data
+22:39:31 | - Go to the first page
+22:39:31 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ EITs_Auto/LHHCiPwp │ cQwXufbUGv - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:35 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:31 | - Comparing 1 items
+22:39:31 | Step 4: Search by: 'Description', with: 'yfxkisXaVN '
+22:39:31 | - Search for: 'yfxkisXaVN '
+22:39:32 | Verify results on table data match partial keyword: 'yfxkisXaVN '
+22:39:32 | - Get table data
+22:39:33 | - Go to the first page
+22:39:33 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ nRZm_Auto_znnVjkJT │ yfxkisXaVN - description │ Hedge         │ B-Book       │ 8 May 2026 04:25:33 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:33 | - Comparing 1 items
+22:39:33 | Step 5: Search by: 'Description', with: 'GnhDmFnCUO - descri'
+22:39:33 | - Search for: 'GnhDmFnCUO - descri'
+22:39:34 | Verify results on table data match partial keyword: 'GnhDmFnCUO - descri'
+22:39:34 | - Get table data
+22:39:35 | - Go to the first page
+22:39:35 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ GVFo_Auto/yRodjPWm │ GnhDmFnCUO - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:23 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:35 | - Comparing 1 items
+22:39:35 | [Teardown] Clear search field
+22:39:35 | - Clear search input
+22:39:36 | - Stop recording screen

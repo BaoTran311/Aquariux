@@ -1,0 +1,34 @@
+09:43:31 | - Running test case: test_AK_GEN_TC09_positive_name_validation.py
+09:43:31 | - Start recording screen
+09:43:31 | [Setup] Open Generate API Key panel
+09:43:31 | - Click 'Generate API Key' button
+09:43:31 | Step 1: Input then clear name
+09:43:31 | - Input name: 'nqyw_Auto-lxsgNSRm'
+09:43:32 | - Clear name field
+09:43:32 | - Trigger blur
+09:43:32 | Verify error validation: 'Name is required'
+09:43:33 | Verify placeholder: 'E.g. Manage order'
+09:43:33 | Step 2: Input name exceeding 50 chars
+09:43:33 | - Input name: 'Apfh_Auto-igTOvsVyEVpSmgxnvcFvXzdmeTfhLzESHsScNmAEFUJQLYKYCF'
+09:43:34 | Verify name auto-trimmed to 50 chars
+09:43:34 | Step 3: Input special chars (no restriction for API Keys): ._-/
+09:43:34 | - Input name: '._-/'
+09:43:34 | Verify no error validation is displayed
+09:43:34 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): TRUE
+09:43:34 | Step 4: Input name with leading space
+09:43:34 | - Input name: ' John'
+09:43:35 | Verify no error validation is displayed
+09:43:35 | Step 5: Input name with trailing space
+09:43:35 | - Input name: 'John '
+09:43:35 | Verify no error validation is displayed
+09:43:36 | Step 6: Input valid name: 'iXCS_Auto-TiFxSrpw'
+09:43:36 | - Input name: 'iXCS_Auto-TiFxSrpw'
+09:43:36 | Verify no error ('iXCS_Auto-TiFxSrpw')
+09:43:36 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): TRUE
+09:43:36 | [Teardown] Close panel if open
+09:43:36 | - Close panel
+09:43:41 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+09:43:42 | - Stop recording screen
+09:43:42 | [Teardown] Quit Web Driver
+09:43:43 | - Quit driver 'web_main'
+09:43:43 | - All drivers quit and registry cleared

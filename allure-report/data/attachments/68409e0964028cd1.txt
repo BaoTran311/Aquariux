@@ -1,0 +1,81 @@
+21:57:26 | - Running test case: test_AK_TBL_TC07_positive_resize_columns_table_overflow.py
+21:57:26 | - Start recording screen
+21:57:28 | - Size of column: 'Name': 'height: 40, width: 279'
+21:57:28 | - Size of column: 'ID': 'height: 40, width: 279'
+21:57:28 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:57:28 | - Size of column: 'Status': 'height: 40, width: 279'
+21:57:28 | - Size of column: 'Created Date': 'height: 40, width: 279'
+21:57:28 | - Size of column: 'Action': 'height: 40, width: 100'
+21:57:28 | Step 1: Widen first col until overflow the table viewport
+21:57:29 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:29 | - Expanding 'Name' to fill viewport
+21:57:29 | - Size of column: 'Name': 'height: 40, width: 279'
+21:57:29 | - Increase column: 'Name' by 1337px
+21:57:31 | - Size of column: 'Name': 'height: 40, width: 1616'
+21:57:31 | - Table is overflow viewport (attempt:2)
+21:57:31 | Verify column 'ID' overflows past the viewport
+21:57:31 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:31 | - Rect of column: 'ID': 'height: 40, width: 279, x: 1889, y: 237'
+21:57:31 | Verify column 'Expires' overflows past the viewport
+21:57:32 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:32 | - Rect of column: 'Expires': 'height: 40, width: 390, x: 2168, y: 237'
+21:57:32 | Verify column 'Status' overflows past the viewport
+21:57:32 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:33 | - Rect of column: 'Status': 'height: 40, width: 279, x: 2558, y: 237'
+21:57:33 | Verify column 'Created Date' overflows past the viewport
+21:57:33 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:33 | - Rect of column: 'Created Date': 'height: 40, width: 279, x: 2837, y: 237'
+21:57:33 | Verify column 'Name' sits inside the viewport
+21:57:34 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:34 | - Rect of column: 'Name': 'height: 40, width: 1616, x: 273, y: 237'
+21:57:34 | Verify column 'Action' sits inside the viewport
+21:57:34 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:35 | - Rect of column: 'Action': 'height: 40, width: 100, x: 1779, y: 237'
+21:57:35 | Step 2: Scroll table horizontally to the most right
+21:57:36 | Verify column 'ID' sits inside the viewport
+21:57:36 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:36 | - Rect of column: 'ID': 'height: 40, width: 279, x: 552, y: 237'
+21:57:36 | Verify column 'Expires' sits inside the viewport
+21:57:37 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:37 | - Rect of column: 'Expires': 'height: 40, width: 390, x: 831, y: 237'
+21:57:37 | Verify column 'Status' sits inside the viewport
+21:57:37 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:38 | - Rect of column: 'Status': 'height: 40, width: 279, x: 1221, y: 237'
+21:57:38 | Verify column 'Created Date' sits inside the viewport
+21:57:38 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:38 | - Rect of column: 'Created Date': 'height: 40, width: 279, x: 1500, y: 237'
+21:57:38 | Verify column 'Action' sits inside the viewport
+21:57:39 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:39 | - Rect of column: 'Action': 'height: 40, width: 100, x: 1779, y: 237'
+21:57:39 | Verify column 'Name' overflows past the viewport
+21:57:39 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:40 | - Rect of column: 'Name': 'height: 40, width: 1616, x: -1064, y: 237'
+21:57:40 | Step 3: Scroll table horizontally to the most left
+21:57:41 | Verify column 'ID' overflows past the viewport again
+21:57:41 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:41 | - Rect of column: 'ID': 'height: 40, width: 279, x: 1889, y: 237'
+21:57:41 | Verify column 'Expires' overflows past the viewport again
+21:57:42 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:42 | - Rect of column: 'Expires': 'height: 40, width: 390, x: 2168, y: 237'
+21:57:42 | Verify column 'Status' overflows past the viewport again
+21:57:42 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:42 | - Rect of column: 'Status': 'height: 40, width: 279, x: 2558, y: 237'
+21:57:42 | Verify column 'Created Date' overflows past the viewport again
+21:57:43 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:43 | - Rect of column: 'Created Date': 'height: 40, width: 279, x: 2837, y: 237'
+21:57:43 | Verify column 'Name' sits inside the viewport again
+21:57:43 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:44 | - Rect of column: 'Name': 'height: 40, width: 1616, x: 273, y: 237'
+21:57:44 | Verify column 'Action' sits inside the viewport again
+21:57:44 | - Viewport rect: {'height': 700, 'width': 1616, 'x': 272, 'y': 236}
+21:57:44 | - Rect of column: 'Action': 'height: 40, width: 100, x: 1779, y: 237'
+21:57:44 | Step 4: Refresh page
+21:57:47 | Verify column widths match initial sizes after refresh
+21:57:49 | - Size of column: 'Name': 'height: 40, width: 279'
+21:57:49 | - Size of column: 'ID': 'height: 40, width: 279'
+21:57:49 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:57:49 | - Size of column: 'Status': 'height: 40, width: 279'
+21:57:49 | - Size of column: 'Created Date': 'height: 40, width: 279'
+21:57:49 | - Size of column: 'Action': 'height: 40, width: 100'
+21:57:49 | [Teardown] Refresh the page
+21:57:51 | - Stop recording screen

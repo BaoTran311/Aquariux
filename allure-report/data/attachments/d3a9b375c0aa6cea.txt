@@ -1,0 +1,32 @@
+22:59:45 | - Running test case: test_TA_TBL_TC05_positive_table_pagination_with_search.py
+22:59:45 | - Start recording screen
+22:59:45 | - Get table data
+22:59:46 | - Go to the first page
+22:59:46 | Step 1: Search with: 'auto'
+22:59:46 | - Search for: 'auto'
+22:59:47 | - Get table data
+22:59:49 | - Click 'next' button on table
+22:59:51 | - Click 'next' button on table
+22:59:51 | - Go to the first page
+22:59:51 | Verify page number 1 has selected color
+22:59:52 | Verify footer label: 'Showing 1 to 4 of 4 items'
+22:59:57 | - Wait for 'Showing 1 to 4 of 4 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): FALSE
+22:59:57 | ✘ Check Failed !
+Expected text to be: 'Showing 1 to 4 of 4 items', got: 'Showing 1 to 40 of 84 items'
+22:59:57 | Verify table data (page: 1)
+22:59:57 | - Get table data
+22:59:59 | Length mismatch: actual has 40 items, expected has 4 items
+22:59:59 | ✘ Check Failed !
+List of dicts validation failed !
+⟶ Length mismatch: actual length=40, expected length=4
+22:59:59 | Verify prev button is disabled on the first page
+22:59:59 | Step 2: Navigate to next page: 2
+22:59:59 | - Click 'next' button on table
+22:59:59 | Verify page number 2 has selected color
+22:59:59 | Verify footer label: 'Showing 41 to 4 of 4 items'
+23:00:04 | - Wait for 'Showing 41 to 4 of 4 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): FALSE
+23:00:04 | ✘ Check Failed !
+Expected text to be: 'Showing 41 to 4 of 4 items', got: 'Showing 41 to 80 of 84 items'
+23:00:04 | Verify table data (page: 2)
+23:00:04 | - Get table data
+23:00:08 | - Stop recording screen

@@ -1,0 +1,41 @@
+14:55:49 | - Running test case: test_AK_TBL_TC08_positive_column_sorting.py
+14:55:49 | - Start recording screen
+14:55:49 | - Clear search input
+14:55:51 | - Get table data
+14:55:53 | - Click 'next' button on table
+14:55:54 | - Go to the first page
+14:55:54 | - Total records: 25
+14:55:54 | Step 1: Check sort button for column: 'ID'
+14:55:54 | Verify sort button for column 'ID' is displayed
+14:55:55 | Step 2: Click sort on column: 'ID'
+14:55:55 | - Sort by: 'ID'
+14:55:56 | Verify column sorts alphabetically a-z
+14:55:56 | - Get table data
+14:55:58 | - Click 'next' button on table
+14:55:59 | - Go to the first page
+14:56:00 | - Total records: 25
+14:56:00 | - Comparing: 
+Actual:    ['019d9256-e8cc-7050-bf49-ed58656bf9dc', '019d9256-e8cc-733c-a973-d79a2e4e0ac3', '019d9256-e8cc-791d-b955-7784bd8abbac', '019d9256-e8cc-79a4-975e-451fd4fd2fb2', '019d9256-e8cc-7e4e-a7c9-168d96221aa5', '019d9256-e8cc-7ef9-b9cd-442429ee327a', '019daf4c-f169-7b2f-a77d-c0b1b4ffe50a', '019daf5b-dbb2-7fd8-9893-22aca78037da', '019daf5d-ee6c-7583-8de9-76043f7d04ff', '019daf5f-a056-7dce-b923-ce283a5fd2d3', '019db03e-8b76-747c-aec8-b2c53eb919ff', '019dcd81-833f-7798-9efd-23c2f9fb3d64', '019ddbe9-bf4e-7696-9dcf-ad2af75ba332', '019df1dc-41db-794a-a80c-f322d81bf149', '019dfc67-cbac-7d85-9330-2d776d21d975', '019e0c68-96a2-769e-bcf9-583561edcc92', '019e0c68-a2a8-77e0-b265-22edcdec76a0', '019e0c68-db93-79b5-b293-0cc445ca7206', '019e1094-0e8e-7035-a3a3-d1ffc9c541a1', '019e1094-1b11-729c-833c-43be480723f1', '019ea54d-e9cf-7be8-93c5-248c06e824db', '019ea63a-965a-7413-b70e-36372717c2ca', '019ea63a-9764-7bb5-81a7-c8a84fc41dca', '019ea63a-985b-76f9-bd45-5d6351aa6f22', '019ea63a-9a28-7749-8a26-2a4cd56d85f8']
+Expected:  ['019d9256-e8cc-7050-bf49-ed58656bf9dc', '019d9256-e8cc-733c-a973-d79a2e4e0ac3', '019d9256-e8cc-791d-b955-7784bd8abbac', '019d9256-e8cc-79a4-975e-451fd4fd2fb2', '019d9256-e8cc-7e4e-a7c9-168d96221aa5', '019d9256-e8cc-7ef9-b9cd-442429ee327a', '019daf4c-f169-7b2f-a77d-c0b1b4ffe50a', '019daf5b-dbb2-7fd8-9893-22aca78037da', '019daf5d-ee6c-7583-8de9-76043f7d04ff', '019daf5f-a056-7dce-b923-ce283a5fd2d3', '019db03e-8b76-747c-aec8-b2c53eb919ff', '019dcd81-833f-7798-9efd-23c2f9fb3d64', '019ddbe9-bf4e-7696-9dcf-ad2af75ba332', '019df1dc-41db-794a-a80c-f322d81bf149', '019dfc67-cbac-7d85-9330-2d776d21d975', '019e0c68-96a2-769e-bcf9-583561edcc92', '019e0c68-a2a8-77e0-b265-22edcdec76a0', '019e0c68-db93-79b5-b293-0cc445ca7206', '019e1094-0e8e-7035-a3a3-d1ffc9c541a1', '019e1094-1b11-729c-833c-43be480723f1', '019ea54d-e9cf-7be8-93c5-248c06e824db', '019ea63a-965a-7413-b70e-36372717c2ca', '019ea63a-9764-7bb5-81a7-c8a84fc41dca', '019ea63a-985b-76f9-bd45-5d6351aa6f22', '019ea63a-9a28-7749-8a26-2a4cd56d85f8']
+14:56:00 | Step 3: Click sort again on column: 'ID'
+14:56:00 | - Sort by: 'ID'
+14:56:01 | Verify column sorts alphabetically z-a
+14:56:01 | - Get table data
+14:56:03 | - Click 'next' button on table
+14:56:05 | - Go to the first page
+14:56:05 | - Total records: 25
+14:56:05 | - Comparing: 
+Actual:    ['019ea63a-9a28-7749-8a26-2a4cd56d85f8', '019ea63a-985b-76f9-bd45-5d6351aa6f22', '019ea63a-9764-7bb5-81a7-c8a84fc41dca', '019ea63a-965a-7413-b70e-36372717c2ca', '019ea54d-e9cf-7be8-93c5-248c06e824db', '019e1094-1b11-729c-833c-43be480723f1', '019e1094-0e8e-7035-a3a3-d1ffc9c541a1', '019e0c68-db93-79b5-b293-0cc445ca7206', '019e0c68-a2a8-77e0-b265-22edcdec76a0', '019e0c68-96a2-769e-bcf9-583561edcc92', '019dfc67-cbac-7d85-9330-2d776d21d975', '019df1dc-41db-794a-a80c-f322d81bf149', '019ddbe9-bf4e-7696-9dcf-ad2af75ba332', '019dcd81-833f-7798-9efd-23c2f9fb3d64', '019db03e-8b76-747c-aec8-b2c53eb919ff', '019daf5f-a056-7dce-b923-ce283a5fd2d3', '019daf5d-ee6c-7583-8de9-76043f7d04ff', '019daf5b-dbb2-7fd8-9893-22aca78037da', '019daf4c-f169-7b2f-a77d-c0b1b4ffe50a', '019d9256-e8cc-7ef9-b9cd-442429ee327a', '019d9256-e8cc-7e4e-a7c9-168d96221aa5', '019d9256-e8cc-79a4-975e-451fd4fd2fb2', '019d9256-e8cc-791d-b955-7784bd8abbac', '019d9256-e8cc-733c-a973-d79a2e4e0ac3', '019d9256-e8cc-7050-bf49-ed58656bf9dc']
+Expected:  ['019ea63a-9a28-7749-8a26-2a4cd56d85f8', '019ea63a-985b-76f9-bd45-5d6351aa6f22', '019ea63a-9764-7bb5-81a7-c8a84fc41dca', '019ea63a-965a-7413-b70e-36372717c2ca', '019ea54d-e9cf-7be8-93c5-248c06e824db', '019e1094-1b11-729c-833c-43be480723f1', '019e1094-0e8e-7035-a3a3-d1ffc9c541a1', '019e0c68-db93-79b5-b293-0cc445ca7206', '019e0c68-a2a8-77e0-b265-22edcdec76a0', '019e0c68-96a2-769e-bcf9-583561edcc92', '019dfc67-cbac-7d85-9330-2d776d21d975', '019df1dc-41db-794a-a80c-f322d81bf149', '019ddbe9-bf4e-7696-9dcf-ad2af75ba332', '019dcd81-833f-7798-9efd-23c2f9fb3d64', '019db03e-8b76-747c-aec8-b2c53eb919ff', '019daf5f-a056-7dce-b923-ce283a5fd2d3', '019daf5d-ee6c-7583-8de9-76043f7d04ff', '019daf5b-dbb2-7fd8-9893-22aca78037da', '019daf4c-f169-7b2f-a77d-c0b1b4ffe50a', '019d9256-e8cc-7ef9-b9cd-442429ee327a', '019d9256-e8cc-7e4e-a7c9-168d96221aa5', '019d9256-e8cc-79a4-975e-451fd4fd2fb2', '019d9256-e8cc-791d-b955-7784bd8abbac', '019d9256-e8cc-733c-a973-d79a2e4e0ac3', '019d9256-e8cc-7050-bf49-ed58656bf9dc']
+14:56:05 | Step 4: Refresh page
+14:56:07 | Verify default sorted by 'Created Date' desc
+14:56:07 | - Get table data
+14:56:09 | - Click 'next' button on table
+14:56:10 | - Go to the first page
+14:56:10 | - Total records: 25
+14:56:10 | - Comparing: 
+Actual:    ['8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:17', '8 June 2026 03:36:47', '10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01', '6 May 2026 08:29:14', '4 May 2026 07:20:37', '30 April 2026 01:03:42', '27 April 2026 05:55:10', '21 April 2026 13:33:02', '21 April 2026 09:29:33', '21 April 2026 09:27:41', '21 April 2026 09:25:26', '21 April 2026 09:09:08', '12 April 2026 13:45:07', '12 April 2026 13:36:52', '12 April 2026 13:21:31', '12 April 2026 04:41:01', '8 April 2026 09:14:05', '31 March 2026 03:05:08']
+Expected:  ['8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:17', '8 June 2026 03:36:47', '10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01', '6 May 2026 08:29:14', '4 May 2026 07:20:37', '30 April 2026 01:03:42', '27 April 2026 05:55:10', '21 April 2026 13:33:02', '21 April 2026 09:29:33', '21 April 2026 09:27:41', '21 April 2026 09:25:26', '21 April 2026 09:09:08', '12 April 2026 13:45:07', '12 April 2026 13:36:52', '12 April 2026 13:21:31', '12 April 2026 04:41:01', '8 April 2026 09:14:05', '31 March 2026 03:05:08']
+14:56:10 | [Teardown] Refresh the page
+14:56:10 | - Clear search input
+14:56:14 | - Stop recording screen

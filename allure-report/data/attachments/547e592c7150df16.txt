@@ -1,0 +1,131 @@
+23:01:19 | - Running test case: test_TA_TBL_TC08_resize_columns_minimum.py
+23:01:19 | - Start recording screen
+23:01:19 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Name': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Email': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Leverage': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Type': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Status': 'height: 40, width: 151'
+23:01:19 | - Size of column: 'Type': 'height: 40, width: 151'
+23:01:19 | Step 1: Shrink column 'Type' toward minimum width
+23:01:19 | - Shrinking column 'Type' to minimum (current: 151px)
+23:01:19 | - Decrease column: 'Type' by 105.69999999999999px
+23:01:20 | - Size of column: 'Type': 'height: 40, width: 80'
+23:01:20 | - Decrease column: 'Type' by 56.0px
+23:01:22 | - Size of column: 'Type': 'height: 40, width: 80'
+23:01:22 | - Column reached minimum width: 80px
+23:01:22 | Verify column 'Type' width decreased toward minimum
+23:01:22 | - Size of column: 'Type': 'height: 40, width: 80'
+23:01:22 | Verify label of 'Type' truncated
+23:01:22 | Verify column has min width limit
+23:01:22 | - Size of column: 'Email': 'height: 40, width: 151'
+23:01:22 | Step 2: Shrink column 'Email' toward minimum width
+23:01:22 | - Shrinking column 'Email' to minimum (current: 151px)
+23:01:22 | - Decrease column: 'Email' by 105.69999999999999px
+23:01:23 | - Size of column: 'Email': 'height: 40, width: 80'
+23:01:23 | - Decrease column: 'Email' by 56.0px
+23:01:25 | - Size of column: 'Email': 'height: 40, width: 80'
+23:01:25 | - Column reached minimum width: 80px
+23:01:25 | Verify column 'Email' width decreased toward minimum
+23:01:25 | - Size of column: 'Email': 'height: 40, width: 80'
+23:01:25 | Verify label of 'Email' truncated
+23:01:25 | Verify column has min width limit
+23:01:25 | - Size of column: 'Leverage': 'height: 40, width: 151'
+23:01:25 | Step 3: Shrink column 'Leverage' toward minimum width
+23:01:25 | - Shrinking column 'Leverage' to minimum (current: 151px)
+23:01:25 | - Decrease column: 'Leverage' by 105.69999999999999px
+23:01:26 | - Size of column: 'Leverage': 'height: 40, width: 80'
+23:01:26 | - Decrease column: 'Leverage' by 56.0px
+23:01:27 | - Size of column: 'Leverage': 'height: 40, width: 80'
+23:01:27 | - Column reached minimum width: 80px
+23:01:27 | Verify column 'Leverage' width decreased toward minimum
+23:01:27 | - Size of column: 'Leverage': 'height: 40, width: 80'
+23:01:27 | Verify label of 'Leverage' truncated
+23:01:27 | Verify column has min width limit
+23:01:27 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:01:27 | Step 4: Shrink column 'Trade Permission' toward minimum width
+23:01:27 | - Shrinking column 'Trade Permission' to minimum (current: 151px)
+23:01:27 | - Decrease column: 'Trade Permission' by 105.69999999999999px
+23:01:29 | - Size of column: 'Trade Permission': 'height: 40, width: 80'
+23:01:29 | - Decrease column: 'Trade Permission' by 56.0px
+23:01:30 | - Size of column: 'Trade Permission': 'height: 40, width: 80'
+23:01:30 | - Column reached minimum width: 80px
+23:01:30 | Verify column 'Trade Permission' width decreased toward minimum
+23:01:30 | - Size of column: 'Trade Permission': 'height: 40, width: 80'
+23:01:30 | Verify label of 'Trade Permission' truncated
+23:01:30 | Verify column has min width limit
+23:01:30 | - Size of column: 'Name': 'height: 40, width: 151'
+23:01:30 | Step 5: Shrink column 'Name' toward minimum width
+23:01:30 | - Shrinking column 'Name' to minimum (current: 151px)
+23:01:30 | - Decrease column: 'Name' by 105.69999999999999px
+23:01:32 | - Size of column: 'Name': 'height: 40, width: 80'
+23:01:32 | - Decrease column: 'Name' by 56.0px
+23:01:33 | - Size of column: 'Name': 'height: 40, width: 80'
+23:01:33 | - Column reached minimum width: 80px
+23:01:33 | Verify column 'Name' width decreased toward minimum
+23:01:33 | - Size of column: 'Name': 'height: 40, width: 80'
+23:01:33 | Verify label of 'Name' truncated
+23:01:33 | Verify column has min width limit
+23:01:33 | - Size of column: 'Status': 'height: 40, width: 151'
+23:01:33 | Step 6: Shrink column 'Status' toward minimum width
+23:01:33 | - Shrinking column 'Status' to minimum (current: 151px)
+23:01:33 | - Decrease column: 'Status' by 105.69999999999999px
+23:01:34 | - Size of column: 'Status': 'height: 40, width: 80'
+23:01:34 | - Decrease column: 'Status' by 56.0px
+23:01:36 | - Size of column: 'Status': 'height: 40, width: 80'
+23:01:36 | - Column reached minimum width: 80px
+23:01:36 | Verify column 'Status' width decreased toward minimum
+23:01:36 | - Size of column: 'Status': 'height: 40, width: 80'
+23:01:36 | Verify label of 'Status' truncated
+23:01:36 | Verify column has min width limit
+23:01:36 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:01:36 | Step 7: Shrink column 'Account ID' toward minimum width
+23:01:36 | - Shrinking column 'Account ID' to minimum (current: 151px)
+23:01:36 | - Decrease column: 'Account ID' by 105.69999999999999px
+23:01:37 | - Size of column: 'Account ID': 'height: 40, width: 80'
+23:01:37 | - Decrease column: 'Account ID' by 56.0px
+23:01:38 | - Size of column: 'Account ID': 'height: 40, width: 80'
+23:01:38 | - Column reached minimum width: 80px
+23:01:38 | Verify column 'Account ID' width decreased toward minimum
+23:01:38 | - Size of column: 'Account ID': 'height: 40, width: 80'
+23:01:38 | Verify label of 'Account ID' truncated
+23:01:39 | Verify column has min width limit
+23:01:39 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:01:39 | Step 8: Shrink column 'Mode' toward minimum width
+23:01:39 | - Shrinking column 'Mode' to minimum (current: 151px)
+23:01:39 | - Decrease column: 'Mode' by 105.69999999999999px
+23:01:40 | - Size of column: 'Mode': 'height: 40, width: 80'
+23:01:40 | - Decrease column: 'Mode' by 56.0px
+23:01:41 | - Size of column: 'Mode': 'height: 40, width: 80'
+23:01:41 | - Column reached minimum width: 80px
+23:01:41 | Verify column 'Mode' width decreased toward minimum
+23:01:41 | - Size of column: 'Mode': 'height: 40, width: 80'
+23:01:41 | Verify label of 'Mode' truncated
+23:01:41 | Verify column has min width limit
+23:01:41 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:01:41 | Step 9: Shrink column 'Currency' toward minimum width
+23:01:41 | - Shrinking column 'Currency' to minimum (current: 151px)
+23:01:41 | - Decrease column: 'Currency' by 105.69999999999999px
+23:01:43 | - Size of column: 'Currency': 'height: 40, width: 80'
+23:01:43 | - Decrease column: 'Currency' by 56.0px
+23:01:44 | - Size of column: 'Currency': 'height: 40, width: 80'
+23:01:44 | - Column reached minimum width: 80px
+23:01:44 | Verify column 'Currency' width decreased toward minimum
+23:01:44 | - Size of column: 'Currency': 'height: 40, width: 80'
+23:01:44 | Verify label of 'Currency' truncated
+23:01:44 | Verify column has min width limit
+23:01:44 | Step 10: Refresh page
+23:01:46 | Verify column widths match initial sizes after refresh
+23:01:46 | - Size of column: 'Type': 'height: 40, width: 151'
+23:01:46 | - Size of column: 'Email': 'height: 40, width: 151'
+23:01:46 | - Size of column: 'Leverage': 'height: 40, width: 151'
+23:01:46 | - Size of column: 'Trade Permission': 'height: 40, width: 151'
+23:01:46 | - Size of column: 'Name': 'height: 40, width: 151'
+23:01:46 | - Size of column: 'Status': 'height: 40, width: 151'
+23:01:46 | - Size of column: 'Account ID': 'height: 40, width: 151'
+23:01:46 | - Size of column: 'Mode': 'height: 40, width: 151'
+23:01:46 | - Size of column: 'Currency': 'height: 40, width: 151'
+23:01:47 | - Stop recording screen

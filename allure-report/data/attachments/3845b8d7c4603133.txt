@@ -1,0 +1,37 @@
+15:22:00 | - Running test case: test_TA_DEL_TC02_positive_cancel_from_edit_panel.py
+15:22:00 | - Start recording screen
+15:22:00 | - Get table data
+15:22:02 | - Click 'next' button on table
+15:22:04 | - Click 'next' button on table
+15:22:06 | - Go to the first page
+15:22:06 | - Get table data
+15:22:08 | - Click 'next' button on table
+15:22:10 | - Click 'next' button on table
+15:22:11 | - Go to the first page
+15:22:11 | [Setup] Total rows data: 119
+15:22:11 | Step 1: View row: 'wMlT_Auto-XWsBWPWg' > Edit
+15:22:11 | - Search for: 'AQX-TA-00000690'
+15:22:12 | - Get table data
+15:22:13 | - Record: 'wMlT_Auto-XWsBWPWg' column: 'Account ID' does not exist !
+15:22:13 | - Go to the first page
+15:22:13 | - View row: 'wMlT_Auto-XWsBWPWg' (attempt:1)
+15:22:13 | - Click 'Edit' button
+15:22:14 | Step 2: Click on 'Delete' button
+15:22:14 | - Click 'Delete' button
+15:22:14 | Verify delete confirmation title
+15:22:14 | Verify delete confirmation content
+15:22:15 | Step 3: Try clicking outside
+15:22:15 | Verify modal remains open
+15:22:15 | Step 4: Click on button 'Maybe Later'
+15:22:15 | - Click 'Maybe Later' button
+15:22:15 | Verify modal is closed
+15:22:15 | - Check invisibility of locator: ('css selector', 'span[data-slot="dialog-title"]'): TRUE
+15:22:15 | Verify 'Edit Trading Account' remains open
+15:22:15 | Step 5: Close the panel
+15:22:15 | - Click 'x' icon
+15:22:15 | Step 6: Clear search
+15:22:15 | - Clear search input
+15:22:16 | Verify footer label unchanged
+15:22:16 | - Wait for 'Showing 1 to 40 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+15:22:16 | [Teardown] Refresh the page
+15:22:18 | - Stop recording screen

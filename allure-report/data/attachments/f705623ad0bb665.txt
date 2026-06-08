@@ -1,0 +1,179 @@
+23:04:22 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:04:22 | - Start recording screen
+23:04:22 | - Get table data
+23:04:24 | - Click 'next' button on table
+23:04:26 | - Click 'next' button on table
+23:04:27 | - Go to the first page
+23:04:27 | Step 1: Search by: 'Email', with: 'auto_jo4ec6apcg9@aquariux.co'
+23:04:27 | - Search for: 'auto_jo4ec6apcg9@aquariux.co'
+23:04:27 | Verify results on table data match partial keyword: 'auto_jo4ec6apcg9@aquariux.co'
+23:04:27 | - Get table data
+23:04:29 | - Go to the first page
+23:04:29 | 
+Table Data:
+┌─────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000204 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:56:59 │
+│ AQX-TA-00000209 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:05 │
+│ AQX-TA-00000211 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:07 │
+│ AQX-TA-00000213 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:10 │
+│ AQX-TA-00000214 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:11 │
+│ AQX-TA-00000215 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:13 │
+│ AQX-TA-00000227 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:27 │
+│ AQX-TA-00000231 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:32 │
+│ AQX-TA-00000238 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:42 │
+│ AQX-TA-00000241 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:47 │
+│ AQX-TA-00000243 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:50 │
+│ AQX-TA-00000244 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:52 │
+│ AQX-TA-00000250 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:01 │
+│ AQX-TA-00000254 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:08 │
+│ AQX-TA-00000263 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:24 │
+│ AQX-TA-00000265 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:27 │
+│ AQX-TA-00000266 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:29 │
+│ AQX-TA-00000270 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:35 │
+│ AQX-TA-00000272 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:39 │
+│ AQX-TA-00000274 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:43 │
+│ AQX-TA-00000277 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:49 │
+│ AQX-TA-00000278 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:51 │
+└─────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:04:29 | - Comparing 22 items
+23:04:29 | Step 2: Search by: 'Email', with: 'auto_jo4ec6apcg9@aquariux'
+23:04:29 | - Search for: 'auto_jo4ec6apcg9@aquariux'
+23:04:30 | Verify results on table data match partial keyword: 'auto_jo4ec6apcg9@aquariux'
+23:04:30 | - Get table data
+23:04:31 | - Go to the first page
+23:04:31 | 
+Table Data:
+┌─────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000204 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:56:59 │
+│ AQX-TA-00000209 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:05 │
+│ AQX-TA-00000211 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:07 │
+│ AQX-TA-00000213 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:10 │
+│ AQX-TA-00000214 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:11 │
+│ AQX-TA-00000215 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:13 │
+│ AQX-TA-00000227 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:27 │
+│ AQX-TA-00000231 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:32 │
+│ AQX-TA-00000238 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:42 │
+│ AQX-TA-00000241 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:47 │
+│ AQX-TA-00000243 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:50 │
+│ AQX-TA-00000244 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:52 │
+│ AQX-TA-00000250 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:01 │
+│ AQX-TA-00000254 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:08 │
+│ AQX-TA-00000263 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:24 │
+│ AQX-TA-00000265 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:27 │
+│ AQX-TA-00000266 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:29 │
+│ AQX-TA-00000270 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:35 │
+│ AQX-TA-00000272 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:39 │
+│ AQX-TA-00000274 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:43 │
+│ AQX-TA-00000277 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:49 │
+│ AQX-TA-00000278 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:51 │
+└─────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:04:31 | - Comparing 22 items
+23:04:31 | Step 3: Search by: 'Email', with: 'auto_h26h8bj8'
+23:04:31 | - Search for: 'auto_h26h8bj8'
+23:04:32 | Verify results on table data match partial keyword: 'auto_h26h8bj8'
+23:04:32 | - Get table data
+23:04:33 | - Go to the first page
+23:04:33 | 
+Table Data:
+┌─────────────────┬─────────────────┬────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name            │ email                      │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼─────────────────┼────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000200 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:56:55 │
+│ AQX-TA-00000202 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:56:57 │
+│ AQX-TA-00000207 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:03 │
+│ AQX-TA-00000208 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:04 │
+│ AQX-TA-00000210 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:06 │
+│ AQX-TA-00000221 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:20 │
+│ AQX-TA-00000223 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:22 │
+│ AQX-TA-00000225 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:25 │
+│ AQX-TA-00000230 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:31 │
+│ AQX-TA-00000234 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:36 │
+│ AQX-TA-00000236 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:38 │
+│ AQX-TA-00000237 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:40 │
+│ AQX-TA-00000242 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:48 │
+│ AQX-TA-00000246 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:55 │
+│ AQX-TA-00000256 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:12 │
+│ AQX-TA-00000259 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:17 │
+│ AQX-TA-00000260 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:19 │
+│ AQX-TA-00000262 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:22 │
+│ AQX-TA-00000267 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:30 │
+│ AQX-TA-00000268 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:32 │
+│ AQX-TA-00000269 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:33 │
+│ AQX-TA-00000275 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:45 │
+└─────────────────┴─────────────────┴────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:04:33 | - Comparing 22 items
+23:04:33 | Step 4: Search by: 'Email', with: 'auto_jo4ec6apcg9@'
+23:04:33 | - Search for: 'auto_jo4ec6apcg9@'
+23:04:34 | Verify results on table data match partial keyword: 'auto_jo4ec6apcg9@'
+23:04:34 | - Get table data
+23:04:36 | - Go to the first page
+23:04:36 | 
+Table Data:
+┌─────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000204 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:56:59 │
+│ AQX-TA-00000209 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:05 │
+│ AQX-TA-00000211 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:07 │
+│ AQX-TA-00000213 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:10 │
+│ AQX-TA-00000214 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:11 │
+│ AQX-TA-00000215 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:13 │
+│ AQX-TA-00000227 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:27 │
+│ AQX-TA-00000231 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:32 │
+│ AQX-TA-00000238 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:42 │
+│ AQX-TA-00000241 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:47 │
+│ AQX-TA-00000243 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:50 │
+│ AQX-TA-00000244 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:52 │
+│ AQX-TA-00000250 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:01 │
+│ AQX-TA-00000254 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:08 │
+│ AQX-TA-00000263 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:24 │
+│ AQX-TA-00000265 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:27 │
+│ AQX-TA-00000266 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:29 │
+│ AQX-TA-00000270 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:35 │
+│ AQX-TA-00000272 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:39 │
+│ AQX-TA-00000274 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:43 │
+│ AQX-TA-00000277 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:49 │
+│ AQX-TA-00000278 │ DWxb_Auto/PvcaIxOr │ auto_jo4ec6apcg9@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:51 │
+└─────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:04:36 | - Comparing 22 items
+23:04:36 | Step 5: Search by: 'Email', with: 'auto_h26h8bj8@aquariux.co'
+23:04:36 | - Search for: 'auto_h26h8bj8@aquariux.co'
+23:04:36 | Verify results on table data match partial keyword: 'auto_h26h8bj8@aquariux.co'
+23:04:36 | - Get table data
+23:04:38 | - Go to the first page
+23:04:38 | 
+Table Data:
+┌─────────────────┬─────────────────┬────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name            │ email                      │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼─────────────────┼────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000200 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:56:55 │
+│ AQX-TA-00000202 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:56:57 │
+│ AQX-TA-00000207 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:03 │
+│ AQX-TA-00000208 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:04 │
+│ AQX-TA-00000210 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:06 │
+│ AQX-TA-00000221 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:20 │
+│ AQX-TA-00000223 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:22 │
+│ AQX-TA-00000225 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:25 │
+│ AQX-TA-00000230 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:31 │
+│ AQX-TA-00000234 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:36 │
+│ AQX-TA-00000236 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:38 │
+│ AQX-TA-00000237 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:40 │
+│ AQX-TA-00000242 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:48 │
+│ AQX-TA-00000246 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:57:55 │
+│ AQX-TA-00000256 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:12 │
+│ AQX-TA-00000259 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:17 │
+│ AQX-TA-00000260 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:19 │
+│ AQX-TA-00000262 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:22 │
+│ AQX-TA-00000267 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:30 │
+│ AQX-TA-00000268 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:32 │
+│ AQX-TA-00000269 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:33 │
+│ AQX-TA-00000275 │ -AutoXjbUYwleGN │ auto_h26h8bj8@aquariux.com │ 1:49         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:58:45 │
+└─────────────────┴─────────────────┴────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:04:38 | - Comparing 22 items
+23:04:38 | [Teardown] Clear search field
+23:04:38 | - Clear search input
+23:04:39 | - Stop recording screen

@@ -1,0 +1,96 @@
+01:05:27 | - Running test case: test_UG_DEL_TC07_positive_cross_browser_sync.py
+01:05:27 | - Start recording screen
+01:05:27 | [API] Send API: POST /backoffice/v1/user-groups
+01:05:27 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjMzMjIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4Mjg1MjIyLCJpYXQiOjE3NzgyNjMzMjIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImY2MTZmMzg5LTkwYTUtNDkxNy1hN2NkLTE1NzJmNjc2ZjYwYiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.IzTEWJ5Ivk08QGz7YC7X7ZVCZ2GRavBs1bbcmCT-C4wyGCFDNIJwln9zNFRIkJldt1AS-E-tVLp7DW---c5l4LcW7XcyxpUgFZu0Zyi_B9CuWZ1vOUHqIpa1JZ_zkN_143U8LNFGzFfnz9AJoKsz48--oyLDStNRCNkgMNxmuLnEdMq9Zn0c7LoE7oxqlkRpjebWs_GWJ_dbxioIsPX92qPXhrJlRJApfx_bUsSKHPLVkTxZlraG5ncZYCiDysQwCSe8aq_TReKYOq8CnFVoVOJBOMAdnWgF5GxPRrvXoDyQb17HyU0I5EWNdOrdZI7wdt-HJx9y2mMwlaxTEuU4tQ' 
+--header 'Content-Length: 192' 
+--data-raw '{"name": "Cupt_Auto_RNKPWQAg", "description": "dSzxETBcGQ - description", "positionType": "HEDGE", "bookType": "A_BOOK", "marginCallLevel": 10.6, "stopOutLevel": 15.51, "commissionRate": 1.03}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-08T18:05:27.787994773Z"
+}
+
+
+01:05:27 | [API] Send API: GET /backoffice/v1/user-groups
+01:05:27 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjMzMjIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4Mjg1MjIyLCJpYXQiOjE3NzgyNjMzMjIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImY2MTZmMzg5LTkwYTUtNDkxNy1hN2NkLTE1NzJmNjc2ZjYwYiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.IzTEWJ5Ivk08QGz7YC7X7ZVCZ2GRavBs1bbcmCT-C4wyGCFDNIJwln9zNFRIkJldt1AS-E-tVLp7DW---c5l4LcW7XcyxpUgFZu0Zyi_B9CuWZ1vOUHqIpa1JZ_zkN_143U8LNFGzFfnz9AJoKsz48--oyLDStNRCNkgMNxmuLnEdMq9Zn0c7LoE7oxqlkRpjebWs_GWJ_dbxioIsPX92qPXhrJlRJApfx_bUsSKHPLVkTxZlraG5ncZYCiDysQwCSe8aq_TReKYOq8CnFVoVOJBOMAdnWgF5GxPRrvXoDyQb17HyU0I5EWNdOrdZI7wdt-HJx9y2mMwlaxTEuU4tQ'
+
+
+01:05:27 | [Setup] Send API to create new user group: name: Cupt_Auto_RNKPWQAg, description: dSzxETBcGQ - description, position_type: Hedge, book_type: A-Book, margin_call_level: 10.6, stop_out_level: 15.51, commission: 1.03, created_date: 08 May 2026 18:05:27, id: 019e08c4-1168-7026-b4d0-e56196070645
+01:05:27 | [Setup] Refresh page to load changes
+01:05:28 | - Get table data
+01:05:30 | - Go to the first page
+01:05:30 | [Setup] Total rows data: 28
+01:05:31 | - Registered driver under 'web_secondary' (total: 2)
+01:05:31 | - Added web driver 'secondary' to driver_list (total: 2)
+01:05:31 | [Setup] Login on browser 2
+01:05:34 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+01:05:34 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+01:05:34 | - Input password: 'Autotest@12345'
+01:05:35 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+01:05:35 | - Click on login button
+01:05:35 | - Waiting for new code generated (old: '593000') ...
+01:06:00 | - New code generated ! (488733)
+01:06:01 | - Input TOTP code: '488733'
+01:06:02 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+01:06:02 | - Expand item: 'Accounts'
+01:06:03 | [Setup] Navigate Asset Classes Page
+01:06:03 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+01:06:03 | - Item: 'Accounts' already 'expand'
+01:06:03 | Step 1: View row: 'Cupt_Auto_RNKPWQAg' > Delete > Confirm Delete
+01:06:04 | - Get table data
+01:06:05 | - Found record: 'Cupt_Auto_RNKPWQAg' column: 'Name' (page:1)
+01:06:05 | - Delete row: 'Cupt_Auto_RNKPWQAg' (attempt:1)
+01:06:05 | - Modal confirm
+01:06:05 | Verify toast message: 'The user group has been deleted successfully'
+01:06:06 | Verify footer remains un-changed: 'Showing 1 to 28 of 28 items' (browser 2)
+01:06:06 | - Wait for 'Showing 1 to 28 of 28 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+01:06:06 | Step 2: Search with deleted name: 'Cupt_Auto_RNKPWQAg' (browser 2)
+01:06:06 | - Search for: 'Cupt_Auto_RNKPWQAg'
+01:06:07 | Verify data sync after search - no results label (browser 2)
+01:06:07 | Verify button 'Add User Group' is displayed (browser 2)
+01:06:07 | Step 3: Clear search
+01:06:07 | - Clear search input
+01:06:07 | Verify footer label -1: 'Showing 1 to 27 of 27 items' (browser 2)
+01:06:07 | - Wait for 'Showing 1 to 27 of 27 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+01:06:07 | [Teardown] Refresh the page
+01:06:08 | [Teardown] Quit Browser 2
+01:06:08 | - Quit driver 'web_secondary'
+01:06:08 | Send API to delete the created asset: 019e08c4-1168-7026-b4d0-e56196070645
+01:06:08 | [API] Send API: DELETE /backoffice/v1/user-groups/019e08c4-1168-7026-b4d0-e56196070645
+01:06:08 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e08c4-1168-7026-b4d0-e56196070645' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjMzMjIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4Mjg1MjIyLCJpYXQiOjE3NzgyNjMzMjIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImY2MTZmMzg5LTkwYTUtNDkxNy1hN2NkLTE1NzJmNjc2ZjYwYiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.IzTEWJ5Ivk08QGz7YC7X7ZVCZ2GRavBs1bbcmCT-C4wyGCFDNIJwln9zNFRIkJldt1AS-E-tVLp7DW---c5l4LcW7XcyxpUgFZu0Zyi_B9CuWZ1vOUHqIpa1JZ_zkN_143U8LNFGzFfnz9AJoKsz48--oyLDStNRCNkgMNxmuLnEdMq9Zn0c7LoE7oxqlkRpjebWs_GWJ_dbxioIsPX92qPXhrJlRJApfx_bUsSKHPLVkTxZlraG5ncZYCiDysQwCSe8aq_TReKYOq8CnFVoVOJBOMAdnWgF5GxPRrvXoDyQb17HyU0I5EWNdOrdZI7wdt-HJx9y2mMwlaxTEuU4tQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "errorCode": "R_0001",
+    "errorName": "Resource Not Found",
+    "message": "UserGroup not found with id: 019e08c4-1168-7026-b4d0-e56196070645",
+    "success": false,
+    "timestamp": "2026-05-08T18:06:09.021363154Z"
+}
+
+
+01:06:08 | ✘ Request failed (404): {"errorCode":"R_0001","errorName":"Resource Not Found","message":"UserGroup not found with id: 019e08c4-1168-7026-b4d0-e56196070645","success":false,"timestamp":"2026-05-08T18:06:09.021363154Z"} after 1 attempt(s)
+01:06:09 | - Stop recording screen

@@ -1,0 +1,27 @@
+22:05:33 | - Running test case: test_AK_GEN_TC06_negative_network_error.py
+22:05:33 | - Get table data
+22:05:35 | - Click 'next' button on table
+22:05:36 | - Click 'next' button on table
+22:05:37 | - Go to the first page
+22:05:38 | - Total records: 52
+22:05:38 | - Start recording screen
+22:05:38 | [Setup] Open Generate API Key panel
+22:05:38 | - Click 'Generate API Key' button
+22:05:38 | Step 1: Fill form with: 'name: YrjG_Auto/SPIVqwcA, expiry: No Expiry, status: Active'
+22:05:38 | - Input name: 'YrjG_Auto/SPIVqwcA'
+22:05:39 | - Select expiry: 'No Expiry'
+22:05:39 | - Toggle status to 'Active'
+22:05:39 | Step 2: Disconnect network
+22:05:39 | Step 3: Click Generate
+22:05:39 | - Click 'Generate Key' button
+22:05:40 | Verify toast message: 'Network error. Please check your connection.'
+22:05:40 | Verify pre-filled values remain un-changed
+22:05:41 | Step 4: Close the panel
+22:05:41 | - Click 'x' icon
+22:05:41 | Verify footer label remains un-changed
+22:05:42 | - Wait for 'Showing 1 to 20 of 52 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:05:42 | [Teardown] Restore network connection
+22:05:42 | [Teardown] Close panel if open
+22:05:42 | - Close panel
+22:05:47 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+22:05:48 | - Stop recording screen

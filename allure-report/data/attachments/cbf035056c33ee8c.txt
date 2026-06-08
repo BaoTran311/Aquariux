@@ -1,0 +1,53 @@
+23:37:13 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:37:13 | - Start recording screen
+23:37:13 | - Get table data
+23:37:14 | - Go to the first page
+23:37:14 | Step 1: Search by: 'Email', with: 'auto_gt07cax83o3@aquariux.com'
+23:37:14 | - Search for: 'auto_gt07cax83o3@aquariux.com'
+23:37:15 | Verify results on table data match: 'auto_gt07cax83o3@aquariux.com'
+23:37:15 | - Get table data
+23:37:16 | - Go to the first page
+23:37:16 | 
+Table Data:
+┌──────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id       │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├──────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000068  │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:66         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:32:49 │
+│ AQX-TA-100000000 │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 09:32:55 │
+└──────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:37:16 | - Comparing 2 items
+23:37:16 | Step 2: Search by: 'Email', with: 'auto_w7f6fdoxll@aquariux.com'
+23:37:16 | - Search for: 'auto_w7f6fdoxll@aquariux.com'
+23:37:17 | Verify results on table data match: 'auto_w7f6fdoxll@aquariux.com'
+23:37:17 | - Get table data
+23:37:18 | - Go to the first page
+23:37:18 | 
+Table Data:
+┌─────────────────┬────────────────────┬──────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id      │ name               │ email                        │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├─────────────────┼────────────────────┼──────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00001753 │ mUJg_Auto-RlGbZgun │ auto_w7f6fdoxll@aquariux.com │ 1:50         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 06:35:31 │
+│ AQX-TA-00001754 │ mUJg_Auto-RlGbZgun │ auto_w7f6fdoxll@aquariux.com │ 1:24         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 06:38:17 │
+└─────────────────┴────────────────────┴──────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:37:18 | - Comparing 2 items
+23:37:18 | Step 3: Search by: 'Email', with: 'auto_gt07cax83o3@aquariux.com'
+23:37:18 | - Search for: 'auto_gt07cax83o3@aquariux.com'
+23:37:18 | Verify results on table data match: 'auto_gt07cax83o3@aquariux.com'
+23:37:18 | - Get table data
+23:37:19 | - Go to the first page
+23:37:20 | 
+Table Data:
+┌──────────────────┬────────────────────┬───────────────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────────┬──────────────┬─────────────────────┐
+│ account_id       │ name               │ email                         │ leverage     │ currency     │ type         │ mode         │ trade_permission │ status       │ created_date        │
+├──────────────────┼────────────────────┼───────────────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────────┼──────────────┼─────────────────────┤
+│ AQX-TA-00000068  │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:66         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 9 May 2026 15:32:49 │
+│ AQX-TA-100000000 │ ablQ_Auto.bfzETPWE │ auto_gt07cax83o3@aquariux.com │ 1:23         │ USD          │ Trader       │ Live         │ Yes              │ Active       │ 8 May 2026 09:32:55 │
+└──────────────────┴────────────────────┴───────────────────────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────────────┴──────────────┴─────────────────────┘
+23:37:20 | - Comparing 2 items
+23:37:20 | Step 4: Refresh page
+23:37:21 | Verify search field is cleared
+23:37:21 | Verify clear search icon is not displayed
+23:37:21 | - Check invisibility of locator: ('css selector', 'button[data-testid="trading-account-list-search-input-search-account-email-input-icon-right"]'): TRUE
+23:37:21 | [Teardown] Clear search field
+23:37:21 | - Clear search input
+23:37:22 | - Stop recording screen

@@ -1,0 +1,14 @@
+23:39:16 | - Running test case: test_UG_VIW_TC02_positive_close_panel.py
+23:39:16 | - Start recording screen
+23:39:16 | - Get table data
+23:39:18 | - Go to the first page
+23:39:18 | Step 1: Action on row: 'lKKq_Auto.mAWhFBUL' > View
+23:39:18 | - Get table data
+23:39:19 | - Found record: 'lKKq_Auto.mAWhFBUL' column: 'Name' (page:1)
+23:39:19 | - View row: 'lKKq_Auto.mAWhFBUL' (attempt:1)
+23:39:19 | Step 2: Click outside to close the panel
+23:39:19 | - Click outside to close the panel
+23:39:20 | Verify panel title: 'lKKq_Auto.mAWhFBUL' & desc: User Group Details
+23:39:20 | [Teardown] Click 'x' icon to close the panel
+23:39:20 | - Click 'x' icon
+23:39:21 | - Stop recording screen

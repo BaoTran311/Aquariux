@@ -1,0 +1,11 @@
+23:06:34 | - Running test case: test_TA_TBL_TC10_positive_search.py
+23:06:34 | - Start recording screen
+23:06:35 | Step 1: Search with: 'naNOatvqOBcxvGlsWXGK' (non-existent keyword)
+23:06:35 | - Search for: 'naNOatvqOBcxvGlsWXGK'
+23:06:35 | Verify empty state label is shown
+23:06:36 | Verify button 'Add User Group' is displayed
+23:06:36 | Verify footer label: 'Showing 0 to 0 of 0 items'
+23:06:36 | - Wait for 'Showing 0 to 0 of 0 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+23:06:36 | [Teardown] Clear search field
+23:06:36 | - Clear search input
+23:06:37 | - Stop recording screen
