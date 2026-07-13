@@ -1,0 +1,98 @@
+23:39:21 | - Running test case: test_UG_VIW_TC03_negative_view_deleted_record.py
+23:39:21 | - Start recording screen
+23:39:22 | [API] Send API: POST /backoffice/v1/user-groups
+23:39:22 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MzExNjg3OS0wNTZjLTQ3MmEtYTFhNy1kNzE1Y2NkODRlMmIiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNTgzMzEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgwMjMxLCJpYXQiOjE3NzgyNTgzMzEsInVzZXJJZCI6IjgzMTE2ODc5LTA1NmMtNDcyYS1hMWE3LWQ3MTVjY2Q4NGUyYiIsImp0aSI6IjNkYzk0NjFjLWVjZTAtNDM4NS05YjkzLTJmYjZiMWZkODY3MyIsImVtYWlsIjoibmdvY3V5ZW4uaG8xQGFxdWFyaXV4LmNvbSJ9.YaSXTr-7qd1iayBNkN6BMsVSPviNLZgelOYTn_UXzDPGYAQd4MxnHRm1KuzbZQb5Tz-uYXInkwMtebNFhV-cmlp4K_6MtVnfJ2B5Kd3FMv-nGhR1ib9njHDA3xgLoqfSlMprnrpr9i0b8yv4msmFbeb327mPf7rM9IIGcM1hwy3osMtqyP9F0kcGWoLOqmyP_ssCuKFgsJYOXDmffedIOWswSriP3BzNtq_O_r8xwx6vV1qLNT9hBmEAuysH6thjmgLlXAZcWnAKZAA_6lhXV7ZHrqMqG4cexoMbBiImg9bu6XumesQDwczMRXHy8F-QaKx1HASt1iDpMcVXYE9wfw' 
+--header 'Content-Length: 193' 
+--data-raw '{"name": "eCww_Auto-IrUvUKWG", "description": "FCnuylyZnX - description", "positionType": "HEDGE", "bookType": "A_BOOK", "marginCallLevel": 70.89, "stopOutLevel": 35.99, "commissionRate": 7.34}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-08T16:39:22.559803173Z"
+}
+
+
+23:39:22 | [API] Send API: GET /backoffice/v1/user-groups
+23:39:22 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MzExNjg3OS0wNTZjLTQ3MmEtYTFhNy1kNzE1Y2NkODRlMmIiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNTgzMzEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgwMjMxLCJpYXQiOjE3NzgyNTgzMzEsInVzZXJJZCI6IjgzMTE2ODc5LTA1NmMtNDcyYS1hMWE3LWQ3MTVjY2Q4NGUyYiIsImp0aSI6IjNkYzk0NjFjLWVjZTAtNDM4NS05YjkzLTJmYjZiMWZkODY3MyIsImVtYWlsIjoibmdvY3V5ZW4uaG8xQGFxdWFyaXV4LmNvbSJ9.YaSXTr-7qd1iayBNkN6BMsVSPviNLZgelOYTn_UXzDPGYAQd4MxnHRm1KuzbZQb5Tz-uYXInkwMtebNFhV-cmlp4K_6MtVnfJ2B5Kd3FMv-nGhR1ib9njHDA3xgLoqfSlMprnrpr9i0b8yv4msmFbeb327mPf7rM9IIGcM1hwy3osMtqyP9F0kcGWoLOqmyP_ssCuKFgsJYOXDmffedIOWswSriP3BzNtq_O_r8xwx6vV1qLNT9hBmEAuysH6thjmgLlXAZcWnAKZAA_6lhXV7ZHrqMqG4cexoMbBiImg9bu6XumesQDwczMRXHy8F-QaKx1HASt1iDpMcVXYE9wfw'
+
+
+23:39:22 | [Setup] Send API to create new user group: name: eCww_Auto-IrUvUKWG, description: FCnuylyZnX - description, position_type: Hedge, book_type: A-Book, margin_call_level: 70.89, stop_out_level: 35.99, commission: 7.34, created_date: 08 May 2026 16:39:22, id: 019e0875-40ba-7147-b055-4c1856e4a42f
+23:39:22 | [Setup] Refresh page to load changes
+23:39:23 | [Setup] Go to row: 'eCww_Auto-IrUvUKWG'
+23:39:23 | - Search for: 'eCww_Auto-IrUvUKWG'
+23:39:24 | - Get table data
+23:39:25 | - Found record: 'eCww_Auto-IrUvUKWG' column: 'Name' (page:1)
+23:39:25 | [Setup] Send API to delete: 'eCww_Auto-IrUvUKWG'
+23:39:25 | [API] Send API: GET /backoffice/v1/user-groups/available-user-groups
+23:39:25 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/available-user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MzExNjg3OS0wNTZjLTQ3MmEtYTFhNy1kNzE1Y2NkODRlMmIiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNTgzMzEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgwMjMxLCJpYXQiOjE3NzgyNTgzMzEsInVzZXJJZCI6IjgzMTE2ODc5LTA1NmMtNDcyYS1hMWE3LWQ3MTVjY2Q4NGUyYiIsImp0aSI6IjNkYzk0NjFjLWVjZTAtNDM4NS05YjkzLTJmYjZiMWZkODY3MyIsImVtYWlsIjoibmdvY3V5ZW4uaG8xQGFxdWFyaXV4LmNvbSJ9.YaSXTr-7qd1iayBNkN6BMsVSPviNLZgelOYTn_UXzDPGYAQd4MxnHRm1KuzbZQb5Tz-uYXInkwMtebNFhV-cmlp4K_6MtVnfJ2B5Kd3FMv-nGhR1ib9njHDA3xgLoqfSlMprnrpr9i0b8yv4msmFbeb327mPf7rM9IIGcM1hwy3osMtqyP9F0kcGWoLOqmyP_ssCuKFgsJYOXDmffedIOWswSriP3BzNtq_O_r8xwx6vV1qLNT9hBmEAuysH6thjmgLlXAZcWnAKZAA_6lhXV7ZHrqMqG4cexoMbBiImg9bu6XumesQDwczMRXHy8F-QaKx1HASt1iDpMcVXYE9wfw'
+
+
+23:39:25 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0875-40ba-7147-b055-4c1856e4a42f
+23:39:25 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0875-40ba-7147-b055-4c1856e4a42f' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MzExNjg3OS0wNTZjLTQ3MmEtYTFhNy1kNzE1Y2NkODRlMmIiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNTgzMzEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgwMjMxLCJpYXQiOjE3NzgyNTgzMzEsInVzZXJJZCI6IjgzMTE2ODc5LTA1NmMtNDcyYS1hMWE3LWQ3MTVjY2Q4NGUyYiIsImp0aSI6IjNkYzk0NjFjLWVjZTAtNDM4NS05YjkzLTJmYjZiMWZkODY3MyIsImVtYWlsIjoibmdvY3V5ZW4uaG8xQGFxdWFyaXV4LmNvbSJ9.YaSXTr-7qd1iayBNkN6BMsVSPviNLZgelOYTn_UXzDPGYAQd4MxnHRm1KuzbZQb5Tz-uYXInkwMtebNFhV-cmlp4K_6MtVnfJ2B5Kd3FMv-nGhR1ib9njHDA3xgLoqfSlMprnrpr9i0b8yv4msmFbeb327mPf7rM9IIGcM1hwy3osMtqyP9F0kcGWoLOqmyP_ssCuKFgsJYOXDmffedIOWswSriP3BzNtq_O_r8xwx6vV1qLNT9hBmEAuysH6thjmgLlXAZcWnAKZAA_6lhXV7ZHrqMqG4cexoMbBiImg9bu6XumesQDwczMRXHy8F-QaKx1HASt1iDpMcVXYE9wfw' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-08T16:39:25.792913477Z"
+}
+23:39:25 | Step 1: View deleted row: 'eCww_Auto-IrUvUKWG'
+23:39:25 | - View row: 'eCww_Auto-IrUvUKWG' (attempt:1)
+23:39:25 | Verify toast message: 'Failed to view user group. The user group has already been deleted.'
+23:39:27 | Verify table data updated to empty
+23:39:27 | [Teardown] Refresh the page
+23:39:28 | Send API to delete the created asset: 019e0875-40ba-7147-b055-4c1856e4a42f
+23:39:28 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0875-40ba-7147-b055-4c1856e4a42f
+23:39:28 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0875-40ba-7147-b055-4c1856e4a42f' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MzExNjg3OS0wNTZjLTQ3MmEtYTFhNy1kNzE1Y2NkODRlMmIiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNTgzMzEsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgwMjMxLCJpYXQiOjE3NzgyNTgzMzEsInVzZXJJZCI6IjgzMTE2ODc5LTA1NmMtNDcyYS1hMWE3LWQ3MTVjY2Q4NGUyYiIsImp0aSI6IjNkYzk0NjFjLWVjZTAtNDM4NS05YjkzLTJmYjZiMWZkODY3MyIsImVtYWlsIjoibmdvY3V5ZW4uaG8xQGFxdWFyaXV4LmNvbSJ9.YaSXTr-7qd1iayBNkN6BMsVSPviNLZgelOYTn_UXzDPGYAQd4MxnHRm1KuzbZQb5Tz-uYXInkwMtebNFhV-cmlp4K_6MtVnfJ2B5Kd3FMv-nGhR1ib9njHDA3xgLoqfSlMprnrpr9i0b8yv4msmFbeb327mPf7rM9IIGcM1hwy3osMtqyP9F0kcGWoLOqmyP_ssCuKFgsJYOXDmffedIOWswSriP3BzNtq_O_r8xwx6vV1qLNT9hBmEAuysH6thjmgLlXAZcWnAKZAA_6lhXV7ZHrqMqG4cexoMbBiImg9bu6XumesQDwczMRXHy8F-QaKx1HASt1iDpMcVXYE9wfw' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "errorCode": "R_0001",
+    "errorName": "Resource Not Found",
+    "message": "UserGroup not found with id: 019e0875-40ba-7147-b055-4c1856e4a42f",
+    "success": false,
+    "timestamp": "2026-05-08T16:39:29.018337667Z"
+}
+
+
+23:39:28 | ✘ Request failed (404): {"errorCode":"R_0001","errorName":"Resource Not Found","message":"UserGroup not found with id: 019e0875-40ba-7147-b055-4c1856e4a42f","success":false,"timestamp":"2026-05-08T16:39:29.018337667Z"} after 1 attempt(s)
+23:39:29 | - Stop recording screen
+23:39:29 | [Teardown] Quit Web Driver
+23:39:30 | - Quit driver 'web_main'
+23:39:30 | - All drivers quit and registry cleared

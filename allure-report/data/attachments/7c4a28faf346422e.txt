@@ -1,0 +1,43 @@
+00:35:49 | - Running test case: test_UG_ADD_TC12_positive_cross_page_sync.py
+00:35:49 | - Start recording screen
+00:35:49 | [Setup] Click on 'Add User Group' button
+00:35:49 | - Click 'Add User Group' button
+00:35:49 | Step 1: submit form with: 'name: eXNQ_Auto.dfNEUsgl, description: mtSpvBqqJC - description, position_type: Hedge, book_type: A-Book, margin_call_level: 53.65, stop_out_level: 49.95, commission: 3.94'
+00:35:49 | - Input name: 'eXNQ_Auto.dfNEUsgl'
+00:35:49 | - Input description: 'mtSpvBqqJC - description'
+00:35:49 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:35:49 | - Open dropdown Book Type
+00:35:49 | - Select Book Type
+00:35:50 | - Input margin call level: 53.65
+00:35:50 | - Input stop out level: 49.95
+00:35:50 | - Input commission: 3.94
+00:35:50 | - Click 'Save' button
+00:35:50 | Verify toast message: 'The user group has been created successfully'
+00:35:51 | [Setup] Navigate to Trading Users Page
+00:35:51 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+00:35:51 | - Item: 'Accounts' already 'expand'
+00:35:51 | Step 2: Click on 'Add Trading User' button
+00:35:51 | - Click 'Add Trading User' button
+00:35:51 | [API] Send API: GET /backoffice/v1/user-groups/available-user-groups
+00:35:51 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/available-user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNjE1OTUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MjgzNDk1LCJpYXQiOjE3NzgyNjE1OTUsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjkyODA5MzJkLTA1NDItNDg2NC04YTE3LWEyMTVmOTEwODY1OSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.VnD5n9MPXrB6fVUeZpni8DeBPhVv2_rpz14FdCXYPIkiVFm8RYgyOBShcef4gCfLej5revHU92VkQ6k1tMAXIM6ezXGIuqLdbZkiPyfzVBiGvXA6GimHFuTopwouRQCK6vu4zpwCMakw-7YoCYvkzxfAd2LkT_6N7gehoSILYzm7VM7Jgsx603lW33IagCDE9XRYMc6e5TACtFmiHq_OuMoMiPdMlgOLjcSeROGWEIgvcSMngPdxobiBWWHt49g3hkzQB1QjoY9tYmh6pPS3mNsx0lJFyW_323VQV7p3zbKuTQ46uar6eDfPdQEsE2TR6z8Cu4YnwjNuggS2vVMG7g'
+
+
+00:35:51 | Step 3: Open 'User Group' dropdown
+00:35:51 | - Open dropdown: User Group
+00:35:51 | Verify options match available user groups
+00:35:52 | - Comparing: 
+Actual:    ['aiZh_Auto_KfVPcHVs', 'AUTOCXXHJ.LXAGC', 'AUTOCXXHJLXA.GC', 'AUTOEDT-EPMSJJP', 'AUTOEDTEPMSJJP-', 'A.utofnycEtsuBJ', '_AUTOGKQZURPXZB', 'AU_TOGKQZURPXZB', 'AutoJDasShYM-do', 'AUTOMX-WXQCIBEB', 'AUTOMXWXQCI-BEB', '_AutoOVbUyZDYSq', 'AutoPytDHbOhF-U', 'BHNm_Auto-WVIrEbfI', 'dtcJ_Auto/LrlzMkxk', 'eXNQ_Auto.dfNEUsgl', 'haDX_Auto/NKekKjAe', 'IlhN_Auto_yarpEETE', 'lKKq_Auto.mAWhFBUL', 'PBCC_Auto_xizSVlkx', 'pLib_Auto_TlXFFGmD', 'PROFESSIONAL', 'SFPF_Auto-jlSwSEjR', 'XAEE_AUTO-YFXADWKZ']
+Expected:  ['aiZh_Auto_KfVPcHVs', 'AUTOCXXHJ.LXAGC', 'AUTOCXXHJLXA.GC', 'AUTOEDT-EPMSJJP', 'AUTOEDTEPMSJJP-', 'A.utofnycEtsuBJ', '_AUTOGKQZURPXZB', 'AU_TOGKQZURPXZB', 'AutoJDasShYM-do', 'AUTOMX-WXQCIBEB', 'AUTOMXWXQCI-BEB', '_AutoOVbUyZDYSq', 'AutoPytDHbOhF-U', 'BHNm_Auto-WVIrEbfI', 'dtcJ_Auto/LrlzMkxk', 'eXNQ_Auto.dfNEUsgl', 'haDX_Auto/NKekKjAe', 'IlhN_Auto_yarpEETE', 'lKKq_Auto.mAWhFBUL', 'PBCC_Auto_xizSVlkx', 'pLib_Auto_TlXFFGmD', 'PROFESSIONAL', 'SFPF_Auto-jlSwSEjR', 'XAEE_AUTO-YFXADWKZ']
+00:35:57 | 🟡 Element not found for ('css selector', 'input[data-testid="user-group-list-search-input-search-name-input-input"]'): TimeoutException after 5(s)
+00:35:57 | [Teardown] Go back to User Group Page
+00:35:58 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+00:35:58 | - Item: 'Accounts' already 'expand'
+00:35:58 | [Teardown] Refresh the page
+00:36:00 | - Stop recording screen

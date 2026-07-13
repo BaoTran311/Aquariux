@@ -1,0 +1,28 @@
+17:51:11 | - Running test case: test_AS_TC13_positive_generation_timestamp.py
+17:51:11 | - Start recording screen
+17:51:12 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:51:12 | - Select month: latest
+17:51:12 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:51:12 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:51:12 | - Select first available trading account
+17:51:12 | - Click Apply filters
+17:51:12 | - Wait for statement data to load
+17:51:18 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:51:19 | Step 1: Observe generation timestamp on statement page
+17:51:19 | Verify generation timestamp is displayed in detail card header
+17:51:19 | Step 2: Re-apply filters to trigger timestamp update
+17:51:19 | - Click Clear Filter
+17:51:19 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:51:19 | - Select first available trading account
+17:51:19 | - Click Apply filters
+17:51:19 | Verify generation timestamp is still displayed after re-apply
+17:51:25 | [Teardown] Refresh the page
+17:51:25 | - Wait for statement data to load
+17:51:35 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+17:51:35 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:51:35 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:51:35 | Cost-optimized locator failed after 47ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:51:35 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:51:35 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:51:35 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:51:37 | - Stop recording screen

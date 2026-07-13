@@ -1,0 +1,16 @@
+17:52:22 | - Running test case: test_AS_TC16_positive_trading_user_search.py
+17:52:22 | - Start recording screen
+17:52:23 | Step 1: Search and select trading user: 'Auto_Stmt.xwovflsb'
+17:52:23 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:52:23 | Verify selected user is displayed: 'Auto_Stmt.xwovflsb'
+17:52:23 | [Teardown] Refresh the page
+17:52:23 | - Wait for statement data to load
+17:52:33 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+17:52:33 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:52:33 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:52:33 | Cost-optimized locator failed after 49ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:52:33 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:52:33 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:52:33 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:52:35 | [Teardown] Close search dropdown
+17:52:36 | - Stop recording screen

@@ -1,0 +1,14 @@
+17:49:23 | - Running test case: test_AS_TC09_positive_table_columns.py
+17:49:23 | - Start recording screen
+17:49:24 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:49:24 | - Select month: latest
+17:49:24 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:49:24 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:49:24 | - Select first available trading account
+17:49:25 | - Click Apply filters
+17:49:25 | - Wait for statement data to load
+17:49:30 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:49:31 | Step 1: Observe Executed Orders table
+17:49:31 | Verify column headers: Symbol, Order Date/Time, Order ID, Buy Volume, Sell Volume, Position, Executed Price, Order Origin
+17:49:31 | - Get column headers: orders
+17:49:32 | - Stop recording screen

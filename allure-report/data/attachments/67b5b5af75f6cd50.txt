@@ -1,0 +1,19 @@
+09:01:49 | - Running test case: test_AK_GEN_TC02_positive_close_panel.py
+09:01:49 | - Start recording screen
+09:01:50 | [Setup] Open Generate API Key panel
+09:01:50 | - Click 'Generate API Key' button
+09:01:50 | Step 1: Fill form with random data
+09:01:50 | - Input name: 'CpZz_Auto/nEBIgbtu'
+09:01:50 | - Select expiry: 'No Expiry'
+09:01:51 | - Toggle status to 'Active'
+09:01:51 | Step 2: Click 'x' icon
+09:01:51 | - Click 'x' icon
+09:01:51 | Verify panel is closed
+09:01:52 | - Check invisibility of locator: ('css selector', 'span[data-testid$="-sheet-title"]'): TRUE
+09:01:52 | Step 3: Reopen Generate API Key panel
+09:01:52 | - Click 'Generate API Key' button
+09:01:52 | Verify pre-filled values reset to defaults
+09:01:53 | [Teardown] Close panel if open
+09:01:53 | - Close panel
+09:01:58 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+09:01:59 | - Stop recording screen

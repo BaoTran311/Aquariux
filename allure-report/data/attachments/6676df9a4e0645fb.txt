@@ -1,0 +1,115 @@
+14:58:38 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+14:58:38 | - Start recording screen
+14:58:38 | - Clear search input
+14:58:40 | - Get table data
+14:58:42 | - Click 'next' button on table
+14:58:43 | - Go to the first page
+14:58:43 | - Total records: 40
+14:58:43 | Step 1: Search with: 'key'
+14:58:43 | - Search for: key
+14:58:44 | Verify column sorts chronologically oldest → newest
+14:58:44 | - Get table data
+14:58:46 | - Go to the first page
+14:58:46 | - Total records: 5
+14:58:46 | - Comparing: 
+Actual:    ['9 May 2026 11:04:04', '9 May 2026 11:04:01', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02']
+Expected:  ['10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01']
+14:58:46 | ✘ Check Failed !
+Column 'Created Date' not sorted desc.
+Actual:   ['9 May 2026 11:04:04', '9 May 2026 11:04:01', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02']
+Expected: ['10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01']
+14:58:46 | Step 2: Click sort again on column: 'Created Date'
+14:58:46 | - Sort by: 'Created Date'
+14:58:47 | Verify column sorts chronologically newest → oldest
+14:58:47 | - Get table data
+14:58:49 | - Go to the first page
+14:58:49 | - Total records: 5
+14:58:49 | - Comparing: 
+Actual:    ['9 May 2026 11:04:01', '9 May 2026 11:04:04', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02']
+Expected:  ['9 May 2026 11:04:01', '9 May 2026 11:04:04', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02']
+14:58:49 | Step 3: Clear search
+14:58:49 | - Clear search input
+14:58:49 | Verify column still sorts chronologically newest → oldest
+14:58:49 | - Get table data
+14:58:51 | - Click 'next' button on table
+14:58:52 | - Go to the first page
+14:58:53 | - Total records: 25
+14:58:53 | - Comparing: 
+Actual:    ['31 March 2026 03:05:08', '8 April 2026 09:14:05', '12 April 2026 04:41:01', '12 April 2026 13:21:31', '12 April 2026 13:36:52', '12 April 2026 13:45:07', '21 April 2026 09:09:08', '21 April 2026 09:25:26', '21 April 2026 09:27:41', '21 April 2026 09:29:33', '21 April 2026 13:33:02', '27 April 2026 05:55:10', '30 April 2026 01:03:42', '4 May 2026 07:20:37', '6 May 2026 08:29:14', '9 May 2026 11:04:01', '9 May 2026 11:04:04', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02', '8 June 2026 03:36:47', '8 June 2026 07:55:17', '8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:18']
+Expected:  ['31 March 2026 03:05:08', '8 April 2026 09:14:05', '12 April 2026 04:41:01', '12 April 2026 13:21:31', '12 April 2026 13:36:52', '12 April 2026 13:45:07', '21 April 2026 09:09:08', '21 April 2026 09:25:26', '21 April 2026 09:27:41', '21 April 2026 09:29:33', '21 April 2026 13:33:02', '27 April 2026 05:55:10', '30 April 2026 01:03:42', '4 May 2026 07:20:37', '6 May 2026 08:29:14', '9 May 2026 11:04:01', '9 May 2026 11:04:04', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02', '8 June 2026 03:36:47', '8 June 2026 07:55:17', '8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:18']
+14:58:54 | - Stop recording screen
+14:58:54 | [API] Send API: DELETE /backoffice/v1/api-keys/019ea63a-965a-7413-b70e-36372717c2ca
+14:58:54 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019ea63a-965a-7413-b70e-36372717c2ca' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDUzMDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2MjA3LCJpYXQiOjE3ODA5MDUzMDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImExZjMxNTQzLWFhOGEtNGY4Mi1iZDA1LTQ4MjE5NWU1MWU4NCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.cQLD1u5dJ11UcdAYYkpeRMBtMnPbf34CVG3Za8WmaOcwCpaGFCiHSyLRu1230kVeJMGX2PZlNzGcQ31L0JSUjJIUFNJ76VJArc4L8KE53spnBhfPwYpWiJT8pSUtjnTONW9hS2PthCcckLbCQiTENB2OL-iAXdTMYJnOdSfCymcd9WCe3aPGxoPxKLLTnHqF6xvTTmKru8pKcY_tIXHu9raei9FU5ADDcIDI3Gj5fm7at6sUbFUVelX1kQOZrmJ4_x0SVMk9RERno7JQbjEDv7AuBK3wO_dyrG0pphbpEG3wG2zYnM1PeprJI-tMx-dZJtMoUAxuNm-URpZA80915w' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T07:58:55.039023478Z"
+}
+
+
+14:58:54 | [API] Send API: DELETE /backoffice/v1/api-keys/019ea63a-9764-7bb5-81a7-c8a84fc41dca
+14:58:55 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019ea63a-9764-7bb5-81a7-c8a84fc41dca' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDUzMDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2MjA3LCJpYXQiOjE3ODA5MDUzMDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImExZjMxNTQzLWFhOGEtNGY4Mi1iZDA1LTQ4MjE5NWU1MWU4NCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.cQLD1u5dJ11UcdAYYkpeRMBtMnPbf34CVG3Za8WmaOcwCpaGFCiHSyLRu1230kVeJMGX2PZlNzGcQ31L0JSUjJIUFNJ76VJArc4L8KE53spnBhfPwYpWiJT8pSUtjnTONW9hS2PthCcckLbCQiTENB2OL-iAXdTMYJnOdSfCymcd9WCe3aPGxoPxKLLTnHqF6xvTTmKru8pKcY_tIXHu9raei9FU5ADDcIDI3Gj5fm7at6sUbFUVelX1kQOZrmJ4_x0SVMk9RERno7JQbjEDv7AuBK3wO_dyrG0pphbpEG3wG2zYnM1PeprJI-tMx-dZJtMoUAxuNm-URpZA80915w' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T07:58:55.270844546Z"
+}
+
+
+14:58:55 | [API] Send API: DELETE /backoffice/v1/api-keys/019ea63a-985b-76f9-bd45-5d6351aa6f22
+14:58:55 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019ea63a-985b-76f9-bd45-5d6351aa6f22' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDUzMDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2MjA3LCJpYXQiOjE3ODA5MDUzMDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImExZjMxNTQzLWFhOGEtNGY4Mi1iZDA1LTQ4MjE5NWU1MWU4NCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.cQLD1u5dJ11UcdAYYkpeRMBtMnPbf34CVG3Za8WmaOcwCpaGFCiHSyLRu1230kVeJMGX2PZlNzGcQ31L0JSUjJIUFNJ76VJArc4L8KE53spnBhfPwYpWiJT8pSUtjnTONW9hS2PthCcckLbCQiTENB2OL-iAXdTMYJnOdSfCymcd9WCe3aPGxoPxKLLTnHqF6xvTTmKru8pKcY_tIXHu9raei9FU5ADDcIDI3Gj5fm7at6sUbFUVelX1kQOZrmJ4_x0SVMk9RERno7JQbjEDv7AuBK3wO_dyrG0pphbpEG3wG2zYnM1PeprJI-tMx-dZJtMoUAxuNm-URpZA80915w' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T07:58:55.502177648Z"
+}
+
+
+14:58:55 | [API] Send API: DELETE /backoffice/v1/api-keys/019ea63a-9a28-7749-8a26-2a4cd56d85f8
+14:58:55 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019ea63a-9a28-7749-8a26-2a4cd56d85f8' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDUzMDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2MjA3LCJpYXQiOjE3ODA5MDUzMDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImExZjMxNTQzLWFhOGEtNGY4Mi1iZDA1LTQ4MjE5NWU1MWU4NCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.cQLD1u5dJ11UcdAYYkpeRMBtMnPbf34CVG3Za8WmaOcwCpaGFCiHSyLRu1230kVeJMGX2PZlNzGcQ31L0JSUjJIUFNJ76VJArc4L8KE53spnBhfPwYpWiJT8pSUtjnTONW9hS2PthCcckLbCQiTENB2OL-iAXdTMYJnOdSfCymcd9WCe3aPGxoPxKLLTnHqF6xvTTmKru8pKcY_tIXHu9raei9FU5ADDcIDI3Gj5fm7at6sUbFUVelX1kQOZrmJ4_x0SVMk9RERno7JQbjEDv7AuBK3wO_dyrG0pphbpEG3wG2zYnM1PeprJI-tMx-dZJtMoUAxuNm-URpZA80915w' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T07:58:55.732388206Z"
+}
+
+
+14:58:55 | [Teardown] Quit Web Driver
+14:58:55 | - Quit driver 'web_main'
+14:58:55 | - All drivers quit and registry cleared

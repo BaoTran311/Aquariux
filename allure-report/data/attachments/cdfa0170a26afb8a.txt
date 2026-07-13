@@ -1,0 +1,17 @@
+17:48:43 | - Running test case: test_AS_TC06_positive_accordion_and_daily_dates.py
+17:48:43 | - Start recording screen
+17:48:44 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:48:44 | - Select month: latest
+17:48:44 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:48:44 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:48:44 | - Select first available trading account
+17:48:45 | - Click Apply filters
+17:48:45 | - Wait for statement data to load
+17:48:50 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:48:51 | Step 1: Observe accordion side menu after applying filters
+17:48:51 | Verify monthly and daily accordion sections are displayed
+17:48:51 | Step 2: Expand daily accordion section
+17:48:51 | - Expand Daily accordion
+17:48:51 | Verify daily section has dates listed
+17:48:52 | Verify only dates with activity are listed in chronological order
+17:48:53 | - Stop recording screen

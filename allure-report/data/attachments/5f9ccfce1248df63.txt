@@ -1,0 +1,27 @@
+20:25:35 | - Running test case: test_UG_EDT_TC03_positive_number_fields_validation.py
+20:25:35 | - Start recording screen
+20:25:35 | - Get table data
+20:25:36 | - Go to the first page
+20:25:36 | Step 1: View row: 'pLib_Auto_TlXFFGmD' > Edit
+20:25:36 | - Get table data
+20:25:38 | - Found record: 'pLib_Auto_TlXFFGmD' column: 'Name' (page:1)
+20:25:38 | - View row: 'pLib_Auto_TlXFFGmD' (attempt:1)
+20:25:38 | - Click 'Edit' button
+20:25:38 | Step 2: Input negative number: -95
+20:25:38 | - Input margin call level: -95
+20:25:38 | Verify Not accept negative number and show 95
+20:25:38 | Step 3: Input more than 2 decimal: 79.25128227006601
+20:25:38 | - Input margin call level: 79.25128227006601
+20:25:38 | - Click outside to close the panel
+20:25:40 | Verify auto complete 2 decimal
+20:25:40 | Step 4: Input non-numeric: ")&^`
+20:25:40 | - Input margin call level: '")&^`'
+20:25:40 | - Click outside to close the panel
+20:25:40 | Verify placeholder restored
+20:25:40 | Step 5: Input valid number: (79, 2)
+20:25:40 | - Input margin call level: 79
+20:25:40 | Verify no error validation is displayed
+20:25:40 | - Check invisibility of locator: ('css selector', 'span[data-testid="user-group-form-field-margin-call-level-error"]'): TRUE
+20:25:40 | [Teardown] Click 'x' icon to close the panel
+20:25:40 | - Click 'x' icon
+20:25:41 | - Stop recording screen

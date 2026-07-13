@@ -1,0 +1,18 @@
+22:05:49 | - Running test case: test_AK_GEN_TC07_positive_toggle_status.py
+22:05:49 | - Start recording screen
+22:05:49 | [Setup] Open Generate API Key panel
+22:05:49 | - Click 'Generate API Key' button
+22:05:50 | Step 1: Toggle status from 'Active' to 'Inactive'
+22:05:50 | - Toggle status to 'Inactive'
+22:05:50 | Verify toggle state: 'Inactive'
+22:05:51 | Verify toggle text: 'Inactive'
+22:05:51 | ✘ Check Failed !
+Expected text to be: 'Inactive', got: 'Active'
+22:05:51 | Step 2: Toggle status from 'Inactive' to 'Active'
+22:05:51 | - Toggle status to 'Active'
+22:05:52 | Verify toggle state: 'Active'
+22:05:52 | Verify toggle text: 'Active'
+22:05:53 | [Teardown] Close panel if open
+22:05:53 | - Close panel
+22:05:58 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+22:05:59 | - Stop recording screen

@@ -1,0 +1,13 @@
+18:06:10 | - Running test case: test_AS_TC21_positive_empty_state_tables.py
+18:06:10 | - Start recording screen
+18:06:10 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:06:10 | - Select month: latest
+18:06:10 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:06:10 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:06:11 | - Select first available trading account
+18:06:11 | - Click Apply filters
+18:06:11 | - Wait for statement data to load
+18:06:16 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:06:17 | Step 1: Observe tables in the statement (latest month — may have empty Transaction History)
+18:06:17 | Verify all table cards are displayed (tables with no data still render)
+18:06:19 | - Stop recording screen

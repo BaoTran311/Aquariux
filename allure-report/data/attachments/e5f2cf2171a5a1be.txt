@@ -1,0 +1,695 @@
+09:49:07 | - Running test case: test_AS_TC20_positive_export_pdf.py
+09:49:07 | [API] Send API: POST /auth/v1/login/admin
+09:49:09 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 68' 
+--data-raw '{"password": "Autotest@12345", "email": "auto_admin02@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019e7c33-b81b-7970-b804-59fcb23666e6",
+        "userType": "ADMIN",
+        "email": "auto_admin02@aquariux.com",
+        "name": "Auto Admin 02",
+        "...": "(7 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-07-13T02:49:09.169467105Z"
+}
+
+
+09:49:09 | [API] Send API: GET /backoffice/v1/admin-users
+09:49:09 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTllN2MzMy1iODFiLTc5NzAtYjgwNC01OWZjYjIzNjY2ZTYiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODM5MTA5NDksImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgzOTk3MzQ5LCJpYXQiOjE3ODM5MTA5NDksInVzZXJJZCI6IjAxOWU3YzMzLWI4MWItNzk3MC1iODA0LTU5ZmNiMjM2NjZlNiIsImp0aSI6ImEyNjMxMWFlLWExMmEtNGQ2MC05YzU3LWZlZjZjMzE3OGVlNSIsImVtYWlsIjoiYXV0b19hZG1pbjAyQGFxdWFyaXV4LmNvbSJ9.Xm2E-xJV8s0-DfSBUZFFUuJfUF18NpqDqvxL-KHMAAc9T1h9OxnTY-YX1TUsziVGQkpIsFy1a1Yi7HT_gPkRJYSQA0JhelwKVskOgI1GEnMsLprdK_UAMPyUl1mvVRNV_rvO-pTNemDPvNDjHe3bM3txUm2Ksz2JrrP9sYFfbwExtSUtnsHouFkRKndMkQpMmbdsF8UyanJmYL0kg_Ydz_-tr04fFBCREIETbzh1mX7x6ea8eyDLBfBXPAnpBmNfl7rePQ12mMNr2LWZN2q-4QdCvoEakj9G4QwcnFtERH6ip12qtiM7NhXzh7nFADAfmQon3cgVXq-PQsVSpl5alg'
+
+
+09:49:09 | [Setup] Init Web Driver
+09:49:15 | - Registered driver under 'web_main' (total: 1)
+09:49:15 | - Added web driver 'main' to driver_list (total: 1)
+09:49:15 | [Setup] Navigate to OMS site
+09:49:18 | [Setup] Login with default admin user
+09:49:18 | - Input email: 'auto_admin02@aquariux.com'
+09:49:18 | - Input password: 'Autotest@12345'
+09:49:19 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+09:49:19 | - Click on login button
+09:49:19 | [Setup] Navigate to Account Statements page
+09:49:20 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-reports"]'): FALSE
+09:49:20 | - Expand item: 'Reports'
+09:49:20 | - Wait for statement data to load
+09:49:31 | OpenAI API call failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+09:49:31 | DOM analysis failed for 'Element with selector: div[data-testid="account-statements-detail-card-header"]' (framework: selenium): OpenAI API call failed: 401
+09:49:31 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='AI DOM analysis failed: OpenAI API call failed: 401', context={})
+09:49:31 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+09:49:31 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+09:49:31 | Cost-optimized locator failed after 1402ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+09:49:31 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+09:49:31 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+09:49:31 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+09:49:33 | - Start recording screen
+09:49:34 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+09:49:34 | - Select month: latest
+09:49:34 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+09:49:34 | - Select trading user: 'Auto_Stmt.xwovflsb'
+09:49:34 | - Select first available trading account
+09:49:35 | - Click Apply filters
+09:49:35 | - Wait for statement data to load
+09:49:42 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+09:49:43 | Step 1: Read all UI data (monthly statement)
+09:49:43 | - Reading all UI data for PDF comparison
+09:49:43 | - Count rows: orders
+09:49:53 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-orders-row-20-cell-orderId"]'): TimeoutException after 1(s)
+09:49:53 | - Get cell: table=orders, row=0, col=symbol
+09:49:53 | - Get cell: table=orders, row=0, col=orderDate
+09:49:53 | - Get cell: table=orders, row=0, col=orderId
+09:49:53 | - Get cell: table=orders, row=0, col=boughtVolume
+09:49:53 | - Get cell: table=orders, row=0, col=soldVolume
+09:49:53 | - Get cell: table=orders, row=0, col=orderAction
+09:49:53 | - Get cell: table=orders, row=0, col=executedPrice
+09:49:53 | - Get cell: table=orders, row=0, col=orderOrigin
+09:49:53 | - Get cell: table=orders, row=1, col=symbol
+09:49:53 | - Get cell: table=orders, row=1, col=orderDate
+09:49:53 | - Get cell: table=orders, row=1, col=orderId
+09:49:53 | - Get cell: table=orders, row=1, col=boughtVolume
+09:49:53 | - Get cell: table=orders, row=1, col=soldVolume
+09:49:53 | - Get cell: table=orders, row=1, col=orderAction
+09:49:53 | - Get cell: table=orders, row=1, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=1, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=2, col=symbol
+09:49:54 | - Get cell: table=orders, row=2, col=orderDate
+09:49:54 | - Get cell: table=orders, row=2, col=orderId
+09:49:54 | - Get cell: table=orders, row=2, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=2, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=2, col=orderAction
+09:49:54 | - Get cell: table=orders, row=2, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=2, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=3, col=symbol
+09:49:54 | - Get cell: table=orders, row=3, col=orderDate
+09:49:54 | - Get cell: table=orders, row=3, col=orderId
+09:49:54 | - Get cell: table=orders, row=3, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=3, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=3, col=orderAction
+09:49:54 | - Get cell: table=orders, row=3, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=3, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=4, col=symbol
+09:49:54 | - Get cell: table=orders, row=4, col=orderDate
+09:49:54 | - Get cell: table=orders, row=4, col=orderId
+09:49:54 | - Get cell: table=orders, row=4, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=4, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=4, col=orderAction
+09:49:54 | - Get cell: table=orders, row=4, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=4, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=5, col=symbol
+09:49:54 | - Get cell: table=orders, row=5, col=orderDate
+09:49:54 | - Get cell: table=orders, row=5, col=orderId
+09:49:54 | - Get cell: table=orders, row=5, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=5, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=5, col=orderAction
+09:49:54 | - Get cell: table=orders, row=5, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=5, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=6, col=symbol
+09:49:54 | - Get cell: table=orders, row=6, col=orderDate
+09:49:54 | - Get cell: table=orders, row=6, col=orderId
+09:49:54 | - Get cell: table=orders, row=6, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=6, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=6, col=orderAction
+09:49:54 | - Get cell: table=orders, row=6, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=6, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=7, col=symbol
+09:49:54 | - Get cell: table=orders, row=7, col=orderDate
+09:49:54 | - Get cell: table=orders, row=7, col=orderId
+09:49:54 | - Get cell: table=orders, row=7, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=7, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=7, col=orderAction
+09:49:54 | - Get cell: table=orders, row=7, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=7, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=8, col=symbol
+09:49:54 | - Get cell: table=orders, row=8, col=orderDate
+09:49:54 | - Get cell: table=orders, row=8, col=orderId
+09:49:54 | - Get cell: table=orders, row=8, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=8, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=8, col=orderAction
+09:49:54 | - Get cell: table=orders, row=8, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=8, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=9, col=symbol
+09:49:54 | - Get cell: table=orders, row=9, col=orderDate
+09:49:54 | - Get cell: table=orders, row=9, col=orderId
+09:49:54 | - Get cell: table=orders, row=9, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=9, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=9, col=orderAction
+09:49:54 | - Get cell: table=orders, row=9, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=9, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=10, col=symbol
+09:49:54 | - Get cell: table=orders, row=10, col=orderDate
+09:49:54 | - Get cell: table=orders, row=10, col=orderId
+09:49:54 | - Get cell: table=orders, row=10, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=10, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=10, col=orderAction
+09:49:54 | - Get cell: table=orders, row=10, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=10, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=11, col=symbol
+09:49:54 | - Get cell: table=orders, row=11, col=orderDate
+09:49:54 | - Get cell: table=orders, row=11, col=orderId
+09:49:54 | - Get cell: table=orders, row=11, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=11, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=11, col=orderAction
+09:49:54 | - Get cell: table=orders, row=11, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=11, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=12, col=symbol
+09:49:54 | - Get cell: table=orders, row=12, col=orderDate
+09:49:54 | - Get cell: table=orders, row=12, col=orderId
+09:49:54 | - Get cell: table=orders, row=12, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=12, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=12, col=orderAction
+09:49:54 | - Get cell: table=orders, row=12, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=12, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=13, col=symbol
+09:49:54 | - Get cell: table=orders, row=13, col=orderDate
+09:49:54 | - Get cell: table=orders, row=13, col=orderId
+09:49:54 | - Get cell: table=orders, row=13, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=13, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=13, col=orderAction
+09:49:54 | - Get cell: table=orders, row=13, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=13, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=14, col=symbol
+09:49:54 | - Get cell: table=orders, row=14, col=orderDate
+09:49:54 | - Get cell: table=orders, row=14, col=orderId
+09:49:54 | - Get cell: table=orders, row=14, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=14, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=14, col=orderAction
+09:49:54 | - Get cell: table=orders, row=14, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=14, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=15, col=symbol
+09:49:54 | - Get cell: table=orders, row=15, col=orderDate
+09:49:54 | - Get cell: table=orders, row=15, col=orderId
+09:49:54 | - Get cell: table=orders, row=15, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=15, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=15, col=orderAction
+09:49:54 | - Get cell: table=orders, row=15, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=15, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=16, col=symbol
+09:49:54 | - Get cell: table=orders, row=16, col=orderDate
+09:49:54 | - Get cell: table=orders, row=16, col=orderId
+09:49:54 | - Get cell: table=orders, row=16, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=16, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=16, col=orderAction
+09:49:54 | - Get cell: table=orders, row=16, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=16, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=17, col=symbol
+09:49:54 | - Get cell: table=orders, row=17, col=orderDate
+09:49:54 | - Get cell: table=orders, row=17, col=orderId
+09:49:54 | - Get cell: table=orders, row=17, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=17, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=17, col=orderAction
+09:49:54 | - Get cell: table=orders, row=17, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=17, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=18, col=symbol
+09:49:54 | - Get cell: table=orders, row=18, col=orderDate
+09:49:54 | - Get cell: table=orders, row=18, col=orderId
+09:49:54 | - Get cell: table=orders, row=18, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=18, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=18, col=orderAction
+09:49:54 | - Get cell: table=orders, row=18, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=18, col=orderOrigin
+09:49:54 | - Get cell: table=orders, row=19, col=symbol
+09:49:54 | - Get cell: table=orders, row=19, col=orderDate
+09:49:54 | - Get cell: table=orders, row=19, col=orderId
+09:49:54 | - Get cell: table=orders, row=19, col=boughtVolume
+09:49:54 | - Get cell: table=orders, row=19, col=soldVolume
+09:49:54 | - Get cell: table=orders, row=19, col=orderAction
+09:49:54 | - Get cell: table=orders, row=19, col=executedPrice
+09:49:54 | - Get cell: table=orders, row=19, col=orderOrigin
+09:49:54 | - Count rows: closed-positions
+09:50:05 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-closed-positions-row-20-cell-orderId"]'): TimeoutException after 1(s)
+09:50:05 | - Get cell: table=closed-positions, row=0, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=0, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=0, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=0, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=0, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=0, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=0, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=0, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=0, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=0, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=0, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=1, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=1, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=1, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=1, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=1, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=1, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=1, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=1, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=1, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=1, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=1, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=2, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=2, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=2, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=2, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=2, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=2, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=2, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=2, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=2, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=2, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=2, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=3, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=3, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=3, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=3, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=3, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=3, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=3, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=3, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=3, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=3, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=3, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=4, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=4, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=4, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=4, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=4, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=4, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=4, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=4, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=4, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=4, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=4, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=5, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=5, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=5, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=5, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=5, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=5, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=5, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=5, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=5, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=5, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=5, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=6, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=6, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=6, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=6, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=6, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=6, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=6, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=6, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=6, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=6, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=6, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=7, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=7, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=7, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=7, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=7, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=7, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=7, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=7, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=7, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=7, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=7, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=8, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=8, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=8, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=8, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=8, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=8, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=8, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=8, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=8, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=8, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=8, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=9, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=9, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=9, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=9, col=openDate
+09:50:05 | - Get cell: table=closed-positions, row=9, col=entryPrice
+09:50:05 | - Get cell: table=closed-positions, row=9, col=closeDate
+09:50:05 | - Get cell: table=closed-positions, row=9, col=closeVolume
+09:50:05 | - Get cell: table=closed-positions, row=9, col=exitPrice
+09:50:05 | - Get cell: table=closed-positions, row=9, col=interest
+09:50:05 | - Get cell: table=closed-positions, row=9, col=commission
+09:50:05 | - Get cell: table=closed-positions, row=9, col=profitLoss
+09:50:05 | - Get cell: table=closed-positions, row=10, col=symbol
+09:50:05 | - Get cell: table=closed-positions, row=10, col=orderId
+09:50:05 | - Get cell: table=closed-positions, row=10, col=positionId
+09:50:05 | - Get cell: table=closed-positions, row=10, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=10, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=10, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=10, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=10, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=10, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=10, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=10, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=11, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=11, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=11, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=11, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=11, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=11, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=11, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=11, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=11, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=11, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=11, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=12, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=12, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=12, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=12, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=12, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=12, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=12, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=12, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=12, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=12, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=12, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=13, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=13, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=13, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=13, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=13, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=13, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=13, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=13, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=13, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=13, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=13, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=14, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=14, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=14, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=14, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=14, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=14, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=14, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=14, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=14, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=14, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=14, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=15, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=15, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=15, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=15, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=15, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=15, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=15, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=15, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=15, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=15, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=15, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=16, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=16, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=16, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=16, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=16, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=16, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=16, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=16, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=16, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=16, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=16, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=17, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=17, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=17, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=17, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=17, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=17, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=17, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=17, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=17, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=17, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=17, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=18, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=18, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=18, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=18, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=18, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=18, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=18, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=18, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=18, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=18, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=18, col=profitLoss
+09:50:06 | - Get cell: table=closed-positions, row=19, col=symbol
+09:50:06 | - Get cell: table=closed-positions, row=19, col=orderId
+09:50:06 | - Get cell: table=closed-positions, row=19, col=positionId
+09:50:06 | - Get cell: table=closed-positions, row=19, col=openDate
+09:50:06 | - Get cell: table=closed-positions, row=19, col=entryPrice
+09:50:06 | - Get cell: table=closed-positions, row=19, col=closeDate
+09:50:06 | - Get cell: table=closed-positions, row=19, col=closeVolume
+09:50:06 | - Get cell: table=closed-positions, row=19, col=exitPrice
+09:50:06 | - Get cell: table=closed-positions, row=19, col=interest
+09:50:06 | - Get cell: table=closed-positions, row=19, col=commission
+09:50:06 | - Get cell: table=closed-positions, row=19, col=profitLoss
+09:50:06 | - Count rows: open-positions
+09:50:16 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-open-positions-row-20-cell-orderId"]'): TimeoutException after 1(s)
+09:50:16 | - Get cell: table=open-positions, row=0, col=symbol
+09:50:16 | - Get cell: table=open-positions, row=0, col=orderId
+09:50:16 | - Get cell: table=open-positions, row=0, col=positionId
+09:50:16 | - Get cell: table=open-positions, row=0, col=openVolume
+09:50:16 | - Get cell: table=open-positions, row=0, col=openDate
+09:50:16 | - Get cell: table=open-positions, row=0, col=entryPrice
+09:50:16 | - Get cell: table=open-positions, row=0, col=currentPrice
+09:50:16 | - Get cell: table=open-positions, row=0, col=dailyInterest
+09:50:16 | - Get cell: table=open-positions, row=0, col=accumulatedInterest
+09:50:16 | - Get cell: table=open-positions, row=0, col=commission
+09:50:16 | - Get cell: table=open-positions, row=0, col=floatingPnl
+09:50:16 | - Get cell: table=open-positions, row=1, col=symbol
+09:50:16 | - Get cell: table=open-positions, row=1, col=orderId
+09:50:16 | - Get cell: table=open-positions, row=1, col=positionId
+09:50:16 | - Get cell: table=open-positions, row=1, col=openVolume
+09:50:16 | - Get cell: table=open-positions, row=1, col=openDate
+09:50:16 | - Get cell: table=open-positions, row=1, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=1, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=1, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=1, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=1, col=commission
+09:50:17 | - Get cell: table=open-positions, row=1, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=2, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=2, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=2, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=2, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=2, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=2, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=2, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=2, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=2, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=2, col=commission
+09:50:17 | - Get cell: table=open-positions, row=2, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=3, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=3, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=3, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=3, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=3, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=3, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=3, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=3, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=3, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=3, col=commission
+09:50:17 | - Get cell: table=open-positions, row=3, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=4, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=4, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=4, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=4, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=4, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=4, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=4, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=4, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=4, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=4, col=commission
+09:50:17 | - Get cell: table=open-positions, row=4, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=5, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=5, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=5, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=5, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=5, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=5, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=5, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=5, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=5, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=5, col=commission
+09:50:17 | - Get cell: table=open-positions, row=5, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=6, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=6, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=6, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=6, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=6, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=6, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=6, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=6, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=6, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=6, col=commission
+09:50:17 | - Get cell: table=open-positions, row=6, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=7, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=7, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=7, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=7, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=7, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=7, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=7, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=7, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=7, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=7, col=commission
+09:50:17 | - Get cell: table=open-positions, row=7, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=8, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=8, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=8, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=8, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=8, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=8, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=8, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=8, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=8, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=8, col=commission
+09:50:17 | - Get cell: table=open-positions, row=8, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=9, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=9, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=9, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=9, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=9, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=9, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=9, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=9, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=9, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=9, col=commission
+09:50:17 | - Get cell: table=open-positions, row=9, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=10, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=10, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=10, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=10, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=10, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=10, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=10, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=10, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=10, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=10, col=commission
+09:50:17 | - Get cell: table=open-positions, row=10, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=11, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=11, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=11, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=11, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=11, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=11, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=11, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=11, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=11, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=11, col=commission
+09:50:17 | - Get cell: table=open-positions, row=11, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=12, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=12, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=12, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=12, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=12, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=12, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=12, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=12, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=12, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=12, col=commission
+09:50:17 | - Get cell: table=open-positions, row=12, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=13, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=13, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=13, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=13, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=13, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=13, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=13, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=13, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=13, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=13, col=commission
+09:50:17 | - Get cell: table=open-positions, row=13, col=floatingPnl
+09:50:17 | - Get cell: table=open-positions, row=14, col=symbol
+09:50:17 | - Get cell: table=open-positions, row=14, col=orderId
+09:50:17 | - Get cell: table=open-positions, row=14, col=positionId
+09:50:17 | - Get cell: table=open-positions, row=14, col=openVolume
+09:50:17 | - Get cell: table=open-positions, row=14, col=openDate
+09:50:17 | - Get cell: table=open-positions, row=14, col=entryPrice
+09:50:17 | - Get cell: table=open-positions, row=14, col=currentPrice
+09:50:17 | - Get cell: table=open-positions, row=14, col=dailyInterest
+09:50:17 | - Get cell: table=open-positions, row=14, col=accumulatedInterest
+09:50:17 | - Get cell: table=open-positions, row=14, col=commission
+09:50:17 | - Get cell: table=open-positions, row=14, col=floatingPnl
+09:50:18 | - Get cell: table=open-positions, row=15, col=symbol
+09:50:18 | - Get cell: table=open-positions, row=15, col=orderId
+09:50:18 | - Get cell: table=open-positions, row=15, col=positionId
+09:50:18 | - Get cell: table=open-positions, row=15, col=openVolume
+09:50:18 | - Get cell: table=open-positions, row=15, col=openDate
+09:50:18 | - Get cell: table=open-positions, row=15, col=entryPrice
+09:50:18 | - Get cell: table=open-positions, row=15, col=currentPrice
+09:50:18 | - Get cell: table=open-positions, row=15, col=dailyInterest
+09:50:18 | - Get cell: table=open-positions, row=15, col=accumulatedInterest
+09:50:18 | - Get cell: table=open-positions, row=15, col=commission
+09:50:18 | - Get cell: table=open-positions, row=15, col=floatingPnl
+09:50:18 | - Get cell: table=open-positions, row=16, col=symbol
+09:50:18 | - Get cell: table=open-positions, row=16, col=orderId
+09:50:18 | - Get cell: table=open-positions, row=16, col=positionId
+09:50:18 | - Get cell: table=open-positions, row=16, col=openVolume
+09:50:18 | - Get cell: table=open-positions, row=16, col=openDate
+09:50:18 | - Get cell: table=open-positions, row=16, col=entryPrice
+09:50:18 | - Get cell: table=open-positions, row=16, col=currentPrice
+09:50:18 | - Get cell: table=open-positions, row=16, col=dailyInterest
+09:50:18 | - Get cell: table=open-positions, row=16, col=accumulatedInterest
+09:50:18 | - Get cell: table=open-positions, row=16, col=commission
+09:50:18 | - Get cell: table=open-positions, row=16, col=floatingPnl
+09:50:18 | - Get cell: table=open-positions, row=17, col=symbol
+09:50:18 | - Get cell: table=open-positions, row=17, col=orderId
+09:50:18 | - Get cell: table=open-positions, row=17, col=positionId
+09:50:18 | - Get cell: table=open-positions, row=17, col=openVolume
+09:50:18 | - Get cell: table=open-positions, row=17, col=openDate
+09:50:18 | - Get cell: table=open-positions, row=17, col=entryPrice
+09:50:18 | - Get cell: table=open-positions, row=17, col=currentPrice
+09:50:18 | - Get cell: table=open-positions, row=17, col=dailyInterest
+09:50:18 | - Get cell: table=open-positions, row=17, col=accumulatedInterest
+09:50:18 | - Get cell: table=open-positions, row=17, col=commission
+09:50:18 | - Get cell: table=open-positions, row=17, col=floatingPnl
+09:50:18 | - Get cell: table=open-positions, row=18, col=symbol
+09:50:18 | - Get cell: table=open-positions, row=18, col=orderId
+09:50:18 | - Get cell: table=open-positions, row=18, col=positionId
+09:50:18 | - Get cell: table=open-positions, row=18, col=openVolume
+09:50:18 | - Get cell: table=open-positions, row=18, col=openDate
+09:50:18 | - Get cell: table=open-positions, row=18, col=entryPrice
+09:50:18 | - Get cell: table=open-positions, row=18, col=currentPrice
+09:50:18 | - Get cell: table=open-positions, row=18, col=dailyInterest
+09:50:18 | - Get cell: table=open-positions, row=18, col=accumulatedInterest
+09:50:18 | - Get cell: table=open-positions, row=18, col=commission
+09:50:18 | - Get cell: table=open-positions, row=18, col=floatingPnl
+09:50:18 | - Get cell: table=open-positions, row=19, col=symbol
+09:50:18 | - Get cell: table=open-positions, row=19, col=orderId
+09:50:18 | - Get cell: table=open-positions, row=19, col=positionId
+09:50:18 | - Get cell: table=open-positions, row=19, col=openVolume
+09:50:18 | - Get cell: table=open-positions, row=19, col=openDate
+09:50:18 | - Get cell: table=open-positions, row=19, col=entryPrice
+09:50:18 | - Get cell: table=open-positions, row=19, col=currentPrice
+09:50:18 | - Get cell: table=open-positions, row=19, col=dailyInterest
+09:50:18 | - Get cell: table=open-positions, row=19, col=accumulatedInterest
+09:50:18 | - Get cell: table=open-positions, row=19, col=commission
+09:50:18 | - Get cell: table=open-positions, row=19, col=floatingPnl
+09:50:18 | - Count rows: transactions
+09:50:28 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-transactions-row-0-cell-transactionId"]'): TimeoutException after 1(s)
+09:50:28 | Step 2: Note the current generation timestamp
+09:50:28 | Step 3: Click 'Export PDF' button
+09:50:28 | - Click Export PDF
+09:50:28 | Step 4: Wait for generation timestamp to update (max 10s)
+09:50:33 | - Timestamp updated: 'Generated 13 July 2026 02:50:29'
+09:50:33 | Step 5: New timestamp: 'Generated 13 July 2026 02:50:29'
+09:50:33 | Verify generation timestamp is newer after Export PDF
+09:50:33 | Step 6: Parse the downloaded PDF
+09:50:36 | - Latest file: /Users/nguyengiabao.tran/Downloads/statement-019f5961-6106-7ba8-9198-56d5196ed6d7.pdf
+09:50:36 | - Reading PDF: /Users/nguyengiabao.tran/Downloads/statement-019f5961-6106-7ba8-9198-56d5196ed6d7.pdf
+09:50:37 | [Setup] Parsed PDF: /Users/nguyengiabao.tran/Downloads/statement-019f5961-6106-7ba8-9198-56d5196ed6d7.pdf
+09:50:37 | Verify PDF content matches UI data (monthly)
+09:50:37 | - Verifying PDF matches UI data
+09:50:37 | [Teardown] Delete downloaded PDF: /Users/nguyengiabao.tran/Downloads/statement-019f5961-6106-7ba8-9198-56d5196ed6d7.pdf
+09:50:37 | - Deleted file: /Users/nguyengiabao.tran/Downloads/statement-019f5961-6106-7ba8-9198-56d5196ed6d7.pdf
+09:50:38 | - Stop recording screen

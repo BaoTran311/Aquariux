@@ -1,0 +1,34 @@
+21:59:10 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+21:59:10 | - Start recording screen
+21:59:11 | Step 1: Search with: 'auto'
+21:59:11 | - Search for: auto
+21:59:11 | Step 2: Click sort on column: 'Name'
+21:59:11 | - Sort by: 'Name'
+21:59:11 | Verify column sorts alphabetically a-z
+21:59:11 | - Get table data
+21:59:13 | - Go to the first page
+21:59:14 | - Total records: 15
+21:59:14 | - Comparing: 
+Actual:    ['ARCz_Auto-XFBjEeih', 'BADV_Auto_jotOuODp', 'inib_Auto_AmwcPjgH', 'JhOm_Auto.nkwuKNYT', 'liUM_Auto-gLeqyttD', 'MGtG_Auto/UKLwKEwg', 'oWvG_Auto-LpaCcXyb', 'RwIR_Auto-GcddgQsl', 'tiuV_Auto_qnJtvvxI', 'ulrK_Auto-iKezxpKV', 'vamO_Auto/dkOkswQd', 'VUUT_Auto-GTRYxCyJ', 'wjvu_Auto-IvfkhqFZ', 'wuSS_Auto/rURKRZgW', 'YDla_Auto.zGgRxjjt']
+Expected:  ['ARCz_Auto-XFBjEeih', 'BADV_Auto_jotOuODp', 'inib_Auto_AmwcPjgH', 'JhOm_Auto.nkwuKNYT', 'liUM_Auto-gLeqyttD', 'MGtG_Auto/UKLwKEwg', 'oWvG_Auto-LpaCcXyb', 'RwIR_Auto-GcddgQsl', 'tiuV_Auto_qnJtvvxI', 'ulrK_Auto-iKezxpKV', 'vamO_Auto/dkOkswQd', 'VUUT_Auto-GTRYxCyJ', 'wjvu_Auto-IvfkhqFZ', 'wuSS_Auto/rURKRZgW', 'YDla_Auto.zGgRxjjt']
+21:59:14 | Step 3: Click sort again on column: 'Name'
+21:59:14 | - Sort by: 'Name'
+21:59:14 | Verify column sorts alphabetically z-a
+21:59:14 | - Get table data
+21:59:16 | - Go to the first page
+21:59:16 | - Total records: 15
+21:59:16 | - Comparing: 
+Actual:    ['YDla_Auto.zGgRxjjt', 'wuSS_Auto/rURKRZgW', 'wjvu_Auto-IvfkhqFZ', 'VUUT_Auto-GTRYxCyJ', 'vamO_Auto/dkOkswQd', 'ulrK_Auto-iKezxpKV', 'tiuV_Auto_qnJtvvxI', 'RwIR_Auto-GcddgQsl', 'oWvG_Auto-LpaCcXyb', 'MGtG_Auto/UKLwKEwg', 'liUM_Auto-gLeqyttD', 'JhOm_Auto.nkwuKNYT', 'inib_Auto_AmwcPjgH', 'BADV_Auto_jotOuODp', 'ARCz_Auto-XFBjEeih']
+Expected:  ['YDla_Auto.zGgRxjjt', 'wuSS_Auto/rURKRZgW', 'wjvu_Auto-IvfkhqFZ', 'VUUT_Auto-GTRYxCyJ', 'vamO_Auto/dkOkswQd', 'ulrK_Auto-iKezxpKV', 'tiuV_Auto_qnJtvvxI', 'RwIR_Auto-GcddgQsl', 'oWvG_Auto-LpaCcXyb', 'MGtG_Auto/UKLwKEwg', 'liUM_Auto-gLeqyttD', 'JhOm_Auto.nkwuKNYT', 'inib_Auto_AmwcPjgH', 'BADV_Auto_jotOuODp', 'ARCz_Auto-XFBjEeih']
+21:59:16 | Step 4: Clear search
+21:59:16 | - Clear search input
+21:59:17 | Verify column still sorts alphabetically z-a
+21:59:17 | - Get table data
+21:59:19 | - Click 'next' button on table
+21:59:20 | - Click 'next' button on table
+21:59:21 | - Go to the first page
+21:59:21 | - Total records: 52
+21:59:21 | - Comparing: 
+Actual:    ['YDla_Auto.zGgRxjjt', 'wuSS_Auto/rURKRZgW', 'wjvu_Auto-IvfkhqFZ', 'WilliamBanh', 'WilliamBanh', 'WilliamBanh', 'WilliamBanh', 'VUUT_Auto-GTRYxCyJ', 'vamO_Auto/dkOkswQd', 'ulrK_Auto-iKezxpKV', 'tuan test', 'tiuV_Auto_qnJtvvxI', 'Testing', 'test_api_key', 'test', 'test', 'RwIR_Auto-GcddgQsl', 'Past Expiry Key', 'Past Expiry Key', 'OxigenProviderVN', 'oWvG_Auto-LpaCcXyb', 'MGtG_Auto/UKLwKEwg', 'liUM_Auto-gLeqyttD', 'JW Birthday Finished', 'Jiun Xian', 'JhOm_Auto.nkwuKNYT', 'Integration Test Key', 'inib_Auto_AmwcPjgH', 'Inactive Pre-provisioned Key', 'Inactive Pre-provisioned Key', 'HI_BAO_PLEASE_DONT_DELETE', 'dtest', 'Denlie ATTABOY', 'cytest', 'CAICAI4', 'CAICAI3', 'CAICAI2', 'CAICAI', 'BQN_TEST', 'bao_api_key', 'banhdainam@gmail.com', 'BADV_Auto_jotOuODp', 'AUD/CAD', 'AUD/CAD', 'AUD/CAD', 'asdasdasd', 'asd', 'ARCz_Auto-XFBjEeih', 'Alexis', 'Active Key With Expiry', 'Active Key With Expiry', '123123123123']
+Expected:  ['YDla_Auto.zGgRxjjt', 'wuSS_Auto/rURKRZgW', 'wjvu_Auto-IvfkhqFZ', 'WilliamBanh', 'WilliamBanh', 'WilliamBanh', 'WilliamBanh', 'VUUT_Auto-GTRYxCyJ', 'vamO_Auto/dkOkswQd', 'ulrK_Auto-iKezxpKV', 'tuan test', 'tiuV_Auto_qnJtvvxI', 'Testing', 'test_api_key', 'test', 'test', 'RwIR_Auto-GcddgQsl', 'Past Expiry Key', 'Past Expiry Key', 'OxigenProviderVN', 'oWvG_Auto-LpaCcXyb', 'MGtG_Auto/UKLwKEwg', 'liUM_Auto-gLeqyttD', 'JW Birthday Finished', 'Jiun Xian', 'JhOm_Auto.nkwuKNYT', 'Integration Test Key', 'inib_Auto_AmwcPjgH', 'Inactive Pre-provisioned Key', 'Inactive Pre-provisioned Key', 'HI_BAO_PLEASE_DONT_DELETE', 'dtest', 'Denlie ATTABOY', 'cytest', 'CAICAI4', 'CAICAI3', 'CAICAI2', 'CAICAI', 'BQN_TEST', 'bao_api_key', 'banhdainam@gmail.com', 'BADV_Auto_jotOuODp', 'AUD/CAD', 'AUD/CAD', 'AUD/CAD', 'asdasdasd', 'asd', 'ARCz_Auto-XFBjEeih', 'Alexis', 'Active Key With Expiry', 'Active Key With Expiry', '123123123123']
+21:59:22 | - Stop recording screen

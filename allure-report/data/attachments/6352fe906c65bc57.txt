@@ -1,0 +1,18 @@
+00:33:53 | - Running test case: test_UG_ADD_TC03_negative_required_fields.py
+00:33:53 | - Start recording screen
+00:33:53 | [Setup] Click on 'Add User Group' button
+00:33:53 | - Click 'Add User Group' button
+00:33:54 | Step 1: Submit form without field: 'Name'
+00:33:54 | - Input description: 'ztcVicFbNa - description'
+00:33:54 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:33:54 | - Open dropdown Book Type
+00:33:54 | - Select Book Type
+00:33:54 | - Input margin call level: 12.05
+00:33:54 | - Input stop out level: 29.61
+00:33:54 | - Input commission: 6.83
+00:33:54 | - Click 'Save' button
+00:33:54 | Verify error validation: 'Name is required'
+00:33:54 | Verify panel remains open
+00:33:54 | [Teardown] Click 'x' icon to close the panel
+00:33:54 | - Click 'x' icon
+00:33:56 | - Stop recording screen

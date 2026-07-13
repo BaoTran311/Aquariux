@@ -1,0 +1,82 @@
+18:01:51 | - Running test case: test_AS_TC19_positive_resize_columns_table_overflow.py
+18:01:51 | - Start recording screen
+18:01:51 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:01:51 | - Select month: latest
+18:01:51 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:01:51 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:01:52 | - Select first available trading account
+18:01:52 | - Click Apply filters
+18:01:52 | - Wait for statement data to load
+18:01:57 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:01:58 | - Size of column: 'Symbol': 'height: 32, width: 220'
+18:01:58 | - Size of column: 'Order Date/Time': 'height: 32, width: 220'
+18:01:58 | - Size of column: 'Order ID': 'height: 32, width: 220'
+18:01:58 | - Size of column: 'Buy Volume': 'height: 32, width: 220'
+18:01:58 | - Size of column: 'Sell Volume': 'height: 32, width: 220'
+18:01:58 | - Size of column: 'Position': 'height: 32, width: 220'
+18:01:58 | - Size of column: 'Executed Price': 'height: 32, width: 220'
+18:01:58 | Step 1: Widen first col until overflow the table viewport
+18:01:58 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:01:58 | - Expanding 'Symbol' to fill viewport (target=1272px)
+18:01:58 | - Size of column: 'Symbol': 'height: 32, width: 220'
+18:01:58 | - Increase column: 'Symbol' by 1052px
+18:02:00 | - Size of column: 'Symbol': 'height: 32, width: 1272'
+18:02:00 | - Table is overflow viewport (attempt:2)
+18:02:00 | Verify column 'Order Date/Time' overflows past the viewport
+18:02:00 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:02:00 | - Rect of column: 'Order Date/Time': 'height: 32, width: 220, x: 1860, y: 775'
+18:02:00 | Verify column 'Order ID' overflows past the viewport
+18:02:00 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:02:00 | - Rect of column: 'Order ID': 'height: 32, width: 220, x: 2080, y: 775'
+18:02:00 | Verify column 'Buy Volume' overflows past the viewport
+18:02:00 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:02:00 | - Rect of column: 'Buy Volume': 'height: 32, width: 220, x: 2300, y: 775'
+18:02:00 | Verify column 'Sell Volume' overflows past the viewport
+18:02:00 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:02:00 | - Rect of column: 'Sell Volume': 'height: 32, width: 220, x: 2520, y: 775'
+18:02:00 | Verify column 'Position' overflows past the viewport
+18:02:00 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:02:00 | - Rect of column: 'Position': 'height: 32, width: 220, x: 2740, y: 775'
+18:02:00 | Verify column 'Executed Price' overflows past the viewport
+18:02:00 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:02:00 | - Rect of column: 'Executed Price': 'height: 32, width: 220, x: 2960, y: 775'
+18:02:00 | Verify column 'Order Origin' overflows past the viewport
+18:02:00 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:02:00 | - Rect of column: 'Order Origin': 'height: 32, width: 220, x: 3180, y: 775'
+18:02:00 | Verify column 'Symbol' sits inside the viewport
+18:02:00 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 774}
+18:02:00 | - Rect of column: 'Symbol': 'height: 32, width: 1272, x: 588, y: 775'
+18:02:00 | Step 2: Refresh page and re-apply filters
+18:02:00 | - Wait for statement data to load
+18:02:11 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:02:11 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:02:11 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:02:11 | Cost-optimized locator failed after 46ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:02:11 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:02:11 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:02:11 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:02:12 | - Select month: latest
+18:02:12 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:02:12 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:02:12 | - Select first available trading account
+18:02:13 | - Click Apply filters
+18:02:13 | - Wait for statement data to load
+18:02:18 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:02:19 | Verify column widths match initial sizes after refresh
+18:02:19 | - Size of column: 'Symbol': 'height: 32, width: 220'
+18:02:19 | - Size of column: 'Order Date/Time': 'height: 32, width: 220'
+18:02:19 | - Size of column: 'Order ID': 'height: 32, width: 220'
+18:02:19 | - Size of column: 'Buy Volume': 'height: 32, width: 220'
+18:02:19 | - Size of column: 'Sell Volume': 'height: 32, width: 220'
+18:02:19 | - Size of column: 'Position': 'height: 32, width: 220'
+18:02:19 | - Size of column: 'Executed Price': 'height: 32, width: 220'
+18:02:19 | [Teardown] Refresh the page
+18:02:20 | - Wait for statement data to load
+18:02:30 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:02:30 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:02:30 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:02:30 | Cost-optimized locator failed after 49ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:02:30 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:02:30 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:02:30 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:02:32 | - Stop recording screen

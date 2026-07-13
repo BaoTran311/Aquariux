@@ -1,0 +1,63 @@
+22:06:10 | - Running test case: test_AK_GEN_TC09_positive_name_validation.py
+22:06:10 | - Start recording screen
+22:06:10 | [Setup] Open Generate API Key panel
+22:06:10 | - Click 'Generate API Key' button
+22:06:10 | Step 1: Input then clear name
+22:06:10 | - Input name: 'Swbx_Auto/NOsLiyTv'
+22:06:10 | - Clear name field
+22:06:11 | - Trigger blur
+22:06:11 | Verify error validation: 'Name is required'
+22:06:11 | Verify placeholder: 'E.g. Manage order'
+22:06:12 | Step 2: Input name exceeding 50 chars
+22:06:12 | - Input name: 'FZZy_Auto/nzjfObYVeOamsVVJLPntWeTUKyrWjQDkKacnQBYeMCDTtHbhNj'
+22:06:13 | Verify name auto-trimmed to 50 chars
+22:06:13 | Step 3: Input special chars (no restriction for API Keys)
+22:06:13 | - Input name: '-=[]\\;\',./~!@#$%^&*(*)_+{}|:"<>?'
+22:06:13 | Verify no error validation is displayed
+22:06:18 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): FALSE
+22:06:18 | ✘ Check Failed !
+Expected element of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]') to be invisible
+22:06:18 | Step 4: Input name with leading space (no restriction for API Keys)
+22:06:18 | - Input name: ' John'
+22:06:19 | Verify no error validation is displayed
+22:06:24 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): FALSE
+22:06:24 | ✘ Check Failed !
+Expected element of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]') to be invisible
+22:06:24 | Step 5: Input name with trailing space (no restriction for API Keys)
+22:06:24 | - Input name: 'John '
+22:06:24 | Verify no error validation is displayed
+22:06:30 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): FALSE
+22:06:30 | ✘ Check Failed !
+Expected element of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]') to be invisible
+22:06:30 | Step 6: Input valid name: 'Phương'
+22:06:30 | - Input name: 'Phương'
+22:06:30 | Verify no error ('Phương')
+22:06:35 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): FALSE
+22:06:35 | ✘ Check Failed !
+Expected element of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]') to be invisible
+22:06:35 | Step 7: Input valid name: '서현'
+22:06:35 | - Input name: '서현'
+22:06:36 | Verify no error ('서현')
+22:06:41 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): FALSE
+22:06:41 | ✘ Check Failed !
+Expected element of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]') to be invisible
+22:06:41 | Step 8: Input valid name: '小美'
+22:06:41 | - Input name: '小美'
+22:06:41 | Verify no error ('小美')
+22:06:47 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): FALSE
+22:06:47 | ✘ Check Failed !
+Expected element of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]') to be invisible
+22:06:47 | Step 9: Input valid name: 'John Doe'
+22:06:47 | - Input name: 'John Doe'
+22:06:47 | Verify no error ('John Doe')
+22:06:52 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): FALSE
+22:06:52 | ✘ Check Failed !
+Expected element of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]') to be invisible
+22:06:52 | Step 10: Input valid name: 'Y'
+22:06:52 | - Input name: 'Y'
+22:06:53 | Verify no error ('Y')
+22:06:53 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): TRUE
+22:06:53 | [Teardown] Close panel if open
+22:06:53 | - Close panel
+22:06:58 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+22:06:59 | - Stop recording screen

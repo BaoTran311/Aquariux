@@ -1,0 +1,155 @@
+17:49:13 | - Running test case: test_AS_TC08_positive_account_summary_fields.py
+17:49:13 | - Start recording screen
+17:49:13 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:49:13 | - Select month: latest
+17:49:13 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:49:13 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:49:14 | - Select first available trading account
+17:49:14 | - Click Apply filters
+17:49:14 | - Wait for statement data to load
+17:49:20 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:49:21 | Step 1: Observe Balance Summary card
+17:49:21 | Verify balance summary card is displayed
+17:49:21 | Verify all 9 summary field labels are present
+17:49:21 | Step 2: Get balance values from OMS UI
+17:49:21 | Verify all 9 fields have non-empty values
+17:49:21 | ✘ Check Failed !
+Field 'Trading State' should have a value
+17:49:21 | Step 3: Cross-check account summary with EMS Trader API
+17:49:21 | [API] Send API: POST /auth/v1/company/login
+17:49:22 | ➡️  Request Sent: 
+curl --location --request POST 'https://aqxoms-mb.webtrader-release-sit.s20ip12.com/api/auth/v1/company/login' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 92' 
+--data-raw '{"source": "WEB", "password": "Autotest@12345", "userId": "auto_stmt_xwovflsb@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "code": "200",
+    "result": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJsb2dpblRpbWUiOjE3ODM2ODA1NjI1NTEsIm1ldGF0cmFkZXJJZCI6IkFRWC1UQS0wMDAwNDc3MSIsInRlbmFudElkIjoiZGVtbzQiLCJvbXNTZXJ2ZXJJZCI6ImRlbW80Iiwic291cmNlIjoiV0VCIiwidHlwZSI6Ik1FTUJFUiIsInVzZXJJZCI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsInN1YiI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsImlhdCI6MTc4MzY4MDU2MiwiZXhwIjoxNzg2MjcyNTYyfQ.lTG9GVC5AELpJLoPp8iv-CZKTJbp-Ros_PYtUpeXbBaRWOoOdJzRyX9X5PrLnbBEY4X55bDsauBOHkJDW_7TRw",
+        "user": {
+            "source": "WEB",
+            "metatraderId": "AQX-TA-00004771",
+            "metatraderGroup": "HI_UYEN_PLEASE_DONT_DELETE",
+            "isDemo": false,
+            "traderSubscription": "demo4|LIVE|AQX-TA-00004771",
+            "marketSubscription": "demo4|LIVE|HI_UYEN_PLEASE_DONT_DELETE",
+            "tenantId": "demo4",
+            "mainProductCode": "AQXOMS",
+            "omsServerId": "demo4"
+        }
+    }
+}
+
+
+17:49:22 | [API] Trader login successful: auto_stmt_xwovflsb@aquariux.com
+17:49:22 | [API] Send API: GET /user/account/v1
+17:49:22 | ➡️  Request Sent: 
+curl --location --request GET 'https://aqxoms-mb.webtrader-release-sit.s20ip12.com/api/user/account/v1' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJsb2dpblRpbWUiOjE3ODM2ODA1NjI1NTEsIm1ldGF0cmFkZXJJZCI6IkFRWC1UQS0wMDAwNDc3MSIsInRlbmFudElkIjoiZGVtbzQiLCJvbXNTZXJ2ZXJJZCI6ImRlbW80Iiwic291cmNlIjoiV0VCIiwidHlwZSI6Ik1FTUJFUiIsInVzZXJJZCI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsInN1YiI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsImlhdCI6MTc4MzY4MDU2MiwiZXhwIjoxNzg2MjcyNTYyfQ.lTG9GVC5AELpJLoPp8iv-CZKTJbp-Ros_PYtUpeXbBaRWOoOdJzRyX9X5PrLnbBEY4X55bDsauBOHkJDW_7TRw'
+
+ ⬅️  Response Received: 
+{
+    "code": "200",
+    "result": {
+        "tradingAccounts": [
+            {
+                "accountId": "AQX-TA-00004771",
+                "userId": "019eee45-ae6b-787e-81a7-97baeb703549",
+                "clientId": null,
+                "userGroup": "HI_UYEN_PLEASE_DONT_DELETE",
+                "accountName": "Auto_Stmt.xwovflsb",
+                "accountNumber": "AQX-TA-00004771",
+                "baseCurrency": "USD",
+                "isDemo": false,
+                "platform": "AQXOMS",
+                "isVirtual": false,
+                "realizedPL": null,
+                "unRealizedPL": null,
+                "strategy": null,
+                "balance": 1000000000378.16,
+                "margin": 530302.35,
+                "equity": null,
+                "profitLoss": -45814.2,
+                "freeMargin": null,
+                "marginLevel": 188571661.969999,
+                "traderId": "019eee45-ae6b-787e-81a7-97baeb703549",
+                "traderSubcription": "demo4|LIVE|AQX-TA-00004771",
+                "marketSubcription": "demo4|LIVE|HI_UYEN_PLEASE_DONT_DELETE",
+                "traderSubscription": "demo4|LIVE|AQX-TA-00004771",
+                "marketSubscription": "demo4|LIVE|HI_UYEN_PLEASE_DONT_DELETE",
+                "metatraderId": "AQX-TA-00004771",
+                "accountType": "LIVE",
+                "accountDisplayType": "LIVE",
+                "accountTypeName": null,
+                "simple2TradeAccountType": null,
+                "canSwitch": true,
+                "leverage": 100,
+                "readOnly": 0,
+                "lastVerifiedDate": null,
+                "language": "en_GB",
+                "marginCall": 90.0,
+                "marginStopout": 80.0,
+                "pnlGross": null,
+                "buyingPower": null,
+                "sellingPower": null,
+                "serverId": 53,
+                "serverUuid": "0929aa1f-085f-4069-a9b9-1fd7f3c2e650",
+                "mainProductCode": "AQXOMS",
+                "omsServerId": "demo4",
+                "notional": null,
+                "commission": null,
+                "swaps": null,
+                "availableWithdraw": null,
+                "credit": null,
+                "tradingState": null,
+                "isOutdated": false,
+                "selected": true,
+                "dealer": false,
+                "viewOnly": false,
+                "enable": true
+            }
+        ],
+        "crmType": "AQXOMS",
+        "crmKYCStatus": null,
+        "loginConfig": null,
+        "notificationTopics": [
+            "demo4_system",
+            "demo4_MARGIN-LIVE-019eee45-ae6b-787e-81a7-97baeb703549",
+            "demo4_LIVE-019eee45-ae6b-787e-81a7-97baeb703549",
+            "demo4_HI_UYEN_PLEASE_DONT_DELETE"
+        ]
+    }
+}
+
+
+17:49:22 | Step 4: EMS API expected: {'Equity': None, 'Free Margin': None, 'Margin Level': 188571661.969999, 'Balance': 1000000000378.16, 'Margin Used': 530302.35, 'Commission': None, 'Interest': None, 'Floating Profit / Loss': -45814.2, 'Trading State': None}
+17:49:22 | Step 5: OMS UI parsed: {'Equity': 999999957475.56, 'Free Margin': 999999403594.33, 'Margin Level': 180544113.34, 'Balance': 1000000000378.16, 'Margin Used': 553881.23, 'Commission': 0.0, 'Interest': 0.0, 'Floating Profit / Loss': -42902.6, 'Trading State': None}
+17:49:22 | Verify OMS UI account summary matches EMS Trader API
+17:49:22 | - Comparison: 
+============================================================
+Field                  | Expected         | Actual          
+------------------------------------------------------------
+Balance                | 1000000000378.16 | 1000000000378.16
+Commission             | None             | 0.0             
+Equity                 | None             | 999999957475.56 
+Floating Profit / Loss | -45814.2         | -42902.6        
+Free Margin            | None             | 999999403594.33 
+Interest               | None             | 0.0             
+Margin Level           | 188571661.969999 | 180544113.34    
+Margin Used            | 530302.35        | 553881.23       
+Trading State          | None             | None            
+============================================================
+17:49:22 | ✘ Check Failed !
+OMS UI vs EMS API account summary
+17:49:23 | - Stop recording screen

@@ -1,0 +1,20 @@
+18:05:24 | - Running test case: test_AS_TC20_positive_export_pdf.py
+18:05:24 | - Start recording screen
+18:05:24 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:05:24 | - Select month: latest
+18:05:24 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:05:24 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:05:25 | - Select first available trading account
+18:05:25 | - Click Apply filters
+18:05:25 | - Wait for statement data to load
+18:05:30 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:05:31 | Step 1: Expand Daily accordion and select the first daily statement
+18:05:31 | - Click first available Daily Statement
+18:05:32 | - Wait for 'Daily Statement' present in locator ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:05:32 | Step 2: Read all UI data (daily statement)
+18:05:32 | - Reading all UI data for PDF comparison
+18:05:32 | - Count rows: orders
+18:05:42 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-orders-row-0-cell-orderId"]'): TimeoutException after 1(s)
+18:05:42 | - Count rows: closed-positions
+18:05:52 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-closed-positions-row-0-cell-orderId"]'): TimeoutException after 1(s)
+18:05:53 | - Stop recording screen

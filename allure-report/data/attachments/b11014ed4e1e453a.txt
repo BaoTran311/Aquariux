@@ -1,0 +1,30 @@
+18:06:36 | - Running test case: test_AS_TC24_positive_current_price_snapshot.py
+18:06:36 | - Start recording screen
+18:06:36 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:06:36 | - Select month: latest
+18:06:36 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:06:36 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:06:37 | - Select first available trading account
+18:06:37 | - Click Apply filters
+18:06:37 | - Wait for statement data to load
+18:06:42 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:06:43 | Step 1: Read Current Price values from Open Positions table (first 5 rows)
+18:06:43 | - Get cell: table=open-positions, row=0, col=currentPrice
+18:06:43 | - Get cell: table=open-positions, row=1, col=currentPrice
+18:06:43 | - Get cell: table=open-positions, row=2, col=currentPrice
+18:06:43 | - Get cell: table=open-positions, row=3, col=currentPrice
+18:06:43 | - Get cell: table=open-positions, row=4, col=currentPrice
+18:06:43 | Step 2: Captured Current Price values: ['-', '-', '-', '-', '-']
+18:06:43 | Step 3: Wait 5 seconds (simulate user browsing the page)
+18:06:48 | Step 4: Read Current Price values again (same generation, no page interaction)
+18:06:49 | - Get cell: table=open-positions, row=0, col=currentPrice
+18:06:49 | - Get cell: table=open-positions, row=1, col=currentPrice
+18:06:49 | - Get cell: table=open-positions, row=2, col=currentPrice
+18:06:49 | - Get cell: table=open-positions, row=3, col=currentPrice
+18:06:49 | - Get cell: table=open-positions, row=4, col=currentPrice
+18:06:49 | Step 5: Current Prices after wait: ['-', '-', '-', '-', '-']
+18:06:49 | Verify Current Price values are unchanged within same statement (point-in-time snapshot)
+18:06:49 | - Comparing: 
+Actual:    ['-', '-', '-', '-', '-']
+Expected:  ['-', '-', '-', '-', '-']
+18:06:50 | - Stop recording screen

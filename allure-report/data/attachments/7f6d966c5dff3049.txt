@@ -1,0 +1,652 @@
+17:50:17 | - Running test case: test_AS_TC10_positive_order_origin.py
+17:50:17 | - Start recording screen
+17:50:17 | [API] Send API: GET /market/v1/symbols/all
+17:50:18 | ➡️  Request Sent: 
+curl --location --request GET 'https://aqxoms-mb.webtrader-release-sit.s20ip12.com/api/market/v1/symbols/all' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJsb2dpblRpbWUiOjE3ODM2ODA1NjI1NTEsIm1ldGF0cmFkZXJJZCI6IkFRWC1UQS0wMDAwNDc3MSIsInRlbmFudElkIjoiZGVtbzQiLCJvbXNTZXJ2ZXJJZCI6ImRlbW80Iiwic291cmNlIjoiV0VCIiwidHlwZSI6Ik1FTUJFUiIsInVzZXJJZCI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsInN1YiI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsImlhdCI6MTc4MzY4MDU2MiwiZXhwIjoxNzg2MjcyNTYyfQ.lTG9GVC5AELpJLoPp8iv-CZKTJbp-Ros_PYtUpeXbBaRWOoOdJzRyX9X5PrLnbBEY4X55bDsauBOHkJDW_7TRw'
+
+ ⬅️  Response Received: 
+{
+    "code": "200",
+    "result": [
+        {
+            "symbol": "IVKO_AUTO_SZOXIKWC",
+            "symbolGroup": "AFJd_Auto-Rpzmegauditlog",
+            "type": "FOREX",
+            "description": "Auto - description - fKTrvlpnkjuiPXmxJzql",
+            "open": null,
+            "ask": 1797.465,
+            "bid": 1795.935,
+            "high": null,
+            "low": null,
+            "decimal": 2,
+            "watch": false,
+            "online": false,
+            "lastUpdated": 1783680616596,
+            "status": "CLOSED",
+            "side": null,
+            "strikePrice": null,
+            "maturityDate": null,
+            "underlyingSymbol": null,
+            "maxQuoteDelay": null,
+            "tickRulesGroupJSON": null,
+            "tickRulesGroup": null
+        },
+        {
+            "symbol": "VTLU_AUTO_LHTFTNKD-renamed",
+            "symbolGroup": "AFJd_Auto-Rpzmegauditlog",
+            "type": "FOREX",
+            "description": "",
+            "open": 13.027335,
+            "ask": 13.096005,
+            "bid": 13.088525,
+            "high": null,
+            "low": null,
+            "decimal": 5,
+            "watch": false,
+            "online": true,
+            "lastUpdated": 1783680613778,
+            "status": "TRADING",
+            "side": null,
+            "strikePrice": null,
+            "maturityDate": null,
+            "underlyingSymbol": null,
+            "maxQuoteDelay": null,
+            "tickRulesGroupJSON": null,
+            "tickRulesGroup": null
+        },
+        {
+            "symbol": "XBNUSD",
+            "symbolGroup": "AFJd_Auto-Rpzmegauditlog",
+            "type": "CRYPTO",
+            "description": "Auto - description - QiCTYtVKGvUHyPDEQPOu",
+            "open": 237.3385,
+            "ask": 247.1615,
+            "bid": 246.5385,
+            "high": null,
+            "low": null,
+            "decimal": 3,
+            "watch": false,
+            "online": true,
+            "lastUpdated": 1783680613361,
+            "status": "TRADING",
+            "side": null,
+            "strikePrice": null,
+            "maturityDate": null,
+            "underlyingSymbol": null,
+            "maxQuoteDelay": null,
+            "tickRulesGroupJSON": null,
+            "tickRulesGroup": null
+        },
+        {
+            "symbol": "YHIA_AUTO.GJYTUJJR",
+            "symbolGroup": "AFJd_Auto-Rpzmegauditlog",
+            "type": "COM",
+            "description": "Auto - description - SwDznSJFGspYXOURAntz",
+            "open": 29742.35,
+            "ask": 29658.05,
+            "bid": 29643.95,
+            "high": null,
+            "low": null,
+            "decimal": 1,
+            "watch": false,
+            "online": true,
+            "lastUpdated": 1783680616167,
+            "status": "TRADING",
+            "side": null,
+            "strikePrice": null,
+            "maturityDate": null,
+            "underlyingSymbol": null,
+            "maxQuoteDelay": null,
+            "tickRulesGroupJSON": null,
+            "tickRulesGroup": null
+        },
+        {
+            "symbol": "AUDCAD.wt",
+            "symbolGroup": "AUDCAD.wt",
+            "type": "FOREX",
+            "description": "Auto - description - IrrIsRNjOXcXiXMvPLEV",
+            "open": 0.98124,
+            "ask": 0.98431,
+            "bid": 0.98419,
+            "high": null,
+            "low": null,
+            "decimal": 5,
+            "watch": false,
+            "online": false,
+            "lastUpdated": 1783680616380,
+            "status": "CLOSED",
+            "side": null,
+            "strikePrice": null,
+            "maturityDate": null,
+            "underlyingSymbol": null,
+            "maxQuoteDelay": null,
+            "tickRulesGroupJSON": null,
+            "tickRulesGroup": null
+        },
+        {
+            "symbol": "IKRX_AUTO-SULZXPDW",
+            "symbolGroup": "bgkK_Auto_VAshaLTB",
+            "type": "CRYPTO",
+            "description": "Auto - description - NWGSRBpMhEukiILMcrtW",
+            "open": 38577.5,
+            "ask": 39946.5,
+            "bid": 39911.5,
+            "high": null,
+            "low": null,
+            "decimal": 0,
+            "watch": false,
+            "online": true,
+            "lastUpdated": 1783680616729,
+            "status": "TRADING",
+            "side": null,
+            "strikePrice": null,
+            "maturityDate": null,
+            "underlyingSymbol": null,
+            "maxQuoteDelay": null,
+            "tickRulesGroupJSON": null,
+            "tickRulesGroup": null
+        },
+        {
+            "symbol": "EUR50_cam",
+            "symbolGroup": "EUR50_cam",
+            "type": "INDEX",
+            "description": "Auto - description - JqNtPPbzYqsnuVydxqHX",
+            "open": 6281.75,
+            "ask": 6286.65,
+            "bid": 6285.05,
+            "high": null,
+            "low": null,
+            "decimal": 1,
+            "watch": false,
+            "online": true,
+            "lastUpdated": 1783680616167,
+            "status": "TRADING",
+            "side": null,
+            "strikePrice": null,
+            "maturityDate": null,
+            "underlyingSymbol": null,
+            "maxQuoteDelay": null,
+            "tickRulesGroupJSON": null,
+            "tickRulesGroup": null
+        }
+    ]
+}
+
+
+17:50:18 | [API] Send API: GET /market/v1/symbol/detail
+17:50:18 | ➡️  Request Sent: 
+curl --location --request GET 'https://aqxoms-mb.webtrader-release-sit.s20ip12.com/api/market/v1/symbol/detail?symbol=VTLU_AUTO_LHTFTNKD-renamed' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJsb2dpblRpbWUiOjE3ODM2ODA1NjI1NTEsIm1ldGF0cmFkZXJJZCI6IkFRWC1UQS0wMDAwNDc3MSIsInRlbmFudElkIjoiZGVtbzQiLCJvbXNTZXJ2ZXJJZCI6ImRlbW80Iiwic291cmNlIjoiV0VCIiwidHlwZSI6Ik1FTUJFUiIsInVzZXJJZCI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsInN1YiI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsImlhdCI6MTc4MzY4MDU2MiwiZXhwIjoxNzg2MjcyNTYyfQ.lTG9GVC5AELpJLoPp8iv-CZKTJbp-Ros_PYtUpeXbBaRWOoOdJzRyX9X5PrLnbBEY4X55bDsauBOHkJDW_7TRw'
+
+ ⬅️  Response Received: 
+{
+    "code": "200",
+    "result": {
+        "symbol": "VTLU_AUTO_LHTFTNKD-renamed",
+        "symbolGroup": "AFJd_Auto-Rpzmegauditlog",
+        "currency": "GBP",
+        "type": "FOREX",
+        "description": "",
+        "digits": 5,
+        "decimal": 5,
+        "stopsLevel": 50,
+        "contractSize": 10000,
+        "marginCurrency": "USD",
+        "profitMode": 1,
+        "marginMode": 1,
+        "marginHedged": null,
+        "marginPercentage": null,
+        "marginInitial": 150,
+        "marginMaintenance": null,
+        "tradeMode": 2,
+        "exeMode": 1,
+        "gtcPendings": null,
+        "swapType": 0,
+        "swapLong": -2.95,
+        "swapShort": -2.37645,
+        "swapRollover3days": null,
+        "minContractLotSize": 2,
+        "maxContractLotSize": 1002,
+        "lotSizeStep": 2,
+        "pointStep": 1e-05,
+        "marketEOD": 1784332739000,
+        "tradingSessions": [
+            {
+                "dayOfWeek": 1,
+                "openDay": 1,
+                "openTime": "00:00",
+                "closeDay": 1,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 2,
+                "openDay": 2,
+                "openTime": "00:00",
+                "closeDay": 2,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 3,
+                "openDay": 3,
+                "openTime": "00:00",
+                "closeDay": 3,
+                "closeTime": "07:11"
+            },
+            {
+                "dayOfWeek": 4,
+                "openDay": 4,
+                "openTime": "00:00",
+                "closeDay": 4,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 5,
+                "openDay": 5,
+                "openTime": "00:00",
+                "closeDay": 5,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 6,
+                "openDay": 6,
+                "openTime": "00:00",
+                "closeDay": 6,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 7,
+                "openDay": 7,
+                "openTime": "00:00",
+                "closeDay": 7,
+                "closeTime": "23:59"
+            }
+        ],
+        "tradingEpochSessions": [
+            {
+                "dayOfWeek": 1,
+                "tradingStartTime": 1609718400000,
+                "tradingEndTime": 1609804740000
+            },
+            {
+                "dayOfWeek": 2,
+                "tradingStartTime": 1609804800000,
+                "tradingEndTime": 1609891140000
+            },
+            {
+                "dayOfWeek": 3,
+                "tradingStartTime": 1609891200000,
+                "tradingEndTime": 1609917060000
+            },
+            {
+                "dayOfWeek": 4,
+                "tradingStartTime": 1609977600000,
+                "tradingEndTime": 1610063940000
+            },
+            {
+                "dayOfWeek": 5,
+                "tradingStartTime": 1610064000000,
+                "tradingEndTime": 1610150340000
+            },
+            {
+                "dayOfWeek": 6,
+                "tradingStartTime": 1609545600000,
+                "tradingEndTime": 1609631940000
+            },
+            {
+                "dayOfWeek": 7,
+                "tradingStartTime": 1609632000000,
+                "tradingEndTime": 1609718340000
+            }
+        ],
+        "ask": 13.096005,
+        "bid": 13.088525,
+        "open": 13.027335,
+        "high": null,
+        "low": null,
+        "watch": false,
+        "online": true,
+        "lastUpdated": 1783680613778,
+        "status": "TRADING",
+        "profile": null,
+        "industry": null,
+        "indexName": null,
+        "revenue": null,
+        "totalAssets": null,
+        "operatingIncome": null,
+        "netIncome": null,
+        "totalEquity": null,
+        "symbolFillPolicy": null,
+        "tradeFillPolicy": {
+            "marketFillPolicy": [
+                0
+            ],
+            "limitFillPolicy": [
+                0,
+                3,
+                4,
+                5
+            ],
+            "stopFillPolicy": [
+                0,
+                3,
+                4,
+                5
+            ],
+            "stopLimitFillPolicy": []
+        },
+        "tradable": true,
+        "tradableExeMode": true,
+        "maxQuoteDelay": null,
+        "enable": true,
+        "exchangeRate": 1,
+        "quoteCurrencyExchangeRate": 1,
+        "closable": true,
+        "tickSize": 1e-05,
+        "tickValue": 0.1,
+        "holiday": false,
+        "side": null,
+        "strikePrice": null,
+        "expiration": null,
+        "underlyingSymbols": null,
+        "tradableSecurityTypes": null,
+        "securityId": null,
+        "priceType": null,
+        "exerciseStyle": null,
+        "lastPrice": null,
+        "prevClose": null,
+        "uniSymbol": null,
+        "onePipEqual": null,
+        "sessionDiff": false,
+        "abookType": false,
+        "tickRulesGroup": null
+    }
+}
+
+
+17:50:18 | [API] Send API: POST /auth/v1/company/login
+17:50:18 | ➡️  Request Sent: 
+curl --location --request POST 'https://aqxoms-mb.webtrader-release-sit.s20ip12.com/api/auth/v1/company/login' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 90' 
+--data-raw '{"source": "WEB", "password": "Autotest@12345", "userId": "auto_9z07w11ie4q@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "code": "200",
+    "result": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJsb2dpblRpbWUiOjE3ODM2ODA2MTkyMjMsIm1ldGF0cmFkZXJJZCI6IkFRWC1UQS0wMDAwNTU0OCIsInRlbmFudElkIjoiZGVtbzQiLCJvbXNTZXJ2ZXJJZCI6ImRlbW80Iiwic291cmNlIjoiV0VCIiwidHlwZSI6Ik1FTUJFUiIsInVzZXJJZCI6IjAxOWUzYTE5LTcxODQtNzJhOC1iNGU1LTBkZGE5ZjE4NDFhMCIsInN1YiI6IjAxOWUzYTE5LTcxODQtNzJhOC1iNGU1LTBkZGE5ZjE4NDFhMCIsImlhdCI6MTc4MzY4MDYxOSwiZXhwIjoxNzg2MjcyNjE5fQ.KDcP5cj4ts3mU_fZKFuLsl90tElDQ71j3iL22UkungYEF3hSMrtavhlHm0Jnw3QKXKgwBeF3PF6CflnDtENIVg",
+        "user": {
+            "source": "WEB",
+            "metatraderId": "AQX-TA-00005548",
+            "metatraderGroup": "HI_UYEN_PLEASE_DONT_DELETE",
+            "isDemo": false,
+            "traderSubscription": "demo4|LIVE|AQX-TA-00005548",
+            "marketSubscription": "demo4|LIVE|HI_UYEN_PLEASE_DONT_DELETE",
+            "tenantId": "demo4",
+            "mainProductCode": "AQXOMS",
+            "omsServerId": "demo4"
+        }
+    }
+}
+
+
+17:50:18 | [API] Trader login successful: auto_9z07w11ie4q@aquariux.com
+17:50:18 | [API] Send API: GET /market/v1/symbol/detail
+17:50:19 | ➡️  Request Sent: 
+curl --location --request GET 'https://aqxoms-mb.webtrader-release-sit.s20ip12.com/api/market/v1/symbol/detail?symbol=VTLU_AUTO_LHTFTNKD-renamed' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJsb2dpblRpbWUiOjE3ODM2ODA2MTkyMjMsIm1ldGF0cmFkZXJJZCI6IkFRWC1UQS0wMDAwNTU0OCIsInRlbmFudElkIjoiZGVtbzQiLCJvbXNTZXJ2ZXJJZCI6ImRlbW80Iiwic291cmNlIjoiV0VCIiwidHlwZSI6Ik1FTUJFUiIsInVzZXJJZCI6IjAxOWUzYTE5LTcxODQtNzJhOC1iNGU1LTBkZGE5ZjE4NDFhMCIsInN1YiI6IjAxOWUzYTE5LTcxODQtNzJhOC1iNGU1LTBkZGE5ZjE4NDFhMCIsImlhdCI6MTc4MzY4MDYxOSwiZXhwIjoxNzg2MjcyNjE5fQ.KDcP5cj4ts3mU_fZKFuLsl90tElDQ71j3iL22UkungYEF3hSMrtavhlHm0Jnw3QKXKgwBeF3PF6CflnDtENIVg'
+
+ ⬅️  Response Received: 
+{
+    "code": "200",
+    "result": {
+        "symbol": "VTLU_AUTO_LHTFTNKD-renamed",
+        "symbolGroup": "AFJd_Auto-Rpzmegauditlog",
+        "currency": "GBP",
+        "type": "FOREX",
+        "description": "",
+        "digits": 5,
+        "decimal": 5,
+        "stopsLevel": 50,
+        "contractSize": 10000,
+        "marginCurrency": "USD",
+        "profitMode": 1,
+        "marginMode": 1,
+        "marginHedged": null,
+        "marginPercentage": null,
+        "marginInitial": 150,
+        "marginMaintenance": null,
+        "tradeMode": 2,
+        "exeMode": 1,
+        "gtcPendings": null,
+        "swapType": 0,
+        "swapLong": -2.95,
+        "swapShort": -2.37645,
+        "swapRollover3days": null,
+        "minContractLotSize": 2,
+        "maxContractLotSize": 1002,
+        "lotSizeStep": 2,
+        "pointStep": 1e-05,
+        "marketEOD": 1784332739000,
+        "tradingSessions": [
+            {
+                "dayOfWeek": 1,
+                "openDay": 1,
+                "openTime": "00:00",
+                "closeDay": 1,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 2,
+                "openDay": 2,
+                "openTime": "00:00",
+                "closeDay": 2,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 3,
+                "openDay": 3,
+                "openTime": "00:00",
+                "closeDay": 3,
+                "closeTime": "07:11"
+            },
+            {
+                "dayOfWeek": 4,
+                "openDay": 4,
+                "openTime": "00:00",
+                "closeDay": 4,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 5,
+                "openDay": 5,
+                "openTime": "00:00",
+                "closeDay": 5,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 6,
+                "openDay": 6,
+                "openTime": "00:00",
+                "closeDay": 6,
+                "closeTime": "23:59"
+            },
+            {
+                "dayOfWeek": 7,
+                "openDay": 7,
+                "openTime": "00:00",
+                "closeDay": 7,
+                "closeTime": "23:59"
+            }
+        ],
+        "tradingEpochSessions": [
+            {
+                "dayOfWeek": 1,
+                "tradingStartTime": 1609718400000,
+                "tradingEndTime": 1609804740000
+            },
+            {
+                "dayOfWeek": 2,
+                "tradingStartTime": 1609804800000,
+                "tradingEndTime": 1609891140000
+            },
+            {
+                "dayOfWeek": 3,
+                "tradingStartTime": 1609891200000,
+                "tradingEndTime": 1609917060000
+            },
+            {
+                "dayOfWeek": 4,
+                "tradingStartTime": 1609977600000,
+                "tradingEndTime": 1610063940000
+            },
+            {
+                "dayOfWeek": 5,
+                "tradingStartTime": 1610064000000,
+                "tradingEndTime": 1610150340000
+            },
+            {
+                "dayOfWeek": 6,
+                "tradingStartTime": 1609545600000,
+                "tradingEndTime": 1609631940000
+            },
+            {
+                "dayOfWeek": 7,
+                "tradingStartTime": 1609632000000,
+                "tradingEndTime": 1609718340000
+            }
+        ],
+        "ask": 13.096005,
+        "bid": 13.088525,
+        "open": 13.027335,
+        "high": null,
+        "low": null,
+        "watch": false,
+        "online": true,
+        "lastUpdated": 1783680613778,
+        "status": "TRADING",
+        "profile": null,
+        "industry": null,
+        "indexName": null,
+        "revenue": null,
+        "totalAssets": null,
+        "operatingIncome": null,
+        "netIncome": null,
+        "totalEquity": null,
+        "symbolFillPolicy": null,
+        "tradeFillPolicy": {
+            "marketFillPolicy": [
+                0
+            ],
+            "limitFillPolicy": [
+                0,
+                3,
+                4,
+                5
+            ],
+            "stopFillPolicy": [
+                0,
+                3,
+                4,
+                5
+            ],
+            "stopLimitFillPolicy": []
+        },
+        "tradable": true,
+        "tradableExeMode": true,
+        "maxQuoteDelay": null,
+        "enable": true,
+        "exchangeRate": 1,
+        "quoteCurrencyExchangeRate": 1,
+        "closable": true,
+        "tickSize": 1e-05,
+        "tickValue": 0.1,
+        "holiday": false,
+        "side": null,
+        "strikePrice": null,
+        "expiration": null,
+        "underlyingSymbols": null,
+        "tradableSecurityTypes": null,
+        "securityId": null,
+        "priceType": null,
+        "exerciseStyle": null,
+        "lastPrice": null,
+        "prevClose": null,
+        "uniSymbol": null,
+        "onePipEqual": null,
+        "sessionDiff": false,
+        "abookType": false,
+        "tickRulesGroup": null
+    }
+}
+
+
+17:50:19 | - Live price: 13.088525
+17:50:19 | - Live price: 13.088525
+17:50:19 | [API] Send API: POST /trade/v2/market
+17:50:20 | ➡️  Request Sent: 
+curl --location --request POST 'https://aqxoms-mb.webtrader-release-sit.s20ip12.com/api/trade/v2/market' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJsb2dpblRpbWUiOjE3ODM2ODA1NjI1NTEsIm1ldGF0cmFkZXJJZCI6IkFRWC1UQS0wMDAwNDc3MSIsInRlbmFudElkIjoiZGVtbzQiLCJvbXNTZXJ2ZXJJZCI6ImRlbW80Iiwic291cmNlIjoiV0VCIiwidHlwZSI6Ik1FTUJFUiIsInVzZXJJZCI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsInN1YiI6IjAxOWVlZTQ1LWFlNmItNzg3ZS04MWE3LTk3YmFlYjcwMzU0OSIsImlhdCI6MTc4MzY4MDU2MiwiZXhwIjoxNzg2MjcyNTYyfQ.lTG9GVC5AELpJLoPp8iv-CZKTJbp-Ros_PYtUpeXbBaRWOoOdJzRyX9X5PrLnbBEY4X55bDsauBOHkJDW_7TRw' 
+--header 'Content-Length: 108' 
+--data-raw '{"orderType": 0, "symbol": "VTLU_AUTO_LHTFTNKD-renamed", "lotSize": 2, "indicate": "PRICE", "fillPolicy": 0}'
+
+ ⬅️  Response Received: 
+{
+    "code": "200",
+    "result": {
+        "positionId": "98cfac9d-92db-4a44-adb0-403817868b4a",
+        "positionReference": "98cfac9d-92db-4a44-adb0-403817868b4a",
+        "clOrdId": "98cfac9d-92db-4a44-adb0-403817868b4a",
+        "traceId": "f2741c3e-9cc0-49d0-83d7-00a1a1c98941"
+    }
+}
+
+
+17:50:20 | [API] Order placed: 98cfac9d-92db-4a44-adb0-403817868b4a (VTLU_AUTO_LHTFTNKD-renamed)
+17:50:20 | [Setup] Placed BUY order: 98cfac9d-92db-4a44-adb0-403817868b4a (VTLU_AUTO_LHTFTNKD-renamed, vol=2)
+17:50:22 | Step 1: Apply filters for user='Auto_Stmt.xwovflsb'
+17:50:22 | - Select month: latest
+17:50:23 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:50:23 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:50:23 | - Select first available trading account
+17:50:24 | - Click Apply filters
+17:50:24 | - Wait for statement data to load
+17:50:29 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:50:30 | Step 2: Observe 'Order Origin' column in Executed Orders table
+17:50:30 | Verify Order Origin shows 'BROKER' for the EMS-placed order
+17:50:30 | - Get cell: table=orders, row=0, col=orderOrigin
+17:50:30 | [Teardown] Refresh the page
+17:50:31 | - Wait for statement data to load
+17:50:41 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+17:50:41 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:50:41 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:50:41 | Cost-optimized locator failed after 49ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:50:41 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:50:41 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:50:41 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:50:43 | - Stop recording screen

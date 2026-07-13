@@ -1,0 +1,17 @@
+18:05:53 | - Running test case: test_AS_TC21_positive_empty_state_tables.py
+18:05:53 | - Start recording screen
+18:05:54 | Step 1: Observe page without applying any filters
+18:05:54 | Verify statement detail section is not shown (empty state 1: no filter)
+18:05:55 | - Check invisibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:05:55 | ✘ Check Failed !
+Expected element of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]') to be invisible
+18:05:55 | [Teardown] Refresh the page
+18:05:55 | - Wait for statement data to load
+18:06:05 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:06:05 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:06:05 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:06:05 | Cost-optimized locator failed after 51ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:06:05 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:06:05 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:06:05 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:06:07 | - Stop recording screen

@@ -1,0 +1,7 @@
+17:52:18 | - Running test case: test_AS_TC16_positive_trading_user_search.py
+17:52:18 | - Start recording screen
+17:52:19 | Step 1: Search trading user by partial name: 'Auto_'
+17:52:19 | - Search trading user: 'Auto_'
+17:52:19 | Verify results contain matching user for partial: 'Auto_'
+17:52:19 | [Teardown] Close search dropdown
+17:52:20 | - Stop recording screen

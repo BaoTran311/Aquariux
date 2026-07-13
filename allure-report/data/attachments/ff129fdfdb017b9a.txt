@@ -1,0 +1,16 @@
+18:06:28 | - Running test case: test_AS_TC23_positive_calculation_accuracy.py
+18:06:28 | - Start recording screen
+18:06:28 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:06:28 | - Select month: latest
+18:06:28 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:06:28 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:06:28 | - Select first available trading account
+18:06:28 | - Click Apply filters
+18:06:28 | - Wait for statement data to load
+18:06:34 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:06:35 | Step 1: Get balance summary values from Account Statement
+18:06:35 | Step 2: Parsed values: balance=1000000000378.16, floating_pnl=-28868.4, equity=999999971509.76, margin_used=554359.07, free_margin=999999417150.69, margin_level=180388493.53
+18:06:35 | Verify Equity = Balance + Floating P/L
+18:06:35 | Verify Free Margin = Equity - Margin Used
+18:06:35 | Verify Margin Level = (Equity / Margin Used) * 100%
+18:06:36 | - Stop recording screen

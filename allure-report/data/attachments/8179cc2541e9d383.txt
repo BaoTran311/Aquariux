@@ -1,0 +1,95 @@
+18:02:33 | - Running test case: test_AS_TC19_positive_resize_columns_table_overflow.py
+18:02:33 | - Start recording screen
+18:02:33 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:02:33 | - Select month: latest
+18:02:33 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:02:33 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:02:34 | - Select first available trading account
+18:02:34 | - Click Apply filters
+18:02:34 | - Wait for statement data to load
+18:02:39 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:02:40 | - Size of column: 'Symbol': 'height: 32, width: 220'
+18:02:40 | - Size of column: 'Order ID': 'height: 32, width: 220'
+18:02:40 | - Size of column: 'Position ID': 'height: 32, width: 220'
+18:02:40 | - Size of column: 'Open Date': 'height: 32, width: 220'
+18:02:40 | - Size of column: 'Entry Price': 'height: 32, width: 220'
+18:02:40 | - Size of column: 'Close Date': 'height: 32, width: 220'
+18:02:40 | - Size of column: 'Close Volume': 'height: 32, width: 220'
+18:02:40 | - Size of column: 'Exit Price': 'height: 32, width: 220'
+18:02:40 | - Size of column: 'Interest': 'height: 32, width: 220'
+18:02:40 | Step 1: Widen first col until overflow the table viewport
+18:02:41 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 1178}
+18:02:41 | - Expanding 'Symbol' to fill viewport (target=1272px)
+18:02:41 | - Size of column: 'Symbol': 'height: 32, width: 220'
+18:02:41 | - Increase column: 'Symbol' by 1052px
+18:02:42 | - Size of column: 'Symbol': 'height: 32, width: 1272'
+18:02:42 | - Table is overflow viewport (attempt:2)
+18:02:42 | Verify column 'Order ID' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Order ID': 'height: 32, width: 220, x: 1860, y: 937'
+18:02:42 | Verify column 'Position ID' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Position ID': 'height: 32, width: 220, x: 2080, y: 937'
+18:02:42 | Verify column 'Open Date' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Open Date': 'height: 32, width: 220, x: 2300, y: 937'
+18:02:42 | Verify column 'Entry Price' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Entry Price': 'height: 32, width: 220, x: 2520, y: 937'
+18:02:42 | Verify column 'Close Date' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Close Date': 'height: 32, width: 220, x: 2740, y: 937'
+18:02:42 | Verify column 'Close Volume' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Close Volume': 'height: 32, width: 220, x: 2960, y: 937'
+18:02:42 | Verify column 'Exit Price' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Exit Price': 'height: 32, width: 220, x: 3180, y: 937'
+18:02:42 | Verify column 'Interest' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Interest': 'height: 32, width: 220, x: 3400, y: 937'
+18:02:42 | Verify column 'Commission' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Commission': 'height: 32, width: 220, x: 3620, y: 937'
+18:02:42 | Verify column 'Profit / Loss' overflows past the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Profit / Loss': 'height: 32, width: 220, x: 3840, y: 937'
+18:02:42 | Verify column 'Symbol' sits inside the viewport
+18:02:42 | - Viewport rect: {'height': 300, 'width': 1272, 'x': 587, 'y': 936}
+18:02:42 | - Rect of column: 'Symbol': 'height: 32, width: 1272, x: 588, y: 937'
+18:02:42 | Step 2: Refresh page and re-apply filters
+18:02:43 | - Wait for statement data to load
+18:02:53 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:02:53 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:02:53 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:02:53 | Cost-optimized locator failed after 48ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:02:53 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:02:53 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:02:53 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:02:54 | - Select month: latest
+18:02:54 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:02:54 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:02:55 | - Select first available trading account
+18:02:55 | - Click Apply filters
+18:02:55 | - Wait for statement data to load
+18:03:00 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:03:01 | Verify column widths match initial sizes after refresh
+18:03:02 | - Size of column: 'Symbol': 'height: 32, width: 220'
+18:03:02 | - Size of column: 'Order ID': 'height: 32, width: 220'
+18:03:02 | - Size of column: 'Position ID': 'height: 32, width: 220'
+18:03:02 | - Size of column: 'Open Date': 'height: 32, width: 220'
+18:03:02 | - Size of column: 'Entry Price': 'height: 32, width: 220'
+18:03:02 | - Size of column: 'Close Date': 'height: 32, width: 220'
+18:03:02 | - Size of column: 'Close Volume': 'height: 32, width: 220'
+18:03:02 | - Size of column: 'Exit Price': 'height: 32, width: 220'
+18:03:02 | - Size of column: 'Interest': 'height: 32, width: 220'
+18:03:02 | [Teardown] Refresh the page
+18:03:02 | - Wait for statement data to load
+18:03:12 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:03:12 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:03:12 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:03:12 | Cost-optimized locator failed after 61ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:03:12 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:03:12 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:03:12 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:03:14 | - Stop recording screen

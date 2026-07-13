@@ -1,0 +1,23 @@
+17:51:57 | - Running test case: test_AS_TC15_positive_apply_loads_data.py
+17:51:58 | - Start recording screen
+17:51:58 | Step 1: Select all 3 filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:51:58 | - Select month: latest
+17:51:58 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:51:58 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:51:58 | - Select first available trading account
+17:51:59 | Step 2: Click Apply button
+17:51:59 | - Click Apply filters
+17:51:59 | Verify accordion side menu is populated
+17:52:04 | Verify all 5 statement tables are displayed
+17:52:05 | Verify monthly statement is shown by default
+17:52:05 | Verify export PDF button is displayed
+17:52:05 | [Teardown] Refresh the page
+17:52:06 | - Wait for statement data to load
+17:52:16 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+17:52:16 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:52:16 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:52:16 | Cost-optimized locator failed after 52ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:52:16 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:52:16 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:52:16 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:52:18 | - Stop recording screen

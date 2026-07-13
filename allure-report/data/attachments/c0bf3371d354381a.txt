@@ -1,0 +1,21 @@
+22:04:11 | - Running test case: test_AK_GEN_TC03_negative_empty_submission.py
+22:04:11 | - Start recording screen
+22:04:11 | [Setup] Open Generate API Key panel
+22:04:11 | - Click 'Generate API Key' button
+22:04:11 | Step 1: Select expiry type: 'Set Expiry Date' and submit empty form
+22:04:11 | - Select expiry: 'Set Expiry Date'
+22:04:12 | - Click 'Generate Key' button
+22:04:12 | Verify error validation: 'Name is required'
+22:04:12 | Verify error validation: 'Expiry date is required'
+22:04:12 | Step 2: Close the panel
+22:04:12 | - Click 'x' icon
+22:04:13 | Step 3: Reopen the Generate panel
+22:04:13 | - Click 'Generate API Key' button
+22:04:14 | Verify no error: 'Name'
+22:04:14 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): TRUE
+22:04:14 | Verify no error: 'Expiry Date'
+22:04:14 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-field-expiry-error"]'): TRUE
+22:04:14 | [Teardown] Close panel if open
+22:04:14 | - Close panel
+22:04:20 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+22:04:21 | - Stop recording screen

@@ -1,0 +1,38 @@
+14:57:30 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+14:57:30 | - Start recording screen
+14:57:30 | - Clear search input
+14:57:31 | - Get table data
+14:57:33 | - Click 'next' button on table
+14:57:34 | - Go to the first page
+14:57:35 | - Total records: 25
+14:57:35 | Step 1: Search with: 'key'
+14:57:35 | - Search for: key
+14:57:35 | Step 2: Click sort on column: 'Name'
+14:57:35 | - Sort by: 'Name'
+14:57:36 | Verify column sorts alphabetically a-z
+14:57:36 | - Get table data
+14:57:38 | - Go to the first page
+14:57:38 | - Total records: 5
+14:57:38 | - Comparing: 
+Actual:    ['Active Key With Expiry', 'Active Key With Expiry', 'Inactive Pre-provisioned Key', 'Integration Test Key', 'Past Expiry Key']
+Expected:  ['Active Key With Expiry', 'Active Key With Expiry', 'Inactive Pre-provisioned Key', 'Integration Test Key', 'Past Expiry Key']
+14:57:38 | Step 3: Click sort again on column: 'Name'
+14:57:38 | - Sort by: 'Name'
+14:57:39 | Verify column sorts alphabetically z-a
+14:57:39 | - Get table data
+14:57:41 | - Go to the first page
+14:57:41 | - Total records: 5
+14:57:41 | - Comparing: 
+Actual:    ['Past Expiry Key', 'Integration Test Key', 'Inactive Pre-provisioned Key', 'Active Key With Expiry', 'Active Key With Expiry']
+Expected:  ['Past Expiry Key', 'Integration Test Key', 'Inactive Pre-provisioned Key', 'Active Key With Expiry', 'Active Key With Expiry']
+14:57:41 | Step 4: Clear search
+14:57:41 | - Clear search input
+14:57:41 | Verify column still sorts alphabetically z-a
+14:57:41 | - Get table data
+14:57:43 | - Click 'next' button on table
+14:57:45 | - Go to the first page
+14:57:45 | - Total records: 25
+14:57:45 | - Comparing: 
+Actual:    ['xwfw_auto.pgzjckzw', 'WilliamBanh', 'WilliamBanh', 'WilliamBanh', 'WilliamBanh', 'VOMF_AUTO.YFQTSBMN', 'tuan test', 'Testing', 'test', 'prvo_auto.ckbzfnxv', 'Past Expiry Key', 'NKBF_Auto.XlWqUlIK', 'Jiun Xian', 'Integration Test Key', 'Inactive Pre-provisioned Key', 'cytest', 'CAICAI4', 'CAICAI3', 'CAICAI2', 'CAICAI', 'BQN_TEST', 'AUD/CAD', 'Alexis', 'Active Key With Expiry', 'Active Key With Expiry']
+Expected:  ['xwfw_auto.pgzjckzw', 'WilliamBanh', 'WilliamBanh', 'WilliamBanh', 'WilliamBanh', 'VOMF_AUTO.YFQTSBMN', 'tuan test', 'Testing', 'test', 'prvo_auto.ckbzfnxv', 'Past Expiry Key', 'NKBF_Auto.XlWqUlIK', 'Jiun Xian', 'Integration Test Key', 'Inactive Pre-provisioned Key', 'cytest', 'CAICAI4', 'CAICAI3', 'CAICAI2', 'CAICAI', 'BQN_TEST', 'AUD/CAD', 'Alexis', 'Active Key With Expiry', 'Active Key With Expiry']
+14:57:46 | - Stop recording screen

@@ -1,0 +1,29 @@
+17:49:50 | - Running test case: test_AS_TC09_positive_table_columns.py
+17:49:50 | - Start recording screen
+17:49:50 | [Setup] Apply filters: June + user='Auto_Stmt.xwovflsb' + first available account
+17:49:50 | - Select month: 5
+17:49:50 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:49:50 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:49:51 | - Select first available trading account
+17:49:52 | - Click Apply filters
+17:49:52 | - Wait for statement data to load
+17:50:02 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+17:50:02 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:50:02 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:50:02 | Cost-optimized locator failed after 56ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:50:02 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:50:02 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:50:02 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:50:03 | Step 1: Observe Transaction History table (June data)
+17:50:03 | Verify column headers: Order Date/Time, Order ID, Transaction ID, Type, Currency
+17:50:03 | - Get column headers: transactions
+17:50:04 | [Teardown] Refresh the page
+17:50:04 | - Wait for statement data to load
+17:50:14 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+17:50:14 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:50:14 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:50:14 | Cost-optimized locator failed after 56ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:50:14 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:50:14 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:50:14 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:50:17 | - Stop recording screen

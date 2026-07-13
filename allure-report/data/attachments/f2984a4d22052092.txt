@@ -1,0 +1,38 @@
+14:58:04 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+14:58:04 | - Start recording screen
+14:58:04 | - Clear search input
+14:58:05 | - Get table data
+14:58:07 | - Click 'next' button on table
+14:58:09 | - Go to the first page
+14:58:09 | - Total records: 25
+14:58:09 | Step 1: Search with: 'key'
+14:58:09 | - Search for: key
+14:58:09 | Step 2: Click sort on column: 'Expires'
+14:58:09 | - Sort by: 'Expires'
+14:58:10 | Verify column sorts chronologically oldest → newest
+14:58:10 | - Get table data
+14:58:12 | - Go to the first page
+14:58:12 | - Total records: 5
+14:58:12 | - Comparing: 
+Actual:    ['1 January 2020 00:00:00', '31 December 2027 23:59:59', '31 December 2027 23:59:59', 'Never', 'Never']
+Expected:  ['1 January 2020 00:00:00', '31 December 2027 23:59:59', '31 December 2027 23:59:59', 'Never', 'Never']
+14:58:12 | Step 3: Click sort again on column: 'Expires'
+14:58:12 | - Sort by: 'Expires'
+14:58:13 | Verify column sorts chronologically newest → oldest
+14:58:13 | - Get table data
+14:58:15 | - Go to the first page
+14:58:15 | - Total records: 5
+14:58:15 | - Comparing: 
+Actual:    ['Never', 'Never', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '1 January 2020 00:00:00']
+Expected:  ['Never', 'Never', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '1 January 2020 00:00:00']
+14:58:15 | Step 4: Clear search
+14:58:15 | - Clear search input
+14:58:16 | Verify column still sorts chronologically newest → oldest
+14:58:16 | - Get table data
+14:58:18 | - Click 'next' button on table
+14:58:19 | - Go to the first page
+14:58:19 | - Total records: 25
+14:58:19 | - Comparing: 
+Actual:    ['Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '1 June 2027 23:59:59', '9 June 2026 23:59:59', '28 May 2026 23:59:59', '1 April 2026 23:59:59', '11 March 2026 23:59:59', '1 January 2020 00:00:00']
+Expected:  ['Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', 'Never', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2035 23:59:59', '31 December 2027 23:59:59', '31 December 2027 23:59:59', '1 June 2027 23:59:59', '9 June 2026 23:59:59', '28 May 2026 23:59:59', '1 April 2026 23:59:59', '11 March 2026 23:59:59', '1 January 2020 00:00:00']
+14:58:20 | - Stop recording screen

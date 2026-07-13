@@ -1,0 +1,86 @@
+11:14:34 | - Running test case: test_AS_TC07_positive_monthly_daily_view_switch.py
+11:14:34 | [API] Send API: POST /auth/v1/login/admin
+11:14:35 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 68' 
+--data-raw '{"password": "Autotest@12345", "email": "auto_admin02@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019e7c33-b81b-7970-b804-59fcb23666e6",
+        "userType": "ADMIN",
+        "email": "auto_admin02@aquariux.com",
+        "name": "Auto Admin 02",
+        "...": "(7 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-07-13T04:14:36.079141308Z"
+}
+
+
+11:14:35 | [API] Send API: GET /backoffice/v1/admin-users
+11:14:36 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTllN2MzMy1iODFiLTc5NzAtYjgwNC01OWZjYjIzNjY2ZTYiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODM5MTYwNzYsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzg0MDAyNDc2LCJpYXQiOjE3ODM5MTYwNzYsInVzZXJJZCI6IjAxOWU3YzMzLWI4MWItNzk3MC1iODA0LTU5ZmNiMjM2NjZlNiIsImp0aSI6ImQ0MjJhNjQxLTFmMTgtNGNlYi04ZTk5LTc3MzQwMzFjNTZkNSIsImVtYWlsIjoiYXV0b19hZG1pbjAyQGFxdWFyaXV4LmNvbSJ9.N9bsm7ZSgSnFM0RIZvoL04sZOUtZKr9bAnbs9wzfpLp-AR0Cp8FkddCo0ZG-tmQBiYdpcxnCiSQmUXv0I1CdAPuOIr4IQ2KyDoqQhQJp9H3f5J9HgHAoh5IiuQH1GJ-3ehSb6NQ1HPZSW43VZ9pBWPZNg-k4yoa9lPX4JiLl-oEukAahPIXC8AO7qOfQhxLK4Pay_mpyejSXJkEXoMs6TTe2U9LV8mQkGCxRZlzh4YMCpTuYfduL0uv909nURJWNhe0B7BU_NAB2nEDUB5g5jHVB99o9-qyORuOZacPNpdDrtvJvk2iPwnL7GDpg58cNpP1cBh7Z3zGzs6JPz06tVA'
+
+
+11:14:36 | [Setup] Init Web Driver
+11:14:38 | - Registered driver under 'web_main' (total: 1)
+11:14:38 | - Added web driver 'main' to driver_list (total: 1)
+11:14:38 | [Setup] Navigate to OMS site
+11:14:41 | [Setup] Login with default admin user
+11:14:41 | - Input email: 'auto_admin02@aquariux.com'
+11:14:41 | - Input password: 'Autotest@12345'
+11:14:42 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+11:14:42 | - Click on login button
+11:14:42 | [Setup] Navigate to Account Statements page
+11:14:43 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-reports"]'): FALSE
+11:14:43 | - Expand item: 'Reports'
+11:14:43 | - Wait for statement data to load
+11:14:54 | OpenAI API call failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+11:14:54 | DOM analysis failed for 'Element with selector: div[data-testid="account-statements-detail-card-header"]' (framework: selenium): OpenAI API call failed: 401
+11:14:54 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='AI DOM analysis failed: OpenAI API call failed: 401', context={})
+11:14:54 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+11:14:54 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+11:14:54 | Cost-optimized locator failed after 1222ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+11:14:54 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+11:14:54 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+11:14:54 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+11:14:55 | - Start recording screen
+11:14:57 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+11:14:57 | - Select month: latest
+11:14:57 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+11:14:57 | - Select trading user: 'Auto_Stmt.xwovflsb'
+11:14:57 | - Select first available trading account
+11:14:58 | - Click Apply filters
+11:14:58 | - Wait for statement data to load
+11:15:06 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+11:15:07 | Verify default view shows 'Monthly Statement'
+11:15:07 | Verify all 5 statement tables are displayed
+11:15:07 | Step 1: Note first row data from Open Positions table for monthly view
+11:15:07 | Step 2: Click first available daily statement
+11:15:07 | - Click first available Daily Statement
+11:15:08 | - Wait for 'Daily Statement' present in locator ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+11:15:08 | Verify detail header switches to 'Daily Statement'
+11:15:08 | Verify all 5 tables are still displayed for the daily view
+11:15:08 | Step 3: Click back to monthly statement
+11:15:08 | - Click Monthly Statement in accordion
+11:15:09 | - Wait for 'Monthly Statement' present in locator ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+11:15:09 | Verify detail header switches back to 'Monthly Statement'
+11:15:09 | Verify all 5 tables are still displayed for the monthly view
+11:15:10 | - Stop recording screen
+11:15:10 | [Teardown] Quit Web Driver
+11:15:10 | - Quit driver 'web_main'
+11:15:10 | - All drivers quit and registry cleared

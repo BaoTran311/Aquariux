@@ -1,0 +1,140 @@
+22:47:55 | - Running test case: test_TA_EDT_TC09_negative_update_failed.py
+22:47:55 | - Start recording screen
+22:47:55 | [Setup] Send API to create new account
+22:47:55 | [API] Send API: GET /backoffice/v1/users/available-users
+22:47:56 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/users/available-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg'
+
+ ⬅️  Response Received: 
+{
+    "data": [
+        {
+            "id": "019e1ae7-6a5f-78f1-ae79-f3fd67d55df6",
+            "name": "1"
+        },
+        {
+            "id": "019e1a60-7a49-7633-b749-b93c36a38e71",
+            "name": "binh"
+        },
+        {
+            "id": "019e1b1e-c281-7b7f-91e6-7413972e0f03",
+            "name": "CH"
+        },
+        {
+            "id": "019e1a71-957b-7902-ae88-707380a73be9",
+            "name": "FIIF_AUTO RTULDMGM"
+        },
+        {
+            "id": "019e1611-acb4-7df6-ac45-f8bd88e43e23",
+            "name": "(name)12"
+        },
+        "... (2 more)"
+    ],
+    "success": true,
+    "timestamp": "2026-05-12T15:47:56.281915791Z"
+}
+
+
+22:47:56 | [API] Send API: POST /backoffice/v1/accounts
+22:47:56 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg' 
+--header 'Content-Length: 199' 
+--data-raw '{"userId": "019e1b1e-c281-7b7f-91e6-7413972e0f03", "status": "ACTIVE", "mode": "LIVE", "canTrade": true, "accountType": "TRADER", "currencyId": "019db3cc-c60d-7f5b-9190-9cb2556a7e3c", "leverage": 44}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-12T15:47:56.602449408Z"
+}
+
+
+22:47:56 | [API] Send API: GET /backoffice/v1/accounts
+22:47:56 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg'
+
+
+22:47:56 | [Setup] Refresh page to load changes
+22:47:58 | - Get table data
+22:48:01 | - Go to the first page
+22:48:01 | - Total records: 8
+22:48:01 | [Setup] Total rows data: 8
+22:48:01 | [Setup] Go to row: 'CH'
+22:48:01 | - Search for: 'AQX-TA-00002149'
+22:48:03 | - View row: 'CH'
+22:48:03 | - Click 'Edit' button
+22:48:04 | - Input leverage: 191
+22:48:04 | - Set trade permission: disable
+22:48:05 | - Set status: 'Inactive'
+22:48:06 | [Setup] Send API to delete: 'CH'
+22:48:06 | [API] Send API: DELETE /backoffice/v1/accounts/019e1cdf-9a31-7c05-911a-a629b9677b94
+22:48:06 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e1cdf-9a31-7c05-911a-a629b9677b94' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-12T15:48:06.767628849Z"
+}
+22:48:06 | Step 1: Action on row: 'CH' > Edit
+22:48:06 | - Click 'Save' button
+22:48:06 | Verify toast message: 'Failed to update trading account. The trading account has already been deleted.'
+22:48:07 | Step 2: Clear search
+22:48:07 | - Clear search input
+22:48:08 | Verify footer label -1: 'Showing 1 to 7 of 7 items'
+22:48:09 | - Wait for 'Showing 1 to 7 of 7 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+22:48:09 | Step 3: Search for: 'AQX-TA-00002149'
+22:48:09 | - Search for: 'AQX-TA-00002149'
+22:48:10 | Verify table data updated to empty
+22:48:10 | [Teardown] Refresh the page
+22:48:12 | [Teardown] Send API to delete the created account: 019e1cdf-9a31-7c05-911a-a629b9677b94
+22:48:12 | [API] Send API: DELETE /backoffice/v1/accounts/019e1cdf-9a31-7c05-911a-a629b9677b94
+22:48:12 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/accounts/019e1cdf-9a31-7c05-911a-a629b9677b94' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg2MDA0NDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NjAxMzQ3LCJpYXQiOjE3Nzg2MDA0NDcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjM1ZTM1MTQxLTlkOTMtNDMxNS1iNzBkLWI3MWRlNzM1NGFhNyIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.AWSevPYbkZxY6j4BQFJOoGvit56dx0Ag_Ea8hbv3m-Gd04gSvXIwhMZkXETmNARO46XjnXfypK0pGjdxes25QSZs0E7xCke6nQ9X3AhQokDEwYMxWH3FcypCJnQwQGXprYi1ugzLaU4WTCX7JGkvMYwDucPNulUbJGATSDmu-dfTCnsLXcdVJYTPFZVScVOdr54AhK3-4d8wk2xFWTJI-9FaucZYUh1YcR-qgtKXh4CR52tNSZmfq005-eHtLNHNYB2EM9EMRDmCaCaPHKEUk--Go_mXXyUXWLXFgbnTBv0YzorDppKwof_3MKu1khjmQcsT2hCCOvgVzOGSrfxIFg' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "errorCode": "TA_0001",
+    "errorName": "Trading Account Not Found",
+    "message": "Trading account not found with id: 019e1cdf-9a31-7c05-911a-a629b9677b94",
+    "success": false,
+    "timestamp": "2026-05-12T15:48:12.893865047Z"
+}
+
+
+22:48:12 | ✘ Request failed (404): {"errorCode":"TA_0001","errorName":"Trading Account Not Found","message":"Trading account not found with id: 019e1cdf-9a31-7c05-911a-a629b9677b94","success":false,"timestamp":"2026-05-12T15:48:12.893865047Z"} after 1 attempt(s)
+22:48:13 | - Stop recording screen
+22:48:13 | [Teardown] Quit Web Driver
+22:48:13 | - Quit driver 'web_main'
+22:48:13 | - All drivers quit and registry cleared

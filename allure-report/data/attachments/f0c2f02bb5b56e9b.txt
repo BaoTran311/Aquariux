@@ -1,0 +1,20 @@
+17:51:38 | - Running test case: test_AS_TC14_positive_read_only.py
+17:51:38 | - Start recording screen
+17:51:38 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:51:38 | - Select month: latest
+17:51:38 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:51:38 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:51:39 | - Select first available trading account
+17:51:39 | - Click Apply filters
+17:51:39 | - Wait for statement data to load
+17:51:45 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:51:46 | Step 1: Observe all interactive elements in the statement detail area
+17:51:46 | Verify export PDF button is present (only Export/Download actions available)
+17:51:46 | Verify no edit or delete buttons exist in statement tables
+17:51:56 | - Check invisibility of locator: ('xpath', '//div[contains(@data-testid,"account-statements-detail-card")]//button[contains(., "Edit") or contains(., "Delete")]'): TRUE
+17:51:56 | Step 2: Scroll down to table sections
+17:51:56 | - Scrolling down - step: 0.4
+17:51:56 | - Scrolling down - step: 0.4
+17:51:56 | Verify all tables are read-only (clicking cells does not activate inline editing)
+17:51:56 | - Verify tables are read-only (no inline editing)
+17:51:57 | - Stop recording screen

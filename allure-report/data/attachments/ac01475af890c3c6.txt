@@ -1,0 +1,20 @@
+23:38:59 | - Running test case: test_UG_VIW_TC01_positive_default_state.py
+23:38:59 | - Start recording screen
+23:38:59 | - Get table data
+23:39:01 | - Go to the first page
+23:39:01 | Step 1: Action on row: '-AUTOSULMGVAVGO' > View
+23:39:01 | - View row: '-AUTOSULMGVAVGO' (attempt:1)
+23:39:01 | Verify Panel title: '-AUTOSULMGVAVGO'
+23:39:01 | Verify Tabs list: ['Overview', 'Audit Log']
+23:39:01 | - Comparing: 
+Actual:    ['Overview', 'Audit Log']
+Expected:  ['Overview', 'Audit Log']
+23:39:01 | Verify Tab 'Overview' selected by default
+23:39:01 | Verify detail labels: ['Name', 'Description', 'Position Type', 'Book Type', 'Margin Call Level', 'Stop Out Level', 'Commission', 'Created Date', 'Last Updated']
+23:39:01 | - Comparing: 
+Actual:    ['Name', 'Description', 'Position Type', 'Book Type', 'Margin Call Level', 'Stop Out Level', 'Commission', 'Created Date', 'Last Updated']
+Expected:  ['Name', 'Description', 'Position Type', 'Book Type', 'Margin Call Level', 'Stop Out Level', 'Commission', 'Created Date', 'Last Updated']
+23:39:01 | Verify CTAs: 'Cancel', 'Edit'
+23:39:01 | [Teardown] Click 'x' icon to close the panel
+23:39:01 | - Click 'x' icon
+23:39:02 | - Stop recording screen

@@ -1,0 +1,47 @@
+18:26:16 | - Running test case: test_AS_TC33_positive_column_sorting.py
+18:26:16 | - Start recording screen
+18:26:16 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:26:16 | - Select month: latest
+18:26:16 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:26:16 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:26:16 | - Select first available trading account
+18:26:16 | - Click Apply filters
+18:26:17 | - Wait for statement data to load
+18:26:23 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:26:24 | Step 1: Scroll down to open positions
+18:26:24 | - Scrolling down - step: 0.4
+18:26:24 | - Scrolling down - step: 0.4
+18:26:24 | Verify sort button for column 'Position ID' is displayed
+18:26:24 | Step 2: Click sort on column: 'Position ID'
+18:26:24 | - Sort by: 'Position ID'
+18:26:24 | Verify column sorts alphabetically a-z
+18:26:24 | - Get table data
+18:26:34 | 🟡 Element not found for ('css selector', 'button[data-testid*="-pagination-next"]'): TimeoutException after 10(s)
+18:26:45 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-open-positions"] th[data-slot="table-head"]'): TimeoutException after 10(s)
+18:26:48 | - Table is empty
+18:26:48 | - Comparing: 
+Actual:    ['[~~missing-key-position_id~~]']
+Expected:  ['[~~missing-key-position_id~~]']
+18:26:48 | Step 3: Click sort again on column: 'Position ID'
+18:26:48 | - Sort by: 'Position ID'
+18:26:48 | Verify column sorts alphabetically z-a
+18:26:48 | - Get table data
+18:26:58 | 🟡 Element not found for ('css selector', 'button[data-testid*="-pagination-next"]'): TimeoutException after 10(s)
+18:27:09 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-open-positions"] th[data-slot="table-head"]'): TimeoutException after 10(s)
+18:27:11 | - Table is empty
+18:27:11 | - Comparing: 
+Actual:    ['[~~missing-key-position_id~~]']
+Expected:  ['[~~missing-key-position_id~~]']
+18:27:11 | [Teardown] Refresh the page
+18:27:12 | - Wait for statement data to load
+18:27:22 | OpenAI API call failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+18:27:22 | DOM analysis failed for 'Element with selector: div[data-testid="account-statements-detail-card-header"]' (framework: selenium): OpenAI API call failed: 401
+18:27:22 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='AI DOM analysis failed: OpenAI API call failed: 401', context={})
+18:27:22 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:27:22 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:27:22 | Cost-optimized locator failed after 500ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:27:22 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:27:22 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:27:23 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:27:25 | - Stop recording screen

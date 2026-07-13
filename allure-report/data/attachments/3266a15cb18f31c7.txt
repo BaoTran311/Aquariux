@@ -1,0 +1,157 @@
+17:58:36 | - Running test case: test_AS_TC18_positive_resize_columns_minimum.py
+17:58:36 | - Start recording screen
+17:58:37 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:58:37 | - Select month: latest
+17:58:37 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:58:37 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:58:37 | - Select first available trading account
+17:58:38 | - Click Apply filters
+17:58:38 | - Wait for statement data to load
+17:58:43 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:58:44 | - Size of column: 'Symbol': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Order ID': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Position ID': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Open Date': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Entry Price': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Close Date': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Close Volume': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Exit Price': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Interest': 'height: 32, width: 220'
+17:58:44 | - Size of column: 'Close Volume': 'height: 32, width: 220'
+17:58:44 | Step 1: Shrink column 'Close Volume' toward minimum width
+17:58:44 | - Shrinking column 'Close Volume' to minimum (current: 220px)
+17:58:44 | - Decrease column: 'Close Volume' by 154.0px
+17:58:45 | - Size of column: 'Close Volume': 'height: 32, width: 80'
+17:58:45 | - Decrease column: 'Close Volume' by 56.0px
+17:58:47 | - Size of column: 'Close Volume': 'height: 32, width: 80'
+17:58:47 | - Column reached minimum width: 80px
+17:58:47 | Verify column 'Close Volume' width decreased toward minimum
+17:58:47 | - Size of column: 'Close Volume': 'height: 32, width: 80'
+17:58:47 | Verify label of 'Close Volume' truncated
+17:58:47 | - Size of column: 'Interest': 'height: 32, width: 220'
+17:58:47 | Step 2: Shrink column 'Interest' toward minimum width
+17:58:47 | - Shrinking column 'Interest' to minimum (current: 220px)
+17:58:47 | - Decrease column: 'Interest' by 154.0px
+17:58:48 | - Size of column: 'Interest': 'height: 32, width: 80'
+17:58:48 | - Decrease column: 'Interest' by 56.0px
+17:58:49 | - Size of column: 'Interest': 'height: 32, width: 80'
+17:58:49 | - Column reached minimum width: 80px
+17:58:49 | Verify column 'Interest' width decreased toward minimum
+17:58:49 | - Size of column: 'Interest': 'height: 32, width: 80'
+17:58:49 | Verify label of 'Interest' truncated
+17:58:49 | - Size of column: 'Entry Price': 'height: 32, width: 220'
+17:58:49 | Step 3: Shrink column 'Entry Price' toward minimum width
+17:58:49 | - Shrinking column 'Entry Price' to minimum (current: 220px)
+17:58:49 | - Decrease column: 'Entry Price' by 154.0px
+17:58:51 | - Size of column: 'Entry Price': 'height: 32, width: 80'
+17:58:51 | - Decrease column: 'Entry Price' by 56.0px
+17:58:52 | - Size of column: 'Entry Price': 'height: 32, width: 80'
+17:58:52 | - Column reached minimum width: 80px
+17:58:52 | Verify column 'Entry Price' width decreased toward minimum
+17:58:52 | - Size of column: 'Entry Price': 'height: 32, width: 80'
+17:58:52 | Verify label of 'Entry Price' truncated
+17:58:52 | - Size of column: 'Open Date': 'height: 32, width: 220'
+17:58:52 | Step 4: Shrink column 'Open Date' toward minimum width
+17:58:52 | - Shrinking column 'Open Date' to minimum (current: 220px)
+17:58:52 | - Decrease column: 'Open Date' by 154.0px
+17:58:53 | - Size of column: 'Open Date': 'height: 32, width: 80'
+17:58:53 | - Decrease column: 'Open Date' by 56.0px
+17:58:55 | - Size of column: 'Open Date': 'height: 32, width: 80'
+17:58:55 | - Column reached minimum width: 80px
+17:58:55 | Verify column 'Open Date' width decreased toward minimum
+17:58:55 | - Size of column: 'Open Date': 'height: 32, width: 80'
+17:58:55 | Verify label of 'Open Date' truncated
+17:58:55 | - Size of column: 'Position ID': 'height: 32, width: 220'
+17:58:55 | Step 5: Shrink column 'Position ID' toward minimum width
+17:58:55 | - Shrinking column 'Position ID' to minimum (current: 220px)
+17:58:55 | - Decrease column: 'Position ID' by 154.0px
+17:58:56 | - Size of column: 'Position ID': 'height: 32, width: 80'
+17:58:56 | - Decrease column: 'Position ID' by 56.0px
+17:58:57 | - Size of column: 'Position ID': 'height: 32, width: 80'
+17:58:57 | - Column reached minimum width: 80px
+17:58:57 | Verify column 'Position ID' width decreased toward minimum
+17:58:57 | - Size of column: 'Position ID': 'height: 32, width: 80'
+17:58:57 | Verify label of 'Position ID' truncated
+17:58:58 | - Size of column: 'Order ID': 'height: 32, width: 220'
+17:58:58 | Step 6: Shrink column 'Order ID' toward minimum width
+17:58:58 | - Shrinking column 'Order ID' to minimum (current: 220px)
+17:58:58 | - Decrease column: 'Order ID' by 154.0px
+17:58:59 | - Size of column: 'Order ID': 'height: 32, width: 80'
+17:58:59 | - Decrease column: 'Order ID' by 56.0px
+17:59:00 | - Size of column: 'Order ID': 'height: 32, width: 80'
+17:59:00 | - Column reached minimum width: 80px
+17:59:00 | Verify column 'Order ID' width decreased toward minimum
+17:59:00 | - Size of column: 'Order ID': 'height: 32, width: 80'
+17:59:00 | Verify label of 'Order ID' truncated
+17:59:00 | - Size of column: 'Symbol': 'height: 32, width: 220'
+17:59:00 | Step 7: Shrink column 'Symbol' toward minimum width
+17:59:00 | - Shrinking column 'Symbol' to minimum (current: 220px)
+17:59:00 | - Decrease column: 'Symbol' by 154.0px
+17:59:02 | - Size of column: 'Symbol': 'height: 32, width: 80'
+17:59:02 | - Decrease column: 'Symbol' by 56.0px
+17:59:03 | - Size of column: 'Symbol': 'height: 32, width: 80'
+17:59:03 | - Column reached minimum width: 80px
+17:59:03 | Verify column 'Symbol' width decreased toward minimum
+17:59:03 | - Size of column: 'Symbol': 'height: 32, width: 80'
+17:59:03 | Verify label of 'Symbol' truncated
+17:59:03 | - Size of column: 'Exit Price': 'height: 32, width: 220'
+17:59:03 | Step 8: Shrink column 'Exit Price' toward minimum width
+17:59:03 | - Shrinking column 'Exit Price' to minimum (current: 220px)
+17:59:03 | - Decrease column: 'Exit Price' by 154.0px
+17:59:04 | - Size of column: 'Exit Price': 'height: 32, width: 80'
+17:59:04 | - Decrease column: 'Exit Price' by 56.0px
+17:59:06 | - Size of column: 'Exit Price': 'height: 32, width: 80'
+17:59:06 | - Column reached minimum width: 80px
+17:59:06 | Verify column 'Exit Price' width decreased toward minimum
+17:59:06 | - Size of column: 'Exit Price': 'height: 32, width: 80'
+17:59:06 | Verify label of 'Exit Price' truncated
+17:59:06 | - Size of column: 'Close Date': 'height: 32, width: 220'
+17:59:06 | Step 9: Shrink column 'Close Date' toward minimum width
+17:59:06 | - Shrinking column 'Close Date' to minimum (current: 220px)
+17:59:06 | - Decrease column: 'Close Date' by 154.0px
+17:59:07 | - Size of column: 'Close Date': 'height: 32, width: 80'
+17:59:07 | - Decrease column: 'Close Date' by 56.0px
+17:59:08 | - Size of column: 'Close Date': 'height: 32, width: 80'
+17:59:08 | - Column reached minimum width: 80px
+17:59:08 | Verify column 'Close Date' width decreased toward minimum
+17:59:08 | - Size of column: 'Close Date': 'height: 32, width: 80'
+17:59:08 | Verify label of 'Close Date' truncated
+17:59:08 | Step 10: Refresh page and re-apply filters
+17:59:09 | - Wait for statement data to load
+17:59:20 | OpenAI API call failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+17:59:20 | DOM analysis failed for 'Element with selector: div[data-testid="account-statements-detail-card-header"]' (framework: selenium): OpenAI API call failed: 401
+17:59:20 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='AI DOM analysis failed: OpenAI API call failed: 401', context={})
+17:59:20 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:59:20 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:59:20 | Cost-optimized locator failed after 437ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:59:20 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:59:20 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:59:20 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:59:21 | - Select month: latest
+17:59:21 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:59:21 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:59:21 | - Select first available trading account
+17:59:22 | - Click Apply filters
+17:59:22 | - Wait for statement data to load
+17:59:27 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:59:28 | Verify column widths match initial sizes after refresh
+17:59:28 | - Size of column: 'Close Volume': 'height: 32, width: 220'
+17:59:28 | - Size of column: 'Interest': 'height: 32, width: 220'
+17:59:28 | - Size of column: 'Entry Price': 'height: 32, width: 220'
+17:59:28 | - Size of column: 'Open Date': 'height: 32, width: 220'
+17:59:28 | - Size of column: 'Position ID': 'height: 32, width: 220'
+17:59:28 | - Size of column: 'Order ID': 'height: 32, width: 220'
+17:59:28 | - Size of column: 'Symbol': 'height: 32, width: 220'
+17:59:28 | - Size of column: 'Exit Price': 'height: 32, width: 220'
+17:59:28 | - Size of column: 'Close Date': 'height: 32, width: 220'
+17:59:28 | [Teardown] Refresh the page
+17:59:29 | - Wait for statement data to load
+17:59:39 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+17:59:39 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:59:39 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:59:39 | Cost-optimized locator failed after 47ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:59:39 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:59:39 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:59:39 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:59:41 | - Stop recording screen

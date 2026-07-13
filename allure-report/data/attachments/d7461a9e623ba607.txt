@@ -1,0 +1,16 @@
+10:30:24 | - Running test case: test_AS_TC21_positive_empty_state_tables.py
+10:30:24 | - Start recording screen
+10:30:24 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+10:30:24 | - Select month: latest
+10:30:24 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+10:30:24 | - Select trading user: 'Auto_Stmt.xwovflsb'
+10:30:25 | - Select first available trading account
+10:30:25 | - Click Apply filters
+10:30:26 | - Wait for statement data to load
+10:30:34 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+10:30:35 | Step 1: Observe tables in the statement (latest month — may have empty Transaction History)
+10:30:35 | Verify all table cards are displayed (tables with no data still render)
+10:30:36 | - Stop recording screen
+10:30:36 | [Teardown] Quit Web Driver
+10:30:36 | - Quit driver 'web_main'
+10:30:36 | - All drivers quit and registry cleared

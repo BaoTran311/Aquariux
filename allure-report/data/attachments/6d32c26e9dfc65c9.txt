@@ -1,0 +1,16 @@
+00:33:56 | - Running test case: test_UG_ADD_TC03_negative_required_fields.py
+00:33:56 | - Start recording screen
+00:33:56 | [Setup] Click on 'Add User Group' button
+00:33:56 | - Click 'Add User Group' button
+00:33:56 | Step 1: Submit form without field: 'Book Type'
+00:33:56 | - Input name: 'QqRi_Auto_yFMvBeUl'
+00:33:56 | - Input description: 'KFPyulyfFk - description'
+00:33:56 | - Input margin call level: 22.19
+00:33:57 | - Input stop out level: 84.39
+00:33:57 | - Input commission: 3.19
+00:33:57 | - Click 'Save' button
+00:33:57 | Verify error validation: 'Book type is required'
+00:33:57 | Verify panel remains open
+00:33:57 | [Teardown] Click 'x' icon to close the panel
+00:33:57 | - Click 'x' icon
+00:33:59 | - Stop recording screen

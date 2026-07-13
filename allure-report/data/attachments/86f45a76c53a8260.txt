@@ -1,0 +1,44 @@
+18:23:56 | - Running test case: test_AS_TC33_positive_column_sorting.py
+18:23:56 | - Start recording screen
+18:23:56 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:23:56 | - Select month: latest
+18:23:56 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:23:56 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:23:57 | - Select first available trading account
+18:23:57 | - Click Apply filters
+18:23:57 | - Wait for statement data to load
+18:24:03 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:24:04 | Step 1: Scroll down to open positions
+18:24:04 | - Scrolling down - step: 0.4
+18:24:04 | - Scrolling down - step: 0.4
+18:24:05 | Verify sort button for column 'Symbol' is displayed
+18:24:05 | Step 2: Click sort on column: 'Symbol'
+18:24:05 | - Sort by: 'Symbol'
+18:24:05 | Verify column sorts alphabetically a-z
+18:24:05 | - Get table data
+18:24:15 | 🟡 Element not found for ('css selector', 'button[data-testid*="-pagination-next"]'): TimeoutException after 10(s)
+18:24:26 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-open-positions"] th[data-slot="table-head"]'): TimeoutException after 10(s)
+18:24:28 | - Table is empty
+18:24:28 | - Comparing: 
+Actual:    ['[~~missing-key-symbol~~]']
+Expected:  ['[~~missing-key-symbol~~]']
+18:24:28 | Step 3: Click sort again on column: 'Symbol'
+18:24:28 | - Sort by: 'Symbol'
+18:24:28 | Verify column sorts alphabetically z-a
+18:24:28 | - Get table data
+18:24:38 | 🟡 Element not found for ('css selector', 'button[data-testid*="-pagination-next"]'): TimeoutException after 10(s)
+18:24:49 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-open-positions"] th[data-slot="table-head"]'): TimeoutException after 10(s)
+18:24:52 | - Table is empty
+18:24:52 | - Comparing: 
+Actual:    ['[~~missing-key-symbol~~]']
+Expected:  ['[~~missing-key-symbol~~]']
+18:24:52 | [Teardown] Refresh the page
+18:24:53 | - Wait for statement data to load
+18:25:03 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:25:03 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:25:03 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:25:03 | Cost-optimized locator failed after 46ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:25:03 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:25:03 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:25:03 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:25:05 | - Stop recording screen

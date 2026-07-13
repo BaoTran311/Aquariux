@@ -1,0 +1,27 @@
+21:54:42 | - Running test case: test_AK_TBL_TC02_positive_data_validation.py
+21:54:43 | [Setup] Navigate to API Keys page
+21:54:43 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-settings"]'): TRUE
+21:54:43 | - Item: 'Settings' already 'expand'
+21:54:43 | - Get table data
+21:54:45 | - Click 'next' button on table
+21:54:46 | - Click 'next' button on table
+21:54:48 | - Go to the first page
+21:54:48 | - Total records: 52
+21:54:48 | - Start recording screen
+21:54:48 | Step 1: Observe API Keys table
+21:54:48 | Verify column labels: Name, ID, Expires, Status, Created Date, Action
+21:54:49 | - Table Labels: ['Name', 'ID', 'Expires', 'Status', 'Created Date', 'Action']
+21:54:49 | - Comparing: 
+Actual:    ['Name', 'ID', 'Expires', 'Status', 'Created Date', 'Action']
+Expected:  ['Name', 'ID', 'Expires', 'Status', 'Created Date', 'Action']
+21:54:49 | Verify column 'Created Date' sorted by latest first (desc) by default
+21:54:49 | - Get table data
+21:54:51 | - Click 'next' button on table
+21:54:52 | - Click 'next' button on table
+21:54:53 | - Go to the first page
+21:54:53 | - Total records: 52
+21:54:53 | - Comparing: 
+Actual:    ['26 May 2026 03:34:26', '26 May 2026 01:06:21', '24 May 2026 05:20:35', '21 May 2026 07:06:56', '21 May 2026 07:03:26', '21 May 2026 06:47:05', '21 May 2026 05:03:23', '21 May 2026 03:38:10', '21 May 2026 03:17:46', '21 May 2026 02:36:34', '21 May 2026 02:13:17', '21 May 2026 02:00:48', '21 May 2026 01:58:44', '21 May 2026 01:57:32', '21 May 2026 01:19:11', '20 May 2026 08:44:08', '20 May 2026 07:41:22', '20 May 2026 02:23:01', '17 May 2026 15:59:27', '17 May 2026 15:57:31', '17 May 2026 15:37:46', '17 May 2026 15:37:15', '17 May 2026 15:28:46', '17 May 2026 15:26:45', '17 May 2026 15:25:04', '17 May 2026 15:17:44', '17 May 2026 15:15:52', '15 May 2026 09:53:25', '13 May 2026 09:52:25', '13 May 2026 07:19:30', '10 May 2026 06:30:12', '10 May 2026 06:30:04', '10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01', '6 May 2026 08:29:14', '4 May 2026 07:20:37', '30 April 2026 01:03:42', '27 April 2026 05:55:10', '21 April 2026 13:33:02', '21 April 2026 09:29:33', '21 April 2026 09:27:41', '21 April 2026 09:25:26', '21 April 2026 09:09:08', '12 April 2026 13:45:07', '12 April 2026 13:36:52', '12 April 2026 13:21:31', '12 April 2026 04:41:01', '8 April 2026 09:14:05', '31 March 2026 03:05:08']
+Expected:  ['26 May 2026 03:34:26', '26 May 2026 01:06:21', '24 May 2026 05:20:35', '21 May 2026 07:06:56', '21 May 2026 07:03:26', '21 May 2026 06:47:05', '21 May 2026 05:03:23', '21 May 2026 03:38:10', '21 May 2026 03:17:46', '21 May 2026 02:36:34', '21 May 2026 02:13:17', '21 May 2026 02:00:48', '21 May 2026 01:58:44', '21 May 2026 01:57:32', '21 May 2026 01:19:11', '20 May 2026 08:44:08', '20 May 2026 07:41:22', '20 May 2026 02:23:01', '17 May 2026 15:59:27', '17 May 2026 15:57:31', '17 May 2026 15:37:46', '17 May 2026 15:37:15', '17 May 2026 15:28:46', '17 May 2026 15:26:45', '17 May 2026 15:25:04', '17 May 2026 15:17:44', '17 May 2026 15:15:52', '15 May 2026 09:53:25', '13 May 2026 09:52:25', '13 May 2026 07:19:30', '10 May 2026 06:30:12', '10 May 2026 06:30:04', '10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01', '6 May 2026 08:29:14', '4 May 2026 07:20:37', '30 April 2026 01:03:42', '27 April 2026 05:55:10', '21 April 2026 13:33:02', '21 April 2026 09:29:33', '21 April 2026 09:27:41', '21 April 2026 09:25:26', '21 April 2026 09:09:08', '12 April 2026 13:45:07', '12 April 2026 13:36:52', '12 April 2026 13:21:31', '12 April 2026 04:41:01', '8 April 2026 09:14:05', '31 March 2026 03:05:08']
+21:54:53 | Verify date/time column 'Created Date' uses format '%d %B %Y %H:%M:%S'
+21:54:54 | - Stop recording screen

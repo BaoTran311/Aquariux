@@ -1,0 +1,85 @@
+22:39:06 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:39:06 | [API] Send API: GET /backoffice/v1/user-groups/available-user-groups
+22:39:06 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/available-user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MzExNjg3OS0wNTZjLTQ3MmEtYTFhNy1kNzE1Y2NkODRlMmIiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgyNTQ1NDUsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4Mjc2NDQ1LCJpYXQiOjE3NzgyNTQ1NDUsInVzZXJJZCI6IjgzMTE2ODc5LTA1NmMtNDcyYS1hMWE3LWQ3MTVjY2Q4NGUyYiIsImp0aSI6IjM2YmJlZGVjLTE0YTEtNGFjOC1iMTg3LWM5ZDEwNWYzYjFjNSIsImVtYWlsIjoibmdvY3V5ZW4uaG8xQGFxdWFyaXV4LmNvbSJ9.UyBhrpxz2A2jZrseZqdcVAcXIoSHqW7fAqstsNBGZXVpu1PZRRa4nbRr1lhyjUR0Ywn6oGfSy9ec76WfoG1MbKicnXTmED2B1ZE78DIRjE7i2aqzoZ31eij26skQ55zKZ_p0daHKnL4DX6qPQNpiBAeKNVjwgTR7x5NuPT0Jng3Ov_I5HSZdQ6SZbr17UMtXG0hN2d4L947N13pK-rGKSX9eDLOcC5xKFhprxyzV9zFmD7szOwgvUEXQi7XbtPtGvm_yPRfveerHCnBAqvgO4I7lfqfcYNjtFW6i0s4F2GYb7w3GuoVRfX1eG9IxcnqmU5aENWyl3_FWFD03RUTHKA'
+
+
+22:39:07 | - Start recording screen
+22:39:08 | - Get table data
+22:39:09 | - Click 'next' button on table
+22:39:11 | - Click 'next' button on table
+22:39:12 | - Go to the first page
+22:39:12 | Step 1: Search by: 'Name', with: 'rUys_A'
+22:39:12 | - Search for: 'rUys_A'
+22:39:12 | Verify results on table data match partial keyword: 'rUys_A'
+22:39:12 | - Get table data
+22:39:14 | - Go to the first page
+22:39:14 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ rUys_Auto_YutJSVHj │ NJbTWXZJca - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:31 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:14 | - Comparing 1 items
+22:39:14 | Step 2: Search by: 'Name', with: 'pDiy_Auto'
+22:39:14 | - Search for: 'pDiy_Auto'
+22:39:14 | Verify results on table data match partial keyword: 'pDiy_Auto'
+22:39:14 | - Get table data
+22:39:15 | - Go to the first page
+22:39:15 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ pDiy_Auto_aEMrooKp │ ILWmQoYwHD - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:03 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:15 | - Comparing 1 items
+22:39:15 | Step 3: Search by: 'Name', with: 'siDg_Auto'
+22:39:15 | - Search for: 'siDg_Auto'
+22:39:16 | Verify results on table data match partial keyword: 'siDg_Auto'
+22:39:16 | - Get table data
+22:39:17 | - Go to the first page
+22:39:17 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ siDg_Auto_jhoWZCPx │ mvpZrZDPvl - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:36 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:17 | - Comparing 1 items
+22:39:17 | Step 4: Search by: 'Name', with: 'zRtw_Auto_C'
+22:39:17 | - Search for: 'zRtw_Auto_C'
+22:39:17 | Verify results on table data match partial keyword: 'zRtw_Auto_C'
+22:39:17 | - Get table data
+22:39:19 | - Go to the first page
+22:39:19 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ zRtw_Auto_CqJVBpgC │ rjwwZFtkxj - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:54 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:19 | - Comparing 1 items
+22:39:19 | Step 5: Search by: 'Name', with: 'vXys_Au'
+22:39:19 | - Search for: 'vXys_Au'
+22:39:19 | Verify results on table data match partial keyword: 'vXys_Au'
+22:39:19 | - Get table data
+22:39:20 | - Go to the first page
+22:39:20 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ vXys_Auto_MSGeGZza │ zudMFbzkfq - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:12 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:39:20 | - Comparing 1 items
+22:39:20 | [Teardown] Clear search field
+22:39:20 | - Clear search input
+22:39:21 | - Stop recording screen

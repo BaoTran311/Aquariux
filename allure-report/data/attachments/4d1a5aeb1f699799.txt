@@ -1,0 +1,153 @@
+15:20:52 | - Running test case: test_TA_DEL_TC01_positive_cancel_from_action.py
+15:20:52 | [Setup] Setup 2FA via API
+15:20:52 | [API] Send API: POST /auth/v1/login/admin
+15:20:53 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-11T08:20:53.171388303Z"
+}
+
+
+15:20:53 | [API] Send API: GET /backoffice/v1/2fa/setup/totp
+15:20:53 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/setup/totp' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg0ODc2NTMsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NDg4NTUzLCJpYXQiOjE3Nzg0ODc2NTMsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6Ijc5Y2ZjZTQzLTg2NmMtNGE5YS1hZjk1LWE1NzQzODc2NWRkMCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.JPmqBhvijB6cWoA40ykZqR1v_KP9Cy6UMEbyJYC-swGMjVb2AGQFdt7NiPzLrfDnYCVpo24GGBNyjzC3JGKg2Imt0n8Z5A1Nd8cQOJslgplYNVH6JsfIoxYB67jkT0uoX13jYFGEtpE5Y3lvJBTBcUCy8sDgWTzIZVtCO0Sl7YuomWSHVMSsQvtZnsDv3AVS6ySY2MHnyMDKc1N05aQKn_cPUfa2UsuXCqdFLeF9jVe8FuTpf6XfFVAsduVFOY4G-0glAXCYCiseAVyQ4-i9Ehx8MMKx-zcZ1oA73AMd_ORBaaW-RBuQF2wisTVlFHcKdAF4msF_UKU4GvvPyDbLmA'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "secret": "BX6BLEFIIVCA3XKGJDY3SE3GI5YI5IBD",
+        "qrCodeUrl": "otpauth://totp/nguyengiabao.tran1%40aquariux.com?secret=BX6BLEFIIVCA3XKGJDY3SE3GI5YI5IBD&issuer=AQXOMS",
+        "accountName": "nguyengiabao.tran1@aquariux.com",
+        "issuer": "AQXOMS",
+        "message": "TOTP secret generated. Scan QR code with authenticator app, then verify."
+    },
+    "success": true,
+    "timestamp": "2026-05-11T08:20:53.476970200Z"
+}
+
+
+15:20:53 | [API] Send API: POST /backoffice/v1/2fa/totp/verify
+15:20:53 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/totp/verify' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg0ODc2NTMsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NDg4NTUzLCJpYXQiOjE3Nzg0ODc2NTMsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6Ijc5Y2ZjZTQzLTg2NmMtNGE5YS1hZjk1LWE1NzQzODc2NWRkMCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.JPmqBhvijB6cWoA40ykZqR1v_KP9Cy6UMEbyJYC-swGMjVb2AGQFdt7NiPzLrfDnYCVpo24GGBNyjzC3JGKg2Imt0n8Z5A1Nd8cQOJslgplYNVH6JsfIoxYB67jkT0uoX13jYFGEtpE5Y3lvJBTBcUCy8sDgWTzIZVtCO0Sl7YuomWSHVMSsQvtZnsDv3AVS6ySY2MHnyMDKc1N05aQKn_cPUfa2UsuXCqdFLeF9jVe8FuTpf6XfFVAsduVFOY4G-0glAXCYCiseAVyQ4-i9Ehx8MMKx-zcZ1oA73AMd_ORBaaW-RBuQF2wisTVlFHcKdAF4msF_UKU4GvvPyDbLmA' 
+--header 'Content-Length: 18' 
+--data-raw '{"code": "222595"}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-11T08:20:53.759263030Z"
+}
+
+
+15:20:53 | [API] Send API: POST /auth/v1/login/admin
+15:20:54 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-05-11T08:20:54.411340959Z"
+}
+
+
+15:20:54 | [API] Send API: GET /backoffice/v1/admin-users
+15:20:54 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3Nzg0ODc2NTQsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4NDg4NTU0LCJpYXQiOjE3Nzg0ODc2NTQsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjMzYTlhNDM2LTc5MjctNDdhNy1iZTYyLTQ3MmJhNjMwMTIwMCIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.IeQNkDolh8GaRqibfpM2dNDyKemCfr6cj4eX0A70nJSI5ZujNXHjZdnOHETf4JzyO9v_zDC_k4HryDnfzcAfxTwXfSqXxt7NuwU3fq3tisWPrPlFaA5sQp6jDnlMD2Qq-OumKT6kCQ4nMBcEPk7CmyKs7591TR6hsv_IqUBnKhbnDhV-qJeZPr0lo-6CUU77OIRRC4YJxJpE_hdrGRE1nOox_pWXFXLiPCcW52hQgp3P6LZ2wXDErL5tAls3TAD_zOvZiK-6YZhz7lXK4NSyy719y_sX4AgwEJwbTpN9-pwQdc0N12buX-bNj_Q5x473Ptr08Trty3sMvIxdSSnhhg'
+
+
+15:20:54 | [Setup] Init Web Driver
+15:20:56 | - Registered driver under 'web_main' (total: 1)
+15:20:56 | - Added web driver 'main' to driver_list (total: 1)
+15:20:56 | [Setup] Navigate to OMS site
+15:20:57 | [Setup] Login with default admin user
+15:20:58 | 🟡 Element not found for ('css selector', 'div[data-testid="stat-card-card"]'): TimeoutException after 1(s)
+15:20:58 | - Input email: 'nguyengiabao.tran1@aquariux.com'
+15:20:59 | - Input password: 'Autotest@12345'
+15:20:59 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+15:20:59 | - Click on login button
+15:20:59 | - Waiting for new code generated (old: '222595') ...
+15:21:00 | - New code generated ! (481495)
+15:21:01 | - Input TOTP code: '481495'
+15:21:02 | [Setup] Expand Accounts section
+15:21:02 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): FALSE
+15:21:02 | - Expand item: 'Accounts'
+15:21:02 | [Setup] Navigate to Trading Account Page
+15:21:02 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-accounts"]'): TRUE
+15:21:02 | - Item: 'Accounts' already 'expand'
+15:21:03 | - Start recording screen
+15:21:04 | - Get table data
+15:21:06 | - Click 'next' button on table
+15:21:08 | - Click 'next' button on table
+15:21:10 | - Go to the first page
+15:21:10 | - Get table data
+15:21:12 | - Click 'next' button on table
+15:21:14 | - Click 'next' button on table
+15:21:15 | - Go to the first page
+15:21:15 | [Setup] Total rows data: 119
+15:21:15 | Step 1: Action on row: 'wMlT_Auto-XWsBWPWg' > Delete
+15:21:15 | - Search for: 'AQX-TA-00000691'
+15:21:16 | - Get table data
+15:21:17 | - Found record: 'wMlT_Auto-XWsBWPWg' column: 'Name' (page:1)
+15:21:17 | - Delete row: 'wMlT_Auto-XWsBWPWg' (attempt:1)
+15:21:17 | Verify delete confirmation title
+15:21:17 | Verify delete confirmation content
+15:21:18 | Step 2: Try clicking outside
+15:21:18 | Verify modal remains open
+15:21:18 | Step 3: Click on icon 'x'
+15:21:18 | Verify modal is closed
+15:21:18 | - Check invisibility of locator: ('css selector', 'span[data-slot="dialog-title"]'): TRUE
+15:21:18 | Step 4: Clear search
+15:21:18 | - Clear search input
+15:21:18 | Verify footer label unchanged
+15:21:20 | - Wait for 'Showing 1 to 40 of 119 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+15:21:20 | [Teardown] Refresh the page
+15:21:21 | - Stop recording screen

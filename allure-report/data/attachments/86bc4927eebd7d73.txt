@@ -1,0 +1,101 @@
+10:10:46 | - Running test case: test_AS_TC20_positive_export_pdf.py
+10:10:46 | [API] Send API: POST /auth/v1/login/admin
+10:10:47 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 68' 
+--data-raw '{"password": "Autotest@12345", "email": "auto_admin02@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019e7c33-b81b-7970-b804-59fcb23666e6",
+        "userType": "ADMIN",
+        "email": "auto_admin02@aquariux.com",
+        "name": "Auto Admin 02",
+        "...": "(7 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-07-13T03:10:47.899363277Z"
+}
+
+
+10:10:47 | [API] Send API: GET /backoffice/v1/admin-users
+10:10:48 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTllN2MzMy1iODFiLTc5NzAtYjgwNC01OWZjYjIzNjY2ZTYiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODM5MTIyNDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgzOTk4NjQ3LCJpYXQiOjE3ODM5MTIyNDcsInVzZXJJZCI6IjAxOWU3YzMzLWI4MWItNzk3MC1iODA0LTU5ZmNiMjM2NjZlNiIsImp0aSI6Ijc0NzlhNDgyLTc5NGItNDdkZC05YmI0LWM4N2JmOTcwMDEzZCIsImVtYWlsIjoiYXV0b19hZG1pbjAyQGFxdWFyaXV4LmNvbSJ9.LwHydu2HExQwHjbt4SZfnTOg2k3PCFlW2k7se7Hcf3C_uzXKGu0biHH6j2KkR8sIoLRTM4R0jKR-l0K70mLdaNpraQFSOomgIc1IBFSPzNCtWk5gr1jw1o8-ECTGRQTB58R9DJLfFo7n3UWJkFTD7cP1NgFM5JgB-Lwq6FFXNua-Clg2eBWUvkgVr9Ndd5h5XXuO2-P4qyvOFGhBealUqbHvQl8vF10EY3wnr9h5c1mIISaNTrWFyA2S4uwFfi1AhzoNZ9aKMvEKSQAVRKCmZc_0ZFy8a8eKzFvvUvQlBBorSKl6IVRbkyXeu_w8jG6wjPWpe-TSaanCLO9Fr_genQ'
+
+
+10:10:48 | [Setup] Init Web Driver
+10:10:50 | - Registered driver under 'web_main' (total: 1)
+10:10:50 | - Added web driver 'main' to driver_list (total: 1)
+10:10:50 | [Setup] Navigate to OMS site
+10:10:53 | [Setup] Login with default admin user
+10:10:53 | - Input email: 'auto_admin02@aquariux.com'
+10:10:53 | - Input password: 'Autotest@12345'
+10:10:54 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+10:10:54 | - Click on login button
+10:10:54 | [Setup] Navigate to Account Statements page
+10:10:55 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-reports"]'): FALSE
+10:10:55 | - Expand item: 'Reports'
+10:10:55 | - Wait for statement data to load
+10:11:06 | OpenAI API call failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+10:11:06 | DOM analysis failed for 'Element with selector: div[data-testid="account-statements-detail-card-header"]' (framework: selenium): OpenAI API call failed: 401
+10:11:06 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='AI DOM analysis failed: OpenAI API call failed: 401', context={})
+10:11:06 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+10:11:06 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+10:11:06 | Cost-optimized locator failed after 1417ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+10:11:06 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+10:11:06 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+10:11:06 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+10:11:07 | - Start recording screen
+10:11:08 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+10:11:08 | - Select month: latest
+10:11:08 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+10:11:08 | - Select trading user: 'Auto_Stmt.xwovflsb'
+10:11:08 | - Select first available trading account
+10:11:08 | - Click Apply filters
+10:11:09 | - Wait for statement data to load
+10:11:17 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+10:11:18 | Step 1: Expand Daily accordion and select the first daily statement
+10:11:19 | - Click first available Daily Statement
+10:11:19 | - Wait for 'Daily Statement' present in locator ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+10:11:19 | Step 2: Read all UI data (daily statement)
+10:11:19 | - Reading all UI data for PDF comparison
+10:11:19 | - Count rows: orders
+10:11:29 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-orders-row-0-cell-orderId"]'): TimeoutException after 1(s)
+10:11:29 | - Count rows: closed-positions
+10:11:39 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-closed-positions-row-0-cell-orderId"]'): TimeoutException after 1(s)
+10:11:39 | - Count rows: open-positions
+10:11:49 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-open-positions-row-0-cell-orderId"]'): TimeoutException after 1(s)
+10:11:49 | - Count rows: transactions
+10:11:59 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-transactions-row-0-cell-transactionId"]'): TimeoutException after 1(s)
+10:11:59 | Step 3: Note the current generation timestamp
+10:11:59 | Step 4: Click 'Export PDF' button
+10:11:59 | - Click Export PDF
+10:11:59 | Step 5: Wait for generation timestamp to update (max 10s)
+10:12:03 | - Timestamp updated: 'Generated 13 July 2026 03:12:00'
+10:12:03 | Step 6: New timestamp: 'Generated 13 July 2026 03:12:00'
+10:12:03 | Verify generation timestamp is newer after Export PDF
+10:12:03 | Step 7: Parse the downloaded PDF
+10:12:06 | - Latest file: /Users/nguyengiabao.tran/Downloads/statement-019f5975-0c1e-7f0a-a723-5b1b1355ad6b.pdf
+10:12:06 | - Reading PDF: /Users/nguyengiabao.tran/Downloads/statement-019f5975-0c1e-7f0a-a723-5b1b1355ad6b.pdf
+10:12:07 | [Setup] Parsed PDF: /Users/nguyengiabao.tran/Downloads/statement-019f5975-0c1e-7f0a-a723-5b1b1355ad6b.pdf
+10:12:07 | Verify PDF content matches UI data (daily)
+10:12:07 | - Verifying PDF matches UI data
+10:12:07 | [Teardown] Delete downloaded PDF: /Users/nguyengiabao.tran/Downloads/statement-019f5975-0c1e-7f0a-a723-5b1b1355ad6b.pdf
+10:12:07 | - Deleted file: /Users/nguyengiabao.tran/Downloads/statement-019f5975-0c1e-7f0a-a723-5b1b1355ad6b.pdf
+10:12:08 | - Stop recording screen
+10:12:08 | [Teardown] Quit Web Driver
+10:12:08 | - Quit driver 'web_main'
+10:12:08 | - All drivers quit and registry cleared

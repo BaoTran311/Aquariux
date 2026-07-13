@@ -1,0 +1,89 @@
+
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 98%;
+                font-family: Arial, sans-serif;
+                margin: 10px 0;
+                table-layout: auto;
+            }
+            th, td {
+                border: 1px solid #ccc;
+                padding: 8px 10px;
+                text-align: left;
+                vertical-align: top;
+                font-size: 12px;
+            }
+            th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+            }
+            .pass-row {
+                background-color: #d4edda;
+            }
+            .fail-row {
+                background-color: #f8d7da;
+            }
+            .status-pass {
+                color: #155724;
+                font-weight: bold;
+            }
+            .status-fail {
+                color: #721c24;
+                font-weight: bold;
+            }
+            .summary-header {
+                background-color: #e9ecef;
+                font-weight: bold;
+                text-align: left;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            .values-cell {
+                font-family: 'Courier New', monospace;
+                font-size: 11px;
+                white-space: pre-wrap;
+                word-break: break-word;
+            }
+            .field-pass {
+                color: #155724;
+            }
+            .field-diff {
+                color: #d9534f;
+                font-weight: bold;
+            }
+            .index-cell {
+                text-align: center;
+                font-weight: bold;
+            }
+            .status-cell {
+                text-align: center;
+            }
+        </style>
+        
+        <div class="summary-header">
+            Overall Result: <span class="status-pass">PASS</span><br>
+            Total Items: 1 | Failed: 0
+        </div>
+        <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">Index</th>
+                <th style="width: 8%;">Status</th>
+                <th style="width: 43%;">Actual Values</th>
+                <th style="width: 43%;">Expected Values</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="pass-row">
+                <td class="index-cell">0</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Book Type: A-Book</span><br><span class='field-pass'>Created Date: 8 May 2026 14:45:46</span><br><span class='field-pass'>Description: rvKQHJsFJg - description</span><br><span class='field-pass'>Name: Rszp_Auto.INczbrBY</span><br><span class='field-pass'>Position Type: Hedge</span></td>
+                <td class="values-cell"><span class='field-pass'>Book Type: A-Book</span><br><span class='field-pass'>Created Date: 8 May 2026 14:45:46</span><br><span class='field-pass'>Description: rvKQHJsFJg - description</span><br><span class='field-pass'>Name: Rszp_Auto.INczbrBY</span><br><span class='field-pass'>Position Type: Hedge</span></td>
+            </tr>
+            
+        </tbody>
+        </table>
+        

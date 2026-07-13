@@ -1,0 +1,14 @@
+17:51:02 | - Running test case: test_AS_TC12_positive_daily_interest_dash_for_monthly.py
+17:51:02 | - Start recording screen
+17:51:02 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:51:02 | - Select month: latest
+17:51:02 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:51:02 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:51:03 | - Select first available trading account
+17:51:03 | - Click Apply filters
+17:51:03 | - Wait for statement data to load
+17:51:09 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:51:10 | Step 1: Observe Daily Interest column in Open Positions table (monthly view)
+17:51:10 | Verify Daily Interest shows '-' for all rows in monthly statement
+17:51:10 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-open-positions"]'): TRUE
+17:51:11 | - Stop recording screen

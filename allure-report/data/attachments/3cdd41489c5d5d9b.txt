@@ -1,0 +1,46 @@
+18:21:37 | - Running test case: test_AS_TC33_positive_column_sorting.py
+18:21:37 | - Start recording screen
+18:21:38 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:21:38 | - Select month: latest
+18:21:38 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:21:38 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:21:38 | - Select first available trading account
+18:21:39 | - Click Apply filters
+18:21:39 | - Wait for statement data to load
+18:21:44 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:21:45 | Step 1: Scroll down to closed positions
+18:21:45 | - Scrolling down - step: 0.4
+18:21:45 | - Scrolling down - step: 0.4
+18:21:45 | Verify sort button for column 'Open Date' is displayed
+18:21:45 | Step 2: Click sort on column: 'Open Date'
+18:21:45 | - Sort by: 'Open Date'
+18:21:45 | Verify column sorts chronologically oldest → newest
+18:21:45 | - Get table data
+18:21:55 | 🟡 Element not found for ('css selector', 'button[data-testid*="-pagination-next"]'): TimeoutException after 10(s)
+18:22:07 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-closed-positions"] th[data-slot="table-head"]'): TimeoutException after 10(s)
+18:22:09 | - Table is empty
+18:22:09 | Input format '%d %B %Y %H:%M:%S' mismatch. Auto-detected format: '[~~missing-key-open_date~~]'
+18:22:09 | - Comparing: 
+Actual:    ['[~~missing-key-open_date~~]']
+Expected:  ['[~~missing-key-open_date~~]']
+18:22:09 | Step 3: Click sort again on column: 'Open Date'
+18:22:09 | - Sort by: 'Open Date'
+18:22:09 | Verify column sorts chronologically newest → oldest
+18:22:09 | - Get table data
+18:22:19 | 🟡 Element not found for ('css selector', 'button[data-testid*="-pagination-next"]'): TimeoutException after 10(s)
+18:22:30 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-closed-positions"] th[data-slot="table-head"]'): TimeoutException after 10(s)
+18:22:33 | - Table is empty
+18:22:33 | Input format '%d %B %Y %H:%M:%S' mismatch. Auto-detected format: '[~~missing-key-open_date~~]'
+18:22:33 | - Comparing: 
+Actual:    ['[~~missing-key-open_date~~]']
+Expected:  ['[~~missing-key-open_date~~]']
+18:22:33 | [Teardown] Refresh the page
+18:22:33 | - Wait for statement data to load
+18:22:44 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:22:44 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:22:44 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:22:44 | Cost-optimized locator failed after 47ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:22:44 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:22:44 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:22:44 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:22:46 | - Stop recording screen

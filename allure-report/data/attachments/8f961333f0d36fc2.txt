@@ -1,0 +1,14 @@
+17:49:41 | - Running test case: test_AS_TC09_positive_table_columns.py
+17:49:41 | - Start recording screen
+17:49:41 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:49:41 | - Select month: latest
+17:49:41 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:49:42 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:49:42 | - Select first available trading account
+17:49:42 | - Click Apply filters
+17:49:42 | - Wait for statement data to load
+17:49:48 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:49:49 | Step 1: Observe Open Positions table
+17:49:49 | Verify column headers: Symbol, Order ID, Position ID, Open Volume, Open Date, Entry Price, Current Price, Daily Interest, Accumulated Interest, Commission, Floating Profit / Loss
+17:49:49 | - Get column headers: open-positions
+17:49:50 | - Stop recording screen

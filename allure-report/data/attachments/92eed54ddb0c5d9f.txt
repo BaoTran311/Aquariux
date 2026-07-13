@@ -1,0 +1,28 @@
+17:48:53 | - Running test case: test_AS_TC07_positive_monthly_daily_view_switch.py
+17:48:53 | - Start recording screen
+17:48:53 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:48:53 | - Select month: latest
+17:48:53 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:48:53 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:48:54 | - Select first available trading account
+17:48:54 | - Click Apply filters
+17:48:54 | - Wait for statement data to load
+17:49:00 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:49:01 | Verify default view shows 'Monthly Statement'
+17:49:01 | Verify all 5 statement tables are displayed
+17:49:01 | Step 1: Note first row data from Open Positions table for monthly view
+17:49:01 | Step 2: Click first available daily statement
+17:49:01 | - Click first available Daily Statement
+17:49:01 | - Wait for 'Daily Statement' present in locator ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:49:01 | Verify detail header switches to 'Daily Statement'
+17:49:01 | Verify all 5 tables are still displayed for the daily view
+17:49:01 | Step 3: Note first row data from Open Positions table for daily view
+17:49:11 | 🟡 Element not found for ('css selector', 'tr[data-testid="account-statements-detail-table-open-positions-row-0"]'): TimeoutException after 10(s)
+17:49:11 | ✘ Check Failed !
+Open Positions row 0 should have data
+17:49:11 | Step 4: Click back to monthly statement
+17:49:11 | - Click Monthly Statement in accordion
+17:49:11 | - Wait for 'Monthly Statement' present in locator ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:49:11 | Verify detail header switches back to 'Monthly Statement'
+17:49:11 | Verify all 5 tables are still displayed for the monthly view
+17:49:12 | - Stop recording screen

@@ -1,0 +1,26 @@
+01:02:59 | - Running test case: test_UG_DEL_TC02_positive_cancel_from_edit_panel.py
+01:02:59 | - Start recording screen
+01:02:59 | - Get table data
+01:03:00 | - Go to the first page
+01:03:00 | - Get table data
+01:03:02 | - Go to the first page
+01:03:02 | [Setup] Total rows data: 27
+01:03:02 | Step 1: View row: 'pLib_Auto_TlXFFGmD' > Edit
+01:03:02 | - Get table data
+01:03:03 | - Found record: 'pLib_Auto_TlXFFGmD' column: 'Name' (page:1)
+01:03:03 | - View row: 'pLib_Auto_TlXFFGmD' (attempt:1)
+01:03:04 | - Click 'Edit' button
+01:03:04 | Step 2: Click on 'Delete' button
+01:03:04 | - Click 'Delete' button
+01:03:04 | Verify delete confirmation title: 'Permanently delete (pLib_Auto_TlXFFGmD)?'
+01:03:04 | Verify delete confirmation content: 'Deleting this user group is permanent and cannot be undone. This may affect historical records and reports.\nPlease only proceed if you are certain this user group is no longer needed.'
+01:03:05 | Step 3: Click on icon 'x'
+01:03:05 | Verify modal is closed
+01:03:05 | - Check invisibility of locator: ('css selector', 'span[data-slot="dialog-title"]'): TRUE
+01:03:05 | Verify 'Edit User Group' remains open
+01:03:05 | Step 4: Close the panel
+01:03:05 | - Click 'x' icon
+01:03:05 | Verify footer remains un-changed
+01:03:05 | - Wait for 'Showing 1 to 27 of 27 items' present in locator ('css selector', 'span[data-testid*="-pagination-record"]'): TRUE
+01:03:05 | [Teardown] Refresh the page
+01:03:07 | - Stop recording screen

@@ -1,0 +1,12 @@
+22:10:04 | - Running test case: test_AK_VIW_TC02_positive_close_panel.py
+22:10:04 | - Start recording screen
+22:10:04 | [Setup] Open view panel for: 'JhOm_Auto.nkwuKNYT'
+22:10:05 | - View row: 'JhOm_Auto.nkwuKNYT' (attempt: 1)
+22:10:06 | Step 1: Click 'x' icon
+22:10:06 | - Click 'x' icon
+22:10:06 | Verify panel is closed
+22:10:07 | - Check invisibility of locator: ('css selector', 'span[data-testid$="-sheet-title"]'): TRUE
+22:10:07 | [Teardown] Close panel if open
+22:10:07 | - Close panel
+22:10:12 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+22:10:13 | - Stop recording screen

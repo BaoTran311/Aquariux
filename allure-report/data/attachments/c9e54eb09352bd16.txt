@@ -1,0 +1,18 @@
+00:34:27 | - Running test case: test_UG_ADD_TC05_positive_close_panel.py
+00:34:27 | - Start recording screen
+00:34:27 | [Setup] Click on 'Add User Group' button
+00:34:27 | - Click 'Add User Group' button
+00:34:27 | Step 1: Fill form with: {'name': 'dNAZ_Auto_rZWQVBeD', 'description': 'XScUiPouer - description', 'position_type': 'Hedge', 'book_type': 'A-Book', 'margin_call_level': 14.07, 'stop_out_level': 89.75, 'commission': 8.86}
+00:34:27 | - Input name: 'dNAZ_Auto_rZWQVBeD'
+00:34:28 | - Input description: 'XScUiPouer - description'
+00:34:28 | - Check invisibility of locator: ('css selector', 'div[role="listbox"]'): TRUE
+00:34:28 | - Open dropdown Book Type
+00:34:28 | - Select Book Type
+00:34:28 | - Input margin call level: 14.07
+00:34:28 | - Input stop out level: 89.75
+00:34:28 | - Input commission: 8.86
+00:34:28 | Step 2: Click outside the panel
+00:34:28 | - Click outside to close the panel
+00:34:28 | Verify panel title: 'Add User Group' & desc: Create a new user group
+00:34:28 | [Teardown] Refresh the page
+00:34:30 | - Stop recording screen

@@ -1,0 +1,16 @@
+17:48:30 | - Running test case: test_AS_TC05_positive_month_picker_future_disabled.py
+17:48:30 | - Start recording screen
+17:48:30 | Step 1: Open Month Picker
+17:48:30 | - Open month picker
+17:48:30 | Verify future months are disabled/not selectable
+17:48:30 | Verify current month and past months are selectable
+17:48:30 | [Teardown] Refresh the page
+17:48:31 | - Wait for statement data to load
+17:48:41 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+17:48:41 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:48:41 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:48:41 | Cost-optimized locator failed after 52ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:48:41 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:48:41 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:48:41 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:48:43 | - Stop recording screen

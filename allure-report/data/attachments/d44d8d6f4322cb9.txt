@@ -1,0 +1,655 @@
+15:01:21 | - Running test case: test_AK_TBL_TC09_positive_column_sorting_with_search.py
+15:01:21 | [API] Send API: POST /auth/v1/login/admin
+15:01:22 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-06-08T08:01:22.402339538Z"
+}
+
+
+15:01:22 | [Setup] Setup 2FA via API
+15:01:22 | [API] Send API: POST /auth/v1/login/admin
+15:01:22 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 74' 
+--data-raw '{"password": "Autotest@12345", "email": "nguyengiabao.tran1@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "userType": "ADMIN",
+        "email": "nguyengiabao.tran1@aquariux.com",
+        "name": "Auto",
+        "...": "(6 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-06-08T08:01:22.995432330Z"
+}
+
+
+15:01:22 | [API] Send API: GET /backoffice/v1/2fa/setup/totp
+15:01:23 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/setup/totp' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImMwMTg4MDQzLTI4YmItNGU1ZC1hNTMyLWQwZjhlYTc0MmUyYiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.fhQmmz4HtuE_vvtGMz3YQ1fqdSz9zp4kSZZ5aXCyyREG2q-BPJLuP1Fu3h4bhRo0RTK_tzFR1LdCSMsp_G-QcXzZLFxu1i9J2GotLDaCJhXXZwYilHFZpGKrfaa7P2un69epPUogUKTiSUxPJZwEY_dEsc_knsoFPWsWYgab5i30ptp3o__RIKUwG3Xje58bylEg8QKQO5-0gFihrIcM_uN6y9Lxb82m8ugo1r755hM0qS2JyKd7v_O5ocT74bgWPkyOYJCvgaryj6YpBTzjdpJWbgoxj4ArvxOwJt9JQBShT1Giy4trl_i-5auPaUVtysnubM9yoIhCZnUwCSD1hw'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "secret": "OXTETSXETPO7IARFSB7BBHXTCTO3VLYP",
+        "qrCodeUrl": "otpauth://totp/nguyengiabao.tran1%40aquariux.com?secret=OXTETSXETPO7IARFSB7BBHXTCTO3VLYP&issuer=AQXOMS",
+        "accountName": "nguyengiabao.tran1@aquariux.com",
+        "issuer": "AQXOMS",
+        "message": "TOTP secret generated. Scan QR code with authenticator app, then verify."
+    },
+    "success": true,
+    "timestamp": "2026-06-08T08:01:23.163556649Z"
+}
+
+
+15:01:23 | [API] Send API: POST /backoffice/v1/2fa/totp/verify
+15:01:23 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/2fa/totp/verify' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImMwMTg4MDQzLTI4YmItNGU1ZC1hNTMyLWQwZjhlYTc0MmUyYiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.fhQmmz4HtuE_vvtGMz3YQ1fqdSz9zp4kSZZ5aXCyyREG2q-BPJLuP1Fu3h4bhRo0RTK_tzFR1LdCSMsp_G-QcXzZLFxu1i9J2GotLDaCJhXXZwYilHFZpGKrfaa7P2un69epPUogUKTiSUxPJZwEY_dEsc_knsoFPWsWYgab5i30ptp3o__RIKUwG3Xje58bylEg8QKQO5-0gFihrIcM_uN6y9Lxb82m8ugo1r755hM0qS2JyKd7v_O5ocT74bgWPkyOYJCvgaryj6YpBTzjdpJWbgoxj4ArvxOwJt9JQBShT1Giy4trl_i-5auPaUVtysnubM9yoIhCZnUwCSD1hw' 
+--header 'Content-Length: 18' 
+--data-raw '{"code": "485063"}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T08:01:23.458857944Z"
+}
+
+
+15:01:23 | [API] Send API: GET /backoffice/v1/admin-users
+15:01:23 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw'
+
+
+15:01:23 | [Setup] Init Web Driver
+15:01:25 | - Registered driver under 'web_main' (total: 1)
+15:01:25 | - Added web driver 'main' to driver_list (total: 1)
+15:01:25 | [Setup] Navigate to OMS site
+15:01:26 | [Setup] Login with default admin user
+15:01:27 | [Setup] Navigate to API Keys page
+15:01:27 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-settings"]'): FALSE
+15:01:27 | - Expand item: 'Settings'
+15:01:29 | [API] Send API: GET /backoffice/v1/api-keys
+15:01:29 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "endRow": 21,
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "list": [
+            {
+                "id": "019ea54d-e9cf-7be8-93c5-248c06e824db",
+                "keyId": "4cfb9ef1",
+                "name": "test",
+                "status": "INACTIVE",
+                "expiresAt": "2026-06-09T23:59:59Z",
+                "createdAt": "2026-06-08T03:36:47.311255Z",
+                "updatedAt": "2026-06-08T07:08:55.382350Z",
+                "createdBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "updatedBy": "019d8eef-9133-76ab-b9de-f073b754820a",
+                "createdByName": "Bao",
+                "updatedByName": "Bao"
+            },
+            {
+                "id": "019e1094-1b11-729c-833c-43be480723f1",
+                "keyId": "193ba65a",
+                "name": "Active Key With Expiry",
+                "status": "ACTIVE",
+                "expiresAt": "2027-12-31T23:59:59Z",
+                "createdAt": "2026-05-10T06:30:02.256799Z",
+                "updatedAt": "2026-05-10T06:30:02.256799Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e1094-0e8e-7035-a3a3-d1ffc9c541a1",
+                "keyId": "6b8b288b",
+                "name": "Integration Test Key",
+                "status": "ACTIVE",
+                "expiresAt": null,
+                "createdAt": "2026-05-10T06:29:59.039087Z",
+                "updatedAt": "2026-05-10T06:29:59.039087Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e0c68-db93-79b5-b293-0cc445ca7206",
+                "keyId": "42fd11ad",
+                "name": "Past Expiry Key",
+                "status": "ACTIVE",
+                "expiresAt": "2020-01-01T00:00:00Z",
+                "createdAt": "2026-05-09T11:04:19.091124Z",
+                "updatedAt": "2026-05-09T11:04:19.091124Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e0c68-a2a8-77e0-b265-22edcdec76a0",
+                "keyId": "50a57ec1",
+                "name": "Inactive Pre-provisioned Key",
+                "status": "INACTIVE",
+                "expiresAt": null,
+                "createdAt": "2026-05-09T11:04:04.519716Z",
+                "updatedAt": "2026-05-09T11:04:04.519716Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019e0c68-96a2-769e-bcf9-583561edcc92",
+                "keyId": "ee704ce6",
+                "name": "Active Key With Expiry",
+                "status": "ACTIVE",
+                "expiresAt": "2027-12-31T23:59:59Z",
+                "createdAt": "2026-05-09T11:04:01.441663Z",
+                "updatedAt": "2026-05-09T11:04:01.441663Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019dfc67-cbac-7d85-9330-2d776d21d975",
+                "keyId": "5c93eb3c",
+                "name": "BQN_TEST",
+                "status": "ACTIVE",
+                "expiresAt": "2027-06-01T23:59:59Z",
+                "createdAt": "2026-05-06T08:29:14.027857Z",
+                "updatedAt": "2026-05-06T08:29:14.027857Z",
+                "createdBy": "019dd302-2ba7-7f10-81cf-0758d92dfec3",
+                "updatedBy": "019dd302-2ba7-7f10-81cf-0758d92dfec3",
+                "createdByName": "Binh",
+                "updatedByName": "Binh"
+            },
+            {
+                "id": "019df1dc-41db-794a-a80c-f322d81bf149",
+                "keyId": "24ae9073",
+                "name": "Testing",
+                "status": "ACTIVE",
+                "expiresAt": "2026-05-28T23:59:59Z",
+                "createdAt": "2026-05-04T07:20:37.082376Z",
+                "updatedAt": "2026-05-04T07:20:37.082376Z",
+                "createdBy": "019d2e3f-1663-7ce3-bd5a-230b81ca3360",
+                "updatedBy": "019d2e3f-1663-7ce3-bd5a-230b81ca3360",
+                "createdByName": "Alexis Soo",
+                "updatedByName": "Alexis Soo"
+            },
+            {
+                "id": "019ddbe9-bf4e-7696-9dcf-ad2af75ba332",
+                "keyId": "f540503e",
+                "name": "cytest",
+                "status": "ACTIVE",
+                "expiresAt": null,
+                "createdAt": "2026-04-30T01:03:42.384606Z",
+                "updatedAt": "2026-04-30T01:03:42.384606Z",
+                "createdBy": "019d25ed-f4ef-7989-9e3c-2c8af202afb2",
+                "updatedBy": "019d25ed-f4ef-7989-9e3c-2c8af202afb2",
+                "createdByName": "System Administrator",
+                "updatedByName": "System Administrator"
+            },
+            {
+                "id": "019dcd81-833f-7798-9efd-23c2f9fb3d64",
+                "keyId": "32c0b1cb",
+                "name": "AUD/CAD",
+                "status": "ACTIVE",
+                "expiresAt": "2026-04-01T23:59:59Z",
+                "createdAt": "2026-04-27T05:55:10.270457Z",
+                "updatedAt": "2026-04-27T05:55:10.270457Z",
+                "createdBy": "019d3c4d-0079-7f79-a4ab-1f45eca837f0",
+                "updatedBy": "019d3c4d-0079-7f79-a4ab-1f45eca837f0",
+                "createdByName": "JX",
+                "updatedByName": "JX"
+            },
+            {
+                "id": "019db03e-8b76-747c-aec8-b2c53eb919ff",
+                "keyId": "8e7b4d2c",
+                "name": "tuan test",
+                "status": "ACTIVE",
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T13:33:02.197832Z",
+                "updatedAt": "2026-04-21T13:33:02.197832Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019daf5f-a056-7dce-b923-ce283a5fd2d3",
+                "keyId": "d80e2dd4",
+                "name": "WilliamBanh",
+                "status": "ACTIVE",
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T09:29:33.013441Z",
+                "updatedAt": "2026-04-21T09:29:33.013441Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019daf5d-ee6c-7583-8de9-76043f7d04ff",
+                "keyId": "4280e585",
+                "name": "WilliamBanh",
+                "status": "ACTIVE",
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T09:27:41.931789Z",
+                "updatedAt": "2026-04-21T09:27:41.931789Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019daf5b-dbb2-7fd8-9893-22aca78037da",
+                "keyId": "5758aeb2",
+                "name": "WilliamBanh",
+                "status": "ACTIVE",
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T09:25:26.062094Z",
+                "updatedAt": "2026-04-21T09:25:26.062094Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019daf4c-f169-7b2f-a77d-c0b1b4ffe50a",
+                "keyId": "8cde6011",
+                "name": "WilliamBanh",
+                "status": "ACTIVE",
+                "expiresAt": "2035-12-31T23:59:59Z",
+                "createdAt": "2026-04-21T09:09:08.567483Z",
+                "updatedAt": "2026-04-21T09:09:08.567483Z",
+                "createdBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "updatedBy": "019d2e45-49c6-7e1a-89c2-869fdd0ed045",
+                "createdByName": "Tuan",
+                "updatedByName": "Tuan"
+            },
+            {
+                "id": "019d9256-e8cc-7e4e-a7c9-168d96221aa5",
+                "keyId": "2699c03f",
+                "name": "CAICAI4",
+                "status": "ACTIVE",
+                "expiresAt": null,
+                "createdAt": "2026-04-12T13:45:07.075395Z",
+                "updatedAt": "2026-04-12T13:45:07.075395Z",
+                "createdBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "updatedBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "createdByName": "jing wei backup",
+                "updatedByName": "jing wei backup"
+            },
+            {
+                "id": "019d9256-e8cc-733c-a973-d79a2e4e0ac3",
+                "keyId": "021029f7",
+                "name": "CAICAI3",
+                "status": "ACTIVE",
+                "expiresAt": null,
+                "createdAt": "2026-04-12T13:36:52.651425Z",
+                "updatedAt": "2026-05-22T03:07:56.313802Z",
+                "createdBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "updatedBy": "019d905a-af1a-7338-89fd-594d5810f966",
+                "createdByName": "jing wei backup",
+                "updatedByName": "NAM"
+            },
+            {
+                "id": "019d9256-e8cc-791d-b955-7784bd8abbac",
+                "keyId": "35d5c72b",
+                "name": "CAICAI2",
+                "status": "INACTIVE",
+                "expiresAt": null,
+                "createdAt": "2026-04-12T13:21:31.683008Z",
+                "updatedAt": "2026-04-12T13:21:36.231703Z",
+                "createdBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "updatedBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "createdByName": "jing wei backup",
+                "updatedByName": "jing wei backup"
+            },
+            {
+                "id": "019d9256-e8cc-7050-bf49-ed58656bf9dc",
+                "keyId": "fea52206",
+                "name": "CAICAI",
+                "status": "INACTIVE",
+                "expiresAt": null,
+                "createdAt": "2026-04-12T04:41:01.081819Z",
+                "updatedAt": "2026-04-12T13:21:10.861579Z",
+                "createdBy": "019d4931-6cff-7116-af67-fb8b68bf89dd",
+                "updatedBy": "019d2e40-881a-7940-9f89-1d8134b37317",
+                "createdByName": "jing wei backup",
+                "updatedByName": "Jing Wei"
+            },
+            {
+                "id": "019d9256-e8cc-7ef9-b9cd-442429ee327a",
+                "keyId": "61bafe7b",
+                "name": "Alexis",
+                "status": "ACTIVE",
+                "expiresAt": null,
+                "createdAt": "2026-04-08T09:14:05.436587Z",
+                "updatedAt": "2026-04-08T09:14:05.436587Z",
+                "createdBy": "019d2e3f-1663-7ce3-bd5a-230b81ca3360",
+                "updatedBy": "019d2e3f-1663-7ce3-bd5a-230b81ca3360",
+                "createdByName": "Alexis Soo",
+                "updatedByName": "Alexis Soo"
+            },
+            {
+                "id": "019d9256-e8cc-79a4-975e-451fd4fd2fb2",
+                "keyId": "a38ae43d",
+                "name": "Jiun Xian",
+                "status": "INACTIVE",
+                "expiresAt": "2026-03-11T23:59:59Z",
+                "createdAt": "2026-03-31T03:05:08.792259Z",
+                "updatedAt": "2026-04-06T03:41:35.362811Z",
+                "createdBy": "019d3c4d-0079-7f79-a4ab-1f45eca837f0",
+                "updatedBy": "019d3c4d-0079-7f79-a4ab-1f45eca837f0",
+                "createdByName": "JX",
+                "updatedByName": "JX"
+            }
+        ],
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "nextPage": 0,
+        "pageNum": 1,
+        "pageSize": 40,
+        "pages": 1,
+        "prePage": 0,
+        "size": 0,
+        "startRow": 1,
+        "total": 21
+    },
+    "success": true,
+    "timestamp": "2026-06-08T08:01:29.614973309Z"
+}
+
+
+15:01:29 | [API] Send API: POST /backoffice/v1/api-keys
+15:01:29 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw' 
+--header 'Content-Length: 50' 
+--data-raw '{"name": "IMZG_AUTO-GDXEALTY", "status": "ACTIVE"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "id": "019ea640-42ae-774a-b7ec-08d7fe9ac4f3",
+        "apiKey": "aqx_b3d9398b_e466235e8e6b46d7aefa825619276434",
+        "name": "IMZG_AUTO-GDXEALTY",
+        "status": "ACTIVE",
+        "expiresAt": null,
+        "createdAt": "2026-06-08T08:01:29.772066157Z",
+        "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "updatedAt": "2026-06-08T08:01:29.772066157Z",
+        "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43"
+    },
+    "success": true,
+    "timestamp": "2026-06-08T08:01:29.783182728Z"
+}
+
+
+15:01:29 | [API] Send API: POST /backoffice/v1/api-keys
+15:01:30 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw' 
+--header 'Content-Length: 56' 
+--data-raw '{"name": "aaaaaawmhl_auto-zmivwcdg", "status": "ACTIVE"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "id": "019ea640-43e2-7ea2-8ee7-fa8521f4724c",
+        "apiKey": "aqx_5acf155d_a022976265c0402d830f6871d7cbbc08",
+        "name": "aaaaaawmhl_auto-zmivwcdg",
+        "status": "ACTIVE",
+        "expiresAt": null,
+        "createdAt": "2026-06-08T08:01:30.080309837Z",
+        "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "updatedAt": "2026-06-08T08:01:30.080309837Z",
+        "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43"
+    },
+    "success": true,
+    "timestamp": "2026-06-08T08:01:30.087401887Z"
+}
+
+
+15:01:30 | [API] Send API: POST /backoffice/v1/api-keys
+15:01:30 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw' 
+--header 'Content-Length: 50' 
+--data-raw '{"name": "lKhq_Auto-qjsQolmN", "status": "ACTIVE"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "id": "019ea640-44d4-7ec3-8adb-a1894d17a3d0",
+        "apiKey": "aqx_26dee72a_65c6af32f22649c9ab7994224ab9d979",
+        "name": "lKhq_Auto-qjsQolmN",
+        "status": "ACTIVE",
+        "expiresAt": null,
+        "createdAt": "2026-06-08T08:01:30.321477144Z",
+        "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "updatedAt": "2026-06-08T08:01:30.321477144Z",
+        "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43"
+    },
+    "success": true,
+    "timestamp": "2026-06-08T08:01:30.330017033Z"
+}
+
+
+15:01:30 | [API] Send API: POST /backoffice/v1/api-keys
+15:01:30 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw' 
+--header 'Content-Length: 50' 
+--data-raw '{"name": "PQlX_Auto-UIkSpyxs", "status": "ACTIVE"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "id": "019ea640-4575-7d27-90bd-79da20d54140",
+        "apiKey": "aqx_5088cbf0_a2fdf3041da94aea87f89cdcd37c844e",
+        "name": "PQlX_Auto-UIkSpyxs",
+        "status": "ACTIVE",
+        "expiresAt": null,
+        "createdAt": "2026-06-08T08:01:30.482786026Z",
+        "createdBy": "019dbffe-06e0-7f1b-a649-41c4785bca43",
+        "updatedAt": "2026-06-08T08:01:30.482786026Z",
+        "updatedBy": "019dbffe-06e0-7f1b-a649-41c4785bca43"
+    },
+    "success": true,
+    "timestamp": "2026-06-08T08:01:30.488970665Z"
+}
+
+
+15:01:31 | - Start recording screen
+15:01:32 | - Clear search input
+15:01:33 | - Get table data
+15:01:35 | - Click 'next' button on table
+15:01:36 | - Go to the first page
+15:01:37 | - Total records: 25
+15:01:37 | Step 1: Search with: 'key'
+15:01:37 | - Search for: key
+15:01:37 | Verify column sorts chronologically oldest → newest
+15:01:37 | - Get table data
+15:01:39 | - Go to the first page
+15:01:39 | - Total records: 5
+15:01:39 | - Comparing: 
+Actual:    ['10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01']
+Expected:  ['10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01']
+15:01:39 | Step 2: Click sort again on column: 'Created Date'
+15:01:39 | - Sort by: 'Created Date'
+15:01:40 | Verify column sorts chronologically newest → oldest
+15:01:40 | - Get table data
+15:01:42 | - Go to the first page
+15:01:42 | - Total records: 5
+15:01:42 | - Comparing: 
+Actual:    ['9 May 2026 11:04:01', '9 May 2026 11:04:04', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02']
+Expected:  ['9 May 2026 11:04:01', '9 May 2026 11:04:04', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02']
+15:01:42 | Step 3: Clear search
+15:01:42 | - Clear search input
+15:01:43 | Verify column still sorts chronologically newest → oldest
+15:01:43 | - Get table data
+15:01:45 | - Click 'next' button on table
+15:01:46 | - Go to the first page
+15:01:46 | - Total records: 25
+15:01:46 | - Comparing: 
+Actual:    ['31 March 2026 03:05:08', '8 April 2026 09:14:05', '12 April 2026 04:41:01', '12 April 2026 13:21:31', '12 April 2026 13:36:52', '12 April 2026 13:45:07', '21 April 2026 09:09:08', '21 April 2026 09:25:26', '21 April 2026 09:27:41', '21 April 2026 09:29:33', '21 April 2026 13:33:02', '27 April 2026 05:55:10', '30 April 2026 01:03:42', '4 May 2026 07:20:37', '6 May 2026 08:29:14', '9 May 2026 11:04:01', '9 May 2026 11:04:04', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02', '8 June 2026 03:36:47', '8 June 2026 08:01:29', '8 June 2026 08:01:30', '8 June 2026 08:01:30', '8 June 2026 08:01:30']
+Expected:  ['31 March 2026 03:05:08', '8 April 2026 09:14:05', '12 April 2026 04:41:01', '12 April 2026 13:21:31', '12 April 2026 13:36:52', '12 April 2026 13:45:07', '21 April 2026 09:09:08', '21 April 2026 09:25:26', '21 April 2026 09:27:41', '21 April 2026 09:29:33', '21 April 2026 13:33:02', '27 April 2026 05:55:10', '30 April 2026 01:03:42', '4 May 2026 07:20:37', '6 May 2026 08:29:14', '9 May 2026 11:04:01', '9 May 2026 11:04:04', '9 May 2026 11:04:19', '10 May 2026 06:29:59', '10 May 2026 06:30:02', '8 June 2026 03:36:47', '8 June 2026 08:01:29', '8 June 2026 08:01:30', '8 June 2026 08:01:30', '8 June 2026 08:01:30']
+15:01:47 | - Stop recording screen
+15:01:47 | [API] Send API: DELETE /backoffice/v1/api-keys/019ea640-42ae-774a-b7ec-08d7fe9ac4f3
+15:01:48 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019ea640-42ae-774a-b7ec-08d7fe9ac4f3' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T08:01:48.181170909Z"
+}
+
+
+15:01:48 | [API] Send API: DELETE /backoffice/v1/api-keys/019ea640-43e2-7ea2-8ee7-fa8521f4724c
+15:01:48 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019ea640-43e2-7ea2-8ee7-fa8521f4724c' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T08:01:48.330709611Z"
+}
+
+
+15:01:48 | [API] Send API: DELETE /backoffice/v1/api-keys/019ea640-44d4-7ec3-8adb-a1894d17a3d0
+15:01:48 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019ea640-44d4-7ec3-8adb-a1894d17a3d0' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T08:01:48.476964251Z"
+}
+
+
+15:01:48 | [API] Send API: DELETE /backoffice/v1/api-keys/019ea640-4575-7d27-90bd-79da20d54140
+15:01:48 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/api-keys/019ea640-4575-7d27-90bd-79da20d54140' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODA5MDU2ODIsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgwOTA2NTgyLCJpYXQiOjE3ODA5MDU2ODIsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6ImZlM2Y2NTMyLWRlMjktNDVhMC1hZjM0LTVmOWY0ZmM2NjQ5ZiIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.ftewNBU8bv3WHWGlcXA_C9Vd1d56r-tafDYiubY1__uZbL-EOzzYx0jIRmDvt39oZ39NQUcMzUd8iRKlHPctmQtZMGfc832Nj19ztUEY07BZP8z7DFV9bbHjO7WwJBgu-TanuWV72lIOqUvjAcLN-Q2gG_WZINCAoSzFDFXbuAp1D6aSkI2w28Fzx4zVIZoFzDe1-PBvPgv49mikn-W-HZBz8PvMtmTVQg7os5US0C5lA6VipYtciHcTDpJNJwRU73S01Nz7PSzOyVwZT1l-O1oYHMUNlvtxsvTsdOa_0nkwIt86PQ3sWCnDw775Fqscrebal6Lxc3LkflfQfn2rpw' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-06-08T08:01:48.625933276Z"
+}
+
+
+15:01:48 | [Teardown] Quit Web Driver
+15:01:48 | - Quit driver 'web_main'
+15:01:48 | - All drivers quit and registry cleared

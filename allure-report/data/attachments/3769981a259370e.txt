@@ -1,0 +1,8 @@
+17:52:36 | - Running test case: test_AS_TC16_positive_trading_user_search.py
+17:52:36 | - Start recording screen
+17:52:36 | Step 1: Search trading user with non-existent keyword: 'aBsMXXnrJKhcyJMTcXIV'
+17:52:36 | - Search trading user: 'aBsMXXnrJKhcyJMTcXIV'
+17:52:46 | 🟡 Element not found for ('xpath', '//div[starts-with(@data-testid,"account-statements-filters-select-trading-user-option-")]'): TimeoutException after 10(s)
+17:52:46 | Verify no results returned
+17:52:46 | [Teardown] Close search dropdown
+17:52:47 | - Stop recording screen

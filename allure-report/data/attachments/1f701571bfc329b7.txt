@@ -1,0 +1,41 @@
+14:56:40 | - Running test case: test_AK_TBL_TC08_positive_column_sorting.py
+14:56:40 | - Start recording screen
+14:56:40 | - Clear search input
+14:56:42 | - Get table data
+14:56:44 | - Click 'next' button on table
+14:56:45 | - Go to the first page
+14:56:45 | - Total records: 40
+14:56:45 | Step 1: Check sort button for column: 'Status'
+14:56:45 | Verify sort button for column 'Status' is displayed
+14:56:46 | Step 2: Click sort on column: 'Status'
+14:56:46 | - Sort by: 'Status'
+14:56:47 | Verify column sorts alphabetically a-z
+14:56:47 | - Get table data
+14:56:49 | - Click 'next' button on table
+14:56:51 | - Go to the first page
+14:56:51 | - Total records: 40
+14:56:51 | - Comparing: 
+Actual:    ['Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+Expected:  ['Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+14:56:51 | Step 3: Click sort again on column: 'Status'
+14:56:51 | - Sort by: 'Status'
+14:56:53 | Verify column sorts alphabetically z-a
+14:56:53 | - Get table data
+14:56:55 | - Click 'next' button on table
+14:56:56 | - Go to the first page
+14:56:56 | - Total records: 25
+14:56:56 | - Comparing: 
+Actual:    ['Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+Expected:  ['Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active', 'Active']
+14:56:56 | Step 4: Refresh page
+14:56:58 | Verify default sorted by 'Created Date' desc
+14:56:58 | - Get table data
+14:57:00 | - Click 'next' button on table
+14:57:01 | - Go to the first page
+14:57:02 | - Total records: 25
+14:57:02 | - Comparing: 
+Actual:    ['8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:17', '8 June 2026 03:36:47', '10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01', '6 May 2026 08:29:14', '4 May 2026 07:20:37', '30 April 2026 01:03:42', '27 April 2026 05:55:10', '21 April 2026 13:33:02', '21 April 2026 09:29:33', '21 April 2026 09:27:41', '21 April 2026 09:25:26', '21 April 2026 09:09:08', '12 April 2026 13:45:07', '12 April 2026 13:36:52', '12 April 2026 13:21:31', '12 April 2026 04:41:01', '8 April 2026 09:14:05', '31 March 2026 03:05:08']
+Expected:  ['8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:18', '8 June 2026 07:55:17', '8 June 2026 03:36:47', '10 May 2026 06:30:02', '10 May 2026 06:29:59', '9 May 2026 11:04:19', '9 May 2026 11:04:04', '9 May 2026 11:04:01', '6 May 2026 08:29:14', '4 May 2026 07:20:37', '30 April 2026 01:03:42', '27 April 2026 05:55:10', '21 April 2026 13:33:02', '21 April 2026 09:29:33', '21 April 2026 09:27:41', '21 April 2026 09:25:26', '21 April 2026 09:09:08', '12 April 2026 13:45:07', '12 April 2026 13:36:52', '12 April 2026 13:21:31', '12 April 2026 04:41:01', '8 April 2026 09:14:05', '31 March 2026 03:05:08']
+14:57:02 | [Teardown] Refresh the page
+14:57:02 | - Clear search input
+14:57:05 | - Stop recording screen

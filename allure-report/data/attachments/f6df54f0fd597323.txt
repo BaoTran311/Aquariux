@@ -1,0 +1,19 @@
+10:51:46 | - Running test case: test_TA_ADD_TC04_positive_close_panel.py
+10:51:46 | - Start recording screen
+10:51:47 | [Setup] Click on 'Add Account' button
+10:51:47 | - Click 'Add Account' button
+10:51:47 | Step 1: Fill form
+10:51:48 | - Check invisibility of locator: ('css selector', 'div[role="option"]'): TRUE
+10:51:48 | - Open dropdown Name
+10:51:49 | - Select Name
+10:51:49 | - Input leverage: 52
+10:51:50 | - Set trade permission: enable
+10:51:50 | - Set status: 'Active'
+10:51:50 | Step 2: Click 'x' to close
+10:51:50 | - Click 'x' icon
+10:51:51 | Verify panel closed
+10:51:51 | - Check invisibility of locator: ('css selector', 'span[data-testid$="-sheet-title"]'): TRUE
+10:51:51 | Step 3: Click 'Add Account' again
+10:51:51 | - Click 'Add Account' button
+10:51:53 | Verify fields reset to placeholders
+10:51:58 | - Stop recording screen

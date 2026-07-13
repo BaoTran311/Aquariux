@@ -1,0 +1,14 @@
+17:50:53 | - Running test case: test_AS_TC11_positive_new_close_indicator.py
+17:50:53 | - Start recording screen
+17:50:53 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:50:53 | - Select month: latest
+17:50:53 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:50:53 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:50:53 | - Select first available trading account
+17:50:54 | - Click Apply filters
+17:50:54 | - Wait for statement data to load
+17:50:59 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:51:00 | Step 1: Scan Executed Orders table for 'Close' indicator
+17:51:00 | Verify at least one 'Close' entry exists in Executed Orders table
+17:51:00 | - Get cell: table=orders, row=0, col=orderAction
+17:51:01 | - Stop recording screen

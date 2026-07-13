@@ -1,0 +1,18 @@
+22:06:00 | - Running test case: test_AK_GEN_TC08_positive_expiry_date_radio.py
+22:06:00 | - Start recording screen
+22:06:00 | [Setup] Open Generate API Key panel
+22:06:00 | - Click 'Generate API Key' button
+22:06:00 | Step 1: Select expiry: 'Set Expiry Date'
+22:06:00 | - Select expiry: 'Set Expiry Date'
+22:06:01 | Verify expiry radio: 'Set Expiry Date'
+22:06:01 | Verify date picker is visible
+22:06:01 | Verify date picker placeholder: 'Select expiry date'
+22:06:02 | Step 2: Switch back to: 'No Expiry'
+22:06:02 | - Select expiry: 'No Expiry'
+22:06:02 | Verify expiry radio: 'No Expiry'
+22:06:02 | Verify date picker is hidden
+22:06:02 | - Check invisibility of locator: ('css selector', 'button[data-testid="api-key-form-date-picker-expiry-trigger"]'): TRUE
+22:06:02 | [Teardown] Close panel if open
+22:06:02 | - Close panel
+22:06:08 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+22:06:09 | - Stop recording screen

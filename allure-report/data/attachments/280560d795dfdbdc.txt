@@ -1,0 +1,154 @@
+17:59:42 | - Running test case: test_AS_TC18_positive_resize_columns_minimum.py
+17:59:42 | - Start recording screen
+17:59:43 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:59:43 | - Select month: latest
+17:59:43 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:59:43 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:59:43 | - Select first available trading account
+17:59:43 | - Click Apply filters
+17:59:43 | - Wait for statement data to load
+17:59:48 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:59:49 | - Size of column: 'Symbol': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Order ID': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Position ID': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Open Volume': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Open Date': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Entry Price': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Current Price': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Daily Interest': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Accumulated Interest': 'height: 32, width: 220'
+17:59:49 | - Size of column: 'Daily Interest': 'height: 32, width: 220'
+17:59:49 | Step 1: Shrink column 'Daily Interest' toward minimum width
+17:59:50 | - Shrinking column 'Daily Interest' to minimum (current: 220px)
+17:59:50 | - Decrease column: 'Daily Interest' by 154.0px
+17:59:51 | - Size of column: 'Daily Interest': 'height: 32, width: 80'
+17:59:51 | - Decrease column: 'Daily Interest' by 56.0px
+17:59:52 | - Size of column: 'Daily Interest': 'height: 32, width: 80'
+17:59:52 | - Column reached minimum width: 80px
+17:59:52 | Verify column 'Daily Interest' width decreased toward minimum
+17:59:52 | - Size of column: 'Daily Interest': 'height: 32, width: 80'
+17:59:52 | Verify label of 'Daily Interest' truncated
+17:59:52 | - Size of column: 'Accumulated Interest': 'height: 32, width: 220'
+17:59:52 | Step 2: Shrink column 'Accumulated Interest' toward minimum width
+17:59:52 | - Shrinking column 'Accumulated Interest' to minimum (current: 220px)
+17:59:52 | - Decrease column: 'Accumulated Interest' by 154.0px
+17:59:54 | - Size of column: 'Accumulated Interest': 'height: 32, width: 80'
+17:59:54 | - Decrease column: 'Accumulated Interest' by 56.0px
+17:59:55 | - Size of column: 'Accumulated Interest': 'height: 32, width: 80'
+17:59:55 | - Column reached minimum width: 80px
+17:59:55 | Verify column 'Accumulated Interest' width decreased toward minimum
+17:59:55 | - Size of column: 'Accumulated Interest': 'height: 32, width: 80'
+17:59:55 | Verify label of 'Accumulated Interest' truncated
+17:59:55 | - Size of column: 'Open Volume': 'height: 32, width: 220'
+17:59:55 | Step 3: Shrink column 'Open Volume' toward minimum width
+17:59:55 | - Shrinking column 'Open Volume' to minimum (current: 220px)
+17:59:55 | - Decrease column: 'Open Volume' by 154.0px
+17:59:56 | - Size of column: 'Open Volume': 'height: 32, width: 80'
+17:59:56 | - Decrease column: 'Open Volume' by 56.0px
+17:59:58 | - Size of column: 'Open Volume': 'height: 32, width: 80'
+17:59:58 | - Column reached minimum width: 80px
+17:59:58 | Verify column 'Open Volume' width decreased toward minimum
+17:59:58 | - Size of column: 'Open Volume': 'height: 32, width: 80'
+17:59:58 | Verify label of 'Open Volume' truncated
+17:59:58 | - Size of column: 'Order ID': 'height: 32, width: 220'
+17:59:58 | Step 4: Shrink column 'Order ID' toward minimum width
+17:59:58 | - Shrinking column 'Order ID' to minimum (current: 220px)
+17:59:58 | - Decrease column: 'Order ID' by 154.0px
+17:59:59 | - Size of column: 'Order ID': 'height: 32, width: 80'
+17:59:59 | - Decrease column: 'Order ID' by 56.0px
+18:00:00 | - Size of column: 'Order ID': 'height: 32, width: 80'
+18:00:00 | - Column reached minimum width: 80px
+18:00:00 | Verify column 'Order ID' width decreased toward minimum
+18:00:00 | - Size of column: 'Order ID': 'height: 32, width: 80'
+18:00:00 | Verify label of 'Order ID' truncated
+18:00:00 | - Size of column: 'Position ID': 'height: 32, width: 220'
+18:00:00 | Step 5: Shrink column 'Position ID' toward minimum width
+18:00:00 | - Shrinking column 'Position ID' to minimum (current: 220px)
+18:00:00 | - Decrease column: 'Position ID' by 154.0px
+18:00:02 | - Size of column: 'Position ID': 'height: 32, width: 80'
+18:00:02 | - Decrease column: 'Position ID' by 56.0px
+18:00:03 | - Size of column: 'Position ID': 'height: 32, width: 80'
+18:00:03 | - Column reached minimum width: 80px
+18:00:03 | Verify column 'Position ID' width decreased toward minimum
+18:00:03 | - Size of column: 'Position ID': 'height: 32, width: 80'
+18:00:03 | Verify label of 'Position ID' truncated
+18:00:03 | - Size of column: 'Current Price': 'height: 32, width: 220'
+18:00:03 | Step 6: Shrink column 'Current Price' toward minimum width
+18:00:03 | - Shrinking column 'Current Price' to minimum (current: 220px)
+18:00:03 | - Decrease column: 'Current Price' by 154.0px
+18:00:04 | - Size of column: 'Current Price': 'height: 32, width: 80'
+18:00:04 | - Decrease column: 'Current Price' by 56.0px
+18:00:06 | - Size of column: 'Current Price': 'height: 32, width: 80'
+18:00:06 | - Column reached minimum width: 80px
+18:00:06 | Verify column 'Current Price' width decreased toward minimum
+18:00:06 | - Size of column: 'Current Price': 'height: 32, width: 80'
+18:00:06 | Verify label of 'Current Price' truncated
+18:00:06 | - Size of column: 'Symbol': 'height: 32, width: 220'
+18:00:06 | Step 7: Shrink column 'Symbol' toward minimum width
+18:00:06 | - Shrinking column 'Symbol' to minimum (current: 220px)
+18:00:06 | - Decrease column: 'Symbol' by 154.0px
+18:00:07 | - Size of column: 'Symbol': 'height: 32, width: 80'
+18:00:07 | - Decrease column: 'Symbol' by 56.0px
+18:00:09 | - Size of column: 'Symbol': 'height: 32, width: 80'
+18:00:09 | - Column reached minimum width: 80px
+18:00:09 | Verify column 'Symbol' width decreased toward minimum
+18:00:09 | - Size of column: 'Symbol': 'height: 32, width: 80'
+18:00:09 | Verify label of 'Symbol' truncated
+18:00:09 | - Size of column: 'Entry Price': 'height: 32, width: 220'
+18:00:09 | Step 8: Shrink column 'Entry Price' toward minimum width
+18:00:09 | - Shrinking column 'Entry Price' to minimum (current: 220px)
+18:00:09 | - Decrease column: 'Entry Price' by 154.0px
+18:00:10 | - Size of column: 'Entry Price': 'height: 32, width: 80'
+18:00:10 | - Decrease column: 'Entry Price' by 56.0px
+18:00:11 | - Size of column: 'Entry Price': 'height: 32, width: 80'
+18:00:11 | - Column reached minimum width: 80px
+18:00:11 | Verify column 'Entry Price' width decreased toward minimum
+18:00:11 | - Size of column: 'Entry Price': 'height: 32, width: 80'
+18:00:11 | Verify label of 'Entry Price' truncated
+18:00:11 | - Size of column: 'Open Date': 'height: 32, width: 220'
+18:00:11 | Step 9: Shrink column 'Open Date' toward minimum width
+18:00:11 | - Shrinking column 'Open Date' to minimum (current: 220px)
+18:00:11 | - Decrease column: 'Open Date' by 154.0px
+18:00:13 | - Size of column: 'Open Date': 'height: 32, width: 80'
+18:00:13 | - Decrease column: 'Open Date' by 56.0px
+18:00:14 | - Size of column: 'Open Date': 'height: 32, width: 80'
+18:00:14 | - Column reached minimum width: 80px
+18:00:14 | Verify column 'Open Date' width decreased toward minimum
+18:00:14 | - Size of column: 'Open Date': 'height: 32, width: 80'
+18:00:14 | Verify label of 'Open Date' truncated
+18:00:14 | Step 10: Refresh page and re-apply filters
+18:00:15 | - Wait for statement data to load
+18:00:25 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:00:25 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:00:25 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:00:25 | Cost-optimized locator failed after 52ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:00:25 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:00:25 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:00:25 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:00:26 | - Select month: latest
+18:00:26 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:00:26 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:00:27 | - Select first available trading account
+18:00:27 | - Click Apply filters
+18:00:27 | - Wait for statement data to load
+18:00:32 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:00:33 | Verify column widths match initial sizes after refresh
+18:00:34 | - Size of column: 'Daily Interest': 'height: 32, width: 220'
+18:00:34 | - Size of column: 'Accumulated Interest': 'height: 32, width: 220'
+18:00:34 | - Size of column: 'Open Volume': 'height: 32, width: 220'
+18:00:34 | - Size of column: 'Order ID': 'height: 32, width: 220'
+18:00:34 | - Size of column: 'Position ID': 'height: 32, width: 220'
+18:00:34 | - Size of column: 'Current Price': 'height: 32, width: 220'
+18:00:34 | - Size of column: 'Symbol': 'height: 32, width: 220'
+18:00:34 | - Size of column: 'Entry Price': 'height: 32, width: 220'
+18:00:34 | - Size of column: 'Open Date': 'height: 32, width: 220'
+18:00:34 | [Teardown] Refresh the page
+18:00:34 | - Wait for statement data to load
+18:00:44 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:00:44 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:00:44 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:00:44 | Cost-optimized locator failed after 47ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:00:44 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:00:44 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:00:44 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:00:46 | - Stop recording screen

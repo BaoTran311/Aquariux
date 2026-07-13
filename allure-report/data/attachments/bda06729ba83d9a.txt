@@ -1,0 +1,39 @@
+18:07:42 | - Running test case: test_AS_TC27_positive_monthly_aggregates_full_month.py
+18:07:42 | - Start recording screen
+18:07:42 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:07:42 | - Select month: latest
+18:07:42 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:07:42 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:07:43 | - Select first available trading account
+18:07:43 | - Click Apply filters
+18:07:43 | - Wait for statement data to load
+18:07:49 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:07:50 | Verify monthly statement is the active view
+18:07:50 | Verify all statement tables are displayed
+18:07:50 | Step 1: Count rows in monthly view tables
+18:07:50 | - Count rows: orders
+18:07:50 | - Scrolling down - step: 0.4
+18:07:50 | - Scrolling down - step: 0.4
+18:07:50 | - Count rows: closed-positions
+18:07:50 | - Count rows: transactions
+18:08:00 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-transactions-row-0-cell-transactionId"]'): TimeoutException after 1(s)
+18:08:00 | Step 2: Monthly — Orders: 20, Closed: 20, Transactions: 0
+18:08:00 | Verify monthly statement has data in at least one table
+18:08:00 | Step 3: Switch to first available daily statement
+18:08:00 | - Click first available Daily Statement
+18:08:01 | - Wait for 'Daily Statement' present in locator ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:08:01 | Verify daily statement is now active
+18:08:01 | Step 4: Count rows in daily view tables
+18:08:01 | - Count rows: orders
+18:08:11 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-orders-row-0-cell-orderId"]'): TimeoutException after 1(s)
+18:08:11 | - Scrolling down - step: 0.4
+18:08:11 | - Scrolling down - step: 0.4
+18:08:12 | - Count rows: closed-positions
+18:08:22 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-closed-positions-row-0-cell-orderId"]'): TimeoutException after 1(s)
+18:08:22 | - Count rows: transactions
+18:08:32 | 🟡 Element not found for ('css selector', 'td[data-testid="account-statements-detail-table-transactions-row-0-cell-transactionId"]'): TimeoutException after 1(s)
+18:08:32 | Step 5: Daily — Orders: 0, Closed: 0, Transactions: 0
+18:08:32 | Verify monthly orders (20) >= daily orders (0)
+18:08:32 | Verify monthly closed positions (20) >= daily closed positions (0)
+18:08:32 | Verify monthly transactions (0) >= daily transactions (0)
+18:08:33 | - Stop recording screen

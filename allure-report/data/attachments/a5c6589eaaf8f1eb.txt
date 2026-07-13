@@ -1,0 +1,11 @@
+17:52:20 | - Running test case: test_AS_TC16_positive_trading_user_search.py
+17:52:20 | - Start recording screen
+17:52:20 | Step 1: Search trading user by lowercase: 'auto_'
+17:52:20 | - Search trading user: 'auto_'
+17:52:20 | Verify results match case-insensitively for: 'auto_'
+17:52:20 | Step 2: Close search dropdown
+17:52:20 | Step 3: Search trading user by uppercase: 'AUTO_'
+17:52:20 | - Search trading user: 'AUTO_'
+17:52:21 | Verify results match case-insensitively for: 'AUTO_'
+17:52:21 | [Teardown] Close search dropdown
+17:52:22 | - Stop recording screen

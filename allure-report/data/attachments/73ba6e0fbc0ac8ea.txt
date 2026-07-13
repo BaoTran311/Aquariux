@@ -1,0 +1,32 @@
+18:06:08 | - Running test case: test_AS_TC21_positive_empty_state_tables.py
+18:06:08 | - Start recording screen
+18:06:08 | [Setup] Create trading user with no activity via API
+18:06:08 | [API] Send API: GET /backoffice/v1/user-groups/available-user-groups
+18:06:08 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/available-user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTllN2MzMy1iODFiLTc5NzAtYjgwNC01OWZjYjIzNjY2ZTYiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODM2ODA0MDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgzNzY2ODA3LCJpYXQiOjE3ODM2ODA0MDcsInVzZXJJZCI6IjAxOWU3YzMzLWI4MWItNzk3MC1iODA0LTU5ZmNiMjM2NjZlNiIsImp0aSI6IjRmYmM1MzM2LTNiN2MtNGY4NS05Y2ViLWY5Mzg5OWU1MTM3NSIsImVtYWlsIjoiYXV0b19hZG1pbjAyQGFxdWFyaXV4LmNvbSJ9.RHnAAeA7pEursLnkcFsxNAnZ3oHB1hPqJcm3m4qliTSW6LOgC2Mnks4JWUoJlI-5uSJzeGwXS4qtGLiUVnLr26UPFdwaNQGl5n_KIpCyAn4vsBL5rF3HxBT7CBqp7KPQDd0q3AU1rew4efi8LEoj162Cn0-4QKvJdWY7GHCcsOGDTWKyVm_cdKhCLGfz91_wcBTDiGfZ2XYifdmi_QEMre7cyvsskSuUs9Ak8UWTOIpRocbpXO4GkASg4ACIX_lGk2A7jEJz-JQN_juWtB5ZU3qbtIt8Yfq5lzVzpgw056oKywX1MH0CQoFduw-GphcFYK1uOtDkQUQP3Ap_wXXA4g'
+
+
+18:06:08 | [API] Send API: POST /backoffice/v1/users
+18:06:09 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTllN2MzMy1iODFiLTc5NzAtYjgwNC01OWZjYjIzNjY2ZTYiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODM2ODA0MDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgzNzY2ODA3LCJpYXQiOjE3ODM2ODA0MDcsInVzZXJJZCI6IjAxOWU3YzMzLWI4MWItNzk3MC1iODA0LTU5ZmNiMjM2NjZlNiIsImp0aSI6IjRmYmM1MzM2LTNiN2MtNGY4NS05Y2ViLWY5Mzg5OWU1MTM3NSIsImVtYWlsIjoiYXV0b19hZG1pbjAyQGFxdWFyaXV4LmNvbSJ9.RHnAAeA7pEursLnkcFsxNAnZ3oHB1hPqJcm3m4qliTSW6LOgC2Mnks4JWUoJlI-5uSJzeGwXS4qtGLiUVnLr26UPFdwaNQGl5n_KIpCyAn4vsBL5rF3HxBT7CBqp7KPQDd0q3AU1rew4efi8LEoj162Cn0-4QKvJdWY7GHCcsOGDTWKyVm_cdKhCLGfz91_wcBTDiGfZ2XYifdmi_QEMre7cyvsskSuUs9Ak8UWTOIpRocbpXO4GkASg4ACIX_lGk2A7jEJz-JQN_juWtB5ZU3qbtIt8Yfq5lzVzpgw056oKywX1MH0CQoFduw-GphcFYK1uOtDkQUQP3Ap_wXXA4g' 
+--header 'Content-Length: 245' 
+--data-raw '{"email": "auto_a9x3fckhqa@aquariux.com", "name": "TEgO_Auto_HZwWMKSl", "phone": "198692844", "country": "MY", "status": "ACTIVE", "userGroupId": "019efa27-7e1b-7291-99f4-b1b3a5c3a148", "password": "Autotest@12345", "isSendReportsEnabled": true}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-07-10T11:06:09.436388409Z"
+}
+18:06:10 | - Stop recording screen

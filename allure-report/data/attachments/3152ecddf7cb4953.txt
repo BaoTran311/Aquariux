@@ -1,0 +1,22 @@
+09:03:11 | - Running test case: test_AK_GEN_TC05_negative_missing_required_fields.py
+09:03:11 | - Start recording screen
+09:03:11 | [Setup] Open Generate API Key panel
+09:03:11 | - Click 'Generate API Key' button
+09:03:11 | Step 1: Submit form without field: 'Name'
+09:03:11 | - Select expiry: 'No Expiry'
+09:03:12 | - Toggle status to 'Active'
+09:03:12 | - Click 'Generate Key' button
+09:03:12 | Verify error validation: 'Name is required'
+09:03:13 | Verify panel remains open
+09:03:13 | Step 2: Fill the form
+09:03:13 | - Input name: 'CEvO_Auto/cnLvklhb'
+09:03:14 | - Select expiry: 'No Expiry'
+09:03:14 | - Toggle status to 'Active'
+09:03:14 | Verify error no longer displays
+09:03:14 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-input-name-field-error"]'): TRUE
+09:03:14 | Verify error no longer displays
+09:03:14 | - Check invisibility of locator: ('css selector', 'span[data-testid="api-key-form-field-expiry-error"]'): TRUE
+09:03:14 | [Teardown] Close panel if open
+09:03:14 | - Close panel
+09:03:20 | 🟡 Element not found for ('css selector', 'button[data-testid="api-key-sheet-close"]'): TimeoutException after 5(s)
+09:03:21 | - Stop recording screen

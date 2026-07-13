@@ -1,0 +1,52 @@
+22:38:21 | - Running test case: test_UG_TBL_TC09_positive_search.py
+22:38:21 | - Start recording screen
+22:38:21 | - Get table data
+22:38:23 | - Click 'next' button on table
+22:38:24 | - Click 'next' button on table
+22:38:25 | - Go to the first page
+22:38:25 | Step 1: Search by: 'Description', with: 'rvKQHJsFJg - description'
+22:38:25 | - Search for: 'rvKQHJsFJg - description'
+22:38:26 | Verify results on table data match: 'rvKQHJsFJg - description'
+22:38:26 | - Get table data
+22:38:27 | - Go to the first page
+22:38:27 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ Rszp_Auto.INczbrBY │ rvKQHJsFJg - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:46 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:38:27 | - Comparing 1 items
+22:38:27 | Step 2: Search by: 'Description', with: 'NHCvdlrple - description'
+22:38:27 | - Search for: 'NHCvdlrple - description'
+22:38:28 | Verify results on table data match: 'NHCvdlrple - description'
+22:38:28 | - Get table data
+22:38:29 | - Go to the first page
+22:38:29 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ VXdr_Auto-QaaAoBOW │ NHCvdlrple - description │ Hedge         │ A-Book       │ 8 May 2026 14:45:01 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:38:29 | - Comparing 1 items
+22:38:29 | Step 3: Search by: 'Description', with: 'DBoRHAuZDZ - description'
+22:38:29 | - Search for: 'DBoRHAuZDZ - description'
+22:38:29 | Verify results on table data match: 'DBoRHAuZDZ - description'
+22:38:29 | - Get table data
+22:38:30 | - Go to the first page
+22:38:30 | 
+Table Data:
+┌────────────────────┬──────────────────────────┬───────────────┬──────────────┬─────────────────────┐
+│ name               │ description              │ position_type │ book_type    │ created_date        │
+├────────────────────┼──────────────────────────┼───────────────┼──────────────┼─────────────────────┤
+│ vHKf_Auto/iDTlnBbA │ DBoRHAuZDZ - description │ Hedge         │ B-Book       │ 8 May 2026 14:45:04 │
+└────────────────────┴──────────────────────────┴───────────────┴──────────────┴─────────────────────┘
+22:38:30 | - Comparing 1 items
+22:38:30 | Step 4: Refresh page
+22:38:31 | Verify search field is cleared
+22:38:31 | Verify clear search icon is not displayed
+22:38:31 | - Check invisibility of locator: ('css selector', 'button[data-testid="user-group-list-search-input-search-name-input-icon-right"]'): TRUE
+22:38:31 | [Teardown] Clear search field
+22:38:31 | - Clear search input
+22:38:32 | - Stop recording screen

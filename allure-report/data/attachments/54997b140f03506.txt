@@ -1,0 +1,74 @@
+20:55:41 | - Running test case: test_UG_EDT_TC06_positive_success_single_field.py
+20:55:41 | - Start recording screen
+20:55:41 | [API] Send API: POST /backoffice/v1/user-groups
+20:55:41 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzQ4ODcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU2Nzg3LCJpYXQiOjE3NzgzMzQ4ODcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjE2M2ExZGQ1LTA3MDUtNDhlMi05ZTIzLTMyYWY1ODA0OTVlZSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.fDuIXMY9UK_YI7XOhYR9VB7MdPjcZ5Cv2Q56DtcF2Avwch4CxPJwQ_CRYZp1fU2n7KCxYN8eOlR2CRvgvTPPzndE08l51RpY1ODoMrGo3XeYeZYY3m2j6SZFcl_r1EUjGHR2LHV6vEplnWNy8at31jgp32TMtJ0SZra_NYxe7S_dRUOy0ZI3J_szqKMrB3WNbMKLLy4vcvVkw_csuxIcYiJOxhGRWeGb6NahIRHJAcEcCSBY0cr9RPBkJW4IJk6EfC6vDRj-whyfGx9m5bHx30-y2OgzMi3f3ZectwzSZzGMG1akpDTSDyXNLXAPeBOZna2KobcO1_yfe5mjqf2UQQ' 
+--header 'Content-Length: 192' 
+--data-raw '{"name": "Jlqi_Auto_zSrZIrAx", "description": "kNBVopmQXE - description", "positionType": "HEDGE", "bookType": "B_BOOK", "marginCallLevel": 19.09, "stopOutLevel": 75.3, "commissionRate": 6.76}'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:55:41.662570552Z"
+}
+
+
+20:55:41 | [API] Send API: GET /backoffice/v1/user-groups
+20:55:42 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups?pageNum=1&pageSize=40' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzQ4ODcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU2Nzg3LCJpYXQiOjE3NzgzMzQ4ODcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjE2M2ExZGQ1LTA3MDUtNDhlMi05ZTIzLTMyYWY1ODA0OTVlZSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.fDuIXMY9UK_YI7XOhYR9VB7MdPjcZ5Cv2Q56DtcF2Avwch4CxPJwQ_CRYZp1fU2n7KCxYN8eOlR2CRvgvTPPzndE08l51RpY1ODoMrGo3XeYeZYY3m2j6SZFcl_r1EUjGHR2LHV6vEplnWNy8at31jgp32TMtJ0SZra_NYxe7S_dRUOy0ZI3J_szqKMrB3WNbMKLLy4vcvVkw_csuxIcYiJOxhGRWeGb6NahIRHJAcEcCSBY0cr9RPBkJW4IJk6EfC6vDRj-whyfGx9m5bHx30-y2OgzMi3f3ZectwzSZzGMG1akpDTSDyXNLXAPeBOZna2KobcO1_yfe5mjqf2UQQ'
+
+
+20:55:42 | [Setup] Send API to create new user group: name: Jlqi_Auto_zSrZIrAx, description: kNBVopmQXE - description, position_type: Hedge, book_type: B-Book, margin_call_level: 19.09, stop_out_level: 75.3, commission: 6.76, created_date: 09 May 2026 13:55:41, id: 019e0d05-c1da-7702-b88b-3ebbd649736f
+20:55:42 | [Setup] Refresh page to load changes
+20:55:43 | Step 1: View row: 'Jlqi_Auto_zSrZIrAx'
+20:55:43 | - Search for: 'Jlqi_Auto_zSrZIrAx'
+20:55:43 | - Select col: 'Name' value: 'Jlqi_Auto_zSrZIrAx'
+20:55:45 | Step 2: Open Edit panel
+20:55:45 | - Click 'Edit' button
+20:55:45 | Step 3: Submit edit 'Stop Out Level' with: 47.86
+20:55:45 | - Input stop out level: 47.86
+20:55:45 | - Click 'Save' button
+20:55:45 | Verify toast message: 'The user group has been updated successfully'
+20:55:46 | Step 4: Search for: 'Jlqi_Auto_zSrZIrAx'
+20:55:46 | - Clear search input
+20:55:46 | - Search for: 'Jlqi_Auto_zSrZIrAx'
+20:55:46 | Verify table data updated accordingly
+20:55:46 | - Get table data
+20:55:47 | Step 5: View details of 'Jlqi_Auto_zSrZIrAx'
+20:55:47 | - Get table data
+20:55:48 | - Found record: 'Jlqi_Auto_zSrZIrAx' column: 'Name' (page:1)
+20:55:48 | - View row: 'Jlqi_Auto_zSrZIrAx' (attempt:1)
+20:55:49 | Verify details updated accordingly
+20:55:50 | [Teardown] Refresh the page
+20:55:51 | Send API to delete the created asset: 019e0d05-c1da-7702-b88b-3ebbd649736f
+20:55:51 | [API] Send API: DELETE /backoffice/v1/user-groups/019e0d05-c1da-7702-b88b-3ebbd649736f
+20:55:51 | ➡️  Request Sent: 
+curl --location --request DELETE 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/user-groups/019e0d05-c1da-7702-b88b-3ebbd649736f' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTlkYmZmZS0wNmUwLTdmMWItYTY0OS00MWM0Nzg1YmNhNDMiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3NzgzMzQ4ODcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzc4MzU2Nzg3LCJpYXQiOjE3NzgzMzQ4ODcsInVzZXJJZCI6IjAxOWRiZmZlLTA2ZTAtN2YxYi1hNjQ5LTQxYzQ3ODViY2E0MyIsImp0aSI6IjE2M2ExZGQ1LTA3MDUtNDhlMi05ZTIzLTMyYWY1ODA0OTVlZSIsImVtYWlsIjoibmd1eWVuZ2lhYmFvLnRyYW4xQGFxdWFyaXV4LmNvbSJ9.fDuIXMY9UK_YI7XOhYR9VB7MdPjcZ5Cv2Q56DtcF2Avwch4CxPJwQ_CRYZp1fU2n7KCxYN8eOlR2CRvgvTPPzndE08l51RpY1ODoMrGo3XeYeZYY3m2j6SZFcl_r1EUjGHR2LHV6vEplnWNy8at31jgp32TMtJ0SZra_NYxe7S_dRUOy0ZI3J_szqKMrB3WNbMKLLy4vcvVkw_csuxIcYiJOxhGRWeGb6NahIRHJAcEcCSBY0cr9RPBkJW4IJk6EfC6vDRj-whyfGx9m5bHx30-y2OgzMi3f3ZectwzSZzGMG1akpDTSDyXNLXAPeBOZna2KobcO1_yfe5mjqf2UQQ' 
+--header 'Content-Length: 0'
+
+ ⬅️  Response Received: 
+{
+    "success": true,
+    "timestamp": "2026-05-09T13:55:51.534088857Z"
+}
+
+
+20:55:52 | - Stop recording screen

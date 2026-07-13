@@ -1,0 +1,77 @@
+21:56:46 | - Running test case: test_AK_TBL_TC06_positive_resize_columns_minimum.py
+21:56:46 | - Start recording screen
+21:56:48 | - Size of column: 'Name': 'height: 40, width: 279'
+21:56:48 | - Size of column: 'ID': 'height: 40, width: 279'
+21:56:48 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:56:48 | - Size of column: 'Status': 'height: 40, width: 279'
+21:56:48 | - Size of column: 'Created Date': 'height: 40, width: 279'
+21:56:48 | - Size of column: 'Action': 'height: 40, width: 100'
+21:56:48 | - Size of column: 'ID': 'height: 40, width: 279'
+21:56:48 | Step 1: Shrink column 'ID' toward minimum width
+21:56:48 | - Shrinking column 'ID' to minimum (current: 279px)
+21:56:48 | - Decrease column: 'ID' by 195.29999999999998px
+21:56:50 | - Size of column: 'ID': 'height: 40, width: 84'
+21:56:50 | - Decrease column: 'ID' by 58.8px
+21:56:52 | - Size of column: 'ID': 'height: 40, width: 80'
+21:56:52 | - Decrease column: 'ID' by 56.0px
+21:56:54 | - Size of column: 'ID': 'height: 40, width: 80'
+21:56:54 | - Column reached minimum width: 80px
+21:56:54 | Verify column 'ID' width decreased toward minimum
+21:56:54 | - Size of column: 'ID': 'height: 40, width: 80'
+21:56:54 | Verify label of 'ID' truncated
+21:56:55 | Verify column has min width limit
+21:56:55 | - Size of column: 'Name': 'height: 40, width: 279'
+21:56:55 | Step 2: Shrink column 'Name' toward minimum width
+21:56:55 | - Shrinking column 'Name' to minimum (current: 279px)
+21:56:55 | - Decrease column: 'Name' by 195.29999999999998px
+21:56:57 | - Size of column: 'Name': 'height: 40, width: 84'
+21:56:57 | - Decrease column: 'Name' by 58.8px
+21:56:59 | - Size of column: 'Name': 'height: 40, width: 80'
+21:56:59 | - Decrease column: 'Name' by 56.0px
+21:57:01 | - Size of column: 'Name': 'height: 40, width: 80'
+21:57:01 | - Column reached minimum width: 80px
+21:57:01 | Verify column 'Name' width decreased toward minimum
+21:57:01 | - Size of column: 'Name': 'height: 40, width: 80'
+21:57:01 | Verify label of 'Name' truncated
+21:57:02 | Verify column has min width limit
+21:57:02 | - Size of column: 'Status': 'height: 40, width: 279'
+21:57:02 | Step 3: Shrink column 'Status' toward minimum width
+21:57:02 | - Shrinking column 'Status' to minimum (current: 279px)
+21:57:02 | - Decrease column: 'Status' by 195.29999999999998px
+21:57:04 | - Size of column: 'Status': 'height: 40, width: 84'
+21:57:04 | - Decrease column: 'Status' by 58.8px
+21:57:06 | - Size of column: 'Status': 'height: 40, width: 80'
+21:57:06 | - Decrease column: 'Status' by 56.0px
+21:57:08 | - Size of column: 'Status': 'height: 40, width: 80'
+21:57:08 | - Column reached minimum width: 80px
+21:57:08 | Verify column 'Status' width decreased toward minimum
+21:57:09 | - Size of column: 'Status': 'height: 40, width: 80'
+21:57:09 | Verify label of 'Status' truncated
+21:57:09 | Verify column has min width limit
+21:57:10 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:57:10 | Step 4: Shrink column 'Expires' toward minimum width
+21:57:10 | - Shrinking column 'Expires' to minimum (current: 390px)
+21:57:10 | - Decrease column: 'Expires' by 273.0px
+21:57:12 | - Size of column: 'Expires': 'height: 40, width: 117'
+21:57:12 | - Decrease column: 'Expires' by 81.89999999999999px
+21:57:14 | - Size of column: 'Expires': 'height: 40, width: 80'
+21:57:14 | - Decrease column: 'Expires' by 56.0px
+21:57:15 | - Size of column: 'Expires': 'height: 40, width: 80'
+21:57:15 | - Column reached minimum width: 80px
+21:57:15 | Verify column 'Expires' width decreased toward minimum
+21:57:16 | - Size of column: 'Expires': 'height: 40, width: 80'
+21:57:16 | Verify label of 'Expires' truncated
+21:57:16 | Verify column has min width limit
+21:57:16 | Step 5: Try decrease size of col Created Date
+21:57:16 | - Decrease column: 'Created Date' by 58px
+21:57:19 | Verify Size remains un-changed
+21:57:19 | - Size of column: 'Created Date': 'height: 40, width: 1186'
+21:57:19 | Step 6: Refresh page
+21:57:22 | Verify column widths match initial sizes after refresh
+21:57:23 | - Size of column: 'Name': 'height: 40, width: 279'
+21:57:23 | - Size of column: 'ID': 'height: 40, width: 279'
+21:57:23 | - Size of column: 'Expires': 'height: 40, width: 390'
+21:57:23 | - Size of column: 'Status': 'height: 40, width: 279'
+21:57:23 | - Size of column: 'Created Date': 'height: 40, width: 279'
+21:57:23 | - Size of column: 'Action': 'height: 40, width: 100'
+21:57:24 | - Stop recording screen

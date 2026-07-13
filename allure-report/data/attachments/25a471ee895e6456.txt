@@ -1,0 +1,71 @@
+17:46:46 | - Running test case: test_AS_TC01_positive_navigation_and_initial_state.py
+17:46:46 | [API] Send API: POST /auth/v1/login/admin
+17:46:47 | ➡️  Request Sent: 
+curl --location --request POST 'https://admin.aqxoms-sit.s20ip12.com/api/auth/v1/login/admin' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Content-Length: 68' 
+--data-raw '{"password": "Autotest@12345", "email": "auto_admin02@aquariux.com"}'
+
+ ⬅️  Response Received: 
+{
+    "data": {
+        "userId": "019e7c33-b81b-7970-b804-59fcb23666e6",
+        "userType": "ADMIN",
+        "email": "auto_admin02@aquariux.com",
+        "name": "Auto Admin 02",
+        "...": "(7 more fields)"
+    },
+    "success": true,
+    "timestamp": "2026-07-10T10:46:47.882083999Z"
+}
+
+
+17:46:47 | [API] Send API: GET /backoffice/v1/admin-users
+17:46:47 | ➡️  Request Sent: 
+curl --location --request GET 'https://admin.aqxoms-sit.s20ip12.com/api/backoffice/v1/admin-users' 
+--header 'user-agent: automation-team-client' 
+--header 'Accept-Encoding: gzip, deflate' 
+--header 'Accept: */*' 
+--header 'Connection: keep-alive' 
+--header 'content-type: application/json' 
+--header 'Authorization: Bearer eyJraWQiOiJhcXhvbXMtand0LWtleSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwMTllN2MzMy1iODFiLTc5NzAtYjgwNC01OWZjYjIzNjY2ZTYiLCJhdWQiOiJhcXhvbXMtYXV0aC1zaXQiLCJuYmYiOjE3ODM2ODA0MDcsImlzcyI6Imh0dHA6Ly9hcXhvbXMtYXV0aC1zZXJ2aWNlIiwiZXhwIjoxNzgzNzY2ODA3LCJpYXQiOjE3ODM2ODA0MDcsInVzZXJJZCI6IjAxOWU3YzMzLWI4MWItNzk3MC1iODA0LTU5ZmNiMjM2NjZlNiIsImp0aSI6IjRmYmM1MzM2LTNiN2MtNGY4NS05Y2ViLWY5Mzg5OWU1MTM3NSIsImVtYWlsIjoiYXV0b19hZG1pbjAyQGFxdWFyaXV4LmNvbSJ9.RHnAAeA7pEursLnkcFsxNAnZ3oHB1hPqJcm3m4qliTSW6LOgC2Mnks4JWUoJlI-5uSJzeGwXS4qtGLiUVnLr26UPFdwaNQGl5n_KIpCyAn4vsBL5rF3HxBT7CBqp7KPQDd0q3AU1rew4efi8LEoj162Cn0-4QKvJdWY7GHCcsOGDTWKyVm_cdKhCLGfz91_wcBTDiGfZ2XYifdmi_QEMre7cyvsskSuUs9Ak8UWTOIpRocbpXO4GkASg4ACIX_lGk2A7jEJz-JQN_juWtB5ZU3qbtIt8Yfq5lzVzpgw056oKywX1MH0CQoFduw-GphcFYK1uOtDkQUQP3Ap_wXXA4g'
+
+
+17:46:47 | [Setup] Init Web Driver
+17:46:50 | - Registered driver under 'web_main' (total: 1)
+17:46:50 | - Added web driver 'main' to driver_list (total: 1)
+17:46:50 | [Setup] Navigate to OMS site
+17:46:51 | [Setup] Login with default admin user
+17:46:51 | - Input email: 'auto_admin02@aquariux.com'
+17:46:52 | - Input password: 'Autotest@12345'
+17:46:52 | - Wait for 'password' not present in 'type' of locator ('css selector', 'input[data-testid="login-form-input-password-input"]'): FALSE
+17:46:52 | - Click on login button
+17:46:52 | - Start recording screen
+17:46:52 | Step 1: Navigate to Reports > Account Statements via sidebar
+17:46:53 | - Wait for 'open' present in 'data-state' of locator ('css selector', 'button[data-testid="layout-page-sidebar-nav-menu-reports"]'): FALSE
+17:46:53 | - Expand item: 'Reports'
+17:46:53 | - Wait for statement data to load
+17:47:04 | OpenAI API call failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+17:47:04 | DOM analysis failed for 'Element with selector: div[data-testid="account-statements-detail-card-header"]' (framework: selenium): OpenAI API call failed: 401
+17:47:04 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='AI DOM analysis failed: OpenAI API call failed: 401', context={})
+17:47:04 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:47:04 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:47:04 | Cost-optimized locator failed after 728ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:47:04 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:47:04 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:47:04 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:47:05 | Verify url matches reports/statements
+17:47:05 | Verify page title: 'Account Statement'
+17:47:05 | Verify page description: 'View detailed account activity and transaction history.'
+17:47:05 | Verify filter area is displayed with month picker, trading user search, trading account dropdown and apply button
+17:47:05 | Verify trading user placeholder: 'Select trading user...'
+17:47:05 | Verify trading account dropdown is disabled by default
+17:47:05 | Verify apply button is disabled by default
+17:47:05 | Verify statement content is not yet displayed (no filters applied)
+17:47:15 | - Check invisibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:47:16 | - Stop recording screen

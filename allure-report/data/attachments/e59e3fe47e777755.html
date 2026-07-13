@@ -1,0 +1,222 @@
+
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 98%;
+                font-family: Arial, sans-serif;
+                margin: 10px 0;
+                table-layout: auto;
+            }
+            th, td {
+                border: 1px solid #ccc;
+                padding: 8px 10px;
+                text-align: left;
+                vertical-align: top;
+                font-size: 12px;
+            }
+            th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+            }
+            .pass-row {
+                background-color: #d4edda;
+            }
+            .fail-row {
+                background-color: #f8d7da;
+            }
+            .status-pass {
+                color: #155724;
+                font-weight: bold;
+            }
+            .status-fail {
+                color: #721c24;
+                font-weight: bold;
+            }
+            .summary-header {
+                background-color: #e9ecef;
+                font-weight: bold;
+                text-align: left;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            .values-cell {
+                font-family: 'Courier New', monospace;
+                font-size: 11px;
+                white-space: pre-wrap;
+                word-break: break-word;
+            }
+            .field-pass {
+                color: #155724;
+            }
+            .field-diff {
+                color: #d9534f;
+                font-weight: bold;
+            }
+            .index-cell {
+                text-align: center;
+                font-weight: bold;
+            }
+            .status-cell {
+                text-align: center;
+            }
+        </style>
+        
+        <div class="summary-header">
+            Overall Result: <span class="status-pass">PASS</span><br>
+            Total Items: 20 | Failed: 0
+         | Sorted by: transaction_id</div>
+        <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">Index</th>
+                <th style="width: 8%;">Status</th>
+                <th style="width: 43%;">Actual Values</th>
+                <th style="width: 43%;">Expected Values</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="pass-row">
+                <td class="index-cell">0</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019f18f4-e1e0-7108-9381-0a3e2584d813</span><br><span class='field-pass'>Type: Deposit</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019f18f4-e1e0-7108-9381-0a3e2584d813</span><br><span class='field-pass'>Type: Deposit</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">1</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef796-8dfb-702e-83cd-e457d2d484be</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef796-8dfb-702e-83cd-e457d2d484be</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">2</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef794-eea5-7ff7-8768-023429fb3efb</span><br><span class='field-pass'>Type: Deposit</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef794-eea5-7ff7-8768-023429fb3efb</span><br><span class='field-pass'>Type: Deposit</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">3</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef786-aecd-7b03-9818-9065f3ca2d2d</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef786-aecd-7b03-9818-9065f3ca2d2d</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">4</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef784-75ea-7eef-affe-f85ec251566b</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef784-75ea-7eef-affe-f85ec251566b</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">5</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef782-da64-71b6-bcd1-c85acc75dda7</span><br><span class='field-pass'>Type: Deposit</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef782-da64-71b6-bcd1-c85acc75dda7</span><br><span class='field-pass'>Type: Deposit</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">6</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef780-e699-7f9a-ab4a-6425edfd2ee6</span><br><span class='field-pass'>Type: Deposit</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef780-e699-7f9a-ab4a-6425edfd2ee6</span><br><span class='field-pass'>Type: Deposit</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">7</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef780-901d-784f-b52c-0ba30b9e5e0b</span><br><span class='field-pass'>Type: Deposit</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef780-901d-784f-b52c-0ba30b9e5e0b</span><br><span class='field-pass'>Type: Deposit</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">8</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef550-67e6-795e-93d6-294acdc991bd</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef550-67e6-795e-93d6-294acdc991bd</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">9</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3d1-8ed3-75ab-9159-a4a8f515fe40</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3d1-8ed3-75ab-9159-a4a8f515fe40</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">10</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3d0-efb5-7003-bf34-e807be55273c</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3d0-efb5-7003-bf34-e807be55273c</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">11</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3d0-4de5-7c11-81d0-5054ad04e933</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3d0-4de5-7c11-81d0-5054ad04e933</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">12</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3ce-adce-7ca6-a2d3-cff1b53f20c5</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3ce-adce-7ca6-a2d3-cff1b53f20c5</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">13</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3cb-8a82-7340-8c84-7b0aae78370b</span><br><span class='field-pass'>Type: Deposit</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3cb-8a82-7340-8c84-7b0aae78370b</span><br><span class='field-pass'>Type: Deposit</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">14</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3b5-c9d9-758c-845b-a76242a5cf5b</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019ef3b5-c9d9-758c-845b-a76242a5cf5b</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">15</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef21-90e9-7436-a57f-6516d5fb4968</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef21-90e9-7436-a57f-6516d5fb4968</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">16</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef20-daf6-7d0c-b40d-9ee911b965ea</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef20-daf6-7d0c-b40d-9ee911b965ea</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">17</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef1f-23e5-7fdf-aa76-dd02369b092f</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef1f-23e5-7fdf-aa76-dd02369b092f</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">18</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef1e-cc4a-73d2-be6a-29d6155ae9b0</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef1e-cc4a-73d2-be6a-29d6155ae9b0</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+            <tr class="pass-row">
+                <td class="index-cell">19</td>
+                <td class="status-cell status-pass">✓</td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef1e-677a-7409-bab2-33493eede7be</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+                <td class="values-cell"><span class='field-pass'>Currency: USD</span><br><span class='field-pass'>Order Id: -</span><br><span class='field-pass'>Transaction Id: 019eef1e-677a-7409-bab2-33493eede7be</span><br><span class='field-pass'>Type: Withdrawal</span></td>
+            </tr>
+            
+        </tbody>
+        </table>
+        

@@ -1,0 +1,53 @@
+18:06:19 | - Running test case: test_AS_TC22_positive_buy_sell_volume_split.py
+18:06:19 | - Start recording screen
+18:06:19 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+18:06:19 | - Select month: latest
+18:06:19 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:06:19 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:06:19 | - Select first available trading account
+18:06:20 | - Click Apply filters
+18:06:20 | - Wait for statement data to load
+18:06:25 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+18:06:26 | Step 1: Read Buy Volume and Sell Volume from Executed Orders table
+18:06:26 | Verify each row has exactly one of Buy/Sell Volume populated (not both)
+18:06:26 | - Get cell: table=orders, row=0, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=0, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=1, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=1, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=2, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=2, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=3, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=3, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=4, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=4, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=5, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=5, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=6, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=6, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=7, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=7, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=8, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=8, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=9, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=9, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=10, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=10, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=11, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=11, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=12, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=12, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=13, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=13, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=14, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=14, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=15, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=15, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=16, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=16, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=17, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=17, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=18, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=18, col=soldVolume
+18:06:26 | - Get cell: table=orders, row=19, col=boughtVolume
+18:06:26 | - Get cell: table=orders, row=19, col=soldVolume
+18:06:27 | - Stop recording screen

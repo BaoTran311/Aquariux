@@ -1,0 +1,101 @@
+18:00:47 | - Running test case: test_AS_TC18_positive_resize_columns_minimum.py
+18:00:47 | - Start recording screen
+18:00:48 | [Setup] Apply filters: June + user='Auto_Stmt.xwovflsb' + first available account
+18:00:48 | - Select month: 5
+18:00:48 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:00:48 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:00:48 | - Select first available trading account
+18:00:48 | - Click Apply filters
+18:00:48 | - Wait for statement data to load
+18:00:58 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:00:58 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:00:58 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:00:58 | Cost-optimized locator failed after 59ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:00:58 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:00:58 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:00:58 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:01:01 | - Size of column: 'Order Date/Time': 'height: 32, width: 252'
+18:01:01 | - Size of column: 'Order ID': 'height: 32, width: 252'
+18:01:01 | - Size of column: 'Transaction ID': 'height: 32, width: 252'
+18:01:01 | - Size of column: 'Type': 'height: 32, width: 252'
+18:01:01 | - Size of column: 'Transaction ID': 'height: 32, width: 252'
+18:01:01 | Step 1: Shrink column 'Transaction ID' toward minimum width
+18:01:01 | - Shrinking column 'Transaction ID' to minimum (current: 252px)
+18:01:01 | - Decrease column: 'Transaction ID' by 176.39999999999998px
+18:01:02 | - Size of column: 'Transaction ID': 'height: 32, width: 80'
+18:01:02 | - Decrease column: 'Transaction ID' by 56.0px
+18:01:03 | - Size of column: 'Transaction ID': 'height: 32, width: 80'
+18:01:03 | - Column reached minimum width: 80px
+18:01:03 | Verify column 'Transaction ID' width decreased toward minimum
+18:01:03 | - Size of column: 'Transaction ID': 'height: 32, width: 80'
+18:01:03 | Verify label of 'Transaction ID' truncated
+18:01:03 | - Size of column: 'Type': 'height: 32, width: 252'
+18:01:03 | Step 2: Shrink column 'Type' toward minimum width
+18:01:03 | - Shrinking column 'Type' to minimum (current: 252px)
+18:01:03 | - Decrease column: 'Type' by 176.39999999999998px
+18:01:05 | - Size of column: 'Type': 'height: 32, width: 80'
+18:01:05 | - Decrease column: 'Type' by 56.0px
+18:01:06 | - Size of column: 'Type': 'height: 32, width: 80'
+18:01:06 | - Column reached minimum width: 80px
+18:01:06 | Verify column 'Type' width decreased toward minimum
+18:01:06 | - Size of column: 'Type': 'height: 32, width: 80'
+18:01:06 | Verify label of 'Type' truncated
+18:01:06 | - Size of column: 'Order Date/Time': 'height: 32, width: 252'
+18:01:06 | Step 3: Shrink column 'Order Date/Time' toward minimum width
+18:01:06 | - Shrinking column 'Order Date/Time' to minimum (current: 252px)
+18:01:06 | - Decrease column: 'Order Date/Time' by 176.39999999999998px
+18:01:07 | - Size of column: 'Order Date/Time': 'height: 32, width: 80'
+18:01:07 | - Decrease column: 'Order Date/Time' by 56.0px
+18:01:09 | - Size of column: 'Order Date/Time': 'height: 32, width: 80'
+18:01:09 | - Column reached minimum width: 80px
+18:01:09 | Verify column 'Order Date/Time' width decreased toward minimum
+18:01:09 | - Size of column: 'Order Date/Time': 'height: 32, width: 80'
+18:01:09 | Verify label of 'Order Date/Time' truncated
+18:01:09 | - Size of column: 'Order ID': 'height: 32, width: 252'
+18:01:09 | Step 4: Shrink column 'Order ID' toward minimum width
+18:01:09 | - Shrinking column 'Order ID' to minimum (current: 252px)
+18:01:09 | - Decrease column: 'Order ID' by 176.39999999999998px
+18:01:10 | - Size of column: 'Order ID': 'height: 32, width: 80'
+18:01:10 | - Decrease column: 'Order ID' by 56.0px
+18:01:11 | - Size of column: 'Order ID': 'height: 32, width: 80'
+18:01:11 | - Column reached minimum width: 80px
+18:01:11 | Verify column 'Order ID' width decreased toward minimum
+18:01:12 | - Size of column: 'Order ID': 'height: 32, width: 80'
+18:01:12 | Verify label of 'Order ID' truncated
+18:01:12 | Step 5: Refresh page and re-apply filters (June)
+18:01:12 | - Wait for statement data to load
+18:01:22 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:01:22 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:01:22 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:01:22 | Cost-optimized locator failed after 49ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:01:22 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:01:22 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:01:22 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:01:23 | - Select month: 5
+18:01:23 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+18:01:23 | - Select trading user: 'Auto_Stmt.xwovflsb'
+18:01:24 | - Select first available trading account
+18:01:24 | - Click Apply filters
+18:01:25 | - Wait for statement data to load
+18:01:35 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:01:35 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:01:35 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:01:35 | Cost-optimized locator failed after 53ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:01:35 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:01:35 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:01:35 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:01:36 | Verify column widths match initial sizes after refresh
+18:01:37 | - Size of column: 'Transaction ID': 'height: 32, width: 252'
+18:01:37 | - Size of column: 'Type': 'height: 32, width: 252'
+18:01:37 | - Size of column: 'Order Date/Time': 'height: 32, width: 252'
+18:01:37 | - Size of column: 'Order ID': 'height: 32, width: 252'
+18:01:37 | [Teardown] Refresh the page
+18:01:38 | - Wait for statement data to load
+18:01:48 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=circuit_breaker_open, message='AI Service circuit breaker is open', context={})
+18:01:48 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:01:48 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+18:01:48 | Cost-optimized locator failed after 52ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:01:48 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+18:01:48 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+18:01:48 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+18:01:50 | - Stop recording screen

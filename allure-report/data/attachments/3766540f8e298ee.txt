@@ -1,0 +1,27 @@
+17:48:14 | - Running test case: test_AS_TC04_positive_trading_account_scoped_to_user.py
+17:48:14 | - Start recording screen
+17:48:14 | Step 1: Select trading user: 'Auto_Stmt.xwovflsb'
+17:48:14 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:48:15 | Step 2: Open trading account dropdown
+17:48:15 | - Open trading account dropdown
+17:48:15 | Verify trading account dropdown shows accounts for 'Auto_Stmt.xwovflsb'
+17:48:15 | - Get trading account filter options
+17:48:15 | Step 3: Change trading user to: 'camcam QA'
+17:48:15 | - Select trading user: 'camcam QA'
+17:48:16 | Step 4: Open trading account dropdown again
+17:48:16 | - Open trading account dropdown
+17:48:16 | Verify trading account dropdown updates to show 'camcam QA''s accounts (different from 'Auto_Stmt.xwovflsb')
+17:48:16 | - Get trading account filter options
+17:48:16 | [Teardown] Refresh the page
+17:48:17 | - Wait for statement data to load
+17:48:27 | OpenAI API call failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+17:48:27 | DOM analysis failed for 'Element with selector: div[data-testid="account-statements-detail-card-header"]' (framework: selenium): OpenAI API call failed: 401
+17:48:27 | DOM analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='AI DOM analysis failed: OpenAI API call failed: 401', context={})
+17:48:27 | Failed to take screenshot or analyze visually: AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:48:27 | Visual analysis failed for selector 'div[data-testid="account-statements-detail-card-header"]': AutoHealException(error_code=ai_service_unavailable, message='Visual analysis is not supported by provider: groq', context={})
+17:48:27 | Cost-optimized locator failed after 442ms: AutoHealException(error_code=element_not_found, message='All locator strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:48:27 | Auto-heal failed: AutoHealException(error_code=element_not_found, message='All healing strategies failed for selector: div[data-testid="account-statements-detail-card-header"]', context={})
+17:48:27 | 🟡 Element not found for ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TimeoutException after 10(s)
+17:48:27 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): FALSE
+17:48:29 | - Stop recording screen

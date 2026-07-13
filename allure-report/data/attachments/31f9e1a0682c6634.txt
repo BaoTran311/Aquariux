@@ -1,0 +1,49 @@
+21:55:18 | - Running test case: test_AK_TBL_TC04_positive_search.py
+21:55:18 | - Start recording screen
+21:55:19 | Step 1: Search by 'Name': 'cytest'
+21:55:19 | - Search for: cytest
+21:55:19 | Verify table data matches: 'cytest'
+21:55:19 | - Get table data
+21:55:21 | - Go to the first page
+21:55:21 | 
+Table Data:
+┌──────────────┬──────────────────────────────────────┬──────────────┬──────────────┬────────────────────────┐
+│ name         │ id                                   │ expires      │ status       │ created_date           │
+├──────────────┼──────────────────────────────────────┼──────────────┼──────────────┼────────────────────────┤
+│ cytest       │ 019ddbe9-bf4e-7696-9dcf-ad2af75ba332 │ Never        │ Active       │ 30 April 2026 01:03:42 │
+└──────────────┴──────────────────────────────────────┴──────────────┴──────────────┴────────────────────────┘
+21:55:21 | - Total records: 1
+21:55:21 | - Comparing 1 items
+21:55:21 | Step 2: Search by 'Name': 'ARCz_Auto-XFBjEeih'
+21:55:21 | - Search for: ARCz_Auto-XFBjEeih
+21:55:22 | Verify table data matches: 'ARCz_Auto-XFBjEeih'
+21:55:22 | - Get table data
+21:55:24 | - Go to the first page
+21:55:24 | 
+Table Data:
+┌────────────────────┬──────────────────────────────────────┬──────────────┬──────────────┬──────────────────────┐
+│ name               │ id                                   │ expires      │ status       │ created_date         │
+├────────────────────┼──────────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
+│ ARCz_Auto-XFBjEeih │ 019e368b-ffad-73d1-bd45-6050bd33e8f4 │ Never        │ Active       │ 17 May 2026 15:26:45 │
+└────────────────────┴──────────────────────────────────────┴──────────────┴──────────────┴──────────────────────┘
+21:55:24 | - Total records: 1
+21:55:24 | - Comparing 1 items
+21:55:24 | Step 3: Search by 'Name': 'Integration Test Key'
+21:55:24 | - Search for: Integration Test Key
+21:55:24 | Verify table data matches: 'Integration Test Key'
+21:55:24 | - Get table data
+21:55:26 | - Go to the first page
+21:55:27 | 
+Table Data:
+┌──────────────────────┬──────────────────────────────────────┬──────────────┬──────────────┬──────────────────────┐
+│ name                 │ id                                   │ expires      │ status       │ created_date         │
+├──────────────────────┼──────────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
+│ Integration Test Key │ 019e1094-0e8e-7035-a3a3-d1ffc9c541a1 │ Never        │ Active       │ 10 May 2026 06:29:59 │
+└──────────────────────┴──────────────────────────────────────┴──────────────┴──────────────┴──────────────────────┘
+21:55:27 | - Total records: 1
+21:55:27 | - Comparing 1 items
+21:55:27 | Step 4: Refresh page
+21:55:28 | Verify search field is cleared
+21:55:28 | [Teardown] Clear search field
+21:55:28 | - Clear search input
+21:55:30 | - Stop recording screen

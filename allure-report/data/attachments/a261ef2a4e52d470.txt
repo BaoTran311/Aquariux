@@ -1,0 +1,18 @@
+17:50:43 | - Running test case: test_AS_TC11_positive_new_close_indicator.py
+17:50:43 | - Start recording screen
+17:50:44 | [Setup] Apply filters: month + user='Auto_Stmt.xwovflsb' + first available account
+17:50:44 | - Select month: latest
+17:50:44 | - Check visibility of locator: ('css selector', 'button[data-testid="account-statements-filters-month-picker-trigger"]'): TRUE
+17:50:44 | - Select trading user: 'Auto_Stmt.xwovflsb'
+17:50:44 | - Select first available trading account
+17:50:45 | - Click Apply filters
+17:50:45 | - Wait for statement data to load
+17:50:50 | - Check visibility of locator: ('css selector', 'div[data-testid="account-statements-detail-card-header"]'): TRUE
+17:50:51 | Step 1: Scan Executed Orders table for 'New' indicator
+17:50:51 | Verify at least one 'New' entry exists in Executed Orders table
+17:50:51 | - Get cell: table=orders, row=0, col=orderAction
+17:50:51 | - Get cell: table=orders, row=1, col=orderAction
+17:50:51 | - Get cell: table=orders, row=2, col=orderAction
+17:50:51 | - Get cell: table=orders, row=3, col=orderAction
+17:50:51 | - Get cell: table=orders, row=4, col=orderAction
+17:50:52 | - Stop recording screen
